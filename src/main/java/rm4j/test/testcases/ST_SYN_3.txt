@@ -1,0 +1,21 @@
+synchronized(Hashtable.this) {
+    Entry<?,?>[] tab = Hashtable.this.table;
+    int index = (lastReturned.hash & 0x7FFFFFFF) % tab.length;
+
+    @SuppressWarnings("unchecked")
+    Entry<K,V> e = (Entry<K,V>)tab[index];
+    for(Entry<K,V> prev = null; e != null; prev = e, e = e.next) {
+        if (e == lastReturned) {
+            if (prev == null)
+                tab[index] = e.next;
+            else
+                prev.next = e.next;
+            expectedModCount++;
+            lastReturned = null;
+            Hashtable.this.modCount++;
+            Hashtable.this.count--;
+            return;
+        }
+    }
+    throw new ConcurrentModificationException();
+}ST_SYN_3

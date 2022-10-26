@@ -1,0 +1,1 @@
+throw e; ST_THR_2

@@ -1,0 +1,5 @@
+try(src.reader; src.writer){
+
+}catch(IOException | IndexOutOfBoundsException e){
+    System.out.println(e);
+}ST_TR_4

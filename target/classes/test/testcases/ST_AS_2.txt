@@ -1,0 +1,1 @@
+assert a.b != null : "b == null"; ST_AS_2

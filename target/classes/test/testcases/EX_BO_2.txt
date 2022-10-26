@@ -1,0 +1,1 @@
+a instanceof Object o EX_BO_2

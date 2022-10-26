@@ -1,0 +1,10 @@
+{
+    src.skip(JavaTS.EXTENDS);
+    if(declType == DeclarationType.CLASS){
+        extendsClause = NameTree.resolveNonArrayTypeOrName(src);
+    }else if(declType == DeclarationType.INTERFACE){
+        implementsClause = Tree.getListWithoutBracket(NameTree::resolveNonArrayTypeOrName, JavaTS.COMMA, src);
+    }else{
+        throw new ParsingException(String.format("A %s declaration cannot have implements clause.", declType.name()));
+    }
+}ST_BLK_2

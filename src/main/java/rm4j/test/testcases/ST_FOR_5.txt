@@ -1,0 +1,3 @@
+for(var e : c){
+    enm += e.toString() +" "+lookAheadSet.get(e).toString()+"\n";
+}ST_FOR_5

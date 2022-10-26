@@ -1,0 +1,28 @@
+switch(ptr.element().resolution){
+    case CLASS -> CLASS;
+    case INTERFACE -> INTERFACE;
+    case ENUM -> ENUM;
+    case RECORD -> RECORD;
+    case AT_SIGN -> ANNOTATION_INTERFACE;
+    case LESS_THAN -> METHOD_DECLARATION;
+    default -> {
+        if(LookAheadMode.TYPE.skip(ptr)){
+            yield switch(ptr.element().resolution){
+                case LEFT_ROUND_BRACKET, LEFT_CURLY_BRACKET -> METHOD_DECLARATION;
+                default ->{
+                    if(ptr.match(IDENTIFIER_TOKENS)){
+                        ptr.next();
+                        if(ptr.match(JavaTS.LEFT_ROUND_BRACKET)){
+                            yield METHOD_DECLARATION;
+                        }else{
+                            yield VARIABLE_DECLARATION;
+                        }
+                    }else{
+                        yield NOT_DECLARATION;
+                    }
+                }
+            };
+        }
+        yield NOT_DECLARATION;
+    }
+}EX_SW_2

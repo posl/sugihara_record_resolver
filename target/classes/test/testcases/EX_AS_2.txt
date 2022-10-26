@@ -1,0 +1,1 @@
+f = s -> true EX_AS_2

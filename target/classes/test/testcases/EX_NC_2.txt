@@ -1,0 +1,8 @@
+new Supplier<String>(){
+    @Override
+    public String get(){
+        return "";
+    }
+}
+
+EX_NC_2

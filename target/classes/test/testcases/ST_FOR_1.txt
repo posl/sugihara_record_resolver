@@ -1,0 +1,2 @@
+for(char c : initialChars) add(c); ST_FOR_1
+        

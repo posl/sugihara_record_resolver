@@ -1,0 +1,13 @@
+for(; n != e.getKey().rule.right().bottom; n = n.next){
+    if(syntax.isTerminal(n.s)){
+        set.add(n.s);
+        return set;
+    }else if(syntax.isNonTerminal(n.s)){
+        set.addAll(firstSet.get(n.s));
+        if(!nullsSet.contains(n.s)){
+            return set;
+        }
+    }else{
+        throw new IllegalSymbolException(n.s);
+    }
+}ST_FOR_2

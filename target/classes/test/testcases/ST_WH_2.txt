@@ -1,0 +1,1 @@
+while(p.pop() instanceof Vector); ST_WH_2

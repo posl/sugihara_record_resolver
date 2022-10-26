@@ -1,0 +1,1 @@
+l.isEmpty()? null : l.get(0) EX_C_1

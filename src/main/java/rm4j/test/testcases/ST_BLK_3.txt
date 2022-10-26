@@ -1,0 +1,15 @@
+{
+    if(src.match(JavaTS.SEMICOLON)){
+        return EmptyStatementTree.parse(src);
+    }else if(src.match(JavaTS.LEFT_CURLY_BRACKET) || src.match(JavaTS.STATIC, JavaTS.LEFT_CURLY_BRACKET)){
+        return BlockTree.parse(src);
+    }else{
+        DeclarationType typeDecl = DeclarationType.lookAheadDeclType(src);
+        return switch(typeDecl){
+            case VARIABLE_DECLARATION -> VariableTree.resolveDeclarationStatement(src);
+            case METHOD_DECLARATION -> MethodTree.parse(src);
+            case NOT_DECLARATION -> throw new ParsingException("Illegal statement in the class body."+src.read());
+            default -> parse(typeDecl, src);
+        };
+    }
+}ST_BLK_3

@@ -1,0 +1,18 @@
+synchronized (this) {
+    // Write out the threshold and loadFactor
+    s.defaultWriteObject();
+
+    // Write out the length and count of elements
+    s.writeInt(table.length);
+    s.writeInt(count);
+
+    // Stack copies of the entries in the table
+    for (Entry<?, ?> entry : table) {
+
+        while (entry != null) {
+            entryStack =
+                new Entry<>(0, entry.key, entry.value, entryStack);
+            entry = entry.next;
+        }
+    }
+}ST_SYN_2

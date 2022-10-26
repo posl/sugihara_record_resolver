@@ -1,0 +1,1 @@
+new A<>(Arrays.asList(1.7f, 3.5, 7)).arg[p.getIndex()] EX_AR_3

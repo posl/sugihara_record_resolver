@@ -1,0 +1,5 @@
+if(src.match(JavaTS.DEFAULT))
+    labels.add(DefaultCaseLabelTree.parse(src));
+else
+    labels.add(CaseLabelTree.parse(src));
+ST_IF_3

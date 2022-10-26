@@ -1,0 +1,21 @@
+try(var reader = new FileReader(file)){
+    int ch;
+    while((ch = reader.read()) != -1){
+        if(ch == '\\'){
+            status = Status.BACK_SLASH;
+        }else{
+            if(ch == 'u' && status == Status.BACK_SLASH
+                && charList.readBack(c -> c == '\\').length() % 2 == 1){
+                charList.remove(1);
+                ch = getUnicode(reader);
+            }
+            status = Status.DEFAULT;
+        }
+        charList.add((char)ch);
+    }
+}catch(IOException e){
+    e.printStackTrace();
+    throw new ParsingException("The lexer reported an error in the resolution of "+file.toString()+".");
+}finally{
+
+}ST_TR_2

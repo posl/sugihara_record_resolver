@@ -1,0 +1,16 @@
+switch(source.refer()){
+    case '*':
+    s += getUntil(source, seq -> !seq.readBack(2).equals("*/"));
+    return new Comment(s + source.get(), recorder.get());
+
+    case '/':
+    s += source.readForward(c -> !LINE_TERMINATE_CHARACTERS.contains(c));
+    return new Comment(s, recorder.get());
+
+    case '=':
+    s += source.get();
+    return new Operator(s, recorder.get());
+
+    default:
+    return new Operator(s, recorder.get());
+}ST_SW_1

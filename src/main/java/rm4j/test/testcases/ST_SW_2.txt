@@ -1,0 +1,14 @@
+switch(symbol = ptr.element().resolution){
+    case AT_SIGN -> ANNOTATIONS.skip(ptr);
+    case LESS_THAN -> count++;
+    case GREATER_THAN -> count--;
+    case BITWISE_SIGNED_RIGHT_SHIFT -> count -= 2;
+    case BITWISE_UNSIGNED_RIGHT_SHIFT -> count -= 3;
+    case QUESTION, SUPER, EXTENDS, COMMA, PERIOD -> {}
+    default -> {
+        if(!Tree.IDENTIFIER_TOKENS.contains(symbol)
+            && !Tree.PRIMITIVE_TYPES.contains(symbol)){
+            return false;
+        }
+    }
+}ST_SW_2

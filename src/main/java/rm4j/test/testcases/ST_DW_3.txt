@@ -1,0 +1,1 @@
+do i++; while(!(list.get(i) instanceof Token)); ST_DW_3

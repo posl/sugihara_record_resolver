@@ -1,0 +1,9 @@
+switch (o) {
+    case null     -> System.out.println("null");
+    case String s when s.length() >= 16777216 -> System.out.println("Long String");
+    case String s -> System.out.println("String");
+    case Color c  -> System.out.println("Color with " + c.values().length + " values");
+    case Point p  -> System.out.println("Record class: " + p.toString());
+    case int[] ia -> System.out.println("Array of ints of length" + ia.length);
+    default       -> System.out.println("Something else");
+}ST_SW_3

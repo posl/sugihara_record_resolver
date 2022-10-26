@@ -1,0 +1,3 @@
+(double d) -> {
+    return d * d;
+} EX_L_3

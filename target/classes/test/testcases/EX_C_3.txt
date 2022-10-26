@@ -1,0 +1,1 @@
+p? new A<>("a") : new B<>("b") EX_C_3

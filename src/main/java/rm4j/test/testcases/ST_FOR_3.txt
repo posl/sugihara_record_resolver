@@ -1,0 +1,9 @@
+for(int i = 1;;i++){
+    String label = uniLabel + "_" + i;
+    File f = new File(TEST_FOLDER_PATH + label + ".txt");
+    if(f.exists()){
+        testList.add(new Test(label, content, aimFunc));
+        continue;
+    }
+    break;
+}ST_FOR_3

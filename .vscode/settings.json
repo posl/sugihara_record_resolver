@@ -1,0 +1,13 @@
+{
+    "files.exclude":{
+        "**/repositories/**": true
+    },
+    "java.import.exclusions": [
+        "**/node_modules/**",
+        "**/.metadata/**",
+        "**/archetype-resources/**",
+        "**/META-INF/maven/**"
+    ],
+    "java.import.generatesMetadataFilesAtProjectRoot": true,
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
