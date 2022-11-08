@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 
 import rm4j.io.git.DatasetManager;
-import rm4j.io.git.Date;
 
 public class Test{
 
@@ -14,7 +13,7 @@ public class Test{
         Timer test1 = new Timer(() ->{
             try{
                 DatasetManager manager = new DatasetManager();
-                manager.collectData();
+                manager.collectDataOfSingleTrace(f -> true);
             }catch(IOException e){
                 System.out.println(e);
             }

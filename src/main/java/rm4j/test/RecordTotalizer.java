@@ -21,7 +21,7 @@ import rm4j.compiler.tree.VariableArityTypeTree;
 import rm4j.compiler.tree.VariableTree;
 import rm4j.compiler.tree.Tree.DeclarationType;
 
-import static rm4j.io.git.DatasetManager.REPOSITORIES;
+import static rm4j.io.git.DatasetManager.DATASET_DIRECTORY;
 
 public class RecordTotalizer{
 
@@ -143,7 +143,7 @@ public class RecordTotalizer{
         File repository = f;
         do{
             repository = repository.getParentFile();
-        }while(!repository.getParentFile().equals(REPOSITORIES));
+        }while(!repository.getParentFile().equals(DATASET_DIRECTORY));
         String directoryName = repository.getName();
         File dir = new File(DEBUG_SOURCE_DIR + "/" +directoryName);
         if(repositoryData.get(dir) == null){
@@ -175,7 +175,7 @@ public class RecordTotalizer{
         File repository = f;
         do{
             repository = repository.getParentFile();
-        }while(!repository.getParentFile().equals(REPOSITORIES));
+        }while(!repository.getParentFile().equals(DATASET_DIRECTORY));
         String directoryName = repository.getName();
         File dir = new File(DEBUG_SOURCE_DIR + "/" +directoryName);
         if(repositoryData3.get(dir) == null){

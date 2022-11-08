@@ -1,6 +1,10 @@
 package rm4j.io.git;
 
-public record Date(int year, int month, int date, int hrs, int min, int sec) implements Comparable<Date>{
+import java.io.Serializable;
+
+public record Date(int year, int month, int date, int hrs, int min, int sec) implements Comparable<Date>, Serializable{
+
+    private static final long serialVersionUID = 0x4434CD1E0808132AL;
 
     public Date(int year, int month, int date){
         this(year, month, date, 0, 0, 0);
