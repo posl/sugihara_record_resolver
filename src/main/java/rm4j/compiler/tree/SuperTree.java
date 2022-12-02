@@ -5,10 +5,11 @@ import java.util.List;
 
 import rm4j.compiler.core.CompileException;
 import rm4j.compiler.core.JavaTS;
+import rm4j.compiler.resolution.Accessor;
 
-public record SuperTree(Tree qualifier)implements ExpressionTree{
+public record SuperTree(Accessor qualifier)implements ExpressionTree{
 
-    static SuperTree parse(Tree qualifier, JavaTokenManager src) throws CompileException{
+    static SuperTree parse(Accessor qualifier, JavaTokenManager src) throws CompileException{
         src.skip(JavaTS.SUPER);
         return new SuperTree(qualifier);
     }

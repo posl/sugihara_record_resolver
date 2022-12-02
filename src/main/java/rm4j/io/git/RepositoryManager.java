@@ -38,22 +38,23 @@ public class RepositoryManager implements Serializable{
                 }
             }
         }
-        run("git checkout %s".formatted(defaultBranchName));
+        run("git checkout %s -f".formatted(defaultBranchName));
         CommitInfo top = getCommitInfo(getStreamReader("git show HEAD"));
         int i = 0;
         while(top != null){
             commitTrace.add(top);
-            top = getCommitInfo(getStreamReader("git show HEAD~%d".formatted(++i)));
+            i++;
+            System.out.println(top.date());
             if(top.date().compareTo(SINCE) < 0){
-                commitTrace.add(top);
-                i++;
                 break;
+            }else{
+                top = getCommitInfo(getStreamReader("git show HEAD~%d".formatted(i)));
             }
         }
         CommitInfo[] commitTraceArray = new CommitInfo[i];
         i = 0;
         for(CommitInfo commit : commitTrace){
-            commitTraceArray[i] = commit;
+            commitTraceArray[i++] = commit;
         }
         return commitTraceArray;
     }
@@ -124,7 +125,7 @@ public class RepositoryManager implements Serializable{
     }
 
     public boolean checkout(BigInteger id) throws IOException{
-        return run("git checkout %s".formatted(id.toString(16)));
+        return run("git checkout %s -f".formatted(id.toString(16)));
     }
 
     private static Date parseDate(String s){

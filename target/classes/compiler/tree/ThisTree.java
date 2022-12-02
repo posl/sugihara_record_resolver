@@ -5,13 +5,14 @@ import java.util.List;
 
 import rm4j.compiler.core.CompileException;
 import rm4j.compiler.core.JavaTS;
+import rm4j.compiler.resolution.Accessor;
 import rm4j.test.Tested;
 import rm4j.test.Tested.Status;
 
 @Tested(date = "2022/7/8", tester = "me", confidence = Status.PROBABLY_OK)
-public record ThisTree(Tree qualifier)implements ExpressionTree{
+public record ThisTree(Accessor qualifier)implements ExpressionTree{
 
-    static ThisTree parse(Tree qualifier, JavaTokenManager src) throws CompileException{
+    static ThisTree parse(Accessor qualifier, JavaTokenManager src) throws CompileException{
         src.skip(JavaTS.THIS);
         return new ThisTree(qualifier);
     }

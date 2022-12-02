@@ -10,9 +10,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.function.Supplier;
 
 import rm4j.compiler.tree.ClassTree;
@@ -78,39 +76,45 @@ public class DatasetManager{
     }
 
     public void collectDataOfSingleTrace(FileFilter filter) throws IOException{
-        File out = new File("work/result.csv");
+        File out = new File("work/result2.csv");
         out.createNewFile();
         try(FileWriter writer = new FileWriter(out)){
-            for(int i = 0; i < DATASET_SIZE; i++){
+            for(int i = 1465; i < DATASET_SIZE; i++){
                 RepositoryManager repository = repositories[i];
                 if(filter.accept(repository.repository())){
-                    Integer count = -1;
+                    int count = -1;
                     String buf = "%d: %s, ".formatted(i+1, repository.repository().getName());
-                    System.out.println(repository.repository().getName());
+                    System.out.print(buf);
                     CommitInfo[] trace = repository.commitTrace();
                     int k = 0;
-                    for(int j = 0; j < NUM_OF_TIMESTAMPS; j++){
-                        while(k < trace.length && TIMESTAMPS[j].compareTo(trace[k].date()) < 0){
+                    for(int j = 1; j <= NUM_OF_TIMESTAMPS; j++){
+                        while(k < trace.length && TIMESTAMPS[NUM_OF_TIMESTAMPS - j].compareTo(trace[k].date()) < 0){
                             k++;
                             count = -1;
                         }
                         if(k < trace.length){
                             if(count == -1){
                                 repository.checkout(trace[k].id());
-                                System.out.println(trace[k].date());
                                 SimpleCounter counter = new SimpleCounter();
                                 repository.createProjectUnit(t -> {
                                     if(t instanceof ClassTree c && c.declType() == DeclarationType.RECORD){
                                         counter.countUp();
                                     }
                                 });
+                                count = counter.getCount(); 
                             }
                             buf += count;
+                            System.out.print(count);
                         }else{
                             buf += "null";
+                            System.out.print("null");
                         }
-                        if(j != NUM_OF_TIMESTAMPS - 1){
+                        if(j != NUM_OF_TIMESTAMPS){
                             buf += ", ";
+                            System.out.print(", ");
+                        }else{
+                            buf += "\n";
+                            System.out.println();
                         }
                     }
                     writer.append(buf);
@@ -118,6 +122,8 @@ public class DatasetManager{
             }
         }
     }
+
+
 
     public boolean writeCommitManager(RepositoryManager commitManager) throws IOException{
         File out = new File(REPOSITORY_STATUS_DIRECTORY + "/" + commitManager.repository().getName() + ".ser");
@@ -130,6 +136,8 @@ public class DatasetManager{
             throw e;
         }
     }
+
+      
 
     public RepositoryManager readCommitManager(File repository) throws IOException{
         File in = new File(REPOSITORY_STATUS_DIRECTORY + "/" + repository.getName() + ".ser");

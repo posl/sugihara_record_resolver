@@ -1,7 +1,5 @@
 package rm4j.compiler.tree;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -229,6 +227,22 @@ public interface Tree{
         tracker.trace.pop();
     }
 
+    default public boolean literallyEquals(Tree t){
+        if(getClass() == t.getClass()){
+            List<Tree> c1 = children();
+            List<Tree> c2 = t.children();
+            if(c1.size() == c2.size()){
+                for(int i = 0; i < c1.size(); i++){
+                    if(!c1.get(i).literallyEquals(c2.get(i))){
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+        return false;
+    }
+
     default void resolve(TreeTracker tracker){
         throw new UnsupportedOperationException();
     }
@@ -252,7 +266,7 @@ public interface Tree{
                 query.accept(child);
                 children.remove(0);
             }
-        }while (!children.isEmpty());
+        }while(!children.isEmpty());
     }
 
 }

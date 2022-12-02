@@ -56,6 +56,23 @@ public record ExpressionNameTree(Accessor qualifier, IdentifierTree identifier) 
     }
 
     @Override
+    public boolean literallyEquals(Tree t){
+        if(t.getClass() == NameTree.class || t.getClass() == ExpressionNameTree.class){
+            List<Tree> c1 = children();
+            List<Tree> c2 = t.children();
+            if(c1.size() == c2.size()){
+                for(int i = 0; i < c1.size(); i++){
+                    if(!c1.get(i).literallyEquals(c2.get(i))){
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    @Override
     public List<Tree> children(){
         if(this == EMPTY){
             return new ArrayList<>(0);
