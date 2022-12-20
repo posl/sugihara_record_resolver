@@ -26,13 +26,13 @@ public class DatasetManager{
     public static final File DATASET_DIRECTORY = new File("../data/repositories");
 
     public static final List<String> RECORD_USECASE_REPOSITORY_NAMES = new ArrayList<>(Arrays.asList(
-        "logisim-evolution", "cas", "openj9", "Chunky", "Sponge", "sparrow", "Applied-Energistics-2", "restheart", "JPlag", "sirix", 
-        "high-performance-java-persistence", "checkstyle", "sdrtrunk", "gson", "stroom", "hellokoding-courses", "pcgen", "Configurate", "activej", "AsciidocFX",
-        "pdfsam", "spring-data-elasticsearch", "CodeKatas", "spring-data-mongodb", "LiveLessons", "jenetics", "OpenLegislation", "CloudNet-v3", "Minestom", "spring-data-commons",
-        "CatServer", "jbang", "junit5", "JustEnoughItems", "CraftBook", "Bytecoder", "crate", "Signal-Server", "signal-cli", "bazel",
-        "jetty.project", "cloudsimplus", "FastCSV", "SapMachine", "oraxen", "geckolib", "spoon", "MCreator", "airbyte", "dependency-track",
-        "TechReborn", "blog-tutorials", "sonar-java", "hazelcast", "jabref", "ImmersivePortalsMod", "sodium-fabric", "Botania", "ArchUnit", "JetBrainsRuntime",
-        "bnd", "Create", "Springy-Store-Microservices", "spring-batch", "equalsverifier", "elasticsearch", "DrivenByMoss", "marquez", "xstream"
+        "logisim-evolution", "cas", "openj9", "Chunky", "sparrow", "Applied-Energistics-2", "restheart", "JPlag", "sirix", "high-performance-java-persistence",
+        "checkstyle", "sdrtrunk", "gson", "stroom", "hellokoding-courses", "pcgen", "Configurate", "activej", "AsciidocFX", "pdfsam",
+        "spring-data-elasticsearch", "CodeKatas", "spring-data-mongodb", "sejda", "LiveLessons", "jenetics", "CloudNet-v3", "Minestom", "spring-data-commons", "jbang",
+        "junit5", "JustEnoughItems", "Bytecoder", "crate", "Signal-Server", "signal-cli", "bazel", "cloudsimplus", "SapMachine", "oraxen",
+        "spoon", "MCreator", "airbyte", "dependency-track", "TechReborn", "blog-tutorials", "sonar-java", "hazelcast", "jabref", "WorldEdit",
+        "ImmersivePortalsMod", "sodium-fabric", "Botania", "ArchUnit", "spring-data-neo4j", "JetBrainsRuntime", "bnd", "Create", "Springy-Store-Microservices", "spring-batch",
+        "equalsverifier", "elasticsearch", "DrivenByMoss", "marquez", "xstream"
     ));
 
     public static final Date[] TIMESTAMPS = ((Supplier<Date[]>) () ->{
@@ -123,8 +123,6 @@ public class DatasetManager{
         }
     }
 
-
-
     public boolean writeCommitManager(RepositoryManager commitManager) throws IOException{
         File out = new File(REPOSITORY_STATUS_DIRECTORY + "/" + commitManager.repository().getName() + ".ser");
         out.createNewFile();
@@ -136,8 +134,6 @@ public class DatasetManager{
             throw e;
         }
     }
-
-      
 
     public RepositoryManager readCommitManager(File repository) throws IOException{
         File in = new File(REPOSITORY_STATUS_DIRECTORY + "/" + repository.getName() + ".ser");

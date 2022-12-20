@@ -1,15 +1,7 @@
 package rm4j.compiler.core;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.channels.FileChannel;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 import rm4j.compiler.tree.CompilationUnitTree;
-import rm4j.test.Test;
 
 public class JavaCompiler{
 

@@ -125,4 +125,13 @@ public final class ProjectUnit{
         return p;
     }
 
+    public static CompilationUnitTree parseFile(final File file, final JavaCompiler compiler){
+        String fileName = file.getName();
+        int separator = fileName.lastIndexOf(".");
+        if (separator > 0 && fileName.substring(separator).equals(".java")){
+           return compiler.compile(file);
+        }
+        return null;
+    }
+
 }

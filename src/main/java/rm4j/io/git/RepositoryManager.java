@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import rm4j.compiler.file.ProjectUnit;
@@ -127,6 +128,18 @@ public class RepositoryManager implements Serializable{
     public boolean checkout(BigInteger id) throws IOException{
         return run("git checkout %s -f".formatted(id.toString(16)));
     }
+
+    public List<File> getChangedFiles() throws IOException{
+        List<File> changedFiles = new ArrayList<>();
+        try(var reader = getStreamReader("git diff HEAD~ --name-only")){
+            String buf;
+            while((buf = reader.readLine()) != null){
+                changedFiles.add(new File("%s/%s".formatted(repository, buf)));
+            }
+        }
+        return changedFiles;
+    }
+
 
     private static Date parseDate(String s){
         String contents[] = s.split(" |:");

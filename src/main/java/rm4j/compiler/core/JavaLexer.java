@@ -188,7 +188,6 @@ public class JavaLexer{
         enum Status{
             BACK_SLASH, DEFAULT
         }
-        ;
         var charList = new CharList();
         Status status = Status.DEFAULT;
 

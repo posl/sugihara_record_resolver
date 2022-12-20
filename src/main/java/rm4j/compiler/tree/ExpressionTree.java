@@ -9,6 +9,7 @@ import java.util.HashSet;
 import rm4j.compiler.core.CompileException;
 import rm4j.compiler.core.JavaTS;
 import rm4j.compiler.core.ParserException;
+import rm4j.compiler.resolution.Accessor;
 import rm4j.test.Tested;
 import rm4j.test.Tested.Status;
 
@@ -107,11 +108,15 @@ public interface ExpressionTree extends CaseConstantTree{
                         case NEW -> resolveTypeCreation(expr, src);
                         case LESS_THAN -> MethodInvocationTree.parse(expr, Tree.resolveTypeArguments(src), src);
                         case SUPER ->{
-                            ExpressionTree e = SuperTree.parse(expr, src);
-                            if(src.match(JavaTS.LEFT_ROUND_BRACKET)){
-                                yield MethodInvocationTree.parse(e, src);
+                            if(expr instanceof Accessor a){
+                                ExpressionTree e = SuperTree.parse(a, src);
+                                if(src.match(JavaTS.LEFT_ROUND_BRACKET)){
+                                    yield MethodInvocationTree.parse(e, src);
+                                }
+                                yield e;
+                            }else{
+                                throw new ParserException("Illegal argument before token \"super\".");  
                             }
-                            yield e;
                         }
                         default ->{
                             if(src.match(IDENTIFIERS)){
@@ -137,26 +142,34 @@ public interface ExpressionTree extends CaseConstantTree{
         return switch(src.lookAhead().resolution){
             case NEW -> resolveTypeCreation(qualifier, src);
             case SUPER ->{
-                ExpressionTree enclosingExpr = SuperTree.parse(qualifier, src);
-                yield switch(src.lookAhead().resolution){
-                    case PERIOD ->{
-                        src.skip(JavaTS.PERIOD);
-                        if(src.match(1, JavaTS.LEFT_ROUND_BRACKET) || src.match(JavaTS.LESS_THAN)){
-                            yield MethodInvocationTree.parse(enclosingExpr, Tree.resolveTypeArguments(src), src);
+                if(qualifier instanceof Accessor a){
+                    ExpressionTree enclosingExpr = SuperTree.parse(a, src);
+                    yield switch(src.lookAhead().resolution){
+                        case PERIOD ->{
+                            src.skip(JavaTS.PERIOD);
+                            if(src.match(1, JavaTS.LEFT_ROUND_BRACKET) || src.match(JavaTS.LESS_THAN)){
+                                yield MethodInvocationTree.parse(enclosingExpr, Tree.resolveTypeArguments(src), src);
+                            }
+                            yield MemberSelectTree.parse(enclosingExpr, src);
                         }
-                        yield MemberSelectTree.parse(enclosingExpr, src);
-                    }
-                    case DOUBLE_COLON -> MemberReferenceTree.parse(enclosingExpr, src);
-                    case LEFT_ROUND_BRACKET -> MethodInvocationTree.parse(enclosingExpr, src);
-                    default ->  throw new IllegalTokenException(src.lookAhead(), "member reference or selection");
-                };
+                        case DOUBLE_COLON -> MemberReferenceTree.parse(enclosingExpr, src);
+                        case LEFT_ROUND_BRACKET -> MethodInvocationTree.parse(enclosingExpr, src);
+                        default ->  throw new IllegalTokenException(src.lookAhead(), "member reference or selection");
+                    };
+                }else{
+                    throw new ParserException("Illegal argument before token \"super\"");
+                }
             }
             case THIS ->{
-                ExpressionTree expr = ThisTree.parse(qualifier, src);
-                if(src.match(JavaTS.LEFT_ROUND_BRACKET)){
-                    yield MethodInvocationTree.parse(expr, src);
+                if(qualifier instanceof Accessor a){
+                    ExpressionTree expr = ThisTree.parse(a, src);
+                    if(src.match(JavaTS.LEFT_ROUND_BRACKET)){
+                        yield MethodInvocationTree.parse(expr, src);
+                    }
+                    yield expr;
+                }else{
+                    throw new ParserException("Illegal argument before token \"this\"");
                 }
-                yield expr;
             }
             case LESS_THAN -> MethodInvocationTree.parse(qualifier, Tree.resolveTypeArguments(src), src);
             default ->{
