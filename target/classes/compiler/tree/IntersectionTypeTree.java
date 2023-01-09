@@ -23,4 +23,9 @@ public record IntersectionTypeTree(ArrayList<TypeTree> bounds) implements TypeTr
         return new ArrayList<>(bounds);
     }
 
+    @Override
+    public String toSource(String indent){
+        return Tree.listToSource(bounds, " & ", indent);
+    }
+
 }

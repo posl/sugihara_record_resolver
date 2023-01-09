@@ -2,6 +2,8 @@ package rm4j.io.git;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -10,6 +12,8 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+
+import rm4j.compiler.core.JavaCompiler;
 import rm4j.compiler.file.ProjectUnit;
 import rm4j.compiler.tree.Tree;
 import rm4j.util.functions.CEConsumer;
@@ -17,7 +21,7 @@ import rm4j.util.functions.CEConsumer;
 public class RepositoryManager implements Serializable{
 
     private static final long serialVersionUID = 0xF4D9F068C644D8DCL;
-    public static final Date SINCE = new Date(2020, 3, 14);
+    public static final Date SINCE = new Date(2019, 3, 1);
 
     private final File repository;
 
@@ -140,6 +144,122 @@ public class RepositoryManager implements Serializable{
         return changedFiles;
     }
 
+    public String collectDifferenceData(int repositoryId, File workingDir) throws IOException{
+        System.out.println("%d: %s".formatted(repositoryId, repository.getName()));
+        JavaCompiler compiler = new JavaCompiler();
+        File outDir = new File("work/commitDifference/%s".formatted(repository.getName()));
+        resetDir(outDir);
+
+        //a file which summerizes the result of single repository
+        File repositoryInfo = new File(outDir, "repository-info.txt");
+
+        //revert the version of the repository to HEAD
+        checkout(commitTrace[0].id());
+
+        try(FileWriter repositoryInfoWriter = new FileWriter(repositoryInfo)){
+            int[] sumOfRepository = new int[9];
+            String buf;
+            repositoryInfoWriter.write(repository.getName() + "\n");
+            for(int j = 1; j < commitTrace.length; j++){
+                System.out.println(commitTrace[j-1].date());
+                resetDir(workingDir);
+                List<File> editedFiles = getChangedFiles();
+                editedFiles.removeIf(f -> !f.getName().endsWith(".java"));
+
+                int id = 0;
+                for(File after : editedFiles){
+                    copyFile(after, new File(workingDir, "diff%d_after.java".formatted(++id)));
+                }
+
+                checkout(commitTrace[j].id());
+
+                List<CommitDifferenceInfo> diffs = new ArrayList<>();
+                id = 0;
+                for(File before : editedFiles){
+                    File after = new File(workingDir, "diff%d_after.java".formatted(++id));
+                    CommitDifferenceInfo info = new CommitDifferenceInfo(
+                        commitTrace[j-1], new TypeSet(before, compiler), new TypeSet(after, compiler));
+                    for(int k = 0; k < info.data().length; k++){
+                        if(info.data()[k] > 0){
+                            diffs.add(info);
+                            break;
+                        }
+                    }
+                }
+
+                if(!diffs.isEmpty()){
+                    File commitDir = new File(outDir, commitTrace[j-1].date().toStringForNamingUsage());
+                    commitDir.mkdir();
+
+                    File commitInfo = new File(commitDir, "commit-info.txt");
+                    try(FileWriter commitInfoWriter = new FileWriter(commitInfo)){
+                        int[] sumOfCommit = new int[9];
+                        commitInfoWriter.write("commit %s (%s)\n".formatted(commitTrace[j-1].id().toString(16), commitTrace[j-1].date() ));
+                        int fileId = 0;
+                        for(var diff : diffs){
+                            File diffDir = new File(commitDir, "file%d".formatted(++fileId));
+                            diffDir.mkdir();
+                            copyFile(diff.before().path, new File(diffDir, "before.java"));
+                            copyFile(diff.after().path, new File(diffDir, "after.java"));
+                            int[] data = diff.data();
+                            buf = "";
+                            for(int k = 0; k < data.length; k++){
+                                buf += data[k] + ((k == data.length - 1)? "\n" : ", ");
+                                sumOfCommit[k] += data[k];
+                            }
+                            commitInfoWriter.write("%d: %s, %s".formatted(fileId, diff.before().path, buf));
+                        }
+                        buf = "";
+                        for(int k = 0; k < sumOfCommit.length; k++){
+                            buf += sumOfCommit[k] + ((k == sumOfCommit.length - 1)? "\n" : ", ");
+                            sumOfRepository[k] += sumOfCommit[k];
+                        }
+                        commitInfoWriter.write("sum: "+buf);
+                        repositoryInfoWriter.write("%s: %s".formatted(commitTrace[j-1].date(), buf));
+                    }
+                }
+            }
+            buf = "";
+            for(int k = 0; k < sumOfRepository.length; k++){
+                buf += sumOfRepository[k] + ((k == sumOfRepository.length - 1)? "\n" : ", ");
+            }
+            repositoryInfoWriter.write("sum: "+buf);
+            return "%d: %s, %s".formatted(repositoryId, repository.getName(), buf);
+        }
+    }
+
+    private static boolean copyFile(File original, File target){
+        if(!original.exists()){
+            return false;
+        }
+        try(FileReader reader = new FileReader(original);
+            FileWriter writer = new FileWriter(target)){
+            reader.transferTo(writer);
+            return true;
+        }catch(IOException e){
+            System.out.println(e);
+            return false;
+        }
+    }
+
+    private static boolean resetDir(File dir){
+        if(dir.exists()){
+            deleteAll(dir);
+        }
+        return dir.mkdir();
+    }
+
+    private static boolean deleteAll(File file){
+        if(file.isDirectory()){
+            boolean status = true;
+            for(File f : file.listFiles()){
+                status &= deleteAll(f);
+            }
+            return status && file.delete();
+        }else{
+            return file.delete();
+        }
+    }
 
     private static Date parseDate(String s){
         String contents[] = s.split(" |:");

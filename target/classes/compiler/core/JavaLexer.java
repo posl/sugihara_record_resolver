@@ -74,7 +74,7 @@ public class JavaLexer{
             throws CompileException, IndexOutOfBoundsException{
         Base base = Base.set(prefix);
         String integerPart = prefix + getDigits(source, base.digitChars);
-        if (source.refer() == '.'){
+        if (source.refer() != null && source.refer() == '.'){
             return readAfterPoint(source, integerPart + source.get(), base, recorder);
         }else{
             return readAfterPoint(source, integerPart, base, recorder);
@@ -133,13 +133,13 @@ public class JavaLexer{
     }
 
     private static String getLineTerminator(CharList source){
-        if (source.refer() == '\r'){
+        if (source.refer() != null && source.refer() == '\r'){
             String s = String.valueOf(source.get());
-            if (source.refer() == '\n'){
+            if (source.refer() != null && source.refer() == '\n'){
                 return s + source.get();
             }
             return s;
-        }else if (source.refer() == '\n'){
+        }else if (source.refer() != null && source.refer() == '\n'){
             return String.valueOf(source.get());
         }
         return "";
@@ -471,9 +471,9 @@ public class JavaLexer{
                 String s = String.valueOf(source.get());
                 if (DIGITS.contains(source.refer())){
                     return readAfterPoint(source, ".", Base.DECIMAL_OR_OCTAL, recorder);
-                }else if (source.refer() == '.'){
+                }else if (source.refer() != null && source.refer() == '.'){
                     s += source.get();
-                    if (source.refer() == '.'){
+                    if (source.refer() != null && source.refer() == '.'){
                         s += source.get();
                         return new Separator(s, recorder.get(source));
                     }else{
@@ -492,7 +492,7 @@ public class JavaLexer{
             public Token getInputElement(CharList source, ReferenceProducer recorder)
                     throws CompileException, IndexOutOfBoundsException{
                 String s = String.valueOf(source.get());
-                if (source.refer() == ':'){
+                if (source.refer() != null && source.refer() == ':'){
                     return new Operator(s + source.get(), recorder.get(source));
                 }else{
                     return new Separator(s, recorder.get(source));
@@ -523,9 +523,9 @@ public class JavaLexer{
                     throws CompileException, IndexOutOfBoundsException{
                 String s = "";
                 source.get();
-                if (source.refer() == '\"'){
+                if (source.refer() != null && source.refer() == '\"'){
                     s += source.get();
-                    if (source.refer() == '\"'){
+                    if (source.refer() != null && source.refer() == '\"'){
                         source.get();
                         s = "";
                         String space = "";

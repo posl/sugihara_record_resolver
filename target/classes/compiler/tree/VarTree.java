@@ -9,5 +9,10 @@ public record VarTree() implements TypeTree{
         src.skip(JavaTS.VAR);
         return new VarTree();
     }
+
+    @Override
+    public String toSource(String indent){
+        return "var";
+    }
     
 }

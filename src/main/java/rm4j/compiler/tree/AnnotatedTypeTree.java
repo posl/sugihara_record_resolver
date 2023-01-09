@@ -1,8 +1,10 @@
 package rm4j.compiler.tree;
 
+import java.lang.annotation.ElementType;
 import java.util.ArrayList;
 import java.util.List;
 
+import rm4j.compiler.core.CompileException;
 import rm4j.compiler.resolution.Accessor;
 
 /**
@@ -26,6 +28,15 @@ public record AnnotatedTypeTree(ArrayList<AnnotationTree> annotations, TypeTree 
         List<Tree> children = new ArrayList<>(annotations);
         children.add(type);
         return children;
+    }
+
+    @Override
+    public String toSource(String indent){
+        String s = Tree.listToSource(annotations, " ", indent);
+        if(type instanceof ArrayTypeTree a){
+            return a.elementType().toSource(indent) + " " + s + "[]";
+        }
+        return  s + " " + type.toSource(indent);
     }
 
 }

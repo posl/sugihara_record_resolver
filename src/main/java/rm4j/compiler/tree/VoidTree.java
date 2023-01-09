@@ -10,4 +10,8 @@ public record VoidTree() implements TypeTree{
         return new VoidTree();
     }
     
+    @Override
+    public String toSource(String indent){
+        return "void";
+    }
 }

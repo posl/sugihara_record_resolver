@@ -32,4 +32,9 @@ public record ArrayTypeTree(TypeTree elementType) implements TypeTree{
         return children;
     }
 
+    @Override
+    public String toSource(String indent){
+        return elementType.toSource(indent) + "[]";
+    }
+
 }

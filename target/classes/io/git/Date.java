@@ -27,6 +27,10 @@ public record Date(int year, int month, int date, int hrs, int min, int sec) imp
         return "%d/%d/%d %02d:%02d:%02d".formatted(year, month, date, hrs, min, sec);
     }
 
+    public String toStringForNamingUsage(){
+        return "%d-%d-%d:%02d:%02d:%02d".formatted(year, month, date, hrs, min, sec);
+    }
+
     public static int convertMonth(String s){
         return switch(s){
             case "Jan" -> 1;

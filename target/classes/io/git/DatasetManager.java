@@ -10,7 +10,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Supplier;
 
 import rm4j.compiler.tree.ClassTree;
@@ -20,24 +22,47 @@ import rm4j.util.SimpleCounter;
 public class DatasetManager{
 
     private static final int DATASET_SIZE = 2000;
-    private static final int NUM_OF_TIMESTAMPS = 31;
+    private static final int NUM_OF_TIMESTAMPS = 46;
 
     private static final File REPOSITORY_STATUS_DIRECTORY = new File("work/repositoryStatus");
     public static final File DATASET_DIRECTORY = new File("../data/repositories");
 
-    public static final List<String> RECORD_USECASE_REPOSITORY_NAMES = new ArrayList<>(Arrays.asList(
-        "logisim-evolution", "cas", "openj9", "Chunky", "sparrow", "Applied-Energistics-2", "restheart", "JPlag", "sirix", "high-performance-java-persistence",
-        "checkstyle", "sdrtrunk", "gson", "stroom", "hellokoding-courses", "pcgen", "Configurate", "activej", "AsciidocFX", "pdfsam",
-        "spring-data-elasticsearch", "CodeKatas", "spring-data-mongodb", "sejda", "LiveLessons", "jenetics", "CloudNet-v3", "Minestom", "spring-data-commons", "jbang",
-        "junit5", "JustEnoughItems", "Bytecoder", "crate", "Signal-Server", "signal-cli", "bazel", "cloudsimplus", "SapMachine", "oraxen",
-        "spoon", "MCreator", "airbyte", "dependency-track", "TechReborn", "blog-tutorials", "sonar-java", "hazelcast", "jabref", "WorldEdit",
-        "ImmersivePortalsMod", "sodium-fabric", "Botania", "ArchUnit", "spring-data-neo4j", "JetBrainsRuntime", "bnd", "Create", "Springy-Store-Microservices", "spring-batch",
-        "equalsverifier", "elasticsearch", "DrivenByMoss", "marquez", "xstream"
+    public static final Set<String> RECORD_USECASE_REPOSITORY_NAMES = new HashSet<>(Arrays.asList(
+        //"logisim-evolution",
+        //"cas",
+        //"openj9",
+        //"Chunky",
+        //"sparrow",
+        //"Applied-Energistics-2",
+        //"restheart",
+        //"jdbi",
+        //"sirix",
+        //"high-performance-java-persistence",
+        //"checkstyle",
+        //"sdrtrunk",
+        //"intellij-plugins",
+        //"gson",
+        //"stroom",
+        //"pcgen",
+        //"Configurate",
+        //"AsciidocFX",
+        //"pdfsam",
+        //"spring-data-elasticsearch",
+        //"graylog2-server",
+        //"CodeKatas",
+        //"spring-data-mongodb",
+        //"sejda",
+        "LiveLessons", "jenetics", "CloudNet-v3", "Smithereen", "kcctl", "spring-data-commons",
+        "odd-platform", "jbang", "junit5", "JustEnoughItems", "FastAsyncWorldEdit", "Bytecoder", "crate", "Signal-Server", "signal-cli", "bazel",
+        "spring-cloud-gateway", "cloudsimplus", "SapMachine", "oraxen", "geckolib", "spoon", "MCreator", "dependency-track", "TechReborn", "blog-tutorials",
+        "sonar-java", "hazelcast", "jabref", "WorldEdit", "ImmersivePortalsMod", "sodium-fabric", "Botania", "CompreFace", "ArchUnit", "spring-data-neo4j",
+        "JetBrainsRuntime", "bnd", "Create", "Springy-Store-Microservices", "spring-data-redis", "spring-batch", "equalsverifier", "elasticsearch", "DrivenByMoss", "marquez",
+        "spark"
     ));
 
-    public static final Date[] TIMESTAMPS = ((Supplier<Date[]>) () ->{
+    public static final Date[] TIMESTAMPS = ((Supplier<Date[]>) () -> {
         Date[] timestamps= new Date[NUM_OF_TIMESTAMPS];
-        int year = 2020;
+        int year = 2019;
         int month = 4;
         for (int i = 0; i < NUM_OF_TIMESTAMPS; i++){
             timestamps[i] = new Date(year, month++, 1);
@@ -52,16 +77,18 @@ public class DatasetManager{
     private final RepositoryManager[] repositories = new RepositoryManager[DATASET_SIZE];
     public Integer[][] data = new Integer[DATASET_SIZE][NUM_OF_TIMESTAMPS];
 
-    public DatasetManager() throws IOException{
+    public DatasetManager(FileFilter filter) throws IOException{
         int i = 0;
         List<String> failed = new ArrayList<>();
         for (File repository : DATASET_DIRECTORY.listFiles()){
             if(!repository.getName().equals(".DS_Store")){
-                System.out.println("%d : %s".formatted(i+1, repository.getName()));
-                repositories[i] = readCommitManager(repository);
-                if(repositories[i] == null){
-                    repositories[i] = new RepositoryManager(repository);
-                    writeCommitManager(repositories[i]);
+                if(filter.accept(repository)){
+                    System.out.println("%d : %s".formatted(i+1, repository.getName()));
+                    repositories[i] = readCommitManager(repository);
+                    if(repositories[i] == null){
+                        repositories[i] = new RepositoryManager(repository);
+                        writeCommitManager(repositories[i]);
+                    }
                 }
                 i++;
             }
@@ -79,21 +106,21 @@ public class DatasetManager{
         File out = new File("work/result2.csv");
         out.createNewFile();
         try(FileWriter writer = new FileWriter(out)){
-            for(int i = 1465; i < DATASET_SIZE; i++){
+            for(int i = 0; i < DATASET_SIZE; i++){
                 RepositoryManager repository = repositories[i];
-                if(filter.accept(repository.repository())){
-                    int count = -1;
+                if(repository != null && filter.accept(repository.repository())){
+                    int count = 0;
                     String buf = "%d: %s, ".formatted(i+1, repository.repository().getName());
                     System.out.print(buf);
                     CommitInfo[] trace = repository.commitTrace();
-                    int k = 0;
+                    int prev = trace.length;
                     for(int j = 1; j <= NUM_OF_TIMESTAMPS; j++){
-                        while(k < trace.length && TIMESTAMPS[NUM_OF_TIMESTAMPS - j].compareTo(trace[k].date()) < 0){
-                            k++;
-                            count = -1;
+                        int k = trace.length - 1;
+                        while(k > 0 && TIMESTAMPS[NUM_OF_TIMESTAMPS - j].compareTo(trace[k-1].date()) >= 0){
+                            k--;
                         }
-                        if(k < trace.length){
-                            if(count == -1){
+                        if(k != trace.length && TIMESTAMPS[NUM_OF_TIMESTAMPS - j].compareTo(trace[k].date()) >= 0){
+                            if(prev != k){
                                 repository.checkout(trace[k].id());
                                 SimpleCounter counter = new SimpleCounter();
                                 repository.createProjectUnit(t -> {
@@ -102,6 +129,7 @@ public class DatasetManager{
                                     }
                                 });
                                 count = counter.getCount(); 
+                                prev = k;
                             }
                             buf += count;
                             System.out.print(count);
@@ -123,6 +151,27 @@ public class DatasetManager{
         }
     }
 
+    public void collectDataFromDifference() throws IOException{
+        //.csv file for statistics of all repository
+        File result = new File("work/result_dif.csv");
+        result.createNewFile();
+
+        //working directory for saving previous revision of .java files
+        File workingDirectory = new File("work/fileBuffer");
+
+        //start writing to result file
+        try(FileWriter resultWriter = new FileWriter(result)){
+            //for each repository
+            int repositoryId = 0;
+            for(int i = 0; i < DATASET_SIZE; i++){
+                RepositoryManager repository = repositories[i];
+                if(repository != null && RECORD_USECASE_REPOSITORY_NAMES.contains(repository.repository().getName())){
+                    resultWriter.write(repository.collectDifferenceData(++repositoryId, workingDirectory));
+                }
+            }
+        }
+    }
+    
     public boolean writeCommitManager(RepositoryManager commitManager) throws IOException{
         File out = new File(REPOSITORY_STATUS_DIRECTORY + "/" + commitManager.repository().getName() + ".ser");
         out.createNewFile();

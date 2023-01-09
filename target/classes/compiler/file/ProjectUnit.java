@@ -126,9 +126,7 @@ public final class ProjectUnit{
     }
 
     public static CompilationUnitTree parseFile(final File file, final JavaCompiler compiler){
-        String fileName = file.getName();
-        int separator = fileName.lastIndexOf(".");
-        if (separator > 0 && fileName.substring(separator).equals(".java")){
+        if (file.getName().endsWith(".java")){
            return compiler.compile(file);
         }
         return null;

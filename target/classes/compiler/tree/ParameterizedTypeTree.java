@@ -30,4 +30,10 @@ public record ParameterizedTypeTree(Accessor type, ArrayList<TypeTree> typeArgum
         return children;
     }
 
+    @Override
+    public String toSource(String indent){
+        String generics = (typeArguments == DIAMOND)? "<>" : "<" + Tree.listToSource(typeArguments, ", ", indent) + ">";
+        return type.toSource("") + generics;
+    }
+
 }

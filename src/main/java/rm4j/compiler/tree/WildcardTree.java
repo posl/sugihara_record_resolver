@@ -58,4 +58,13 @@ public record WildcardTree(ArrayList<AnnotationTree> annotations, WildcardType w
         return children;
     }
 
+    @Override
+    public String toSource(String indent){
+        return Tree.listToSource(annotations, " ", indent) + switch(wildcardType){
+            case WILD -> " ?";
+            case CONVARIANT -> " ? extends " + bound.toSource(indent);
+            case CONTRAVARIANT -> " ? super " + bound.toSource(indent);
+        };
+    }
+
 }

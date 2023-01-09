@@ -26,4 +26,10 @@ public record UnionTypeTree(ArrayList<TypeTree> typeAlternatives) implements Typ
         return new ArrayList<>(typeAlternatives);
     }
 
+    @Override
+    public String toSource(String indent){
+        return Tree.listToSource(typeAlternatives, " | ", indent);
+    }
+
+
 }

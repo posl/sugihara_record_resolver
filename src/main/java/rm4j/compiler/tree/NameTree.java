@@ -101,6 +101,7 @@ public record NameTree(Accessor qualifier, IdentifierTree identifier) implements
                 && ptr.match(JavaTS.LEFT_SQUARE_BRACKET, JavaTS.RIGHT_SQUARE_BRACKET);
     }
 
+    @Override
     public String toSource(String indent){
         return (qualifier == ExpressionNameTree.EMPTY)?
                 identifier.name() : qualifier.toSource(indent)+"."+identifier.name(); 

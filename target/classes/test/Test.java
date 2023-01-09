@@ -1,6 +1,7 @@
 package rm4j.test;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.IOException;
 
 import rm4j.io.git.DatasetManager;
@@ -12,8 +13,11 @@ public class Test{
     public static void main(String[] args){
         Timer test1 = new Timer(() ->{
             try{
-                DatasetManager manager = new DatasetManager();
-                manager.collectDataOfSingleTrace(f -> true);
+                FileFilter filter = f -> f.getName().equals("Botania");
+                DatasetManager manager = new DatasetManager(filter);
+                //DatasetManager manager = new DatasetManager(f -> DatasetManager.RECORD_USECASE_REPOSITORY_NAMES.contains(f.getName()));
+                manager.collectDataOfSingleTrace(filter);
+                //manager.collectDataFromDifference();
             }catch(IOException e){
                 System.out.println(e);
             }

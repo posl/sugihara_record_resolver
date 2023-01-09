@@ -24,4 +24,9 @@ public record PrimitiveTypeTree(PrimitiveType primitiveType) implements TypeTree
         return new PrimitiveTypeTree(PrimitiveType.get(src.read()));
     }
 
+    @Override
+    public String toSource(String indent){
+        return primitiveType.symbol().key();
+    }
+
 }

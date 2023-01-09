@@ -30,9 +30,21 @@ public record MethodInvocationTree(ArrayList<TypeTree> typeArguments, Expression
 
     static MethodInvocationTree parse(Tree qualifier, ArrayList<TypeTree> typeArguments, JavaTokenManager src) throws CompileException{
         ExpressionTree methodSelect = switch(src.lookAhead().resolution){
-            case THIS -> ThisTree.parse(qualifier, src);
-            case SUPER -> SuperTree.parse(qualifier, src);
-            default ->{
+            case THIS -> {
+                if(qualifier instanceof Accessor a){
+                    yield ThisTree.parse(a, src);
+                }else{
+                    throw new ParserException("Illegal argument before token \"this\".");  
+                }
+            }
+            case SUPER -> {
+                if(qualifier instanceof Accessor a){
+                    yield SuperTree.parse(a, src);
+                }else{
+                    throw new ParserException("Illegal argument before token \"super\".");  
+                }   
+            }
+            default -> {
                 if(qualifier instanceof ExpressionNameTree e){
                     yield ExpressionNameTree.parse(e, src);
                 }else if(qualifier instanceof NameTree n){

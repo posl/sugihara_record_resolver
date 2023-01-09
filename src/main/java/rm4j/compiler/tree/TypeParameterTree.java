@@ -53,4 +53,10 @@ public record TypeParameterTree(ArrayList<AnnotationTree> annotations, Identifie
         return children;
     }
 
+    @Override
+    public String toSource(String indent){
+        return Tree.listToSource(annotations, " ", indent) + " " 
+            + name.toSource("") + (bounds.isEmpty()? "" : Tree.listToSource(bounds, " & ", indent));
+    }
+
 }

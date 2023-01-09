@@ -165,14 +165,14 @@ public interface Tree{
         return typeArguments;
     }
 
-    public static <E> ArrayList<E> getList(CEFunction<JavaTokenManager, E> getter, JavaTS rightBracket,
+    public static <T extends Tree> ArrayList<T> getList(CEFunction<JavaTokenManager, T> getter, JavaTS rightBracket,
             JavaTokenManager src) throws CompileException{
         return getList(getter, JavaTS.COMMA, rightBracket, src);
     }
 
-    public static <E> ArrayList<E> getList(CEFunction<JavaTokenManager, E> getter, JavaTS separator,
+    public static <T extends Tree> ArrayList<T> getList(CEFunction<JavaTokenManager, T> getter, JavaTS separator,
             JavaTS rightBracket, JavaTokenManager src) throws CompileException{
-        var list = new ArrayList<E>();
+        var list = new ArrayList<T>();
         if (src.match(separator)){
             src.skip(separator);
             return list;
@@ -188,9 +188,9 @@ public interface Tree{
         return list;
     }
 
-    public static <E> ArrayList<E> getListWithoutBracket(CEFunction<JavaTokenManager, E> getter, JavaTS separator,
+    public static <T extends Tree> ArrayList<T> getListWithoutBracket(CEFunction<JavaTokenManager, T> getter, JavaTS separator,
             JavaTokenManager src) throws CompileException{
-        var list = new ArrayList<E>();
+        var list = new ArrayList<T>();
         do{
             list.add(getter.apply(src));
             if (src.match(separator)){
@@ -200,6 +200,14 @@ public interface Tree{
             }
         }while (true);
         return list;
+    }
+
+    public static String listToSource(List<? extends Tree> treeList, String separator, String indent){
+        String s = "";
+        for(int i = 0; i < treeList.size(); i++){
+            s += treeList.get(i).toSource(indent) + ((i == treeList.size()-1)? "" : separator);
+        }
+        return s;
     }
 
     static boolean followsNameHeader(JavaTokenManager src) throws CompileException{

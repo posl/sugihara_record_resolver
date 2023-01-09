@@ -3,9 +3,8 @@ package rm4j.compiler.resolution;
 import rm4j.compiler.core.JavaTS;
 import rm4j.compiler.tokens.Token;
 import rm4j.compiler.tree.IllegalTokenException;
-import rm4j.compiler.tree.TypeTree;
 
-public enum PrimitiveType implements TypeTree{
+public enum PrimitiveType{
     BOOLEAN(JavaTS.BOOLEAN),
     BYTE(JavaTS.BYTE),
     SHORT(JavaTS.SHORT),
@@ -21,6 +20,10 @@ public enum PrimitiveType implements TypeTree{
         this.symbol = symbol;
     }
 
+    public JavaTS symbol(){
+        return symbol;
+    }
+
     public static PrimitiveType get(Token t) throws IllegalTokenException{
         for(PrimitiveType p : PrimitiveType.values()){
             if(p.symbol == t.resolution){
@@ -29,4 +32,5 @@ public enum PrimitiveType implements TypeTree{
         }
         throw new IllegalTokenException(t, "primitive type");
     }
+
 }
