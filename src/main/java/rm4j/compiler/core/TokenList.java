@@ -30,7 +30,7 @@ public class TokenList extends DoublyLinkedList<InputElement>{
     }
 
     @SafeVarargs
-    public final InputElement[] referWithCondition(CEPredicate<InputElement>... conds) throws CompileException{
+    public final InputElement[] referWithCondition(CEPredicate<? super InputElement>... conds) throws CompileException{
         var elements = new InputElement[conds.length];
         Node curr = current;
         for(int i = 0; i < conds.length; i++){
@@ -49,7 +49,7 @@ public class TokenList extends DoublyLinkedList<InputElement>{
         return elements;
     }
 
-    public final InputElement[] lookAhead(int length, CEPredicate<InputElement> cond) throws CompileException{
+    public final InputElement[] lookAhead(int length, CEPredicate<? super InputElement> cond) throws CompileException{
         var elements = new InputElement[length];
         Node curr = current;
         for(int i = 0; i < length; i++){
@@ -73,9 +73,9 @@ public class TokenList extends DoublyLinkedList<InputElement>{
      * Reads back the characters which satisfies the specified condition from the current pointer.
      */
     @SafeVarargs
-    public final boolean applyTests(CEPredicate<InputElement>... testers) throws CompileException{
+    public final boolean applyTests(CEPredicate<? super InputElement>... testers) throws CompileException{
         Node curr = current;
-        for(CEPredicate<InputElement> cond : testers){
+        for(CEPredicate<? super InputElement> cond : testers){
             if(curr == top || !cond.test(curr.e)){
                 return false;
             }

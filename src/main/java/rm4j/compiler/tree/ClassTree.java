@@ -8,7 +8,6 @@ import rm4j.compiler.core.JavaTS;
 import rm4j.compiler.core.ParserException;
 import rm4j.compiler.resolution.TreeTracker;
 import rm4j.compiler.resolution.TypeIdentifier;
-import rm4j.test.Test;
 
 /**
  * A tree node for a class, interface, enum, record, or annotation
@@ -36,8 +35,8 @@ import rm4j.test.Test;
 
 public record ClassTree(ModifiersTree modifiers, DeclarationType declType, IdentifierTree name,
         ArrayList<VariableTree> recordComponents,
-        ArrayList<TypeParameterTree> typeParameters, Tree extendsClause, ArrayList<Tree> implementsClause,
-        ArrayList<Tree> permitsClause, ArrayList<EnumConstantTree> enumConstants, ArrayList<Tree> members)
+        ArrayList<TypeParameterTree> typeParameters, TypeTree extendsClause, ArrayList<TypeTree> implementsClause,
+        ArrayList<TypeTree> permitsClause, ArrayList<EnumConstantTree> enumConstants, ArrayList<Tree> members)
         implements StatementTree, TypeIdentifier{
 
     static ClassTree parse(DeclarationType declType, JavaTokenManager src) throws CompileException{
@@ -49,9 +48,9 @@ public record ClassTree(ModifiersTree modifiers, DeclarationType declType, Ident
         var name = IdentifierTree.parse(src);
         ArrayList<VariableTree> recordComponents = null;
         var typeParameters = new ArrayList<TypeParameterTree>();
-        Tree extendsClause = null;
-        var implementsClause = new ArrayList<Tree>();
-        var permitsClause = new ArrayList<Tree>();
+        TypeTree extendsClause = null;
+        var implementsClause = new ArrayList<TypeTree>();
+        var permitsClause = new ArrayList<TypeTree>();
         ArrayList<EnumConstantTree> enumConstants = null;
 
         if (src.match(JavaTS.LESS_THAN)){
@@ -73,6 +72,8 @@ public record ClassTree(ModifiersTree modifiers, DeclarationType declType, Ident
                 throw new ParserException(String.format("Only records have record header."));
             }
             src.skip(JavaTS.RIGHT_ROUND_BRACKET);
+        }else if(declType == DeclarationType.RECORD){
+            throw new ParserException(String.format("Records must have record header."));
         }
         if (src.match(JavaTS.EXTENDS)){
             src.skip(JavaTS.EXTENDS);
@@ -120,7 +121,7 @@ public record ClassTree(ModifiersTree modifiers, DeclarationType declType, Ident
                 implementsClause, permitsClause, enumConstants, members);
     }
 
-    static ClassTree parse(Tree superType, JavaTokenManager src) throws CompileException{
+    static ClassTree parse(TypeTree superType, JavaTokenManager src) throws CompileException{
         src.skip(JavaTS.LEFT_CURLY_BRACKET);
 
         ArrayList<Tree> members = new ArrayList<>();

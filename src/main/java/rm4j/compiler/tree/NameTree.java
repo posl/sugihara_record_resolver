@@ -57,7 +57,7 @@ public record NameTree(Accessor qualifier, IdentifierTree identifier) implements
             if(type instanceof Accessor a){
                 type = parse(a, src);
                 if(src.match(JavaTS.LESS_THAN)){
-                    type = new ParameterizedTypeTree(a, Tree.resolveTypeArguments(src));
+                    type = new ParameterizedTypeTree(type, Tree.resolveTypeArguments(src));
                 }
             }else{
                 throw new ParserException(String.format("\"%s\" cannot be a qualifier.", type.toString()));
@@ -103,8 +103,8 @@ public record NameTree(Accessor qualifier, IdentifierTree identifier) implements
 
     @Override
     public String toSource(String indent){
-        return (qualifier == ExpressionNameTree.EMPTY)?
-                identifier.name() : qualifier.toSource(indent)+"."+identifier.name(); 
+        return ((qualifier == ExpressionNameTree.EMPTY)?
+                "" : qualifier.toSource(indent)+".") + identifier.name(); 
     }
 
     @Override
@@ -130,6 +130,16 @@ public record NameTree(Accessor qualifier, IdentifierTree identifier) implements
         children.add(qualifier);
         children.add(identifier);
         return children;
+    }
+
+    @Override
+    public String toQualifiedTypeName(){
+        if(qualifier instanceof TypeTree typeName){
+            return ((qualifier == ExpressionNameTree.EMPTY)?
+            "" : typeName.toQualifiedTypeName() + ".") + identifier.name(); 
+        }else{
+            return "$NOT_TYPE";
+        }
     }
 }
 

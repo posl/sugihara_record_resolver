@@ -594,9 +594,9 @@ public class JavaLexer{
 
         };
 
-        Predicate<Character> tester;
+        Predicate<? super Character> tester;
 
-        private Terminal(Predicate<Character> tester){
+        private Terminal(Predicate<? super Character> tester){
             this.tester = tester;
         }
 

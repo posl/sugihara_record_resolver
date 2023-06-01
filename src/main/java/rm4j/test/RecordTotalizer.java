@@ -1,188 +1,127 @@
 package rm4j.test;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.channels.FileChannel;
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 
-import rm4j.compiler.tree.AnnotatedTypeTree;
-import rm4j.compiler.tree.ArrayTypeTree;
-import rm4j.compiler.tree.ClassTree;
-import rm4j.compiler.tree.ParameterizedTypeTree;
-import rm4j.compiler.tree.PrimitiveTypeTree;
-import rm4j.compiler.tree.TypeTree;
-import rm4j.compiler.tree.VariableArityTypeTree;
-import rm4j.compiler.tree.VariableTree;
+import rm4j.compiler.tree.*;
 import rm4j.compiler.tree.Tree.DeclarationType;
-
-import static rm4j.io.git.DatasetManager.DATASET_DIRECTORY;
 
 public class RecordTotalizer{
 
-    private int numOfRecords = 0;
-    private Map<TypeInfo, Integer> componentTypeData = new ConcurrentHashMap<>(64);
-    private Map<Integer, Integer> componentSizeData = new ConcurrentHashMap<>(10);
-    private Map<Integer, Integer> interfaceData = new ConcurrentHashMap<>(10);
-    private Map<Integer, Integer> genericsData = new ConcurrentHashMap<>(10);
-    private static final Set<String> SUBJECT_TYPES = new HashSet<>(Arrays.asList(
-        "byte", "short", "int", "long", "float", "double", "char", "boolean", "String", "Object", "Byte", "Short", "Integer", "Long", "Float", "Double", "Character", "Boolean", "File", "List", "Map", "Set"
-    ));
+    private Ranker<String> recordHeaderTypes = new Ranker<>(2048);
+    private Ranker<Integer> sizeOfHeader = new Ranker<>(64);
+    private Ranker<String> implementedInterfaces = new Ranker<>(2048);
+    private Ranker<Integer> numOfImplementedInterfaces = new Ranker<>(16);
+    private Ranker<Integer> numOfTypeParameters = new Ranker<>(16);
+    private Ranker<String> wordsForRecordName = new Ranker<>(4096);
+    private Ranker<String> recordAttribute = new Ranker<>(2048);
 
-    private Map<File, Integer> repositoryData = new ConcurrentHashMap<>(50);
-    private Map<File, Integer> repositoryData2 = new ConcurrentHashMap<>(50);
-    private Map<File, Integer> repositoryData3 = new ConcurrentHashMap<>(50);
-    private Map<File, File> fileCorrespondence = new ConcurrentHashMap<>(300);
-    private static final File DEBUG_SOURCE_DIR = new File("/output");
-    private static volatile int debugFileNumber = 0;
-    //private static int debugDirectoryNumber = 0;
-
-    public void totalize(ClassTree t, File f){
-        
-        if(t.declType() == DeclarationType.RECORD && t.recordComponents() != null && t.typeParameters() != null && t.implementsClause() != null){
-            synchronized(this){
-                numOfRecords++;
-            }
-            getSource(f);
-            for(VariableTree v : t.recordComponents()){
-                registerTypeInfo(getRootType(v.actualType(), 0));
-            }
-            registerNumber(t.recordComponents().size(), componentSizeData);
-            registerNumber(t.typeParameters().size(), genericsData);
-            registerNumber(t.implementsClause().size(), interfaceData);
-        }
-        
-    }
-
-    TypeInfo getRootType(TypeTree t, int dimension){
-        if(t instanceof AnnotatedTypeTree ann){
-            return getRootType(ann.type(), dimension);
-        }else if(t instanceof ArrayTypeTree arr){
-            return getRootType(arr.elementType(), dimension+1);
-        }else if(t instanceof VariableArityTypeTree ari){
-            return getRootType(ari.type(), dimension+1);
-        }else if(t instanceof ParameterizedTypeTree par){
-            return getRootType((TypeTree)par.type(), dimension);
-        }else if(t instanceof PrimitiveTypeTree prim){
-            return new TypeInfo(prim.primitiveType().name().toLowerCase(), dimension);
-        }
-        return new TypeInfo(t.toString(), dimension);
-    }
-
-    void registerTypeInfo(TypeInfo info){
-        if(!SUBJECT_TYPES.contains(info.typeName())){
-            info = TypeInfo.REFERENCE_TYPE;
-        }
-        registerNumber(info, componentTypeData);
-    }
-
-    synchronized <K> void registerNumber(K key, Map<K, Integer> map){
-        if(map.get(key) == null){
-            map.put(key, 1);
-        }else{
-            map.put(key, map.get(key)+1);
-        }
-    }
-
-    public void print(){
-        System.out.format("number of total records : %d\n", numOfRecords);
-
-        System.out.println("\nrecord usecase repositories:");
-        printMap(repositoryData);
-
-        System.out.println("\nnum of type parameters:");
-        printMap(genericsData);
-        System.out.println("\ncomponent size data:");
-        printMap(componentSizeData);
-        System.out.println("\ncomponent type data:");
-        printMap(componentTypeData);
-        System.out.println("\nnum of implemented interfaces:");
-        printMap(interfaceData);
-
-        System.out.println("\nswitch expression usecase repositories:");
-        printMap(repositoryData2);
-    }
-
-    <K> void printMap(Map<K, Integer> map){
-        for(var e : map.entrySet()){
-            System.out.format("%s --- %d\n", e.getKey().toString(), e.getValue());
-        }
-    }
-
-    private void getSource(File f){
-
-        if(fileCorrespondence.get(f) != null){
-            return;
-        }
-        File dir = getRepository(f);
-
-        synchronized(this){
-            File created = new File(dir.toString() + "/USECASE_%s.java".formatted(++debugFileNumber));
-            fileCorrespondence.put(f, created);
-            try{
-                created.createNewFile();
-                try(FileInputStream reader = new FileInputStream(f);
-                    FileOutputStream writer = new FileOutputStream(created)){
-                    FileChannel in = reader.getChannel();
-                    in.transferTo(0, in.size(), writer.getChannel());
+    public void collectInformation(ClassTree c){
+        if(c.declType() == DeclarationType.RECORD && c.recordComponents() != null){
+            char[] nameCharacters = c.name().toSource("").toCharArray();
+            String s = "";
+            List<String> wordsOfName = new ArrayList<>();
+            for(int i = 0; i < nameCharacters.length; i++){
+                char ch = nameCharacters[i];
+                if(Character.isUpperCase(ch)){
+                    if(!s.equals("")){
+                        wordsOfName.add(s);
+                        s = "";
+                    }
+                    s += Character.toLowerCase(ch);
+                }else if(Character.isLowerCase(ch)){
+                    s += ch;
+                }else{
+                    if(!s.equals("")){
+                        wordsOfName.add(s);
+                        s = "";
+                    }
                 }
-            }catch(IOException e){
-                e.printStackTrace();
-                System.out.println(e);
+            }
+            if(!s.equals("")){
+                wordsOfName.add(s);
+            }
+            for(String word : wordsOfName){
+                wordsForRecordName.count(word);
+            }
+            if(!wordsOfName.isEmpty()){
+                recordAttribute.count(wordsOfName.get(wordsOfName.size()-1));
+            }
+            sizeOfHeader.count(c.recordComponents().size());
+            numOfImplementedInterfaces.count(c.implementsClause().size());
+            numOfTypeParameters.count(c.typeParameters().size());
+            for(var recordComponent : c.recordComponents()){
+                recordHeaderTypes.count(recordComponent.declaredType().toQualifiedTypeName());
+            }
+            for(var implemention : c.implementsClause()){
+                implementedInterfaces.count(implemention.toQualifiedTypeName());
+            }
+        }else if(c.declType() == DeclarationType.RECORD && c.recordComponents() == null){
+            sizeOfHeader.count(null);
+            System.out.println("Invalid record");
+        }
+    }
+
+    public void writeData() throws IOException{
+        writeDataToSingleFile(recordHeaderTypes, "recordHeaderTypes.csv");
+        writeDataToSingleFile(sizeOfHeader, "sizeOfHeader.csv");
+        writeDataToSingleFile(implementedInterfaces, "interfaces.csv");
+        writeDataToSingleFile(numOfImplementedInterfaces, "numOfInterfaces.csv");
+        writeDataToSingleFile(wordsForRecordName, "wordsForRecordName.csv");
+        writeDataToSingleFile(recordAttribute, "recordAttribute.csv");
+        writeDataToSingleFile(numOfTypeParameters, "numOfTypeParameters.csv");
+    }
+
+    private static <T> void writeDataToSingleFile(Ranker<T> ranker, String fileName) throws IOException{
+        File out = new File("work/record2/"+fileName);
+        try(FileWriter writer = new FileWriter(out)){
+            int n = 0;
+            for(var column : ranker.getRanking()){
+                writer.write("%d: %s, %d\n".formatted(++n, column.t(), column.count()));
+            }
+        }
+    }
+
+    class Ranker<T>{
+
+        final Map<T, Integer> data;
+
+        public Ranker(int initialCapacity){
+            this.data = new HashMap<>(initialCapacity);
+        }
+
+        public void count(T t){
+            Integer count;
+            if((count = data.get(t)) == null){
+                data.put(t, 1);
+            }else{
+                data.put(t, count+1);
             }
         }
 
-    }
-
-    private File getRepository(File f){
-        File repository = f;
-        do{
-            repository = repository.getParentFile();
-        }while(!repository.getParentFile().equals(DATASET_DIRECTORY));
-        String directoryName = repository.getName();
-        File dir = new File(DEBUG_SOURCE_DIR + "/" +directoryName);
-        if(repositoryData.get(dir) == null){
-            repositoryData.put(dir, 1);
-            dir.mkdir();
-        }else{
-            repositoryData.put(dir, repositoryData.get(dir) + 1);
-        }
-        return dir;
-    }
-
-    record TypeInfo(String typeName, int dimension){
-        static final TypeInfo REFERENCE_TYPE = new TypeInfo("#REF", 0);
-
-        @Override
-        public String toString(){
-            String dims = "";
-            for(int i = 0; i < dimension; i++){
-                dims += "[]";
+        public List<RankerComponent<T>> getRanking(){
+            List<RankerComponent<T>> ranking = new ArrayList<>();
+            for(var e : data.entrySet()){
+                ranking.add(new RankerComponent<>(e.getKey(), e.getValue()));
             }
-            return typeName + dims;
+            ranking.sort((c1, c2) -> {
+                if(c1.count() > c2.count()){
+                    return -1;
+                }else if(c1.count() < c2.count()){
+                    return 1;
+                }
+                return 0;
+            });
+            return ranking;
         }
+        
     }
 
-    public void countRecordPattern(File f){
-        if(fileCorrespondence.get(f) != null){
-            return;
-        }
-        File repository = f;
-        do{
-            repository = repository.getParentFile();
-        }while(!repository.getParentFile().equals(DATASET_DIRECTORY));
-        String directoryName = repository.getName();
-        File dir = new File(DEBUG_SOURCE_DIR + "/" +directoryName);
-        if(repositoryData3.get(dir) == null){
-            repositoryData3.put(dir, 1);
-            dir.mkdir();
-        }else{
-            repositoryData3.put(dir, repositoryData3.get(dir) + 1);
-        }
-    }
+    record RankerComponent<T>(T t, int count){};
+
 }

@@ -263,7 +263,7 @@ public interface Tree{
         return new ArrayList<>(0);
     }
 
-    public static void visit(Tree tree, CEConsumer<Tree> query) throws CompileException{
+    public static void visit(Tree tree, CEConsumer<? super Tree> query) throws CompileException{
         List<Tree> children = new LinkedList<>();
         children.add(tree);
         do{

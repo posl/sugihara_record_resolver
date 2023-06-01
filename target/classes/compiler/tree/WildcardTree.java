@@ -29,7 +29,7 @@ import rm4j.test.Tested.Status;
 @Tested(date = "2022/7/8", tester = "me", confidence = Status.PROBABLY_OK)
 public record WildcardTree(ArrayList<AnnotationTree> annotations, WildcardType wildcardType, TypeTree bound) implements TypeTree{
 
-    enum WildcardType{
+    public enum WildcardType{
         WILD,
         CONVARIANT,
         CONTRAVARIANT;
@@ -60,10 +60,19 @@ public record WildcardTree(ArrayList<AnnotationTree> annotations, WildcardType w
 
     @Override
     public String toSource(String indent){
-        return Tree.listToSource(annotations, " ", indent) + switch(wildcardType){
-            case WILD -> " ?";
-            case CONVARIANT -> " ? extends " + bound.toSource(indent);
-            case CONTRAVARIANT -> " ? super " + bound.toSource(indent);
+        return Tree.listToSource(annotations, " ", indent) + (annotations.isEmpty()? "" : " ") + switch(wildcardType){
+            case WILD -> "?";
+            case CONVARIANT -> "? extends " + bound.toSource(indent);
+            case CONTRAVARIANT -> "? super " + bound.toSource(indent);
+        };
+    }
+
+    @Override
+    public String toQualifiedTypeName() {
+        return switch(wildcardType){
+            case WILD -> "?";
+            case CONVARIANT -> "? extends " + bound.toQualifiedTypeName();
+            case CONTRAVARIANT -> "? super " + bound.toQualifiedTypeName();
         };
     }
 

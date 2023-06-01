@@ -40,7 +40,7 @@ class CharList extends DoublyLinkedList<Character>{
     /**
      * Reads back the characters which satisfies the specified condition from the current pointer.
      */
-    public final String readBack(CEPredicate<Character> cond) throws CompileException{
+    public final String readBack(CEPredicate<? super Character> cond) throws CompileException{
         String s = "";
         Node curr = current;
         while(cond.test(curr.e)){
@@ -79,7 +79,7 @@ class CharList extends DoublyLinkedList<Character>{
     /**
      * Reads the characters which satisfies the specified condition from the current pointer.
      */
-    public final String readForward(CEPredicate<Character> cond) throws CompileException{
+    public final String readForward(CEPredicate<? super Character> cond) throws CompileException{
         String s = "";
         while(hasNext() && cond.test(current.e)){
             s += get();

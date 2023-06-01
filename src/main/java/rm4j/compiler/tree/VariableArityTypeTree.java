@@ -20,4 +20,14 @@ public record VariableArityTypeTree(TypeTree type) implements TypeTree{
         return children;
     }
 
+    @Override
+    public String toSource(String indent){
+        return type.toSource(indent) + "...";
+    }
+
+    @Override
+    public String toQualifiedTypeName() {
+        return type.toQualifiedTypeName() + "...";
+    }
+
 }

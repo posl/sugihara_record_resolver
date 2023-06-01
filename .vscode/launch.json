@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "APIResolver",
+            "request": "launch",
+            "mainClass": "rm4j.io.APIResolver",
+            "projectName": "rm4j"
+        },
+        {
+            "type": "java",
+            "name": "FileManager",
+            "request": "launch",
+            "mainClass": "rm4j.test.FileManager",
+            "projectName": "rm4j"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sample",
+            "request": "launch",
+            "mainClass": "rm4j.test.Sample",
+            "projectName": "rm4j"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClassTotalizer",
+            "request": "launch",
+            "mainClass": "rm4j.test.ClassTotalizer",
+            "projectName": "rm4j"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

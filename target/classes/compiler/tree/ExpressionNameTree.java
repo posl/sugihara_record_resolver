@@ -83,4 +83,14 @@ public record ExpressionNameTree(Accessor qualifier, IdentifierTree identifier) 
         return children;
     }
 
+    @Override
+    public String toQualifiedTypeName(){
+        if(qualifier instanceof TypeTree typeName){
+            return ((qualifier == ExpressionNameTree.EMPTY)?
+                "" : typeName.toQualifiedTypeName()+".") + identifier.name(); 
+        }else{
+            return "$NOT_TYPE";
+        }
+    }
+
 }

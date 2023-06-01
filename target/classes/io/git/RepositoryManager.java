@@ -21,15 +21,27 @@ import rm4j.util.functions.CEConsumer;
 public class RepositoryManager implements Serializable{
 
     private static final long serialVersionUID = 0xF4D9F068C644D8DCL;
-    public static final Date SINCE = new Date(2019, 3, 1);
+    public static final Date SINCE = new Date(2020, 3, 1);
 
-    private final File repository;
+    private final File project;
 
     private final CommitInfo[] commitTrace;
 
-    public RepositoryManager(File repository) throws IOException{
-        this.repository = repository;
+    public RepositoryManager(File project) throws IOException{
+        this.project = project;
         commitTrace = createCommitTrace();
+    }
+
+    public String getFetchURL() throws IOException{
+        try(var reader = getStreamReader("git remote show origin")){
+            String buf;
+            while((buf = reader.readLine()) != null && !buf.startsWith("    ")){
+                if(buf.startsWith("  Fetch URL: ")){
+                    return buf.split("  Fetch URL: ")[1];
+                }
+            }
+        }
+        return "";
     }
 
     private CommitInfo[] createCommitTrace() throws IOException{
@@ -154,7 +166,7 @@ public class RepositoryManager implements Serializable{
         File repositoryInfo = new File(outDir, "repository-info.txt");
 
         //revert the version of the repository to HEAD
-        checkout(commitTrace[0].id());
+        while(!checkout(commitTrace[0].id()));
 
         try(FileWriter repositoryInfoWriter = new FileWriter(repositoryInfo)){
             int[] sumOfRepository = new int[9];

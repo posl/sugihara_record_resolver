@@ -18,9 +18,9 @@ import rm4j.compiler.resolution.Accessor;
  * @author me
  * 
  */
-public record ParameterizedTypeTree(Accessor type, ArrayList<TypeTree> typeArguments) implements Accessor, TypeTree{
+public record ParameterizedTypeTree(TypeTree type, ArrayList<TypeTree> typeArguments) implements Accessor, TypeTree{
     
-    static final ArrayList<TypeTree> DIAMOND = new ArrayList<>();
+    public static final ArrayList<TypeTree> DIAMOND = new ArrayList<>();
 
     @Override
     public List<Tree> children(){
@@ -34,6 +34,11 @@ public record ParameterizedTypeTree(Accessor type, ArrayList<TypeTree> typeArgum
     public String toSource(String indent){
         String generics = (typeArguments == DIAMOND)? "<>" : "<" + Tree.listToSource(typeArguments, ", ", indent) + ">";
         return type.toSource("") + generics;
+    }
+
+    @Override
+    public String toQualifiedTypeName(){
+        return type.toQualifiedTypeName();
     }
 
 }

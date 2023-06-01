@@ -14,4 +14,11 @@ public record VoidTree() implements TypeTree{
     public String toSource(String indent){
         return "void";
     }
+
+    @Override
+    public String toQualifiedTypeName() {
+        return toSource("");
+    }
+
+    
 }

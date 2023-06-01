@@ -37,4 +37,9 @@ public record ArrayTypeTree(TypeTree elementType) implements TypeTree{
         return elementType.toSource(indent) + "[]";
     }
 
+    @Override
+    public String toQualifiedTypeName(){
+        return elementType.toQualifiedTypeName() + "[]";
+    }
+
 }

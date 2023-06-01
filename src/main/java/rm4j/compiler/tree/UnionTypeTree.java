@@ -31,5 +31,19 @@ public record UnionTypeTree(ArrayList<TypeTree> typeAlternatives) implements Typ
         return Tree.listToSource(typeAlternatives, " | ", indent);
     }
 
+    @Override
+    public String toQualifiedTypeName() {
+        List<String> exprs = new ArrayList<>();
+        String s = "";
+        for(var type : typeAlternatives){
+            exprs.add(type.toQualifiedTypeName());
+        }
+        exprs.sort(String.CASE_INSENSITIVE_ORDER);
+        for(int i = 0; i < exprs .size(); i++){
+            s += exprs.get(i) + ((i == exprs.size() - 1)? "" : " | ");
+        }
+        return s;
+    }
+
 
 }

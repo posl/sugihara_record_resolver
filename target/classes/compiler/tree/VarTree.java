@@ -14,5 +14,10 @@ public record VarTree() implements TypeTree{
     public String toSource(String indent){
         return "var";
     }
+
+    @Override
+    public String toQualifiedTypeName(){
+        return toSource("");
+    }
     
 }

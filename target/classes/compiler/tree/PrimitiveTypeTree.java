@@ -29,4 +29,9 @@ public record PrimitiveTypeTree(PrimitiveType primitiveType) implements TypeTree
         return primitiveType.symbol().key();
     }
 
+    @Override
+    public String toQualifiedTypeName(){
+        return toSource("");
+    }
+
 }

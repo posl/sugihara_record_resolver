@@ -38,7 +38,7 @@ public final class ProjectUnit{
         packageTable.put(ExpressionNameTree.EMPTY, unnamedPackage);
     }
 
-    public ProjectUnit(CEConsumer<Tree> query){
+    public ProjectUnit(CEConsumer<? super Tree> query){
         Arrays.asList(API.listFiles(dir -> dir.isDirectory())).parallelStream().forEach(dir ->{
             resolvePackage(dir, ExpressionNameTree.EMPTY, unnamedModule, query);
         });
@@ -46,7 +46,7 @@ public final class ProjectUnit{
         // failed, succeed + failed));
     }
 
-    public ProjectUnit(File sourcePath, CEConsumer<Tree> query){
+    public ProjectUnit(File sourcePath, CEConsumer<? super Tree> query){
         // System.out.println(sourcePath);
         // Arrays.asList(API.listFiles(dir ->
         // dir.isDirectory())).parallelStream().forEach(dir ->{resolvePackage(dir,
@@ -60,7 +60,7 @@ public final class ProjectUnit{
     }
 
     private JavaPackage resolvePackage(File dir, ExpressionNameTree name, JavaModule associated,
-            CEConsumer<Tree> query){
+            CEConsumer<? super Tree> query){
 
         for (File f : dir.listFiles((d, s) -> s.equals("module-info.java"))){
             CompilationUnitTree moduleSpecification = compiler.compile(f);
