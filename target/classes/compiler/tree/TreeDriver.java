@@ -125,7 +125,7 @@ public class TreeDriver{
                     executionStatus = e.toString();
                     e.printStackTrace();
                 }
-            }catch(CompileException e){
+            }catch(IOException | CompileException e){
                 executionStatus = "Lexical analyzation fault.";
             }
             return (JavaTokenManager.ENABLE_PARSING_TRACE? "\n" : "") + String.format("%s ... %s\ndescription : %s\n%s\n", label, status, content, executionStatus);

@@ -184,14 +184,14 @@ public class JavaLexer{
      * @return CharList expression
      */
 
-    private CharList translateUnicode(File file) throws CompileException, IndexOutOfBoundsException{
+    private CharList translateUnicode(File file) throws IOException, CompileException, IndexOutOfBoundsException{
         enum Status{
             BACK_SLASH, DEFAULT
         }
         var charList = new CharList();
         Status status = Status.DEFAULT;
-
-        try (var reader = new FileReader(file)){
+        var reader = new FileReader(file);
+        try{
             int ch;
             int bscount = 0;
             while ((ch = reader.read()) != -1){
@@ -209,9 +209,11 @@ public class JavaLexer{
                 }
                 charList.add((char) ch);
             }
-        }catch (IOException e){
+        }catch (LexerException | IOException e){
             e.printStackTrace();
             throw new LexerException("The lexer reported an error in the resolution of " + file.toString() + ".");
+        }finally{
+            reader.close();
         }
         charList.reset();
         return charList;
@@ -251,7 +253,7 @@ public class JavaLexer{
      * Gets TokenList from CharList.
      */
 
-    private TokenList tokenize(File file) throws CompileException{
+    private TokenList tokenize(File file) throws IOException, CompileException{
         var source = translateUnicode(file);
         var tokens = new TokenList(file);
         var recorder = new ReferenceProducer();
@@ -280,7 +282,7 @@ public class JavaLexer{
         return tokens;
     }
 
-    public TokenList run(File file) throws CompileException{
+    public TokenList run(File file) throws IOException, CompileException{
         return tokenize(file);
     }
 

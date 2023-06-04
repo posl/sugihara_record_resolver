@@ -45,7 +45,21 @@ public record Date(int year, int month, int date, int hrs, int min, int sec) imp
             case "Oct" -> 10;
             case "Nov" -> 11;
             case "Dec" -> 12;
-            default -> throw new IllegalArgumentException();
+            default -> throw new NumberFormatException();
         };
+    }
+
+    public static Date parse(String s){
+        String contents[] = s.split(" |:");
+        if(contents.length != 8){
+            throw new NumberFormatException();
+        }
+        return new Date(
+            Integer.parseInt(contents[6]),
+            convertMonth(contents[1]),
+            Integer.parseInt(contents[2]),
+            Integer.parseInt(contents[3]),
+            Integer.parseInt(contents[4]),
+            Integer.parseInt(contents[5]));
     }
 }

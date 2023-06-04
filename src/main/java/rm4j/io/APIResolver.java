@@ -8,6 +8,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import rm4j.compiler.core.JavaCompiler;
@@ -15,9 +16,12 @@ import rm4j.compiler.file.ProjectUnit;
 import rm4j.compiler.tree.ClassTree;
 import rm4j.compiler.tree.CompilationUnitTree;
 import rm4j.compiler.tree.ExportsTree;
+import rm4j.compiler.tree.ImportTree;
 import rm4j.compiler.tree.StatementTree;
 import rm4j.compiler.tree.Tree;
+import rm4j.compiler.tree.TypeTree;
 import rm4j.compiler.tree.ModifiersTree.ModifierKeyword;
+import rm4j.compiler.tree.Tree.DeclarationType;
 
 public class APIResolver implements Serializable{
 
@@ -25,26 +29,18 @@ public class APIResolver implements Serializable{
 
     private static final File API_PATH = new File("../data_original/JavaAPI17");
     
-    public static final File OBJECT_PATH = new File("./work/api17info.ser");
+    public static final File OBJECT_PATH = new File("work/api17info.ser");
     public final Map<String, APINameUnit> packages = new HashMap<>();
 
     public static APIResolver deserialize() throws IOException{
-        try(ObjectInputStream in = new ObjectInputStream(new FileInputStream(OBJECT_PATH))){
-            return (APIResolver)in.readObject();
-        }catch(ClassNotFoundException | ClassCastException e){
-            throw new IOException(e);
-        }
-    }
-
-    public static void main(String[] args){
-        try{
-            var api = new APIResolver();
-            for(var e : api.packages.entrySet()){
-                System.out.println(e);
+        if(OBJECT_PATH.exists()){
+            try(ObjectInputStream in = new ObjectInputStream(new FileInputStream(OBJECT_PATH))){
+                return (APIResolver)in.readObject();
+            }catch(ClassNotFoundException | ClassCastException e){
+                e.printStackTrace();
             }
-        }catch(IOException e){
-            e.printStackTrace();
         }
+        return new APIResolver();
     }
 
     public APIResolver() throws IOException{
@@ -72,6 +68,56 @@ public class APIResolver implements Serializable{
         }
     }
 
+    public String getFullyQualifiedName(String typeName, List<ImportTree> imports) {
+        String ret = searchAPIType(typeName);
+        if(ret != null){
+            return ret;
+        }
+        String name = typeName.replaceFirst("\\..+", "");
+        for(ImportTree imp : imports){
+            if(!imp.isOnDemand() && imp.qualifiedName().identifier().name().equals(name)){
+                ret = searchAPIType(((TypeTree)imp.qualifiedName().qualifier()).toQualifiedTypeName() + "." + typeName);
+                if(ret != null){
+                    return ret;
+                }
+            }
+        }
+        for(ImportTree imp : imports){
+            if(imp.isOnDemand()){
+                ret = searchAPIType(imp.qualifiedName().toQualifiedTypeName() + "." + typeName);
+                if(ret != null){
+                    return ret;
+                }
+            }
+        }
+        return searchAPIType("java.lang." + typeName);
+    }
+
+    private String searchAPIType(String typeName){
+        String name = typeName;
+        String ret;
+        for(int i = name.lastIndexOf("."); i != -1; i = name.lastIndexOf(".")){
+            name = name.substring(0, i);
+            APINameUnit unit = packages.get(name);
+            if(unit != null){
+                ret = name;
+                String[] identifiers = typeName.replaceFirst(name + ".", "").split("\\.");
+                int j;
+                for(j = 0; j < identifiers.length; j++){
+                    unit = unit.types.get(identifiers[j]);
+                    if(unit == null){
+                        break;
+                    }
+                    ret += "." + identifiers[j];
+                }
+                if(j == identifiers.length){
+                    return ret;
+                }
+            }
+        }
+        return null;
+    }
+
     private APINameUnit resolvePackage(String packageName, File module, JavaCompiler compiler) throws IOException{
         File pkgdir = new File(module, packageName.replaceAll("\\.", "/"));
         Map<String, APINameUnit> types = new HashMap<>();
@@ -93,7 +139,8 @@ public class APIResolver implements Serializable{
     private APINameUnit resolveType(ClassTree type){
         Map<String, APINameUnit> types = new HashMap<>();
         for(Tree t : type.members()){
-            if(t instanceof ClassTree c && c.modifiers().getModifiers().contains(ModifierKeyword.PUBLIC)){
+            if(t instanceof ClassTree c && (c.modifiers().getModifiers().contains(ModifierKeyword.PUBLIC) ||
+                type.declType() == DeclarationType.INTERFACE || type.declType() == DeclarationType.ANNOTATION_INTERFACE)){
                 types.put(c.name().toSource(""), resolveType(c));
             }
         }
