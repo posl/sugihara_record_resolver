@@ -1,1 +1,0 @@
-yield++; ST_EX_1

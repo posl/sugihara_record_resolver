@@ -1,1 +1,0 @@
-@Anno1 Type1<@Anno2 Type2<Type3, Type4>>.Type5<Type6>@Anno5[]@Anno3(id1 = 0, id2 = {2,3,6,7})[]@Anno7[] T_1

@@ -1,1 +1,0 @@
-l.get(i) instanceof ComplexNumber<Integer, Integer>(Integer i, Integer j) c EX_BO_5

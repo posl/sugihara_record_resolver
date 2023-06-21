@@ -1,9 +1,0 @@
-if(src.match(JavaTS.LESS_THAN)){
-    src.skip(JavaTS.LESS_THAN);
-    if(declType.hasTypeParameterClause){
-        typeParameters = Tree.getList(TypeParameterTree::parse, JavaTS.GREATER_THAN, src);
-    }else{
-        throw new ParsingException(String.format("A %s declaration cannot have type parameters", declType.name()));
-    }
-    src.skip(JavaTS.GREATER_THAN);
-}ST_IF_1

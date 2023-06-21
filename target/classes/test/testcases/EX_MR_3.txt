@@ -1,1 +1,0 @@
-java.util.@A(arr = l.isEmpty()? null : l.toArray())ArrayList<String>::size EX_MR_3

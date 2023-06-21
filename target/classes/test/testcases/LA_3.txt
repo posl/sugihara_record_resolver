@@ -1,1 +1,0 @@
-public  @Target static @Ano1 @Ano2(version = 17, author = "me") non-sealed LA_3

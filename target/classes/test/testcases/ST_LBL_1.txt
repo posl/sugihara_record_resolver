@@ -1,1 +1,0 @@
-LABEL: yield a; ST_LBL_1
