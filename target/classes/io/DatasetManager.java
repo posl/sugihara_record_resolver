@@ -3,17 +3,13 @@ package rm4j.io;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 import rm4j.io.Metrics.JavaVersion;
-import rm4j.util.functions.CEConsumer;
-import rm4j.compiler.tree.ClassTree;
-import rm4j.compiler.tree.InstanceOfTree;
-import rm4j.compiler.tree.Tree;
-import rm4j.compiler.tree.ModifiersTree.ModifierKeyword;
 
 public class DatasetManager implements FileManager{
 
@@ -40,29 +36,51 @@ public class DatasetManager implements FileManager{
 
     public DatasetManager() throws IOException{
         for(int i = 0; i < DATASET_SIZE; i++){
-            repositories[i] = ProjectManager.deserialize(i+1);
+            repositories[i] = new ProjectManager(i+1);
+        }
+    }
+
+    public void refreshCopies(Predicate<? super ProjectManager> filter) throws IOException{
+        for(var project : repositories){
+            if(filter.test(project)){
+                project.refreshCopies();
+            }
         }
     }
 
     public void getMetrics() throws IOException{
-        String labels = "repository_name, age, number_of_commits, number_of_authors, number_of_java_files, version";
-        Metrics[] metrics = new Metrics[DATASET_SIZE];
-        List<Metrics> list1 = new LinkedList<>();
-        List<Metrics> list2 = new LinkedList<>();
-        for(int i = 0; i < DATASET_SIZE; i++){
-            System.out.println("Measuring metrics of rep%d:%s...".formatted(i+1, repositories[i].getProjectName()));
-            metrics[i] = repositories[i].measureMetrics();
-            if(metrics[i].version() != JavaVersion.BEFORE_JAVA16){
-                list1.add(metrics[i]);
-                if(metrics[i].version() == JavaVersion.HAS_RECORDS){
-                    list2.add(metrics[i]);
-                }
+        String labels = "repository_name,age,number_of_commits,number_of_authors,number_of_java_files,version";
+        ProjectSpec[] specs = Stream.of(repositories).map(ProjectManager::getSpec).toArray(ProjectSpec[]::new);
+        writeCSV(labels, specs, new File("work/dataset_spec/all_repository_metrics.csv"));
+        writeCSV(labels, Stream.of(specs).filter(spec -> spec.metrics().version() != JavaVersion.BEFORE_JAVA16).toList(), new File("work/dataset_spec/Java16_repository_metrics.csv"));
+        writeCSV(labels, Stream.of(specs).filter(spec -> spec.metrics().version() != JavaVersion.HAS_RECORDS).toList(), new File("work/dataset_spec/record_repository_metrics.csv"));
+    }
+
+    public void collectDifferenceInfo() throws IOException{
+        String labels = "repository_name,with_new_files,to_record_conversion,added_to_file,with_deleted_files,to_class_conversion,removed_from_file";
+        List<String> data = new LinkedList<>();
+        for(ProjectManager project : repositories){
+            if(project.isCompatibleWithJava16()){
+                data.add(project.collectDifferenceData());
             }
         }
+        recordDataInCSV(labels, data, new File("work/rq2-1/diffs/diff_summerize.csv"));
+    }
 
-        writeCSV(labels, metrics, new File("work/dataset_spec/all_repository_metrics.csv"));
-        writeCSV(labels, list1, new File("work/dataset_spec/Java16_repository_metrics.csv"));
-        writeCSV(labels, list2, new File("work/dataset_spec/record_repository_metrics.csv"));
+    public void mineRecordHistory() throws IOException{
+        String labels = "";
+        Date since = new Date(2020, 4, 1);
+        for(Date date = new Date(2023, 6, 1); date.compareTo(since) >= 0; date = date.previousMonth()){
+            labels = "," + date.toDateString() + labels;   
+        }
+        labels = "repository_name" + labels;
+        List<String> data = new LinkedList<>();
+        for(ProjectManager project : repositories){
+            if(project.isCompatibleWithJava16()){
+                data.add(project.mineRecordHistory());
+            }
+        }
+        recordDataInCSV(labels, data, new File("work/rq1-1/record_history.csv"));
     }
 
     public void countTypeDeclarations() throws IOException{
@@ -80,25 +98,48 @@ public class DatasetManager implements FileManager{
             }
 
         }
-        String labels = "repository_name, classes, enums, interfaces, annotation_interfaces, records";
+        String labels = "repository_name,classes,enums,interfaces,annotation_interfaces,records";
         Tuple[] data = new Tuple[DATASET_SIZE];
         List<Tuple> list1 = new LinkedList<>();
         List<Tuple> list2 = new LinkedList<>();
 
         for(int i = 0; i < DATASET_SIZE; i++){
             System.out.println("Counting type declarations of rep%d:%s...".formatted(i+1, repositories[i].getProjectName()));
-            int[] counts = repositories[i].countTypeDeclarations();
-            data[i] = new Tuple(repositories[i].getProjectName(), Arrays.copyOf(counts, 5));
-            switch(counts[5]){
-                case 3: list2.add(data[i]);
-                // fall through
-                case 1: list1.add(data[i]);
+            data[i] = new Tuple(repositories[i].getProjectName(), repositories[i].countTypeDeclarations());
+            if(repositories[i].isCompatibleWithJava16()){
+                list1.add(data[i]);
+            }
+            if(repositories[i].hasRecords()){
+                list2.add(data[i]);
             }
         }
 
         writeCSV(labels, data, new File("work/rq1-1/type_declarations_A.csv"));
         writeCSV(labels, list1, new File("work/rq1-1/type_declarations_B.csv"));
         writeCSV(labels, list2, new File("work/rq1-1/type_declarations_C.csv"));
+    }
+
+    public void countTypeUsage() throws IOException{
+        TypeDeclarationData classData = new TypeDeclarationData();
+        TypeDeclarationData recordData = new TypeDeclarationData();
+        APIResolver typeResolver = APIResolver.deserialize();
+        for(int i = 0; i < DATASET_SIZE; i++){
+            if(repositories[i].isCompatibleWithJava16()){
+                System.out.println("Analyzing type declarations of rep%d:%s...".formatted(i+1, repositories[i].getProjectName()));
+                repositories[i].countTypeUsage(classData, recordData, typeResolver);
+            }
+        }
+        String[] labelsList = {"num_of_fields", "field_type", "num_of_interfaces", "interface_type", "num_of_methods"};
+        for(int i = 0; i < 5; i++){
+            writeCSV("%s, frequency".formatted(labelsList[i]),
+                        classData.enumerateRankers().get(i).getRanking(),
+                        new File("work/rq1-2/classes/%s.csv".formatted(labelsList[i])));
+        }
+        for(int i = 0; i < 5; i++){
+            writeCSV("%s, frequency".formatted(labelsList[i]),
+                        recordData.enumerateRankers().get(i).getRanking(),
+                        new File("work/rq1-2/records/%s.csv".formatted(labelsList[i])));
+        }
     }
 
     public void writeCSV(String labels, CSVTuple[] data, File path) throws IOException{
@@ -115,5 +156,5 @@ public class DatasetManager implements FileManager{
     public void writeCSV(String labels, List<? extends CSVTuple> data, File path) throws IOException{
         writeCSV(labels, data.toArray(CSVTuple[]::new), path);
     }
-
+    
 }

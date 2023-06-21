@@ -93,7 +93,7 @@ public record CompilationUnitTree(ModuleTree module, PackageTree packageDecl, Ar
 
     @Override
     public int hashCode(){
-        return sourceFile.hashCode();
+        return (sourceFile == null)? 0 :sourceFile.hashCode();
     }
 
     @Override

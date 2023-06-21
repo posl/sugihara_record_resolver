@@ -69,7 +69,7 @@ public class CommitTrace implements Serializable{
         return commitTraceArray;
     }
 
-    public CommitInfo getCommitInfo(final BufferedReader reader) throws IOException{
+    public static CommitInfo getCommitInfo(final BufferedReader reader) throws IOException{
         try(reader){
             final BigInteger id;
             final String author;

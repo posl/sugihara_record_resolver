@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.function.Consumer;
 
 public interface FileManager {
@@ -61,21 +62,14 @@ public interface FileManager {
         return true;
     }
 
-    default public void recordDataInCSV(String[] label, int[][] data, File csv) throws IOException{
-        if(label.length != data.length){
-            throw new IOException("The length of labels doesn't match lines of data.");
-        }
+    default public void recordDataInCSV(String label, Collection<String> data, File csv) throws IOException{
         if(!csv.exists()){
             csv.createNewFile();
         }
         try(FileWriter writer = new FileWriter(csv)){
-            for(int i = 0; i < data.length; i++){
-                String buf = label[i];
-                int[] low = data[i];
-                for(int j = 0; j < low.length; j++){
-                    buf += (", " + low[j]);
-                }
-                writer.write(buf + "\n");
+            writer.write(label + "\n");
+            for(String line : data){
+                writer.write(line + "\n");
             }
         }
     }

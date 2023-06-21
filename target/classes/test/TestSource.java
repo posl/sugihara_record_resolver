@@ -78,23 +78,10 @@ public class TestSource{
 
     
     public static <E> List<Pair<E>> createCouples(List<E> list){
-        List<Pair<E>> returnList = getCartesianProduct(list, list, Pair::new);
-        returnList.removeIf(pair -> pair.e1.equals(pair.e2));
-        return returnList;
-    }
-
-    @Deprecated
-    public static <E> void cleanList(List<E> list){
-        for(int i = 0; i < list.size(); i++){
-            E checking = list.get(i);
-            for(int j = i+1; j < list.size();){
-                if(checking.equals(list.get(j))){
-                    list.remove(j);
-                }else{
-                    j++;
-                }
-            }
-        }
+        return getCartesianProduct(list, list, Pair::new)
+                .stream()
+                .filter(pair -> pair.e1.equals(pair.e2))
+                .toList();
     }
 
     public static sealed class Tuple<T, U> permits Pair<List<Number>>{

@@ -17,7 +17,7 @@ import rm4j.compiler.core.CompileException;
 
 public record IdentifierTree(String name)implements ExpressionTree{
 
-    static final IdentifierTree EMPTY = new IdentifierTree("");
+    public static final IdentifierTree EMPTY = new IdentifierTree("");
 
     static IdentifierTree parse(JavaTokenManager src) throws CompileException{
         if(src.match(IDENTIFIERS)){

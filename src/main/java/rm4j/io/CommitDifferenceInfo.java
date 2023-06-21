@@ -9,7 +9,7 @@ import rm4j.compiler.tree.Tree.DeclarationType;
 public record CommitDifferenceInfo(CommitInfo info, TypeSet before, TypeSet after, int[] data){
 
     public CommitDifferenceInfo(CommitInfo info, TypeSet before, TypeSet after){
-        this(info, before, after, new int[9]);
+        this(info, before, after, new int[7]);
     }
 
     /*
@@ -17,25 +17,27 @@ public record CommitDifferenceInfo(CommitInfo info, TypeSet before, TypeSet afte
      * 0 : records in new file
      * 1 : class to record refactoring
      * 2 : record newly added in an existing file
-     * 3 : others
      * 
      * record deletion
-     * 4 : records in deleted file
-     * 5 : record to class refactoring
-     * 6 : record removed from an existing file
-     * 7 : others
-     * 
-     * 8 : record changes
-     * 
+     * 3 : records in deleted file
+     * 4 : record to class refactoring
+     * 5 : record removed from an existing file
      */
 
     public CommitDifferenceInfo{
-        int sameRecords = 0;
         if(before.fileExists || after.fileExists){
             if(!before.fileExists){
-                data[0] = after.records.size();
+                for(ClassTree c : after.classes().values()){
+                    if(c.declType() == DeclarationType.RECORD){
+                        data[0]++;
+                    }
+                }
             }else if(!after.fileExists){
-                data[4] = before.records.size();
+                for(ClassTree c : before.classes().values()){
+                    if(c.declType() == DeclarationType.RECORD){
+                        data[3]++;
+                    }
+                }
             }else{
                 for(String classPath : before.classes.keySet()){
                     ClassTree beforeClass = before.classes.get(classPath);
@@ -45,13 +47,7 @@ public record CommitDifferenceInfo(CommitInfo info, TypeSet before, TypeSet afte
                             data[1]++;
                         }
                         if(beforeClass.declType() == DeclarationType.RECORD && afterClass.declType() != DeclarationType.RECORD){
-                            data[5]++;
-                        }
-                        if(beforeClass.declType() == DeclarationType.RECORD && afterClass.declType() == DeclarationType.RECORD){
-                            sameRecords++;
-                            if(!beforeClass.equals(afterClass)){
-                                data[8]++;
-                            }
+                            data[4]++;
                         }
                     }
                 }
@@ -67,11 +63,9 @@ public record CommitDifferenceInfo(CommitInfo info, TypeSet before, TypeSet afte
                 oldClasses.removeAll(after.classes.keySet());
                 for(String classPath : oldClasses){
                     if(before.classes.get(classPath).declType() == DeclarationType.RECORD){
-                        data[6]++;
+                        data[5]++;
                     }
                 }
-                data[3] = after.records.size() - sameRecords - data[1] - data[2];
-                data[7] = before.records.size() - sameRecords - data[5] - data[6];
             }
         }
     }

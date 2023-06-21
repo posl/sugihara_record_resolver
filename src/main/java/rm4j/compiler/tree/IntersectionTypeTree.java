@@ -30,11 +30,8 @@ public record IntersectionTypeTree(ArrayList<TypeTree> bounds) implements TypeTr
 
     @Override
     public String toQualifiedTypeName(){
-        List<String> exprs = new ArrayList<>();
         String s = "";
-        for(var bound : bounds){
-            exprs.add(bound.toQualifiedTypeName());
-        }
+        List<String> exprs = bounds.stream().map(TypeTree::toQualifiedTypeName).sorted(String.CASE_INSENSITIVE_ORDER).toList();
         exprs.sort(String.CASE_INSENSITIVE_ORDER);
         for(int i = 0; i < exprs .size(); i++){
             s += exprs.get(i) + ((i == exprs.size() - 1)? "" : " & ");

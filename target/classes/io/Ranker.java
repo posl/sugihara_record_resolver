@@ -1,6 +1,5 @@
 package rm4j.io;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,21 +22,19 @@ public class Ranker<T>{
     }
 
     public List<Component<T>> getRanking(){
-        List<Component<T>> ranking = new ArrayList<>();
-        for(var e : data.entrySet()){
-            ranking.add(new Component<>(e.getKey(), e.getValue()));
-        }
-        ranking.sort((c1, c2) -> {
-            if(c1.count() > c2.count()){
-                return -1;
-            }else if(c1.count() < c2.count()){
-                return 1;
-            }
-            return 0;
-        });
-        return ranking;
+        return data.entrySet()
+                .stream()
+                .map(e -> new Component<>(e.getKey(), e.getValue()))
+                .sorted((c1, c2) -> Integer.compare(c1.count(), c2.count())).toList();
     }
 
-    record Component<T>(T t, int count){};
+    record Component<T>(T t, int count) implements CSVTuple{
+
+        @Override
+        public String toCSVLine() {
+            return t.toString() + "," + count;
+        }
+        
+    };
     
 }

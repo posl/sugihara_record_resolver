@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TypeSet",
+            "request": "launch",
+            "mainClass": "rm4j.io.TypeSet",
+            "projectName": "rm4j"
+        },
+        {
+            "type": "java",
+            "name": "PropertyResolver",
+            "request": "launch",
+            "mainClass": "rm4j.io.PropertyResolver",
+            "projectName": "rm4j"
+        },
+        {
+            "type": "java",
             "name": "APIResolver",
             "request": "launch",
             "mainClass": "rm4j.io.APIResolver",

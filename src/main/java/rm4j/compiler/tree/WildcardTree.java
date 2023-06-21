@@ -76,4 +76,13 @@ public record WildcardTree(ArrayList<AnnotationTree> annotations, WildcardType w
         };
     }
 
+    @Override
+    public String toSourceWithoutAnnotation(){
+        return switch(wildcardType){
+            case WILD -> "?";
+            case CONVARIANT -> "? extends " + bound.toSource("");
+            case CONTRAVARIANT -> "? super " + bound.toSource("");
+        };
+    }
+
 }

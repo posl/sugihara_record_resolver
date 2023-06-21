@@ -7,7 +7,7 @@ import rm4j.compiler.core.CompileException;
 import rm4j.compiler.core.JavaTS;
 import rm4j.compiler.resolution.Accessor;
 
-public record SuperTree(Accessor qualifier)implements ExpressionTree{
+public record SuperTree(Accessor qualifier)implements ExpressionTree, Accessor{
 
     static SuperTree parse(Accessor qualifier, JavaTokenManager src) throws CompileException{
         src.skip(JavaTS.SUPER);

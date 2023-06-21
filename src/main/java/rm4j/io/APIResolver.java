@@ -13,6 +13,7 @@ import java.util.Map;
 
 import rm4j.compiler.core.JavaCompiler;
 import rm4j.compiler.file.ProjectUnit;
+import rm4j.compiler.resolution.PrimitiveType;
 import rm4j.compiler.tree.ClassTree;
 import rm4j.compiler.tree.CompilationUnitTree;
 import rm4j.compiler.tree.ExportsTree;
@@ -28,8 +29,8 @@ public class APIResolver implements Serializable{
     private static final long serialVersionUID = 0xC436E989F898BEEAL;
 
     private static final File API_PATH = new File("../data_original/JavaAPI17");
-    
     public static final File OBJECT_PATH = new File("work/api17info.ser");
+
     public final Map<String, APINameUnit> packages = new HashMap<>();
 
     public static APIResolver deserialize() throws IOException{
@@ -67,30 +68,41 @@ public class APIResolver implements Serializable{
             out.writeObject(this);
         }
     }
-
+    
     public String getFullyQualifiedName(String typeName, List<ImportTree> imports) {
+        String arraySuffix = "";
+        int suffixStart =  typeName.indexOf("[");
+        if(suffixStart != -1){
+            arraySuffix = typeName.substring(suffixStart);
+            typeName = typeName.substring(0, suffixStart);
+        }
+        for(PrimitiveType pt : PrimitiveType.values()){
+            if(pt.name().toLowerCase().equals(typeName)){
+                return typeName + arraySuffix;
+            }
+        }
         String ret = searchAPIType(typeName);
-        if(ret != null){
-            return ret;
+        if(!ret.equals("#userType")){
+            return ret + arraySuffix;
         }
         String name = typeName.replaceFirst("\\..+", "");
         for(ImportTree imp : imports){
             if(!imp.isOnDemand() && imp.qualifiedName().identifier().name().equals(name)){
                 ret = searchAPIType(((TypeTree)imp.qualifiedName().qualifier()).toQualifiedTypeName() + "." + typeName);
-                if(ret != null){
-                    return ret;
+                if(!ret.equals("#userType")){
+                    return ret + arraySuffix;
                 }
             }
         }
         for(ImportTree imp : imports){
             if(imp.isOnDemand()){
                 ret = searchAPIType(imp.qualifiedName().toQualifiedTypeName() + "." + typeName);
-                if(ret != null){
-                    return ret;
+                if(!ret.equals("#userType")){
+                    return ret + arraySuffix;
                 }
             }
         }
-        return searchAPIType("java.lang." + typeName);
+        return searchAPIType("java.lang." + typeName) + arraySuffix;
     }
 
     private String searchAPIType(String typeName){
@@ -115,7 +127,7 @@ public class APIResolver implements Serializable{
                 }
             }
         }
-        return null;
+        return "#userType";
     }
 
     private APINameUnit resolvePackage(String packageName, File module, JavaCompiler compiler) throws IOException{

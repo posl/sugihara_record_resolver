@@ -2,7 +2,7 @@ package rm4j.io;
 
 import java.io.Serializable;
 
-public record Date(int year, int month, int date, int hrs, int min, int sec) implements Comparable<Date>, Serializable{
+public record Date(int year, int month, int date, int hrs, int min, int sec) implements Comparable<Date>, Cloneable, Serializable{
 
     private static final long serialVersionUID = 0x4434CD1E0808132AL;
 
@@ -27,8 +27,30 @@ public record Date(int year, int month, int date, int hrs, int min, int sec) imp
         return "%d/%d/%d %02d:%02d:%02d".formatted(year, month, date, hrs, min, sec);
     }
 
+    public String toDateString(){
+        return "%d/%d/%d".formatted(year, month, date);
+    }
+
+
     public String toStringForNamingUsage(){
         return "%d-%d-%d:%02d:%02d:%02d".formatted(year, month, date, hrs, min, sec);
+    }
+
+    @Override
+    public Date clone(){
+        return new Date(year, month, date, hrs, min, sec);
+    }
+
+    public Date previousMonth(){
+        int year = this.year;
+        int month = this.month;
+        if(month == 1){
+            year--;
+            month = 12;
+        }else{
+            month--;
+        }
+        return new Date(year, month, date, hrs, min, sec);
     }
 
     public static int convertMonth(String s){
@@ -62,4 +84,5 @@ public record Date(int year, int month, int date, int hrs, int min, int sec) imp
             Integer.parseInt(contents[4]),
             Integer.parseInt(contents[5]));
     }
+
 }

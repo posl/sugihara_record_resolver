@@ -13,6 +13,7 @@ import rm4j.compiler.resolution.Scope;
 import rm4j.compiler.resolution.TreeTracker;
 import rm4j.util.functions.CEConsumer;
 import rm4j.util.functions.CEFunction;
+import rm4j.util.functions.CEPredicate;
 
 /**
  * Common interface for all nodes in an abstract syntax tree.
@@ -275,6 +276,25 @@ public interface Tree{
                 children.remove(0);
             }
         }while(!children.isEmpty());
+    }
+
+    public static List<Tree> extractChildren(Tree tree, CEPredicate<? super Tree> filter) throws CompileException{
+        List<Tree> filtered = new ArrayList<>();
+        List<Tree> children = new LinkedList<>();
+        children.add(tree);
+        do{
+            final int size = children.size();
+            for (int i = 0; i < size; i++){
+                Tree child = children.get(0);
+                if(filter.test(child)){
+                    filtered.add(child);
+                }else{
+                    children.addAll(child.children());
+                }
+                children.remove(0);
+            }
+        }while(!children.isEmpty());
+        return filtered;
     }
 
 }

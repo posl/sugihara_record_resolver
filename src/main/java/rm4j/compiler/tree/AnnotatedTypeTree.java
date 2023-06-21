@@ -42,4 +42,12 @@ public record AnnotatedTypeTree(ArrayList<AnnotationTree> annotations, TypeTree 
         return type.toQualifiedTypeName();
     }
 
+    @Override
+    public String toSourceWithoutAnnotation(){
+        if(type instanceof ArrayTypeTree a){
+            return a.elementType().toSource("") + "[]";
+        }
+        return type.toSource("");
+    }
+
 }
