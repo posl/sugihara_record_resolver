@@ -1,0 +1,3 @@
+commit d1adbcbdf8ccf28c32125f45ddda146b0199cf1c (2022/7/8 16:49:54)
+18,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/where/OrPredicate.java,0,1,0,-1,0,0,0,0,0
+total,0,1,0,-1,0,0,0,0,0

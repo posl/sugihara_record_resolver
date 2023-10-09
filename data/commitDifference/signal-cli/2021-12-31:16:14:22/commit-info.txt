@@ -1,0 +1,4 @@
+commit ffcda46c31b586c786bae46ddddb405b5e7855cd (2021/12/31 16:14:22)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/Configuration.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/Group.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

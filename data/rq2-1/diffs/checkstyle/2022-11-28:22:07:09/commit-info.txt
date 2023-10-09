@@ -1,0 +1,4 @@
+commit 847203f2b8982017c53be4e0df673759e4fd2c31 (2022/11/28 22:07:09)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/requirethis/InputRequireThisRecordsWithCheckFields.java,1,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/requirethis/InputRequireThisRecordsWithCheckFieldsOverlap.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

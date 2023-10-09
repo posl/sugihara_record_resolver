@@ -1,0 +1,9 @@
+commit 7e541d666ac76a0b2e09feea8b2f67e81e3e5d92 (2022/10/7 18:43:08)
+97,../data_original/repositories/rep381/copied/pdfsam/pdfsam-gui/src/main/java/org/pdfsam/gui/components/notification/RemoveNotificationRequest.java,1,0,0,0,0,0,0,0,0
+194,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/ComboItem.java,0,0,0,0,0,1,0,-1,0
+195,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/InputPdfArgumentsLoadRequest.java,0,0,0,-1,0,0,0,-1,1
+196,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetActiveDashboardItemRequest.java,1,0,0,0,0,0,0,0,0
+197,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetActiveToolRequest.java,0,0,0,-1,0,0,0,-1,1
+198,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetTitleRequest.java,1,0,0,0,0,0,0,0,0
+199,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/dnd/FilesDroppedEvent.java,1,0,0,0,0,0,0,0,0
+total,4,0,0,-2,0,1,0,-3,2

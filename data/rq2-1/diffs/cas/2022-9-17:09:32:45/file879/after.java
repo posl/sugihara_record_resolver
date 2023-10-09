@@ -1,0 +1,182 @@
+package org.apereo.cas.services;
+
+import org.apereo.cas.util.CollectionUtils;
+import org.apereo.cas.util.serialization.JacksonObjectMapperFactory;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.val;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+
+import java.io.File;
+import java.net.URI;
+import java.util.List;
+import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * This is {@link ChainingRegisteredServiceAccessStrategyTests}.
+ *
+ * @author Misagh Moayyed
+ * @since 6.5.0
+ */
+@Tag("RegisteredService")
+public class ChainingRegisteredServiceAccessStrategyTests {
+    private static final File JSON_FILE = new File(FileUtils.getTempDirectoryPath(), "ChainingRegisteredServiceAccessStrategyTests.json");
+
+    private static final ObjectMapper MAPPER = JacksonObjectMapperFactory.builder()
+        .defaultTypingEnabled(true).build().toObjectMapper();
+
+    @Test
+    public void verifyDelegatedAccessAnd() {
+        val chain = new ChainingRegisteredServiceAccessStrategy();
+        chain.setOperator(LogicalOperatorTypes.AND);
+        var s1 = new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key1", Set.of("value1")));
+        s1.setDelegatedAuthenticationPolicy(new DefaultRegisteredServiceDelegatedAuthenticationPolicy()
+            .setExclusive(true).setPermitUndefined(true).setAllowedProviders(List.of("P1")));
+        chain.addStrategy(s1);
+
+        var s2 = new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key2", Set.of("value2")));
+        s2.setDelegatedAuthenticationPolicy(new DefaultRegisteredServiceDelegatedAuthenticationPolicy()
+            .setExclusive(false).setPermitUndefined(false).setAllowedProviders(List.of("P2")));
+        chain.addStrategy(s2);
+
+        val delegation = chain.getDelegatedAuthenticationPolicy();
+        assertNotNull(delegation);
+        assertFalse(delegation.isExclusive());
+        assertFalse(delegation.isPermitUndefined());
+        assertTrue(delegation.getAllowedProviders().contains("P1"));
+        assertTrue(delegation.getAllowedProviders().contains("P2"));
+        assertFalse(delegation.isProviderRequired());
+        assertFalse(delegation.isProviderAllowed("P2", new CasRegisteredService()));
+    }
+
+    @Test
+    public void verifyDelegatedAccessOr() {
+        val chain = new ChainingRegisteredServiceAccessStrategy();
+        chain.setOperator(LogicalOperatorTypes.OR);
+        var s1 = new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key1", Set.of("value1")));
+        s1.setDelegatedAuthenticationPolicy(new DefaultRegisteredServiceDelegatedAuthenticationPolicy()
+            .setExclusive(true).setPermitUndefined(true).setAllowedProviders(List.of("P1")));
+        chain.addStrategy(s1);
+
+        var s2 = new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key2", Set.of("value2")));
+        s2.setDelegatedAuthenticationPolicy(new DefaultRegisteredServiceDelegatedAuthenticationPolicy()
+            .setExclusive(false).setPermitUndefined(false).setAllowedProviders(List.of("P2")));
+        chain.addStrategy(s2);
+
+        val delegation = chain.getDelegatedAuthenticationPolicy();
+        assertNotNull(delegation);
+        assertTrue(delegation.isExclusive());
+        assertTrue(delegation.isPermitUndefined());
+        assertTrue(delegation.isProviderRequired());
+
+        assertTrue(delegation.isProviderAllowed("P1", new CasRegisteredService()));
+    }
+
+    @Test
+    public void verifyRequiredAttributes() {
+        val chain = new ChainingRegisteredServiceAccessStrategy();
+        chain.setOperator(LogicalOperatorTypes.AND);
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key1", Set.of("value1"))));
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key2", Set.of("value2"))));
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key1", Set.of("value3"))));
+        val attributes = chain.getRequiredAttributes();
+        assertEquals(2, attributes.size());
+        assertTrue(attributes.containsKey("key1"));
+        assertTrue(attributes.containsKey("key2"));
+        assertTrue(attributes.get("key1").contains("value1"));
+        assertTrue(attributes.get("key1").contains("value3"));
+        assertTrue(attributes.get("key2").contains("value2"));
+    }
+
+    @Test
+    public void verifyAndOperation() {
+        val chain = new ChainingRegisteredServiceAccessStrategy();
+        chain.setOperator(LogicalOperatorTypes.AND);
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(false, true));
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(true, false));
+        assertFalse(chain.isServiceAccessAllowed());
+        assertFalse(chain.isServiceAccessAllowedForSso());
+    }
+
+    @Test
+    public void verifyPrincipalAccessAnd() {
+        val chain = new ChainingRegisteredServiceAccessStrategy();
+        chain.setOperator(LogicalOperatorTypes.AND);
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key1", Set.of("value1"))));
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key2", Set.of("value2"))));
+
+        assertFalse(chain.doPrincipalAttributesAllowServiceAccess(RegisteredServiceAccessStrategyRequest.builder().principalId("casuser")
+            .attributes(CollectionUtils.wrap("key1", Set.of("value1"))).build()));
+        assertFalse(chain.doPrincipalAttributesAllowServiceAccess(RegisteredServiceAccessStrategyRequest.builder().principalId("casuser")
+            .attributes(CollectionUtils.wrap("key2", Set.of("value2"))).build()));
+        assertTrue(chain.doPrincipalAttributesAllowServiceAccess(RegisteredServiceAccessStrategyRequest.builder().principalId("casuser")
+            .attributes(CollectionUtils.wrap("key1", Set.of("value1"), "key2", Set.of("value2"))).build()));
+    }
+
+    @Test
+    public void verifyPrincipalAccessOr() {
+        val chain = new ChainingRegisteredServiceAccessStrategy();
+        chain.setOperator(LogicalOperatorTypes.OR);
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key1", Set.of("value1"))));
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key2", Set.of("value2"))));
+
+        assertTrue(chain.doPrincipalAttributesAllowServiceAccess(RegisteredServiceAccessStrategyRequest.builder().principalId("casuser")
+            .attributes(CollectionUtils.wrap("key1", Set.of("value1"))).build()));
+        assertTrue(chain.doPrincipalAttributesAllowServiceAccess(RegisteredServiceAccessStrategyRequest.builder().principalId("casuser")
+            .attributes(CollectionUtils.wrap("key2", Set.of("value2"))).build()));
+    }
+
+    @Test
+    public void verifyOrOperation() throws Exception {
+        val chain = new ChainingRegisteredServiceAccessStrategy();
+        chain.setUnauthorizedRedirectUrl(new URI("https://google.com"));
+        chain.setOperator(LogicalOperatorTypes.OR);
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(false, true));
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(true, false));
+        assertTrue(chain.isServiceAccessAllowed());
+        assertTrue(chain.isServiceAccessAllowedForSso());
+        assertNotNull(chain.getUnauthorizedRedirectUrl());
+    }
+
+
+    @Test
+    public void verifySerializeToJson() throws Exception {
+        val chain = new ChainingRegisteredServiceAccessStrategy();
+        chain.setUnauthorizedRedirectUrl(new URI("https://google.com"));
+        chain.setOperator(LogicalOperatorTypes.OR);
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(false, true));
+        chain.addStrategy(new DefaultRegisteredServiceAccessStrategy(true, false));
+
+        MAPPER.writeValue(JSON_FILE, chain);
+        val policyRead = MAPPER.readValue(JSON_FILE, ChainingRegisteredServiceAccessStrategy.class);
+        assertEquals(chain, policyRead);
+    }
+
+    @Test
+    public void verifyPrincipalAccessMixedRules() throws Exception {
+        val chain1 = new ChainingRegisteredServiceAccessStrategy();
+        chain1.setOperator(LogicalOperatorTypes.AND);
+        chain1.addStrategy(new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key1", Set.of("value1"))));
+        chain1.addStrategy(new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key2", Set.of("value2"))));
+
+        val chain2 = new DefaultRegisteredServiceAccessStrategy(CollectionUtils.wrap("key3", Set.of("value3")));
+
+        val parentChain = new ChainingRegisteredServiceAccessStrategy();
+        parentChain.setOperator(LogicalOperatorTypes.OR);
+        parentChain.addStrategies(chain1, chain2);
+
+        assertFalse(parentChain.doPrincipalAttributesAllowServiceAccess(RegisteredServiceAccessStrategyRequest.builder().principalId("casuser")
+            .attributes(CollectionUtils.wrap("key1", Set.of("value1"))).build()));
+        assertFalse(parentChain.doPrincipalAttributesAllowServiceAccess(RegisteredServiceAccessStrategyRequest.builder().principalId("casuser")
+            .attributes(CollectionUtils.wrap("key2", Set.of("value2"))).build()));
+
+        assertTrue(parentChain.doPrincipalAttributesAllowServiceAccess(RegisteredServiceAccessStrategyRequest.builder().principalId("casuser")
+            .attributes(CollectionUtils.wrap("key1", Set.of("value1"), "key2", Set.of("value2"))).build()));
+        assertTrue(parentChain.doPrincipalAttributesAllowServiceAccess(RegisteredServiceAccessStrategyRequest.builder().principalId("casuser")
+            .attributes(CollectionUtils.wrap("key3", Set.of("value3"))).build()));
+    }
+}

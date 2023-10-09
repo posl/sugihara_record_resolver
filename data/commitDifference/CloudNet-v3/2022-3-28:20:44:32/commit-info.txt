@@ -1,0 +1,4 @@
+commit 3410f37fe147c75aa0fcc851ceb313642c9dd5ca (2022/3/28 20:44:32)
+1: ../data/repositories/CloudNet-v3/modules/bridge/src/main/java/eu/cloudnetservice/modules/bridge/config/ProxyFallback.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/modules/bridge/src/main/java/eu/cloudnetservice/modules/bridge/config/ProxyFallbackConfiguration.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 1

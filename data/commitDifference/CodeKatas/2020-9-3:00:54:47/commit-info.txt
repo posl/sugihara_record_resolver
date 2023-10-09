@@ -1,0 +1,6 @@
+commit 2984118c83054de54198c06d14c09d1a1c736f14 (2020/9/3 00:54:47)
+1: ../data/repositories/CodeKatas/donut-kata-solutions/src/main/java/bnymellon/codekatas/donutkata/Customer.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CodeKatas/donut-kata-solutions/src/main/java/bnymellon/codekatas/donutkata/Delivery.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/CodeKatas/donut-kata-solutions/src/main/java/bnymellon/codekatas/donutkata/Donut.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/CodeKatas/donut-kata-solutions/src/main/java/bnymellon/codekatas/donutkata/Order.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,6 @@
+commit b7f24bdc4bc8a4427d71325ddbb33ca327d182a7 (2022/5/4 13:15:13)
+1: ../data/repositories/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/inference/results/QuestionAnsweringInferenceResults.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/NerProcessor.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/QuestionAnsweringProcessor.java, 3, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/tokenizers/TokenizationResult.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 2

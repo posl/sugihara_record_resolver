@@ -1,0 +1,4 @@
+commit c735b586073beed78f4eaa08b7a9266d55eef5fd (2021/10/5 15:21:12)
+1: ../data/repositories/spring-data-commons/src/main/java/org/springframework/data/convert/DefaultConverterBuilder.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/spring-data-commons/src/main/java/org/springframework/data/querydsl/binding/PropertyPathInformation.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 2, 0, 0, 0, 0, 0, 0, 0

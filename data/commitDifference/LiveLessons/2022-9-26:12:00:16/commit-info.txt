@@ -1,0 +1,10 @@
+commit f7bd2e76a63c277f78ad1ab8229032a76910bb94 (2022/9/26 12:00:16)
+1: ../data/repositories/LiveLessons/Folders/ForkJoin/src/main/resources/works/LiveLessons/Java8/ex0/src/main/java/ex0.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/LiveLessons/Folders/ForkJoin/src/main/resources/works/LiveLessons/Java8/ex38/src/main/java/utils/GCDParam.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/LiveLessons/Folders/ForkJoin/src/main/resources/works/LiveLessons/Java8/ex38/src/main/java/utils/GCDResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/LiveLessons/Folders/ForkJoin/src/main/resources/works/LiveLessons/Java8/ex9/src/main/java/utils/PrimeResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/LiveLessons/Folders/ForkJoin/src/main/resources/works/LiveLessons/Loom/ex2/src/main/java/utils/GCDResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/LiveLessons/Folders/ForkJoin/src/main/resources/works/LiveLessons/Loom/ex2/src/main/java/utils/PrimeResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/LiveLessons/Folders/ForkJoin/src/main/resources/works/LiveLessons/Reactive/flux/ex2/src/main/java/utils/PrimeResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/LiveLessons/Folders/ForkJoin/src/main/resources/works/LiveLessons/Reactor/ex2/src/main/java/utils/TimerManager.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 8, 0, 0, 0, 0, 0, 0, 0, 0

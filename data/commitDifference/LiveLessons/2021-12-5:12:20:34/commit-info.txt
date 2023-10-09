@@ -1,0 +1,4 @@
+commit 94e8d13fbfebda0e9c1b4ecd6cc4a5593ba55e97 (2021/12/5 12:20:34)
+1: ../data/repositories/LiveLessons/Java8/ex38/src/main/java/utils/GCDParam.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/LiveLessons/Java8/ex38/src/main/java/utils/GCDResult.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 1

@@ -1,0 +1,5 @@
+commit 32e2f3785c442e9032f1667e756164d8743fd08c (2022/12/1 10:21:57)
+1: ../data/repositories/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/AggregationRequestSpec.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/MessagesRequestSpec.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/response/ResponseSchemaEntry.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 3

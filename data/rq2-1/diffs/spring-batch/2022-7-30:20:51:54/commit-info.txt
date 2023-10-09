@@ -1,0 +1,3 @@
+commit f14d57f2642e8aff64aea059ce694255329ccb3f (2022/7/30 20:51:54)
+1,../data_original/repositories/rep409/copied/spring-batch/spring-batch-infrastructure/src/test/java/org/springframework/batch/item/file/transform/RecordFieldExtractorTests.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

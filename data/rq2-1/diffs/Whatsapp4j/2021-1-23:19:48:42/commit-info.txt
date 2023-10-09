@@ -1,0 +1,14 @@
+commit 867aecd49ff390ea798705363c5aee9a7e7fe127 (2021/1/23 19:48:42)
+11,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/manager/WhatsappDataManager.java,1,0,0,0,0,0,0,0,0
+16,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappManager.java,0,0,0,0,1,0,0,0,0
+17,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappMessage.java,1,0,0,0,0,0,0,0,0
+19,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappNode.java,0,0,0,-1,0,0,0,-1,1
+20,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappQuotedMessage.java,1,0,0,0,0,0,0,0,0
+21,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/request/InitialRequest.java,0,0,0,0,0,1,0,-1,0
+22,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/request/LogOutRequest.java,0,0,0,0,0,1,0,-1,0
+24,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/request/SolveChallengeRequest.java,0,0,0,0,0,1,0,-1,0
+25,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/request/TakeOverRequest.java,0,0,0,0,0,1,0,-1,0
+28,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/Response.java,0,0,0,-1,0,0,0,-1,1
+31,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/utils/BinaryEncoder.java,1,0,0,0,0,0,0,0,0
+32,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/utils/BytesArray.java,0,0,0,-1,0,0,0,-1,1
+total,4,0,0,-3,1,4,0,-7,3

@@ -1,0 +1,5 @@
+commit da4ba4c41fcae24f38fcf9039cf6cb76a7df524f (2022/10/7 12:36:35)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/activity/OwnershipActivityStateDto.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/term/TermOwnershipDto.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/notification/dto/OwnershipPair.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 3

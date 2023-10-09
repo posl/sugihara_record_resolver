@@ -1,0 +1,3 @@
+commit 47acda0287cef480abdbbaffee534bcab0824563 (2023/1/15 15:38:38)
+2,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/imm_ptl_core/src/main/java/qouteall/imm_ptl/core/portal/Portal.java,0,1,0,-1,0,0,0,0,0
+total,0,1,0,-1,0,0,0,0,0

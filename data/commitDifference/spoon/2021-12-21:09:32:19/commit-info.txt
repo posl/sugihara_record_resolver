@@ -1,0 +1,3 @@
+commit 701c585640c88faf93e33631c21a2742420fbadf (2021/12/21 09:32:19)
+1: ../data/repositories/spoon/src/test/resources/records/MultiParameter.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

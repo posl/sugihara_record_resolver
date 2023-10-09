@@ -1,0 +1,4 @@
+commit 70a6a58f7974038e59af05588e9d9904a73a3cd8 (2022/12/16 11:48:22)
+1: ../data/repositories/CloudNet-v3/modules/syncproxy/src/main/java/eu/cloudnetservice/modules/syncproxy/config/SyncProxyConfiguration.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CloudNet-v3/modules/syncproxy/src/main/java/eu/cloudnetservice/modules/syncproxy/config/SyncProxyMotd.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

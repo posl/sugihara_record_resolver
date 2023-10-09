@@ -1,0 +1,3 @@
+commit 5b6012238d4229c0a7d78f3f24df59231a7e2cfd (2022/11/15 15:45:46)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/action/bulk/WriteAckDelay.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

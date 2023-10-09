@@ -1,0 +1,3 @@
+commit 62dd2ee49ebcc182fb3892648c3f3f3840d38652 (2021/11/10 20:12:40)
+1: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/commands/ListAccountsCommand.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

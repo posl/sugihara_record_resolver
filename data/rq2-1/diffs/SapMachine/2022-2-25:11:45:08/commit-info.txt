@@ -1,0 +1,5 @@
+commit 4d17ead5804d4058c9e64f8269bc2dd083374edb (2022/2/25 11:45:08)
+20,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/reflect/ReflectionFactory.java,0,0,1,-1,0,0,0,0,0
+56,../data_original/repositories/rep1322/copied/SapMachine/test/hotspot/jtreg/serviceability/HeapDump/DuplicateArrayClassesTest.java,1,0,0,0,0,0,0,0,0
+122,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/warnings/suppress/SuppressWarningsPackage.java,1,0,0,0,0,0,0,0,0
+total,2,0,1,-1,0,0,0,0,0

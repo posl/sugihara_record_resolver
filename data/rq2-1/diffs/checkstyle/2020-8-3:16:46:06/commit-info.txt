@@ -1,0 +1,3 @@
+commit f225b1bcb43d3541ae0769602e9877c331cb5247 (2020/8/3 16:46:06)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/executablestatementcount/InputExecutableStatementCountRecords.java,6,0,0,0,0,0,0,0,0
+total,6,0,0,0,0,0,0,0,0

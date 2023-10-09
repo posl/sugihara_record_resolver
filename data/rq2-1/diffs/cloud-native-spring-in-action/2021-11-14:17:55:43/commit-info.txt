@@ -1,0 +1,4 @@
+commit 534185be5b322a3e3ad6a8203ad193d28a94ba99 (2021/11/14 17:55:43)
+3,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/Chapter16/16-end/quote-function/src/main/java/com/polarbookshop/quotefunction/domain/Quote.java,1,0,0,0,0,0,0,0,0
+9,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/Chapter16/16-end/quote-service/src/main/java/com/polarbookshop/quoteservice/domain/Quote.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

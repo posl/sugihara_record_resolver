@@ -1,0 +1,79 @@
+/*
+ * This class is distributed as part of the Botania Mod.
+ * Get the Source Code in github:
+ * https://github.com/Vazkii/Botania
+ *
+ * Botania is Open Source and distributed under the
+ * Botania License: http://botaniamod.net/license.php
+ */
+package vazkii.botania.client.integration.jei.crafting;
+
+import mezz.jei.api.constants.VanillaTypes;
+import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
+import mezz.jei.api.gui.ingredient.ICraftingGridHelper;
+import mezz.jei.api.recipe.IFocusGroup;
+import mezz.jei.api.recipe.RecipeIngredientRole;
+import mezz.jei.api.recipe.category.extensions.vanilla.crafting.ICraftingCategoryExtension;
+
+import net.minecraft.core.Registry;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+
+import vazkii.botania.common.crafting.recipe.CompositeLensRecipe;
+import vazkii.botania.common.item.lens.ItemLens;
+import vazkii.botania.common.lib.ModTags;
+
+import javax.annotation.Nonnull;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.StreamSupport;
+
+public class CompositeLensRecipeWrapper implements ICraftingCategoryExtension {
+	private final List<Item> allLenses;
+
+	public CompositeLensRecipeWrapper(CompositeLensRecipe recipe) {
+		allLenses = StreamSupport.stream(Registry.ITEM.getTagOrEmpty(ModTags.Items.LENS).spliterator(), false)
+				.map(ItemStack::new)
+				.filter(s -> !((ItemLens) s.getItem()).isControlLens(s))
+				.filter(s -> ((ItemLens) s.getItem()).isCombinable(s))
+				.map(ItemStack::getItem)
+				.toList();
+	}
+
+	@Override
+	public void setRecipe(@Nonnull IRecipeLayoutBuilder builder, @Nonnull ICraftingGridHelper helper, @Nonnull IFocusGroup focusGroup) {
+		var possibleFirstLenses = focusGroup.getFocuses(VanillaTypes.ITEM, RecipeIngredientRole.INPUT)
+				.filter(f -> allLenses.contains(f.getTypedValue().getIngredient().getItem()))
+				.map(f -> f.getTypedValue().getIngredient().getItem())
+				.toList();
+		if (possibleFirstLenses.isEmpty()) {
+			possibleFirstLenses = allLenses;
+		}
+
+		List<ItemStack> firstInput = new ArrayList<>();
+		List<ItemStack> secondInput = new ArrayList<>();
+		List<ItemStack> outputs = new ArrayList<>();
+
+		for (var firstLens : possibleFirstLenses) {
+			var firstLensStack = new ItemStack(firstLens);
+			for (var secondLens : allLenses) {
+				if (secondLens == firstLens) {
+					continue;
+				}
+
+				ItemStack secondLensStack = new ItemStack(secondLens);
+				if (((ItemLens) firstLens).canCombineLenses(firstLensStack, secondLensStack)) {
+					firstInput.add(firstLensStack);
+					secondInput.add(secondLensStack);
+					outputs.add(((ItemLens) firstLens).setCompositeLens(firstLensStack.copy(), secondLensStack));
+				}
+			}
+		}
+
+		helper.setInputs(builder, VanillaTypes.ITEM,
+				List.of(firstInput, List.of(new ItemStack(Items.SLIME_BALL)), secondInput), 0, 0);
+		helper.setOutputs(builder, VanillaTypes.ITEM, outputs);
+	}
+}

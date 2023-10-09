@@ -1,0 +1,6 @@
+commit a2472c57d8e833ded1d60cb88ed8b696356b667b (2021/6/18 07:30:30)
+1: ../data/repositories/SapMachine/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/src/jdk.jfr/share/classes/jdk/jfr/internal/dcmd/Argument.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/SapMachine/test/jdk/java/io/Serializable/serialFilter/SerialFactoryExample.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/doclet/testNewApiList/mdl/pkg/TestRecord.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 1, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,3 @@
+commit c96397bb327b1231ab3ae1e273271e2c858a2dd9 (2021/11/13 18:38:42)
+1: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/doclet/testSnippetTag/TestSnippetTag.java, 0, 0, 0, 9, 0, 0, 0, 8, 0
+sum: 0, 0, 0, 9, 0, 0, 0, 8, 0

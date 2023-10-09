@@ -1,0 +1,12 @@
+commit 56c61fddd00dd9bd2e58095ddd2101d516e3dea0 (2022/6/15 19:13:39)
+1: ../data/repositories/jenetics/jenetics.ext/src/main/java/io/jenetics/ext/grammar/Cfg.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/jenetics/jenetics.ext/src/main/java/io/jenetics/ext/internal/parser/Token.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/jenetics/jenetics.ext/src/main/java/io/jenetics/ext/util/FlatTreeNode.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+4: ../data/repositories/jenetics/jenetics.ext/src/test/java/io/jenetics/ext/grammar/CfgTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/jenetics/jenetics.incubator/src/main/java/io/jenetics/incubator/grammar/Cfg.java, 0, 0, 0, 0, 5, 0, 0, 0, 0
+6: ../data/repositories/jenetics/jenetics.incubator/src/main/java/io/jenetics/incubator/util/Path.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/jenetics/jenetics.prog/src/main/java/io/jenetics/prog/op/MathExprParser.java, 0, 0, 0, 0, 2, 0, 0, 0, 0
+8: ../data/repositories/jenetics/jenetics/src/jmh/java/io/jenetics/util/ProxySorterPerf.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+9: ../data/repositories/jenetics/jenetics/src/main/java/io/jenetics/AltererResult.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+10: ../data/repositories/jenetics/jenetics/src/main/java/io/jenetics/MutatorResult.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 9, 0, 0, 1, 7, 0, 0, 1, 3

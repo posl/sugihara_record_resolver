@@ -1,0 +1,3 @@
+commit 2c7af5bacd09321f5b7682bbbe547160283aa688 (2022/11/22 19:07:54)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/GroupCipher.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

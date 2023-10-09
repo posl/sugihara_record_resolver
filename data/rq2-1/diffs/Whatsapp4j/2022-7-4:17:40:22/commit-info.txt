@@ -1,0 +1,5 @@
+commit dc5d86879645793c126cc26e6cb900efabbdb085 (2022/7/4 17:40:22)
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionCipher.java,0,0,0,-1,0,0,1,-2,1
+36,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/chat/ChatMute.java,0,0,0,-1,0,0,0,-1,1
+58,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/sync/MutationsRecord.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,1,-4,3

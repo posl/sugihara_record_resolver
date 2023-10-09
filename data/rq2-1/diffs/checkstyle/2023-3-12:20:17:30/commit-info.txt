@@ -1,0 +1,4 @@
+commit 5ceb64bc7b14e74d07c6a77477f690aae89d3fc8 (2023/3/12 20:17:30)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/modifier/classmemberimpliedmodifier/InputClassMemberImpliedModifierNoViolationRecords.java,0,0,2,-7,0,0,0,-5,0
+4,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/modifier/classmemberimpliedmodifier/InputClassMemberImpliedModifierRecords.java,0,0,2,-7,0,0,0,-5,0
+total,0,0,4,-14,0,0,0,-10,0

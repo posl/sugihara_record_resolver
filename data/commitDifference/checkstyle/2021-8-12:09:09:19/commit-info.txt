@@ -1,0 +1,3 @@
+commit f542c83a2340f876229f7da2827da3851c3df4e2 (2021/8/12 09:09:19)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/antlr4/InputAntlr4AstRegressionJava15FinalLocalRecord.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

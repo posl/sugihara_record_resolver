@@ -1,0 +1,4 @@
+commit 565fb3664fb0207b99c2068753a50dd2aaf19c80 (2021/7/5 10:28:17)
+1: ../data/repositories/pcgen/code/src/java/pcgen/base/format/dice/Dice.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/pcgen/code/src/java/pcgen/base/format/dice/Die.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 2, 0, 0, 0, 0, 0, 0, 0

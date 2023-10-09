@@ -1,0 +1,14 @@
+commit 19bb7447dbb4babd6813ba7ebabd98be3ac28251 (2022/11/10 20:49:36)
+12,../data_original/repositories/rep1318/copied/geckolib/Fabric/core/src/main/java/software/bernie/geckolib3/core/easing/EasingFunctionArgs.java,0,0,0,0,1,0,0,0,0
+23,../data_original/repositories/rep1318/copied/geckolib/Fabric/core/src/main/java/software/bernie/geckolib3/core/keyframe/BoneAnimationQueue.java,0,0,0,0,1,0,0,0,0
+107,../data_original/repositories/rep1318/copied/geckolib/Fabric/src/main/java/software/bernie/geckolib3/file/AnimationFile.java,0,0,0,0,1,0,0,0,0
+161,../data_original/repositories/rep1318/copied/geckolib/Fabric/src/main/java/software/bernie/geckolib3/resource/data/GlowingMetadataSection.java,0,0,0,0,1,0,0,0,0
+194,../data_original/repositories/rep1318/copied/geckolib/Forge/core/src/main/java/software/bernie/geckolib3/core/easing/EasingFunctionArgs.java,0,0,0,0,1,0,0,0,0
+205,../data_original/repositories/rep1318/copied/geckolib/Forge/core/src/main/java/software/bernie/geckolib3/core/keyframe/BoneAnimationQueue.java,0,0,0,0,1,0,0,0,0
+285,../data_original/repositories/rep1318/copied/geckolib/Forge/src/main/java/software/bernie/geckolib3/file/AnimationFile.java,0,0,0,0,1,0,0,0,0
+338,../data_original/repositories/rep1318/copied/geckolib/Forge/src/main/java/software/bernie/geckolib3/resource/data/GlowingMetadataSection.java,0,0,0,0,1,0,0,0,0
+366,../data_original/repositories/rep1318/copied/geckolib/Quilt/core/src/main/java/software/bernie/geckolib3/core/easing/EasingFunctionArgs.java,0,0,0,0,1,0,0,0,0
+377,../data_original/repositories/rep1318/copied/geckolib/Quilt/core/src/main/java/software/bernie/geckolib3/core/keyframe/BoneAnimationQueue.java,0,0,0,0,1,0,0,0,0
+461,../data_original/repositories/rep1318/copied/geckolib/Quilt/src/main/java/software/bernie/geckolib3/file/AnimationFile.java,0,0,0,0,1,0,0,0,0
+515,../data_original/repositories/rep1318/copied/geckolib/Quilt/src/main/java/software/bernie/geckolib3/resource/data/GlowingMetadataSection.java,0,0,0,0,1,0,0,0,0
+total,0,0,0,0,12,0,0,0,0

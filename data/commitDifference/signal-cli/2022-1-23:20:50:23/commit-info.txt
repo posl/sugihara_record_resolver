@@ -1,0 +1,4 @@
+commit 95cc0ae7fdaf0cc34742bce38bb456e02653db43 (2022/1/23 20:50:23)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/sendLog/MessageSendLogEntry.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/sendLog/MessageSendLogStore.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

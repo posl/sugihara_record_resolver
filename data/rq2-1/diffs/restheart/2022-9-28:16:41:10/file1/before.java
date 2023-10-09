@@ -1,0 +1,445 @@
+/*-
+ * ========================LICENSE_START=================================
+ * restheart-core
+ * %%
+ * Copyright (C) 2014 - 2022 SoftInstigate
+ * %%
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * =========================LICENSE_END==================================
+ */
+package org.restheart.plugins;
+
+import java.lang.reflect.InvocationTargetException;
+import java.net.URLClassLoader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import org.restheart.Bootstrapper;
+import org.restheart.ConfigurationException;
+import org.restheart.plugins.security.AuthMechanism;
+import org.restheart.plugins.security.Authenticator;
+import org.restheart.plugins.security.Authorizer;
+import org.restheart.plugins.security.TokenManager;
+import org.restheart.utils.PluginUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/**
+ *
+ * @author Andrea Di Cesare {@literal <andrea@softinstigate.com>}
+ */
+public class PluginsFactory {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(PluginsFactory.class);
+
+    private static final Map<String, Map<String, Object>> PLUGINS_CONFS = consumePluginsConfiguration();
+
+    private static final PluginsFactory SINGLETON = new PluginsFactory();
+
+    public static PluginsFactory getInstance() {
+        return SINGLETON;
+    }
+
+    @SuppressWarnings({"unchecked","rawtypes"})
+    private static Map<String, Map<String, Object>> consumePluginsConfiguration() {
+        var pluginsArgs = Bootstrapper.getConfiguration().getPluginsArgs();
+
+        var confs = new HashMap<String, Map<String, Object>>();
+
+        pluginsArgs.forEach((name, params) -> {
+            if (params instanceof Map) {
+                confs.put(name, (Map) params);
+            } else {
+                confs.put(name, new HashMap<>());
+            }
+        });
+
+        return confs;
+    }
+
+    private ArrayList<ClassLoader> classLoaders = new ArrayList<>();
+
+    private PluginsFactory() {
+        classLoaders.add(this.getClass().getClassLoader());
+
+        // take classloaders from PluginsScanner into account
+        if (PluginsScanner.jars != null) {
+            classLoaders.add(new URLClassLoader(PluginsScanner.jars));
+        }
+    }
+
+    private Set<PluginRecord<AuthMechanism>> authMechanismsCache = null;
+
+    /**
+     *
+     * @return the AuthenticationMechanisms
+     */
+    Set<PluginRecord<AuthMechanism>> authMechanisms() {
+        if (authMechanismsCache == null) {
+            authMechanismsCache = createPlugins(PluginsScanner.authMechanisms(), "Authentication Mechanism", Bootstrapper.getConfiguration().getAuthMechanisms());
+        }
+
+        return authMechanismsCache;
+    }
+
+    private Set<PluginRecord<Authenticator>> authenticatorsCache = null;
+
+    /**
+     *
+     * @return the Authenticators
+     */
+    Set<PluginRecord<Authenticator>> authenticators() {
+        if (authenticatorsCache == null) {
+            authenticatorsCache = createPlugins(PluginsScanner.authenticators(), "Authenticator", Bootstrapper.getConfiguration().getAuthenticators());
+        }
+
+        return authenticatorsCache;
+    }
+
+    private Set<PluginRecord<Authorizer>> authorizersCache = null;
+
+    /**
+     *
+     * @return the Authorizers
+     */
+    Set<PluginRecord<Authorizer>> authorizers() {
+        if (authorizersCache == null) {
+            authorizersCache = createPlugins(PluginsScanner.authorizers(), "Authorizer", Bootstrapper.getConfiguration().getAuthorizers());
+        }
+
+        return authorizersCache;
+    }
+
+    private PluginRecord<TokenManager> tokenManagerCache = null;
+
+    /**
+     *
+     * @return the Token Manager
+     */
+    PluginRecord<TokenManager> tokenManager() {
+        if (tokenManagerCache == null) {
+            Set<PluginRecord<TokenManager>> tkms = createPlugins(PluginsScanner.tokenManagers(), "Token Manager", Bootstrapper.getConfiguration().getTokenManagers());
+
+            if (tkms != null) {
+                var tkm = tkms.stream().filter(t -> t.isEnabled()).findFirst();
+
+                if (tkm != null && tkm.isPresent()) {
+                    tokenManagerCache = tkm.get();
+                }
+            }
+        }
+
+        return tokenManagerCache;
+    }
+
+    private Set<PluginRecord<Initializer>> initializersCache = null;
+
+    /**
+     * create the initializers
+     */
+    Set<PluginRecord<Initializer>> initializers() {
+        if (initializersCache == null) {
+            initializersCache = createPlugins(PluginsScanner.initializers(), "Initializer", PLUGINS_CONFS);
+        }
+
+        return initializersCache;
+    }
+
+    private Set<PluginRecord<Interceptor<?, ?>>> interceptorsCache = null;
+
+    /**
+     * creates the interceptors
+     */
+    Set<PluginRecord<Interceptor<?, ?>>> interceptors() {
+        if (interceptorsCache == null) {
+            interceptorsCache = createPlugins(PluginsScanner.interceptors(), "Interceptor", PLUGINS_CONFS);
+        }
+
+        return interceptorsCache;
+    }
+
+    private Set<PluginRecord<Service<?, ?>>> servicesCache = null;
+
+    /**
+     * creates the services
+     */
+    Set<PluginRecord<Service<?, ?>>> services() {
+        if (this.servicesCache == null) {
+            servicesCache = createPlugins(PluginsScanner.services(), "Service", PLUGINS_CONFS);
+        }
+
+        return servicesCache;
+    }
+
+    private Set<PluginRecord<Provider<?>>> providersCache = null;
+    private ProvidersChecker providersChecker = null;
+
+    /**
+     * creates the providers
+     */
+    Set<PluginRecord<Provider<?>>> providers() {
+        if (this.providersCache == null) {
+            // ProvidersChecker needs to be initialized with providers
+            // so we instantial them all
+            // afterward, we can check it
+
+            // other plugins (such as Services) can be checked without being
+            // instantiated first (with PluginDescriptor from PluginsScanner)
+            // TODO. checkDependencies for other plugins
+
+            // instantial all providers
+            Set<PluginRecord<Provider<?>>> providers = createPlugins(PluginsScanner.providers(), "Provider", PLUGINS_CONFS);
+
+            // ProvidersChecker needs the instantiated providers
+            this.providersChecker = new ProvidersChecker(providers);
+
+            // only register valid plugins (that passed ProvidersChecker.checkDependencies)
+            this.providersCache = PluginsScanner.providers().stream()
+                .filter(this.providersChecker::checkDependencies)
+                .map(pd -> providers.stream().filter(p -> p.getClassName().equals(pd.clazz())).findFirst())
+                .filter(p -> p.isPresent())
+                .map(p -> p.get())
+                .collect(Collectors.toSet());
+        }
+
+        return providersCache;
+    }
+
+
+    /**
+     * @param type the class of the plugin , e.g. Initializer.class
+     */
+    @SuppressWarnings("unchecked")
+    private <T extends Plugin> Set<PluginRecord<T>> createPlugins(ArrayList<PluginDescriptor> pluginDescriptors, String type, Map<String, Map<String, Object>> confs) {
+        var ret = new LinkedHashSet<PluginRecord<T>>();
+
+        // sort by priority
+        pluginDescriptors.sort((PluginDescriptor cd1, PluginDescriptor cd2) -> {
+            try {
+                var clazz1 = loadPluginClass(cd1);
+                var clazz2 = loadPluginClass(cd2);
+                return Integer.compare(priority(clazz1), priority(clazz2));
+            } catch (ClassNotFoundException cnfe) {
+                LOGGER.error("error sorting {} plugins by priority", type, cnfe);
+                return -1;
+            }
+        });
+
+        pluginDescriptors.stream().forEachOrdered(plugin -> {
+            try {
+                var clazz = loadPluginClass(plugin);
+                Plugin i;
+
+                var name = name(clazz);
+                var description = description(clazz);
+                var secure = secure(clazz);
+                var enabledByDefault = enabledByDefault(clazz);
+                var enabled = PluginRecord.isEnabled(enabledByDefault, confs != null ? confs.get(name) : null);
+
+                if (enabled) {
+                    i = instantiatePlugin(clazz, type, name, confs);
+
+                    var pr = new PluginRecord<>(name, description, secure, enabledByDefault, clazz.getName(), (T) i,
+                            confs != null ? confs.get(name) : null);
+
+                    this.INSTANTIATED_PLUGINS_RECORDS.put(i.getClass().getName(), pr);
+
+                    if (pr.isEnabled()) {
+                        ret.add(pr);
+                        LOGGER.debug("Registered {} {}: {}", type, name, description);
+
+                        if (!plugin.injections().isEmpty()) {
+                            var ip = new InstatiatedPlugin(name, type, plugin, clazz, i);
+                            PLUGINS_TO_INJECT_DEPS.add(ip);
+                        }
+                    }
+                } else {
+                    LOGGER.debug("{} {} is disabled", type, name);
+                }
+            } catch (ClassNotFoundException | ConfigurationException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
+                LOGGER.error("Error registering {} {}: {}", type, plugin.clazz(), getRootException(e).getMessage(), e);
+            }
+        });
+
+        return ret;
+    }
+
+    Map<String, Class<Plugin>> PC_CACHE = new HashMap<>();
+
+    @SuppressWarnings("unchecked")
+    private Class<Plugin> loadPluginClass(PluginDescriptor plugin) throws ClassNotFoundException {
+        if (PC_CACHE.containsKey(plugin.clazz())) {
+            return PC_CACHE.get(plugin.clazz());
+        }
+
+        for (var classLoader : this.classLoaders) {
+            try {
+                var pluginc = (Class<Plugin>) classLoader.loadClass(plugin.clazz());
+
+                PC_CACHE.put(plugin.clazz(), pluginc);
+                return pluginc;
+            } catch (ClassNotFoundException cnfe) {
+                // nothing to do
+            }
+        }
+
+        throw new ClassNotFoundException("plugin class not found " + plugin.clazz());
+    }
+
+    @SuppressWarnings("rawtypes")
+    private Plugin instantiatePlugin(Class<Plugin> pc, String pluginType, String pluginName, Map confs) throws InstantiationException, IllegalAccessException, InvocationTargetException, IllegalArgumentException, SecurityException, ClassNotFoundException {
+        try {
+            return pc.getDeclaredConstructor().newInstance();
+        } catch (NoSuchMethodException nme) {
+            throw new ConfigurationException(pluginType + " " + pluginName + " does not have default constructor " + pc.getSimpleName() + "()");
+        }
+    }
+
+    private ArrayList<InstatiatedPlugin> PLUGINS_TO_INJECT_DEPS = new ArrayList<>();
+
+    private HashMap<String, PluginRecord<?>> INSTANTIATED_PLUGINS_RECORDS = new HashMap<>();
+
+    void injectDependencies() {
+        for (var ip: PLUGINS_TO_INJECT_DEPS) {
+            try {
+                inject(ip);
+            } catch (InvocationTargetException ite) {
+                if (ite.getCause() != null && ite.getCause() instanceof NoClassDefFoundError) {
+                    var errMsg = "An external dependency is missing for " + ip.type
+                            + " " + ip.name + ". Copying the missing dependency jar into the plugins directory "
+                            + "should fix the error";
+
+                    LOGGER.error(errMsg, ite);
+                } else {
+                    LOGGER.error("Error injecting dependency into {} {}: {}", ip.type, ip.name, getRootException(ite).getMessage(), ite);
+                }
+            } catch(NoProviderException npe) {
+                LOGGER.error("Error injecting dependency into {} {}: {}", ip.type, ip.name, npe.getMessage());
+            } catch (InstantiationException | IllegalAccessException ex) {
+                LOGGER.error("Error injecting dependency into {} {}: {}", ip.type, ip.name, getRootException(ex).getMessage(), ex);
+            }
+        }
+    }
+
+    private void inject(InstatiatedPlugin ip) throws NoProviderException, InstantiationException, IllegalAccessException, InvocationTargetException {
+        setInjectFields(ip);
+        invokeOnInitMethods(ip);
+    }
+
+    private void setInjectFields(InstatiatedPlugin ip) throws NoProviderException, InstantiationException, IllegalAccessException, InvocationTargetException {
+        // finds @Inject methods
+
+        // we need to process methods that are annotated only with @Inject
+        // and have only one method parameter
+
+        var injections = new ArrayList<FieldInjectionDescriptor>();
+        ip.descriptor.injections().stream()
+            .filter(i -> i instanceof FieldInjectionDescriptor)
+            .map(i -> (FieldInjectionDescriptor) i)
+            .forEach(injections::add);
+
+        for (var injection : injections) {
+            // try to set @Inject field
+            try {
+                var field = ip.clazz.getDeclaredField(injection.field());
+
+                // find the provider
+                var providerName = injection.annotationParams().get(0).getValue();
+                var _provider = providers().stream().filter(p -> p.getName().equals(providerName)).findFirst();
+
+                if (_provider.isPresent()) {
+                    var value = _provider.get().getInstance().get(this.INSTANTIATED_PLUGINS_RECORDS.get(ip.clazz.getName()));
+                    field.setAccessible(true);
+                    LOGGER.debug("Injecting {} into field {} of class {}", PluginUtils.name(_provider.get().getInstance()), field.getName(), ip.instance.getClass().getName());
+                    field.set(ip.instance, value);
+                } else {
+                    throw new NoProviderException("no provider found for @Inject(\"" + providerName + "\")");
+                }
+            } catch(NoSuchFieldException nsfe) {
+                // should not happen
+                throw new InvocationTargetException(nsfe);
+            }
+        }
+    }
+
+    private void invokeOnInitMethods(InstatiatedPlugin ip) throws ConfigurationException, InstantiationException, IllegalAccessException, InvocationTargetException {
+        // finds @Inject methods
+
+        // we need to process methods that are annotated only with @Inject
+        // and have only one method parameter
+
+        var injections = new ArrayList<MethodInjectionDescriptor>();
+        ip.descriptor.injections().stream()
+            .filter(i -> i instanceof MethodInjectionDescriptor)
+            .map(i -> (MethodInjectionDescriptor) i)
+            .forEach(injections::add);
+
+        for (var injection : injections) {
+            if (OnInit.class.equals(injection.clazz()) && ip.descriptor.injections().stream()
+                                                            .filter(p -> p instanceof MethodInjectionDescriptor)
+                                                            .map(p -> (MethodInjectionDescriptor) p)
+                                                            .filter(p -> p.methodHash() == injection.methodHash()).count() == 1) {
+                // try to inovke @OnInit() method
+                try {
+                    ip.clazz.getDeclaredMethod(injection.method()).invoke(ip.instance);
+                } catch (NoSuchMethodException nme) {
+                    throw new ConfigurationException(ip.type + " " + ip.name + " has an invalid method @OnInit " + injection.method() + "()");
+                } catch (Throwable t) {
+                    throw new ConfigurationException("Error injecting dependencies into " + ip.type + " " + ip.name, getRootException(t));
+                }
+            }
+        }
+    }
+
+    private Throwable getRootException(Throwable t) {
+        if (t.getCause() != null) {
+            return getRootException(t.getCause());
+        } else {
+            return t;
+        }
+    }
+
+    private int priority(Class<Plugin> p) {
+        return p.getAnnotation(RegisterPlugin.class).priority();
+    }
+
+    private String name(Class<Plugin> p) {
+        return p.getAnnotation(RegisterPlugin.class).name();
+    }
+
+    private String description(Class<Plugin> p) {
+        return p.getAnnotation(RegisterPlugin.class).description();
+    }
+
+    private Boolean enabledByDefault(Class<Plugin> p) {
+        return p.getAnnotation(RegisterPlugin.class).enabledByDefault();
+    }
+
+    private Boolean secure(Class<Plugin> p) {
+        return p.getAnnotation(RegisterPlugin.class).secure();
+    }
+
+    private static record InstatiatedPlugin(String name, String type, PluginDescriptor descriptor, Class<Plugin> clazz, Object instance) {
+    }
+}
+
+class NoProviderException extends Exception {
+    public NoProviderException(String msg) {
+        super(msg);
+    }
+}

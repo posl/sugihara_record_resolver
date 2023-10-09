@@ -1,0 +1,6 @@
+commit 10d5c434487976fe9aee1a8ec2bede05faf565e8 (2023/3/14 08:56:12)
+32,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/Binding.java,0,0,0,-9,0,0,0,-9,2
+38,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/aarch64/CallArranger.java,0,0,1,-2,0,0,0,-1,0
+80,../data_original/repositories/rep1322/copied/SapMachine/src/java.net.http/share/classes/jdk/internal/net/http/common/DebugLogger.java,0,0,1,-1,0,0,0,0,0
+424,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/foreign/NativeTestHelper.java,0,0,1,-1,0,0,0,0,0
+total,0,0,3,-13,0,0,0,-10,2

@@ -1,0 +1,3 @@
+commit 274f3c7cd094578b9009027839bf10d23afcabd5 (2022/7/21 16:38:44)
+1: ../data/repositories/crate/plugins/cr8-copy-s3/src/test/java/io/crate/copy/s3/S3FileReadingCollectorTest.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

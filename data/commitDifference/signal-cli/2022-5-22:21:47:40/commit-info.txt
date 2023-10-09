@@ -1,0 +1,4 @@
+commit 862c2fec8707f87076233b0991e47e6c0b37dfad (2022/5/22 21:47:40)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/LegacyRecipientStore2.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/RecipientStore.java, 0, 0, 1, 0, 0, 0, 4, 0, 0
+sum: 4, 0, 1, 0, 0, 0, 4, 0, 0

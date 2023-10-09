@@ -1,0 +1,4 @@
+commit 50ee77e66bf017fa9f6b15b1519160f973a7f13c (2022/9/2 23:51:55)
+1: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/integration/modules/jei/transfer/EncodePatternTransferHandler.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/integration/modules/jei/transfer/UseCraftingRecipeTransfer.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 1

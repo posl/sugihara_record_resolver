@@ -1,0 +1,4 @@
+commit a3bc754e8077549c75cc75c5b4dd2aeb1237cec8 (2023/5/16 22:50:27)
+1,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/LegacyRecipientStore2.java,0,0,0,-4,0,0,0,-4,4
+2,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/senderKeys/LegacySenderKeySharedStore.java,0,0,0,-2,0,0,0,-2,2
+total,0,0,0,-6,0,0,0,-6,6

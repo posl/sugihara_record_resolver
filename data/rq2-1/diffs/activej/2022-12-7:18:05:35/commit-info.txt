@@ -1,0 +1,5 @@
+commit 2edffde82810e9053dc0cb7e46290c0976f31d18 (2022/12/7 18:05:35)
+11,../data_original/repositories/rep1374/copied/activej/core-stream-codecs/src/main/java/io/activej/streamcodecs/StreamCodecs.java,1,0,0,0,0,0,0,0,0
+16,../data_original/repositories/rep1374/copied/activej/core-stream-codecs/src/main/java/io/activej/streamcodecs/StructuredStreamCodec.java,1,0,0,0,0,0,0,0,0
+38,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/codec/StructuredStreamCodec.java,0,0,0,0,1,0,0,0,0
+total,2,0,0,0,1,0,0,0,0

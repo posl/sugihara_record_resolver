@@ -1,0 +1,4 @@
+commit 320c5eac532e68c4c1d9a0d03ba93f69ebab4057 (2022/9/7 14:55:48)
+2,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/BatchIdentityCheckRequest.java,0,0,0,-2,0,0,0,-2,2
+3,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/BatchIdentityCheckResponse.java,0,0,0,-2,0,0,0,-2,2
+total,0,0,0,-4,0,0,0,-4,4

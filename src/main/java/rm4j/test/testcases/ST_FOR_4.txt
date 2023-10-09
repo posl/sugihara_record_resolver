@@ -1,5 +1,0 @@
-for(int i = 0, n = symbols.length; i < n && ptr.hasNext(); i++, ptr.next()){
-    if(symbols[i] != ptr.element().resolution){
-        return false;
-    }
-}ST_FOR_4

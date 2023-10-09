@@ -1,0 +1,4 @@
+commit d828c2a6424c016103357f9be2a647769164ad06 (2022/8/3 11:10:26)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/health/metadata/HealthMetadata.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/health/node/DiskHealthInfo.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 1

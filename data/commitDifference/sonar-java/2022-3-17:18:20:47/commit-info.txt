@@ -1,0 +1,6 @@
+commit 9ba5c5bc8c9b30f7da2f7123c2b9fe174b13fb89 (2022/3/17 18:20:47)
+1: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/LeftCurlyBraceEndLineCheck_java16.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+2: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/LeftCurlyBraceEndLineCheck_java17.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/LeftCurlyBraceStartLineCheck_java16.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+4: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/LeftCurlyBraceStartLineCheck_java17.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 8, 0, 0, 0, 2, 0, 0, 0, 0

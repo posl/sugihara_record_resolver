@@ -1,0 +1,4 @@
+commit c76018d9eeb049957e168d016d87d653364bfc12 (2021/1/14 09:26:19)
+372,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/jdk/javadoc/doclet/testPreview/api/preview/CoreRecord.java,1,0,0,0,0,0,0,0,0
+373,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/jdk/javadoc/doclet/testPreview/api/preview/CoreRecordComponent.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

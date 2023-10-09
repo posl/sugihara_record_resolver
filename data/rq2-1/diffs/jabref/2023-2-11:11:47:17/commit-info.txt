@@ -1,0 +1,5 @@
+commit 591b34aec34e653a2dff7ec98da086c1d5d6bc08 (2023/2/11 11:47:17)
+2,../data_original/repositories/rep302/copied/jabref/src/main/java/org/jabref/logic/importer/fileformat/mods/Identifier.java,1,0,0,0,0,0,0,0,0
+3,../data_original/repositories/rep302/copied/jabref/src/main/java/org/jabref/logic/importer/fileformat/mods/Name.java,1,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep302/copied/jabref/src/main/java/org/jabref/logic/importer/fileformat/mods/RecordInfo.java,1,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

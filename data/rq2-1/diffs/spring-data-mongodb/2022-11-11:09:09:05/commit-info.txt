@@ -1,0 +1,4 @@
+commit 3b33f90e5cd5ea14d0041da4360a7c46cfc633a8 (2022/11/11 09:09:05)
+10,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/encryption/EncryptionKey.java,2,0,0,0,0,0,0,0,0
+22,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/test/java/org/springframework/data/mongodb/core/encryption/MongoEncryptionConverterUnitTests.java,1,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

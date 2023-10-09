@@ -1,0 +1,4 @@
+commit ba15c617037d999220d54ebd880bdde17e9f05f0 (2023/4/4 14:19:00)
+164,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/parser/JavacParserTest.java,0,0,1,-2,0,0,0,-1,0
+165,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/patterns/DeconstructionDesugaring.java,0,0,1,-6,0,0,0,-5,0
+total,0,0,2,-8,0,0,0,-6,0

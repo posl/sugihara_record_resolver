@@ -1,0 +1,3 @@
+commit c15cc5532c36a1b6db32f339ba528562b137c9b0 (2023/3/10 22:51:08)
+47,../data_original/repositories/rep1645/copied/sirix/bundles/sirix-core/src/main/java/org/sirix/cache/PathSummaryData.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

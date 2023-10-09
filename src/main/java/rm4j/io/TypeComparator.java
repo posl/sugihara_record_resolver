@@ -1,5 +1,6 @@
 package rm4j.io;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -31,18 +32,18 @@ import rm4j.compiler.tree.StatementTree;
 import rm4j.compiler.tree.ThisTree;
 import rm4j.compiler.tree.Tree.DeclarationType;
 
-public class TypeComparator {
+public class TypeComparator implements FileManager{
 
-    private static final File DIFF_DIRECTORY = new File("work/rq2-1/diffs");
+    private static final File DIFF_DIRECTORY = new File("out/rq2-1/diffs");
 
     public void compareType() throws IOException {
         JavaCompiler compiler = new JavaCompiler();
         PropertyResolver resolver = new PropertyResolver();
-        File constructorOverrides = new File("work/rq2-1/constructor_override_cases");
+        File constructorOverrides = new File("out/rq2-1/constructor_override_cases");
         int caseId = 0;
         int[] data = new int[26];
 
-        new FileManager(){}.deleteAll(constructorOverrides);
+        deleteAll(constructorOverrides);
         constructorOverrides.mkdirs();
 
         for(File repository : DIFF_DIRECTORY.listFiles(File::isDirectory)){
@@ -227,7 +228,7 @@ public class TypeComparator {
             }
         }
 
-        File out = new File("work/rq2-1/conversion_data.csv");
+        File out = new File("out/rq2-1/conversion_data.csv");
         out.delete();
         try(FileWriter writer = new FileWriter(out)){
             writer.append("total class -> record refactorings : %d \n".formatted(data[0]));
@@ -249,6 +250,76 @@ public class TypeComparator {
             writer.append("      hashCode()       |   %d   |   %d   |  %d  \n".formatted(data[14], data[17], data[14] - data[17]));
             writer.append("      toString()       |   %d   |   %d   |  %d  \n\n".formatted(data[15], data[18], data[15] - data[18]));
             writer.append("deleted field reference : %d | deleted class getter reference : %d | added record getter reference : %d \n".formatted(data[23], data[24], data[25]));
+        }
+    }
+
+    public void getRecordToClassConversion() throws IOException {
+        JavaCompiler compiler = new JavaCompiler();
+        PropertyResolver resolver = new PropertyResolver();
+        int data[] = new int[9];
+        File toClassConversions = new File("out/rq2-2/to_class_conversions");
+
+        deleteAll(toClassConversions);
+        toClassConversions.mkdirs();
+
+        for(File repository : DIFF_DIRECTORY.listFiles(File::isDirectory)){
+            for(File commitDate : repository.listFiles(File::isDirectory)){
+
+                for(File filePair : commitDate.listFiles(File::isDirectory)){
+                    File before = new File(filePair, "before.java");
+                    File after = new File(filePair, "after.java");
+                    if(before.exists() && after.exists()){
+                        Map<String, ClassTree> oldClassMap = new TypeSet(before, compiler).classes();
+                        Map<String, ClassTree> newClassMap = new TypeSet(after, compiler).classes();
+                        for(String classPath : oldClassMap.keySet()){
+                            ClassTree oldClass = oldClassMap.get(classPath);
+                            if(oldClass.declType() == DeclarationType.RECORD){
+                                ClassTree correspondingType = newClassMap.get(classPath);
+                                if(correspondingType != null && correspondingType.declType() == DeclarationType.CLASS){
+                                    int result = resolver.getClassData(correspondingType);
+                                    data[0]++;
+                                    for(int i = 1; i < 8; i++){
+                                        data[i] += (result>>(i-1))&1;
+                                    }
+                                    if((result & 0b0011111) == 0){
+                                        data[8]++;
+                                        File commitInfo = new File(commitDate, "commit-info.txt");
+                                        try(BufferedReader reader = new BufferedReader(new FileReader(commitInfo))){
+                                            String commitId = reader.readLine().split(" ")[1];
+                                            File dir = new File(toClassConversions, commitId + ":" + filePair.getName());
+                                            if(!dir.exists()){
+                                                dir.mkdir();
+                                                copyFiles(before, new File(dir, "before.java"));
+                                                copyFiles(after, new File(dir, "after.java"));
+                                                File changedClasses = new File(dir, "converted_records.txt");
+                                                if(!changedClasses.exists()){
+                                                    changedClasses.createNewFile();
+                                                }
+                                                try(FileWriter writer = new FileWriter(changedClasses)){
+                                                    writer.append(correspondingType.name().name()+"\n");
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        File out = new File("out/rq2-2/converted_record_data.csv");
+        out.delete();
+        try(FileWriter writer = new FileWriter(out)){
+            writer.append("all_conversions : %d \n".formatted(data[0]));
+            writer.append("has_non_final_fields : %d (%.1f%%) \n".formatted(data[1], toPercentage(data[1], data[0])));
+            writer.append("extends_other_class : %d (%.1f%%) \n".formatted(data[2], toPercentage(data[2], data[0])));
+            writer.append("has_prohibited_modifiers : %d (%.1f%%) \n" .formatted(data[3], toPercentage(data[3], data[0])));
+            writer.append("has_instrance_initializer : %d (%.1f%%) \n".formatted(data[4], toPercentage(data[4], data[0])));
+            writer.append("has_inproper_canonical_constructor: %d (%.1f%%) \n".formatted(data[5], toPercentage(data[5], data[0])));
+            writer.append("has_get_prefixed_getters: %d (%.1f%%) \n".formatted(data[6], toPercentage(data[6], data[0])));
+            writer.append("has_effective_getters: %d (%.1f%%) \n".formatted(data[7], toPercentage(data[7], data[0])));
+            writer.append("none_of_the_above: %d (%.1f%%) \n".formatted(data[8], toPercentage(data[8], data[0])));
         }
     }
 

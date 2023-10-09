@@ -1,0 +1,6 @@
+commit 1af9432b8e849193c925361d89e78737f8e404f0 (2023/5/29 11:41:48)
+72,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/gui/widgets/InfoBar.java,0,0,0,-2,0,0,0,-2,2
+85,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/render/SimpleRenderContext.java,0,0,0,-1,0,0,0,-1,1
+142,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/menu/locator/BlockEntityLocator.java,0,0,0,-1,0,0,0,-1,1
+143,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/menu/locator/PartLocator.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-5,0,0,0,-5,5

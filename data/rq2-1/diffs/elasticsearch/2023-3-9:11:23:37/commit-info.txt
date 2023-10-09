@@ -1,0 +1,5 @@
+commit 88c605a31ffbd606885e1027d53aeaa681db4d63 (2023/3/9 11:23:37)
+2,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/gateway/PrimaryShardAllocator.java,0,3,0,-3,0,0,0,0,0
+3,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/gateway/ReplicaShardAllocator.java,0,2,0,-3,0,0,0,-1,0
+4,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/allocation/SearchableSnapshotAllocator.java,0,0,0,-1,0,0,0,-1,1
+total,0,5,0,-7,0,0,0,-2,1

@@ -1,0 +1,3 @@
+commit 1a230192b61b34010186bf5de41068928590b28a (2022/10/24 16:08:42)
+1,../data_original/repositories/rep844/copied/sonar-java/java-checks-test-sources/src/main/java/checks/TooManyParametersCheck.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

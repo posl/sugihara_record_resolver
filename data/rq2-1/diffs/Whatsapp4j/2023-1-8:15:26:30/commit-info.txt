@@ -1,0 +1,4 @@
+commit 6345a23231c4ab0db28b922fc832a1a552e01f3f (2023/1/8 15:26:30)
+179,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/contact/ContactJid.java,0,0,0,-1,0,0,0,-1,1
+292,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/MessageSendRequest.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-1,0,0,0,-1,1

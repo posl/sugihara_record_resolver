@@ -1,0 +1,3 @@
+commit 484a8a3e4d5eef521754facd2f59d799781f14a3 (2020/10/31 22:30:10)
+1: ../data/repositories/Configurate/core/src/test/java14/org/spongepowered/configurate/objectmapping/RecordDiscovererTest.java, 0, 0, 0, 1, 0, 0, 1, 0, 0
+sum: 0, 0, 0, 1, 0, 0, 1, 0, 0

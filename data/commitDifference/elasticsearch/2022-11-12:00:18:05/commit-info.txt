@@ -1,0 +1,4 @@
+commit 2c7d634b2e4c6bee6de3f69447b9e1f4cb497dc7 (2022/11/12 00:18:05)
+1: ../data/repositories/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/authc/jwt/JwkSetLoader.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/authc/jwt/JwtRealm.java, 0, 0, 0, 0, 0, 0, 2, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 2, 0, 0

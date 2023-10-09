@@ -1,0 +1,13 @@
+commit 5e119ae9c1fe23d9cc24e1547ceaf451245abdf2 (2023/3/2 12:29:30)
+141,../data_original/repositories/rep60/copied/cas/core/cas-server-core-authentication-api/src/main/java/org/apereo/cas/authentication/DefaultAuthenticationTransactionManager.java,0,0,0,-1,0,0,0,-1,1
+173,../data_original/repositories/rep60/copied/cas/core/cas-server-core-authentication-mfa-api/src/main/java/org/apereo/cas/authentication/DefaultMultifactorAuthenticationContextValidator.java,0,0,0,-1,0,0,0,-1,1
+188,../data_original/repositories/rep60/copied/cas/core/cas-server-core-configuration-api/src/main/java/org/apereo/cas/configuration/CasConfigurationPropertiesEnvironmentManager.java,0,0,0,-1,0,0,0,-1,1
+198,../data_original/repositories/rep60/copied/cas/core/cas-server-core-events-api/src/main/java/org/apereo/cas/support/events/listener/CasAuthenticationAuthenticationEventListener.java,0,0,0,0,0,1,0,-1,0
+222,../data_original/repositories/rep60/copied/cas/core/cas-server-core-notifications-api/src/main/java/org/apereo/cas/notifications/sms/RestfulSmsSender.java,0,0,0,-1,0,0,0,-1,1
+303,../data_original/repositories/rep60/copied/cas/core/cas-server-core-validation-api/src/main/java/org/apereo/cas/validation/ImmutableAssertion.java,0,0,0,-1,0,0,0,-1,1
+308,../data_original/repositories/rep60/copied/cas/core/cas-server-core-web-api/src/main/java/org/apereo/cas/web/view/DynamicHtmlView.java,0,0,0,-1,0,0,0,-1,1
+370,../data_original/repositories/rep60/copied/cas/support/cas-server-support-consent-couchdb/src/main/java/org/apereo/cas/consent/CouchDbConsentRepository.java,0,0,0,-1,0,0,0,-1,1
+805,../data_original/repositories/rep60/copied/cas/support/cas-server-support-saml-idp-core/src/main/java/org/apereo/cas/support/saml/services/idp/metadata/SamlRegisteredServiceServiceProviderMetadataFacade.java,0,0,0,-1,0,0,0,-1,1
+900,../data_original/repositories/rep60/copied/cas/support/cas-server-support-sms-smsmode/src/main/java/org/apereo/cas/support/sms/SmsModeSmsSender.java,0,0,0,-1,0,0,0,-1,1
+937,../data_original/repositories/rep60/copied/cas/support/cas-server-support-token-core-api/src/main/java/org/apereo/cas/token/JwtTokenTicketBuilder.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-10,0,1,0,-11,10

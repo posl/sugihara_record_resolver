@@ -1,0 +1,157 @@
+/*
+ * This file is part of Applied Energistics 2.
+ * Copyright (c) 2021, TeamAppliedEnergistics, All rights reserved.
+ *
+ * Applied Energistics 2 is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Applied Energistics 2 is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Applied Energistics 2.  If not, see <http://www.gnu.org/licenses/lgpl>.
+ */
+
+package appeng.helpers.iface;
+
+import java.util.Objects;
+
+import javax.annotation.Nullable;
+
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidStorage;
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
+import net.fabricmc.fabric.api.transfer.v1.item.ItemStorage;
+import net.fabricmc.fabric.api.transfer.v1.item.ItemVariant;
+import net.fabricmc.fabric.api.transfer.v1.storage.Storage;
+import net.fabricmc.fabric.api.transfer.v1.transaction.Transaction;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
+
+import appeng.api.config.Actionable;
+import appeng.api.networking.security.IActionSource;
+import appeng.api.storage.IStorageChannel;
+import appeng.api.storage.IStorageMonitorable;
+import appeng.api.storage.IStorageMonitorableAccessor;
+import appeng.api.storage.StorageChannels;
+import appeng.api.storage.data.AEFluidKey;
+import appeng.api.storage.data.AEItemKey;
+import appeng.api.storage.data.AEKey;
+import appeng.me.storage.StorageAdapter;
+import appeng.util.IVariantConversion;
+
+public interface IInterfaceTarget {
+    @Nullable
+    static IInterfaceTarget get(Level l, BlockPos pos, @Nullable BlockEntity be, Direction side, IActionSource src) {
+        if (be == null)
+            return null;
+
+        // our capability first: allows any storage channel
+        var accessor = IStorageMonitorableAccessor.SIDED.find(l, pos, null, be, side);
+        if (accessor != null) {
+            return wrapStorageMonitorable(accessor, src);
+        }
+
+        // otherwise fall back to the platform capability
+        // TODO: look into exposing this for other storage channels
+        var itemHandler = ItemStorage.SIDED.find(l, pos, null, be, side);
+        var fluidHandler = FluidStorage.SIDED.find(l, pos, null, be, side);
+
+        if (itemHandler != null || fluidHandler != null) {
+            return wrapHandlers(
+                    Objects.requireNonNullElse(itemHandler, Storage.empty()),
+                    Objects.requireNonNullElse(fluidHandler, Storage.empty()),
+                    src);
+        }
+
+        return null;
+    }
+
+    private static IInterfaceTarget wrapStorageMonitorable(IStorageMonitorableAccessor accessor, IActionSource src) {
+        var monitorable = accessor.getInventory(src);
+        if (monitorable == null) {
+            return null;
+        } else {
+            return new IInterfaceTarget() {
+                @Override
+                public long insert(AEKey what, long amount, Actionable type) {
+                    return monitorable.insert(what, amount, type, src);
+                }
+
+                @Override
+                public boolean isBusy() {
+                    for (var channel : StorageChannels.getAll()) {
+                        if (IInterfaceTarget.isChannelBusy(channel, monitorable, src)) {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+            };
+        }
+    }
+
+    private static <T extends AEKey> boolean isChannelBusy(IStorageChannel<T> channel,
+            IStorageMonitorable monitorable, IActionSource src) {
+        var inventory = monitorable.getInventory(channel);
+        if (inventory != null) {
+            for (var stack : inventory.getCachedAvailableStacks()) {
+                if (inventory.extract(stack.getKey(), 1, Actionable.SIMULATE, src) > 0) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private static IInterfaceTarget wrapHandlers(Storage<ItemVariant> itemHandler, Storage<FluidVariant> fluidHandler,
+            IActionSource src) {
+        var itemAdapter = new StorageAdapter<>(IVariantConversion.ITEM, itemHandler, false) {
+            @Override
+            protected void onInjectOrExtract() {
+            }
+        };
+        var fluidAdapter = new StorageAdapter<>(IVariantConversion.FLUID, fluidHandler, false) {
+            @Override
+            protected void onInjectOrExtract() {
+            }
+        };
+        return new IInterfaceTarget() {
+            @Override
+            public long insert(AEKey what, long amount, Actionable type) {
+                if (what instanceof AEItemKey itemKey) {
+                    return itemAdapter.insert(itemKey, amount, type, src);
+                }
+                if (what instanceof AEFluidKey fluidKey) {
+                    return fluidAdapter.insert(fluidKey, amount, type, src);
+                }
+                return 0;
+            }
+
+            @Override
+            public boolean isBusy() {
+                return IInterfaceTarget.canRemove(itemHandler) || IInterfaceTarget.canRemove(fluidHandler);
+            }
+        };
+    }
+
+    private static <T> boolean canRemove(Storage<T> storage) {
+        try (Transaction tx = Transaction.openOuter()) {
+            for (var view : storage.iterable(tx)) {
+                if (!view.isResourceBlank() && view.extract(view.getResource(), Long.MAX_VALUE, tx) > 0) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    long insert(AEKey what, long amount, Actionable type);
+
+    boolean isBusy();
+}

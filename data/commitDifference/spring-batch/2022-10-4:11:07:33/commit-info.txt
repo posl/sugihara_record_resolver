@@ -1,0 +1,3 @@
+commit 27302469abe1ce93f70ece33aa0bee4a64493ad (2022/10/4 11:07:33)
+1: ../data/repositories/spring-batch/spring-batch-core/src/main/java/org/springframework/batch/core/converter/JsonJobParametersConverter.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

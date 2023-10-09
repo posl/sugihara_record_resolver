@@ -1,0 +1,4 @@
+commit f4551b8d2db3f7e9adf322a2c7d7e1fa47001056 (2022/11/4 18:41:58)
+1: ../data/repositories/cloudsimplus/src/main/java/org/cloudbus/cloudsim/hosts/HostStateHistoryEntry.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/cloudsimplus/src/main/java/org/cloudbus/cloudsim/network/topologies/Point2D.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

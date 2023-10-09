@@ -1,0 +1,3 @@
+commit b04e1912b253e4215d74bcf4b4d435d807de868d (2021/12/13 22:57:04)
+1: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/client/gui/NumberEntryType.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,4 @@
+commit 35ea2b13b54ce28ff8a07da3fe0d51be6969ed0d (2022/9/13 09:05:08)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/plugins/scanners/NameToPluginInfo.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/plugins/scanners/PluginInfo.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

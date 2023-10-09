@@ -1,2 +1,0 @@
-"""
-What? Isn"t JavaScript Java?""" EX_LIT_7

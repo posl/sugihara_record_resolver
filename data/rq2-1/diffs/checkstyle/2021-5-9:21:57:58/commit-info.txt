@@ -1,0 +1,3 @@
+commit 80b8568ccfd35ffe977d750c6e879eda55dee8f2 (2021/5/9 21:57:58)
+2,../data_original/repositories/rep88/copied/checkstyle/src/it/resources-noncompilable/org/checkstyle/suppressionxpathfilter/covariantequals/SuppressionXpathRegressionCovariantEqualsInRecord.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

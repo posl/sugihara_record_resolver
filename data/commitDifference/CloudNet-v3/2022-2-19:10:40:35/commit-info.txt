@@ -1,0 +1,4 @@
+commit 745ac8d3f6ef1fa3274792b2d2da2f48b36c4537 (2022/2/19 10:40:35)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/cloudnet/driver/registry/DefaultServiceRegistry.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/cloudnet/driver/registry/DefaultServicesRegistry.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 1, 0, 0, 0, 0

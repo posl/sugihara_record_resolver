@@ -1,0 +1,34 @@
+package org.apereo.cas.configuration.model.support.pac4j;
+
+import org.apereo.cas.configuration.model.RestEndpointProperties;
+import org.apereo.cas.configuration.support.RequiresModule;
+
+import com.fasterxml.jackson.annotation.JsonFilter;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.Accessors;
+
+/**
+ * This is {@link Pac4jDelegatedAuthenticationRestfulProperties}.
+ *
+ * @author Misagh Moayyed
+ * @since 6.4.0
+ */
+@RequiresModule(name = "cas-server-support-pac4j-webflow")
+@Getter
+@Setter
+@Accessors(chain = true)
+@JsonFilter("Pac4jDelegatedAuthenticationRestfulProperties")
+public class Pac4jDelegatedAuthenticationRestfulProperties extends RestEndpointProperties {
+    private static final long serialVersionUID = 3659099897056632608L;
+
+    /**
+     * Specify the format of the payload that would be produced by the REST API.
+     * Accepted values are:
+     * <ul>
+     *     <li>{@code pac4j}: The output must confirm to the syntax controlled by pac4j's {@code PropertiesConfigFactory}</li>
+     *     <li>{@code cas}: The output must should contain properties that allow CAS to build delegated identity providers.</li>
+     * </ul>
+     */
+    private String type = "pac4j";
+}

@@ -1,0 +1,4 @@
+commit 871ae74db1c30ec65b6f1d772add9f01ae2d4f10 (2022/12/24 00:06:02)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/open-ai-chat-bot/src/main/java/org/example/whatsapp/ChatMessage.java,0,0,0,0,1,0,0,0,0
+2,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/open-ai-chat-bot/src/main/java/org/example/whatsapp/ChatRequest.java,0,0,0,0,1,0,0,0,0
+total,0,0,0,0,2,0,0,0,0

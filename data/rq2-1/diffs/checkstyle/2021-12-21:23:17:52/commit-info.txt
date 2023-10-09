@@ -1,0 +1,3 @@
+commit e292c079ced9ede7dfbc657e444208eca5b69538 (2021/12/21 23:17:52)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/design/finalclass/InputFinalClassConstructorInRecord.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

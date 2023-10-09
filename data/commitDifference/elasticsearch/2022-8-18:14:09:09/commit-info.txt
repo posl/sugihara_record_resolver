@@ -1,0 +1,8 @@
+commit 18328b014f957c7cf7d4846b1b16b1feed4052e5 (2022/8/18 14:09:09)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/action/admin/indices/rollover/TransportRolloverAction.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/ClusterStateTaskExecutor.java, 0, 0, 0, 0, 0, 0, 1, 0, 0
+3: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/action/shard/ShardStateAction.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+4: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/coordination/JoinTask.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+5: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/coordination/NodeRemovalClusterStateTaskExecutor.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+6: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/metadata/MetadataIndexStateService.java, 0, 0, 0, 0, 0, 0, 0, 0, 5
+sum: 0, 0, 0, 0, 0, 0, 1, 0, 10

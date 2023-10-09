@@ -1,0 +1,5 @@
+commit de360a2a94e42ef768d8e9293a752279fdcedaaa (2022/11/16 21:13:07)
+1,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/imm_ptl_core/src/main/java/qouteall/imm_ptl/core/portal/animation/AnimationContext.java,1,0,0,0,0,0,0,0,0
+2,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/imm_ptl_core/src/main/java/qouteall/imm_ptl/core/portal/animation/AnimationResult.java,1,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/imm_ptl_core/src/main/java/qouteall/imm_ptl/core/portal/animation/UnilateralPortalState.java,0,0,0,-1,0,0,0,-1,1
+total,2,0,0,-1,0,0,0,-1,1

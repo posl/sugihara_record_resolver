@@ -1,0 +1,3 @@
+commit 9f2b96d82e7a67aa6dddabf0fd2ae310749c39fd (2022/7/29 11:14:51)
+1: ../data/repositories/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/tokenizers/PrecompiledCharMapNormalizer.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

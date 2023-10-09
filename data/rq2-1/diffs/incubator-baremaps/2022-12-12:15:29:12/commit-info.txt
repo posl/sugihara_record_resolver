@@ -1,0 +1,4 @@
+commit 47508fbb0c09e716d169b4c360c5fd44d7f2da4f (2022/12/12 15:29:12)
+7,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/CreateIplocIndex.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/UngzipFile.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

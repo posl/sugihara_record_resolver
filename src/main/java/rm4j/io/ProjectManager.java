@@ -22,10 +22,13 @@ import java.util.function.UnaryOperator;
 import rm4j.compiler.core.CompileException;
 import rm4j.compiler.core.JavaCompiler;
 import rm4j.compiler.file.ProjectUnit;
+import rm4j.compiler.tree.AssignmentTree;
 import rm4j.compiler.tree.ClassTree;
 import rm4j.compiler.tree.CompilationUnitTree;
 import rm4j.compiler.tree.InstanceOfTree;
+import rm4j.compiler.tree.MethodInvocationTree;
 import rm4j.compiler.tree.MethodTree;
+import rm4j.compiler.tree.NewClassTree;
 import rm4j.compiler.tree.Tree;
 import rm4j.compiler.tree.TypeTree;
 import rm4j.compiler.tree.VariableTree;
@@ -38,7 +41,7 @@ import rm4j.util.functions.CEConsumer;
 public class ProjectManager implements FileManager{
 
     private static final Date HEAD_COMMIT_STAMP = new Date(2023, 6, 1);
-    private static final File INSTANCES_PARENT = new File("work/project_specs");
+    private static final File INSTANCES_PARENT = new File("out/project_specs");
     private static final File PROJECTS_PARENT = new File("../data_original/repositories");
 
     private final ProjectSpec spec;
@@ -259,7 +262,7 @@ public class ProjectManager implements FileManager{
     public String collectDifferenceData() throws IOException{
         System.out.println("collecting commit info of %s...".formatted(getProjectName()));
         JavaCompiler compiler = new JavaCompiler();
-        File workDir = new File("work/rq2-1/diffs/" + getProjectName());
+        File workDir = new File("out/rq2-1/diffs/" + getProjectName());
 
         deleteAll(workDir);
         workDir.mkdirs();
@@ -269,7 +272,7 @@ public class ProjectManager implements FileManager{
         CommitInfo[] commitTrace = spec.commitTrace().commits();
 
         try(FileWriter repStatOut = new FileWriter(repStat)){
-            File backup = new File("work/rq2-1/backup");
+            File backup = new File("out/rq2-1/backup");
             int[] sumOfRepository = new int[9];
             String buf;
             repStatOut.write(getProjectName() + "\n");
@@ -357,6 +360,90 @@ public class ProjectManager implements FileManager{
             }
         }
         return changedFiles;
+    }
+
+    public String collectClassData() throws IOException{
+        final PropertyResolver propResolver = new PropertyResolver();
+        int[] data = new int[9];
+        new ProjectUnit(original(), t -> {
+            if(t instanceof ClassTree c && c.declType() == DeclarationType.CLASS){
+                int result = propResolver.getClassData(c);
+                data[0]++;
+                for(int i = 1; i < 8; i++){
+                    data[i] += (result>>(i-1))&1;
+                }
+                if((result & 0b0011111) == 0){
+                    data[8]++;
+                }
+            }
+        });
+        String buf = getProjectName() + ",";
+        for(int i = 0; i < data.length; i++){
+            buf += data[i] + ((i == data.length - 1)? "" : ",");
+        }
+        return buf;
+    }
+
+    public String collectClassesAndExpressions(){
+        int[] data = new int[9];
+        new ProjectUnit(original(), t -> {
+            if(t instanceof ClassTree c){
+                switch(c.declType()){
+                    case CLASS -> data[0]++;
+                    case ENUM -> data[1]++;
+                    case INTERFACE -> data[2]++;
+                    case ANNOTATION_INTERFACE -> data[3]++;
+                    case RECORD -> data[4]++;
+                    default -> {}
+                }
+                data[5]++;
+            }else if(t instanceof AssignmentTree as){
+                data[6]++;
+            }else if(t instanceof VariableTree v){
+                do{
+                    if(v.initializer() != null){
+                        data[6]++;
+                    }
+                }while((v = v.follows()) != null);
+            }else if(t instanceof MethodInvocationTree mi){
+                data[7] += mi.arguments().size();
+            }else if(t instanceof NewClassTree nc){
+                data[7] += nc.arguments().size();
+            }
+        });
+        data[8] = data[6] + data[7]; 
+        String buf = getProjectName() + ",";
+        for(int i = 0; i < data.length; i++){
+            buf += data[i] + ((i == data.length - 1)? "" : ",");
+        }
+        return buf;
+    }
+
+    public String collectAccessorsInfo(){
+        final PropertyResolver propResolver = new PropertyResolver();
+        int[] data = new int[3];
+        new ProjectUnit(original(), t -> {
+            if(t instanceof ClassTree c){
+                c.members().forEach(member -> {
+                    if(member instanceof MethodTree m){
+                        if(propResolver.isEffectivelyGetter(m, c)){
+                            data[0]++;
+                        }
+                        if(propResolver.isGetPrefixedMethod(m) && propResolver.isEffectivelyGetter(m, c)){
+                            data[1]++;
+                        }
+                        if(propResolver.isRecordFormatGetter(m, c) && propResolver.isEffectivelyGetter(m, c)){
+                            data[2]++;
+                        }
+                    }
+                });
+            }
+        });
+        String buf = getProjectName() + ",";
+        for(int i = 0; i < data.length; i++){
+            buf += data[i] + ((i == data.length - 1)? "" : ",");
+        }
+        return buf;
     }
     
     private boolean run(String cmd, File dir) throws IOException{

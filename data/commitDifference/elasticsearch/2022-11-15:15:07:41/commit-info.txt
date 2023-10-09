@@ -1,0 +1,4 @@
+commit d891b1fb1bbdb4e0b55c1131babc18bafd3a3041 (2022/11/15 15:07:41)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/action/admin/indices/rollover/TransportRolloverAction.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/metadata/IndexMetadataStats.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 1

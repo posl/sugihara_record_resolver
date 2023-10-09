@@ -1,0 +1,4 @@
+commit eef4512fe39d06ef165258ab92cda60c8f959588 (2023/1/30 19:54:43)
+10,../data_original/repositories/rep1374/copied/activej/core-codegen/src/main/java/io/activej/codegen/expression/Expression_Compare.java,1,0,0,0,0,0,0,0,0
+54,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-cube/src/main/java/io/activej/cube/http/PredicateDefJsonCodec.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

@@ -1,0 +1,5 @@
+commit 8d502e67eb8dec04197ceb6bd586a37ee1872b89 (2022/5/24 17:29:14)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/plugins/PluginApiInfo.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/plugins/PluginIntrospector.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/plugins/PluginRuntimeInfo.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

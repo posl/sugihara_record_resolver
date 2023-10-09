@@ -1,0 +1,4 @@
+commit d0e4e65e2a1d39e12526dba8a52d7a9cb88da144 (2022/12/1 09:45:22)
+1: ../data/repositories/graylog2-server/graylog2-server/src/main/java/org/graylog2/rest/resources/entities/FilterOption.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/graylog2-server/graylog2-server/src/main/java/org/graylog2/rest/resources/entities/Sorting.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

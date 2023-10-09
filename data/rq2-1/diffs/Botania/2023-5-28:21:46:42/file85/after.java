@@ -1,0 +1,59 @@
+/*
+ * This class is distributed as part of the Botania Mod.
+ * Get the Source Code in github:
+ * https://github.com/Vazkii/Botania
+ *
+ * Botania is Open Source and distributed under the
+ * Botania License: http://botaniamod.net/license.php
+ */
+package vazkii.botania.common.item.lens;
+
+import com.google.common.base.Predicates;
+import com.google.common.collect.Iterables;
+
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.ExperienceOrb;
+import net.minecraft.world.entity.item.FallingBlockEntity;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.item.PrimedTnt;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.projectile.ThrowableProjectile;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.AABB;
+
+import vazkii.botania.api.internal.ManaBurst;
+import vazkii.botania.common.item.BotaniaItems;
+
+public class InfluenceLens extends Lens {
+
+	@Override
+	public void updateBurst(ManaBurst burst, ItemStack stack) {
+		Entity entity = burst.entity();
+		if (!burst.isFake()) {
+			double range = 3.5;
+			AABB bounds = new AABB(entity.getX() - range, entity.getY() - range, entity.getZ() - range, entity.getX() + range, entity.getY() + range, entity.getZ() + range);
+			var items = entity.getLevel().getEntitiesOfClass(ItemEntity.class, bounds);
+			var expOrbs = entity.getLevel().getEntitiesOfClass(ExperienceOrb.class, bounds);
+			var arrows = entity.getLevel().getEntitiesOfClass(AbstractArrow.class, bounds);
+			var fallingBlocks = entity.getLevel().getEntitiesOfClass(FallingBlockEntity.class, bounds);
+			var primedTnt = entity.getLevel().getEntitiesOfClass(PrimedTnt.class, bounds);
+			var bursts = entity.getLevel().getEntitiesOfClass(ThrowableProjectile.class, bounds, Predicates.instanceOf(ManaBurst.class));
+
+			var concat = Iterables.concat(items, expOrbs, arrows, fallingBlocks, primedTnt, bursts);
+			for (Entity movable : concat) {
+				if (movable == burst) {
+					continue;
+				}
+
+				if (movable instanceof ManaBurst otherBurst) {
+					ItemStack lens = otherBurst.getSourceLens();
+					if (!lens.isEmpty() && lens.is(BotaniaItems.lensInfluence)) {
+						continue;
+					}
+				}
+				movable.setDeltaMovement(entity.getDeltaMovement());
+			}
+		}
+	}
+
+}

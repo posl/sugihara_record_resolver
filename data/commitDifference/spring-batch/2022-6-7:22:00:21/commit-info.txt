@@ -1,0 +1,4 @@
+commit 83d01fbfca6554ad609cf502a810b4da4da6f391 (2022/6/7 22:00:21)
+1: ../data/repositories/spring-batch/spring-batch-infrastructure/src/test/java/org/springframework/batch/item/file/builder/FlatFileItemReaderBuilderTests.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+2: ../data/repositories/spring-batch/spring-batch-infrastructure/src/test/java/org/springframework/batch/item/file/builder/FlatFileItemWriterBuilderTests.java, 0, 0, 0, 2, 0, 0, 0, 2, 0
+sum: 0, 0, 0, 3, 0, 0, 0, 3, 0

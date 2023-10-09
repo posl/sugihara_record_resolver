@@ -1,0 +1,7 @@
+commit 397d3cb45a0c1f63deafcc921bd59bf06a9743e6 (2022/11/16 12:27:00)
+1: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/GiftConfiguration.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+2: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/OneTimeDonationConfiguration.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/OneTimeDonationCurrencyConfiguration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/controllers/SubscriptionController.java, 0, 0, 3, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/Signal-Server/service/src/test/java/org/whispersystems/textsecuregcm/controllers/SubscriptionControllerTest.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 4, 0, 1, 0, 0, 0, 0

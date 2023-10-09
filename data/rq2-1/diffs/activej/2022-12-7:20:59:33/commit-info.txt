@@ -1,0 +1,8 @@
+commit d2c1128ec16295310d926484c98a9d7a5c260c5c (2022/12/7 20:59:33)
+14,../data_original/repositories/rep1374/copied/activej/util-common/src/main/java/io/activej/common/tuple/Tuple1.java,0,1,0,-1,0,0,0,0,0
+15,../data_original/repositories/rep1374/copied/activej/util-common/src/main/java/io/activej/common/tuple/Tuple2.java,0,1,0,-1,0,0,0,0,0
+16,../data_original/repositories/rep1374/copied/activej/util-common/src/main/java/io/activej/common/tuple/Tuple3.java,0,1,0,-1,0,0,0,0,0
+17,../data_original/repositories/rep1374/copied/activej/util-common/src/main/java/io/activej/common/tuple/Tuple4.java,0,1,0,-1,0,0,0,0,0
+18,../data_original/repositories/rep1374/copied/activej/util-common/src/main/java/io/activej/common/tuple/Tuple5.java,0,1,0,-1,0,0,0,0,0
+19,../data_original/repositories/rep1374/copied/activej/util-common/src/main/java/io/activej/common/tuple/Tuple6.java,0,1,0,-1,0,0,0,0,0
+total,0,6,0,-6,0,0,0,0,0

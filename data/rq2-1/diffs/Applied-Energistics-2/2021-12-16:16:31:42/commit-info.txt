@@ -1,0 +1,8 @@
+commit d6132836f1d099ed4f6936a182eb395f1a0026af (2021/12/16 16:31:42)
+8,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/server/testworld/BlockEntityCustomizer.java,0,0,0,-1,0,0,0,-1,1
+12,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/server/testworld/PartCustomizer.java,0,0,0,-1,0,0,0,-1,1
+13,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/server/testworld/PlaceBlockState.java,0,0,0,-1,0,0,0,-1,1
+14,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/server/testworld/PlacePart.java,0,0,0,-1,0,0,0,-1,1
+17,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/server/testworld/PlotTest.java,1,0,0,0,0,0,0,0,0
+18,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/server/testworld/PostGridInitAction.java,0,0,0,-1,0,0,0,-1,1
+total,1,0,0,-5,0,0,0,-5,5

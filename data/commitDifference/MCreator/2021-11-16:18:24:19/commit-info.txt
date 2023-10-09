@@ -1,0 +1,4 @@
+commit 4f308d3fc52d65eaae73eae7713cb06443a697fe (2021/11/16 18:24:19)
+1: ../data/repositories/MCreator/src/main/java/net/mcreator/ui/help/HelpContextWithEntry.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/MCreator/src/main/java/net/mcreator/ui/help/ModElementHelpContext.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 1

@@ -1,0 +1,4 @@
+commit 368684c3889c465f89cffacda195e0ad79e6da3d (2023/5/11 19:35:57)
+5,../data_original/repositories/rep1854/copied/Whatsapp4j/src/test/java/it/auties/whatsapp/github/GithubKey.java,1,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep1854/copied/Whatsapp4j/src/test/java/it/auties/whatsapp/github/GithubUpload.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

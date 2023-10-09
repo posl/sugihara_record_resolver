@@ -1,0 +1,3 @@
+commit a589456b81feaf70fd20fec5c646a79a0d55687b (2022/5/10 07:46:58)
+1: ../data/repositories/elasticsearch/test/framework/src/main/java/org/elasticsearch/index/mapper/MapperTestCase.java, 0, 0, 2, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 2, 0, 0, 0, 0, 0, 0

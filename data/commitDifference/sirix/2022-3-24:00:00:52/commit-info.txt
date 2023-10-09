@@ -1,0 +1,3 @@
+commit 1a75aa0eaef487d0114096e48a8ce0d2bce0ed76 (2022/3/24 00:00:52)
+1: ../data/repositories/sirix/bundles/sirix-xquery/src/main/java/org/sirix/xquery/compiler/translator/DerefDescendantExpr.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

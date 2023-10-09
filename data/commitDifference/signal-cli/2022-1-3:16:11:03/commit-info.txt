@@ -1,0 +1,5 @@
+commit e70463d7b8a9ea921028dc2a0cf77f90998f6831 (2022/1/3 16:11:03)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/JsonStickerPack.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+2: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/StickerPack.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/commands/ListStickerPacksCommand.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 2

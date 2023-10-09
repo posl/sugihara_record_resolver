@@ -1,0 +1,3 @@
+commit 6e033a3ba797cb572d907141d2ccb82002202bb (2021/10/15 07:28:19)
+1: ../data/repositories/SapMachine/test/jdk/com/sun/net/httpserver/simpleserver/IdempotencyAndCommutativityTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

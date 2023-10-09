@@ -1,0 +1,10 @@
+commit f219d9daf4de8b1bf22d0f5de00937964d6c3317 (2022/7/16 00:34:20)
+2,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/action/BusinessCatalogEntry.java,1,0,0,0,0,0,0,0,0
+3,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/action/BusinessCollectionEntry.java,1,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/business/BusinessCategory.java,1,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/business/BusinessHours.java,1,0,0,0,0,0,0,0,0
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/business/BusinessHoursEntry.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Node.java,0,0,0,-1,0,0,0,-1,1
+9,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/response/ContactStatusResponse.java,0,0,0,-1,0,0,0,-1,1
+10,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/signal/keypair/SignalSignedKeyPair.java,0,0,0,-1,0,0,0,-1,1
+total,5,0,0,-3,0,0,0,-3,3

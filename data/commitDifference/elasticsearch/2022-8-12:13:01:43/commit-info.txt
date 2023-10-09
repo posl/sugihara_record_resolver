@@ -1,0 +1,3 @@
+commit 502139885818e117c6d8bbcf91fc0ea3b5f79b1 (2022/8/12 13:01:43)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/coordination/CoordinationDiagnosticsService.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

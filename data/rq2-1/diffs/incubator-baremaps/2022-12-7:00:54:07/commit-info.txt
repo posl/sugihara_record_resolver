@@ -1,0 +1,3 @@
+commit 9a1c1685198e548d2582e2961400af3ac2e507e7 (2022/12/7 00:54:07)
+2,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ExecuteSql.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

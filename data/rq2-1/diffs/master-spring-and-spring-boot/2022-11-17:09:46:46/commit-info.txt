@@ -1,0 +1,6 @@
+commit c793fce67748904ee29ff74142a146f3c8323137 (2022/11/17 09:46:46)
+64,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/13-full-stack/02-rest-api/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/jwt/JwtTokenRequest.java,1,0,0,0,0,0,0,0,0
+65,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/13-full-stack/02-rest-api/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/jwt/JwtTokenResponse.java,1,0,0,0,0,0,0,0,0
+85,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/71-spring-security/src/main/java/com/in28minutes/learnspringsecurity/jwt/JwtAuthenticationResource.java,1,0,0,0,0,0,0,0,0
+89,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/71-spring-security/src/main/java/com/in28minutes/learnspringsecurity/resources/TodoResource.java,1,0,0,0,0,0,0,0,0
+total,4,0,0,0,0,0,0,0,0

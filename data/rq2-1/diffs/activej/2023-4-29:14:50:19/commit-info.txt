@@ -1,0 +1,3 @@
+commit e080ca151189cb58244cd0e2d8287a2f53de4c23 (2023/4/29 14:50:19)
+31,../data_original/repositories/rep1374/copied/activej/examples/cloud/rpc/src/main/java/specializer/RpcResponse.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

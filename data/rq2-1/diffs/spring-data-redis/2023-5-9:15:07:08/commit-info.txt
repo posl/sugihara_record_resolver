@@ -1,0 +1,4 @@
+commit 5e2b668dccbf185aa55161f6cb2fda813fd14f5b (2023/5/9 15:07:08)
+17,../data_original/repositories/rep608/copied/spring-data-redis/src/test/java/org/springframework/data/redis/test/extension/LettuceExtension.java,0,0,1,-1,0,0,0,0,0
+20,../data_original/repositories/rep608/copied/spring-data-redis/src/test/java/org/springframework/data/redis/test/extension/parametrized/MethodArgumentsProvider.java,0,0,2,-2,0,0,0,0,0
+total,0,0,3,-3,0,0,0,0,0

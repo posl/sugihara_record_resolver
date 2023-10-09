@@ -1,0 +1,5 @@
+commit 2249db4c72a49916ce247e830a0d2d80ca84e617 (2022/5/27 19:18:06)
+1: ../data/repositories/cloudsimplus/cloudsimplus/src/main/java/org/cloudbus/cloudsim/core/events/PredicateType.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/cloudsimplus/cloudsimplus/src/main/java/org/cloudbus/cloudsim/hosts/HostStateHistoryEntry.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/cloudsimplus/cloudsimplus/src/main/java/org/cloudbus/cloudsim/network/topologies/Point2D.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

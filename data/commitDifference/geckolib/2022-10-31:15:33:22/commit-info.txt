@@ -1,0 +1,6 @@
+commit 32c57b3b8b641b08c8cde899a2f27af5e8aea43d (2022/10/31 15:33:22)
+1: ../data/repositories/geckolib/Fabric/core/src/main/java/software/bernie/geckolib3/core/easing/EasingFunctionArgs.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/geckolib/Fabric/core/src/main/java/software/bernie/geckolib3/core/keyframe/BoneAnimationQueue.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/geckolib/Quilt/core/src/main/java/software/bernie/geckolib3/core/easing/EasingFunctionArgs.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/geckolib/Quilt/core/src/main/java/software/bernie/geckolib3/core/keyframe/BoneAnimationQueue.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 2, 0, 0, 0, 0, 0, 0, 0

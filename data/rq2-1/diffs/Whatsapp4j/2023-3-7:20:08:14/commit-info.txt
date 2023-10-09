@@ -1,0 +1,4 @@
+commit 1194ef0852836d4b7dca80366637c982cdb40c1e (2023/3/7 20:08:14)
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/controller/DefaultControllerSerializer.java,1,0,0,0,0,0,0,0,0
+13,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Attributes.java,0,0,0,-1,0,0,0,-1,1
+total,1,0,0,-1,0,0,0,-1,1

@@ -1,0 +1,6 @@
+commit f1539497e0bf2a91c72ceb65117800650d948d0 (2021/12/22 13:41:06)
+38,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/menu/locator/BlockEntityLocator.java,1,0,0,0,0,0,0,0,0
+39,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/menu/locator/MenuItemLocator.java,1,0,0,0,0,0,0,0,0
+41,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/menu/locator/MenuLocators.java,1,0,0,0,0,0,0,0,0
+42,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/menu/locator/PartLocator.java,1,0,0,0,0,0,0,0,0
+total,4,0,0,0,0,0,0,0,0

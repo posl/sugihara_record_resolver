@@ -1,0 +1,4 @@
+commit 36194785366c631a3e1edf17cc1e6b2b2c967f02 (2022/1/31 14:54:43)
+1: ../data/repositories/CloudNet-v3/modules/database-mysql/src/main/java/eu/cloudnetservice/modules/mysql/config/MySQLConfiguration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/modules/database-mysql/src/main/java/eu/cloudnetservice/modules/mysql/config/MySQLConnectionEndpoint.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

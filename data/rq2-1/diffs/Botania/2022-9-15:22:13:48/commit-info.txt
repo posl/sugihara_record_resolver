@@ -1,0 +1,5 @@
+commit 541012a7440c7026bbd68dfdfa20b2b7e2d3e9a7 (2022/9/15 22:13:48)
+34,../data_original/repositories/rep776/copied/Botania/Xplat/src/main/java/vazkii/botania/common/entity/ManaBurstEntity.java,1,0,0,0,0,0,0,0,0
+73,../data_original/repositories/rep776/copied/Botania/Xplat/src/main/java/vazkii/botania/network/clientbound/PacketBotaniaEffect.java,0,0,0,-1,0,0,0,-1,1
+74,../data_original/repositories/rep776/copied/Botania/Xplat/src/main/java/vazkii/botania/network/clientbound/PacketSpawnDoppleganger.java,0,0,0,-1,0,0,0,-1,1
+total,1,0,0,-2,0,0,0,-2,2

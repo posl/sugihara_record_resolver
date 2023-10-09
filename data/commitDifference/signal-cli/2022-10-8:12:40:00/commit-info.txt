@@ -1,0 +1,7 @@
+commit 7eb7ee44f2dd85431bf8077965f73cf14d477000 (2022/10/8 12:40:00)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/Group.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java, 0, 0, 0, 0, 0, 0, 0, 0, 13
+3: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/RecipientAddress.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/SendMessageResult.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+5: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/RecipientAddress.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 16

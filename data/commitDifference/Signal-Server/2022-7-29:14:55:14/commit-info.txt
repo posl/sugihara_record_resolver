@@ -1,0 +1,4 @@
+commit 3d2f7e731ff822fd3244a6e9c56bef0e7aca5824 (2022/7/29 14:55:14)
+1: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/IncomingMessage.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/OutgoingMessageEntity.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

@@ -1,0 +1,9 @@
+commit 392fdd14aa9525698cf468e03762d93fec7b304a (2021/11/10 19:05:00)
+32,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/api/storage/GenericStack.java,1,0,0,0,0,0,0,0,0
+79,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/blockentity/storage/ChestBlockEntity.java,0,0,1,-1,0,0,0,0,0
+136,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/core/sync/packets/MEInventoryUpdatePacket.java,0,0,0,-1,0,0,0,-1,1
+141,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/crafting/CraftingPlan.java,0,0,0,-1,0,0,0,-1,1
+149,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/crafting/execution/InputTemplate.java,1,0,0,0,0,0,0,0,0
+218,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/me/service/StorageService.java,0,0,0,-1,0,0,0,-1,1
+324,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/util/item/FuzzySearch.java,1,0,0,0,0,0,0,0,0
+total,3,0,1,-4,0,0,0,-3,3

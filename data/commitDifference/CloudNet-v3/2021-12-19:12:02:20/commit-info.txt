@@ -1,0 +1,5 @@
+commit 61a702e8ffb4e30abf2b604d52ba29d3af375cc1 (2021/12/19 12:02:20)
+1: ../data/repositories/CloudNet-v3/modules/cloudflare/src/main/java/de/dytanic/cloudnet/ext/cloudflare/CloudflareConfiguration.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/modules/cloudflare/src/main/java/de/dytanic/cloudnet/ext/cloudflare/CloudflareConfigurationEntry.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/CloudNet-v3/modules/cloudflare/src/main/java/de/dytanic/cloudnet/ext/cloudflare/CloudflareGroupConfiguration.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 3, 0, 0, 0, 0, 0, 0, 0

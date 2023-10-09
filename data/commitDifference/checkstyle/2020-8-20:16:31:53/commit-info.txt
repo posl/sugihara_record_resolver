@@ -1,0 +1,3 @@
+commit 21a19ad2e863280b07f13fc47620fb56fb4de28 (2020/8/20 16:31:53)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/typename/InputTypeNameRecords.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,3 @@
+commit d5017a18a466ca99e58a2eb221ca70c8221cfcde (2020/7/29 19:20:36)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/abbreviationaswordinname/InputAbbreviationAsWordInNameCheckRecords.java, 3, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

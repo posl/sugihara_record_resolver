@@ -1,0 +1,3 @@
+commit 26229fe7a04791a512cc1320ce84130e97afe565 (2021/10/4 10:28:26)
+1,../data_original/repositories/rep19/copied/bazel/third_party/ijar/test/records/RecordTest.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

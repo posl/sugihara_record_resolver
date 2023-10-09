@@ -1,0 +1,3 @@
+commit 2a3fe19c794704b8d5fbc8179b823bd6c099db88 (2022/10/13 12:07:38)
+1: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/EmptyMethodsCheckNoSemantics.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

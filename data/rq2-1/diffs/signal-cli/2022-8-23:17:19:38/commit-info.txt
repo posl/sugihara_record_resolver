@@ -1,0 +1,10 @@
+commit 4fa0468151c78f80197feb6434e39e0fd7e2d9e (2022/8/23 17:19:38)
+5,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/helper/IncomingMessageHandler.java,0,0,1,-1,0,0,0,0,0
+16,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/RecipientAddress.java,0,0,0,-1,0,0,0,-1,1
+17,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/sendLog/MessageSendLogStore.java,0,0,0,-1,0,0,0,-1,1
+18,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/senderKeys/LegacySenderKeyRecordStore.java,0,0,1,-1,0,0,0,0,0
+20,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/senderKeys/SenderKeyRecordStore.java,0,0,0,-1,0,0,0,-1,1
+21,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/senderKeys/SenderKeySharedStore.java,0,0,0,-1,0,0,0,-1,1
+23,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/sessions/LegacySessionStore.java,0,0,1,-1,0,0,0,0,0
+24,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/sessions/SessionStore.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,3,-8,0,0,0,-5,5

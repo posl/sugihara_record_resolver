@@ -1,0 +1,5 @@
+commit fa4e01d06db90e8b85e12d323993840063b2143c (2023/1/16 12:31:47)
+12,../data_original/repositories/rep1443/copied/sts4/headless-services/jdt-ls-extension/org.springframework.tooling.jdt.ls.commons.test/test-projects/java-data/src/main/java/com/java/data/UserPropertiesRecord.java,1,0,0,0,0,0,0,0,0
+23,../data_original/repositories/rep1443/copied/sts4/headless-services/spring-boot-language-server/src/test/resources/test-projects/record-props/src/main/java/com/record/props/SecurityProperties.java,1,0,0,0,0,0,0,0,0
+24,../data_original/repositories/rep1443/copied/sts4/headless-services/spring-boot-language-server/src/test/resources/test-projects/record-props/src/main/java/com/record/props/UserProperties.java,1,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

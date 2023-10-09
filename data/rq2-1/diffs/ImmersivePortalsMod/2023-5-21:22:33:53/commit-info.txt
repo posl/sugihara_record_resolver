@@ -1,0 +1,6 @@
+commit 715a91ce11a7eda5ef453b7f3fed4a339d6b29fd (2023/5/21 22:33:53)
+1,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/imm_ptl_core/src/main/java/qouteall/imm_ptl/core/portal/animation/DeltaUnilateralPortalState.java,0,0,0,-1,0,0,0,-1,1
+7,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/src/main/java/qouteall/imm_ptl/peripheral/wand/ClientPortalWandPortalDrag.java,0,0,0,-1,0,0,0,-1,1
+8,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/src/main/java/qouteall/imm_ptl/peripheral/wand/PortalDraggingAnimation.java,1,0,0,0,0,0,0,0,0
+9,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/src/main/java/qouteall/imm_ptl/peripheral/wand/PortalWandInteraction.java,0,0,0,-1,0,0,0,-1,1
+total,1,0,0,-3,0,0,0,-3,3

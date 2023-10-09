@@ -1,0 +1,3 @@
+commit 434f170b9667df33eb7355c0e7e62147c48a7da8 (2021/7/8 14:32:36)
+1: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/serialization/RecordSerializationIgnoredMembersCheck.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 5, 0, 0, 0, 0, 0, 0, 0, 0

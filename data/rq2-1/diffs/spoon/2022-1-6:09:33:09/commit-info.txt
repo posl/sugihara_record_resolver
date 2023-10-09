@@ -1,0 +1,4 @@
+commit d134c8b90861f89fc4caaabc4a7aac34e46bd251 (2022/1/6 09:33:09)
+4,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/CompactConstructor.java,0,0,0,-1,0,0,0,-1,1
+5,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/CompactConstructor2.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-1,0,0,0,-1,1

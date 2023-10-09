@@ -1,0 +1,5 @@
+commit b6557c444230f6ceaaec3c4afc78a9e106e9c17b (2022/10/25 22:12:25)
+430,../data_original/repositories/rep1322/copied/SapMachine/src/java.naming/share/classes/com/sun/naming/internal/ObjectFactoriesFilter.java,0,0,2,-2,0,0,0,0,0
+636,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/awt/Mouse/MacTouchPressEventModifiers/MouseMacTouchPressEventModifiers.java,1,0,0,0,0,0,0,0,0
+640,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/net/URL/EarlyOrDelayedParsing.java,6,0,0,0,0,0,0,0,0
+total,7,0,2,-2,0,0,0,0,0

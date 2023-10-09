@@ -1,0 +1,4 @@
+commit 84778f3c8b992eccca1808b16b70ab34d3b99238 (2023/4/25 01:05:55)
+3,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ImportGeoPackage.java,0,0,0,-1,0,0,0,-1,1
+4,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ImportShapefile.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

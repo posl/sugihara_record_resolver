@@ -1,0 +1,3 @@
+commit aa8f084b196f73205407d52c4392b52238db9d12 (2022/10/4 18:27:56)
+1: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/ScopeResizeTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

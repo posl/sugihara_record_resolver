@@ -1,0 +1,21 @@
+commit 287e2fa89a10c6ff96fe6f10d2de7b7016df10a3 (2023/5/17 11:14:04)
+3,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/AdminEventLoggingConfiguration.java,0,0,0,-1,0,0,0,-1,1
+4,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/ApnConfiguration.java,0,1,0,-1,0,0,0,0,0
+5,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/ArtServiceConfiguration.java,0,1,0,-1,0,0,0,0,0
+6,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/AwsAttachmentsConfiguration.java,0,1,0,-1,0,0,0,0,0
+7,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/BraintreeConfiguration.java,0,0,0,-1,0,0,0,-1,1
+8,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/CdnConfiguration.java,0,1,0,-1,0,0,0,0,0
+10,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/DirectoryV2ClientConfiguration.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/FcmConfiguration.java,0,0,0,-1,0,0,0,-1,1
+12,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/GcpAttachmentsConfiguration.java,0,1,0,-1,0,0,0,0,0
+13,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/GenericZkConfig.java,0,0,0,-1,0,0,0,-1,1
+14,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/HCaptchaConfiguration.java,0,0,0,-1,0,0,0,-1,1
+15,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/PaymentsServiceConfiguration.java,0,1,0,-1,0,0,0,0,0
+16,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/RemoteConfigConfiguration.java,0,1,0,-1,0,0,0,0,0
+18,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/SecureStorageServiceConfiguration.java,0,0,0,-1,0,0,0,-1,1
+19,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/SecureValueRecovery2Configuration.java,0,0,0,-1,0,0,0,-1,1
+20,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/StripeConfiguration.java,0,0,0,-1,0,0,0,-1,1
+21,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/UnidentifiedDeliveryConfiguration.java,0,1,0,-1,0,0,0,0,0
+22,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/ZkConfig.java,0,1,0,-1,0,0,0,0,0
+44,../data_original/repositories/rep85/copied/Signal-Server/service/src/test/java/org/whispersystems/textsecuregcm/configuration/secrets/SecretsTest.java,4,0,0,0,0,0,0,0,0
+total,4,9,0,-18,0,0,0,-9,9

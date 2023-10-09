@@ -1,0 +1,4 @@
+commit bbb367e623591894209c79f4439e13f7c4cd7627 (2022/1/5 23:58:35)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/cloudnet/driver/service/ProcessSnapshot.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/cloudnet/driver/template/FileInfo.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

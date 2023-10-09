@@ -1,0 +1,16 @@
+commit faa5650f0eb28b7cfa69941fb86f13b18093fa44 (2022/11/20 16:11:26)
+7,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/catalog-service/src/main/java/com/polarbookshop/catalogservice/domain/Book.java,1,0,0,0,0,0,0,0,0
+14,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/catalog-service/src/test/java/com/polarbookshop/catalogservice/CatalogServiceApplicationTests.java,1,0,0,0,0,0,0,0,0
+24,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/dispatcher-service/src/main/java/com/polarbookshop/dispatcherservice/OrderAcceptedMessage.java,1,0,0,0,0,0,0,0,0
+25,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/dispatcher-service/src/main/java/com/polarbookshop/dispatcherservice/OrderDispatchedMessage.java,1,0,0,0,0,0,0,0,0
+32,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/edge-service/src/main/java/com/polarbookshop/edgeservice/user/User.java,1,0,0,0,0,0,0,0,0
+39,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/order-service/src/main/java/com/polarbookshop/orderservice/book/Book.java,1,0,0,0,0,0,0,0,0
+42,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/order-service/src/main/java/com/polarbookshop/orderservice/config/ClientProperties.java,1,0,0,0,0,0,0,0,0
+45,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/order-service/src/main/java/com/polarbookshop/orderservice/order/domain/Order.java,1,0,0,0,0,0,0,0,0
+49,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/order-service/src/main/java/com/polarbookshop/orderservice/order/event/OrderAcceptedMessage.java,1,0,0,0,0,0,0,0,0
+50,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/order-service/src/main/java/com/polarbookshop/orderservice/order/event/OrderDispatchedMessage.java,1,0,0,0,0,0,0,0,0
+53,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/order-service/src/main/java/com/polarbookshop/orderservice/order/web/OrderRequest.java,1,0,0,0,0,0,0,0,0
+54,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/order-service/src/test/java/com/polarbookshop/orderservice/OrderServiceApplicationTests.java,1,0,0,0,0,0,0,0,0
+63,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/quote-function/src/main/java/com/polarbookshop/quotefunction/domain/Quote.java,1,0,0,0,0,0,0,0,0
+69,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/PolarBookshop/quote-service/src/main/java/com/polarbookshop/quoteservice/domain/Quote.java,1,0,0,0,0,0,0,0,0
+total,14,0,0,0,0,0,0,0,0

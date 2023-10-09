@@ -1,0 +1,4 @@
+commit 93df97becf6a73f75c97f811c737bc227ce42903 (2022/12/24 15:15:48)
+1: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/Binding.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/SapMachine/test/jdk/javax/net/ssl/DTLS/DTLSOverDatagram.java, 0, 0, 0, 0, 0, 0, 2, 0, 0
+sum: 0, 0, 0, 0, 0, 0, 2, 0, 1

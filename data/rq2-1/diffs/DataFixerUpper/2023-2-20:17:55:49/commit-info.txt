@@ -1,0 +1,3 @@
+commit e453f972305b47af9ef03a0bcbca9582aabe24ef (2023/2/20 17:55:49)
+1,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/functions/PointFreeRule.java,0,0,0,-8,0,0,0,-8,1
+total,0,0,0,-8,0,0,0,-8,1

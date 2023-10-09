@@ -1,0 +1,3 @@
+commit 3886a1f20ee48a6cab5669ced2de7ed361d1d3a0 (2022/7/1 01:35:23)
+10,../data_original/repositories/rep1645/copied/sirix/bundles/sirix-core/src/main/java/org/sirix/io/RevisionFileData.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

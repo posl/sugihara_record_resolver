@@ -1,0 +1,5 @@
+commit d90ed6df291898928147a9d6d15caf5bf84959dd (2022/10/4 13:57:11)
+4,../data_original/repositories/rep1598/copied/LiveLessons/Java8/ex38/src/main/java/gcd/GCDParam.java,1,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep1598/copied/LiveLessons/Java8/ex38/src/main/java/gcd/GCDResult.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep1598/copied/LiveLessons/Java8/ex38/src/main/java/utils/GCDResult.java,0,0,0,0,1,0,0,0,0
+total,2,0,0,0,1,0,0,0,0

@@ -1,0 +1,4 @@
+commit ad115ed41e3312895aee6898a8ce3a5a1222454 (2022/12/12 11:15:35)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/DataEntityDimensionsDto.java, 0, 0, 0, 0, 0, 0, 0, 0, 4
+2: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/repository/util/DataEntityCTEQueryConfig.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 4

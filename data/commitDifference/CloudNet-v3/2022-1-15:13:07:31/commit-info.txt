@@ -1,0 +1,4 @@
+commit 71e04d4f480d60d5879753af11d9c024e1552978 (2022/1/15 13:07:31)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/cloudnet/driver/permission/Permission.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CloudNet-v3/launcher/java17/src/main/java/eu/cloudnetservice/launcher/java17/dependency/Dependency.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

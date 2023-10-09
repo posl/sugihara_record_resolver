@@ -1,0 +1,12 @@
+commit 51722a3c3e08d9b4eddbbe6abdc2858f2ef4b1de (2022/10/28 14:06:57)
+10,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/DownloadUrl.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/ExecuteCommand.java,0,0,0,-1,0,0,0,-1,1
+12,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/ExecuteSql.java,0,0,0,-1,0,0,0,-1,1
+13,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/ExportVectorTiles.java,0,0,0,-1,0,0,0,-1,1
+14,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/ImportGeoPackage.java,0,0,0,-1,0,0,0,-1,1
+15,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/ImportOpenStreetMap.java,0,0,0,-1,0,0,0,-1,1
+16,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/ImportShapefile.java,0,0,0,-1,0,0,0,-1,1
+17,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/LogMessage.java,0,0,0,-1,0,0,0,-1,1
+18,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/UnzipFile.java,0,0,0,-1,0,0,0,-1,1
+19,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/UpdateOpenStreetMap.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-10,0,0,0,-10,10

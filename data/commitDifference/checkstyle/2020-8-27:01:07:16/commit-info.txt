@@ -1,0 +1,6 @@
+commit 83507b994cb273d33280c7b3cf74a6b6f8b2a17e (2020/8/27 01:07:16)
+1: ../data/repositories/checkstyle/src/it/resources-noncompilable/org/checkstyle/suppressionxpathfilter/illegalidentifiername/SuppressionXpathRegressionIllegalIdentifierNameTestOne.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/illegalidentifiername/InputIllegalIdentifierName.java, 3, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/illegalidentifiername/InputIllegalIdentifierNameOpenTransitive.java, 3, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/illegalidentifiername/InputIllegalIdentifierNameParameterReceiver.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 8, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,3 @@
+commit 68003a760480fecec1145ebdf9fbdd9057a52973 (2021/6/23 17:00:42)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/methodlength/InputMethodLengthRecordsAndCompactCtors.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 0, 0, 0, 1, 0, 0, 0, 1, 0

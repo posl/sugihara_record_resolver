@@ -1,0 +1,4 @@
+commit b299ad13f11f99ff20fd1d7b7d54cfaa03b19bab (2020/8/3 13:56:13)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/parenpad/InputParenPadCheckRecords.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/parenpad/InputParenPadCheckRecordsSpace.java, 6, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 11, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,403 @@
+package qouteall.imm_ptl.core.portal.animation;
+
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
+import net.minecraft.world.phys.Vec3;
+import qouteall.imm_ptl.core.portal.Portal;
+import qouteall.q_misc_util.Helper;
+import qouteall.q_misc_util.my_util.DQuaternion;
+import qouteall.q_misc_util.my_util.Vec2d;
+
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class NormalAnimation implements PortalAnimationDriver {
+    public static void init() {
+        PortalAnimationDriver.registerDeserializer(
+            new ResourceLocation("imm_ptl:normal"),
+            NormalAnimation::deserialize
+        );
+    }
+    
+    public static class Phase {
+        public long durationTicks;
+        @Nullable
+        public Vec3 position;
+        @Nullable
+        public DQuaternion orientation;
+        @Nullable
+        public Vec2d size;
+        public TimingFunction timingFunction;
+        
+        public Phase(
+            long durationTicks,
+            @Nullable Vec3 position,
+            @Nullable DQuaternion orientation,
+            @Nullable Vec2d size,
+            TimingFunction timingFunction
+        ) {
+            this.durationTicks = durationTicks;
+            this.position = position;
+            this.orientation = orientation;
+            this.size = size;
+            this.timingFunction = timingFunction;
+        }
+        
+        public static Phase fromTag(CompoundTag compoundTag) {
+            long durationTicks = compoundTag.getLong("durationTicks");
+            Vec3 position = Helper.getVec3dOptional(compoundTag, "position");
+            DQuaternion orientation =
+                compoundTag.contains("orientation") ?
+                    DQuaternion.fromTag(compoundTag.getCompound("orientation")) : null;
+            Vec2d size = compoundTag.contains("sizeW") ? new Vec2d(
+                compoundTag.getDouble("sizeW"),
+                compoundTag.getDouble("sizeH")
+            ) : null;
+            TimingFunction timingFunction =
+                compoundTag.contains("timingFunction") ?
+                    TimingFunction.fromString(compoundTag.getString("timingFunction")) :
+                    TimingFunction.linear;
+            
+            return new Phase(
+                durationTicks,
+                position,
+                orientation,
+                size,
+                timingFunction
+            );
+        }
+        
+        private void writeIntermediaryState(UnilateralPortalState.Builder currentState, double phaseProgress) {
+            if (this.position != null) {
+                currentState.position(
+                    Helper.interpolatePos(
+                        currentState.position,
+                        this.position,
+                        phaseProgress
+                    )
+                );
+            }
+            if (this.orientation != null) {
+                currentState.orientation(
+                    DQuaternion.interpolate(
+                        currentState.orientation,
+                        this.orientation,
+                        phaseProgress
+                    )
+                );
+            }
+            if (this.size != null) {
+                currentState.width(Mth.lerp(phaseProgress, currentState.width, this.size.x()));
+                currentState.height(Mth.lerp(phaseProgress, currentState.height, this.size.y()));
+            }
+        }
+        
+        public void writeEndingState(UnilateralPortalState.Builder currentState) {
+            if (this.position != null) {
+                currentState.position(this.position);
+            }
+            if (this.orientation != null) {
+                currentState.orientation(this.orientation);
+            }
+            if (this.size != null) {
+                currentState.width(this.size.x());
+                currentState.height(this.size.y());
+            }
+        }
+        
+        public CompoundTag toTag() {
+            CompoundTag tag = new CompoundTag();
+            tag.putLong("durationTicks", durationTicks);
+            if (position != null) {
+                Helper.putVec3d(tag, "position", position);
+            }
+            if (orientation != null) {
+                tag.put("orientation", orientation.toTag());
+            }
+            if (size != null) {
+                tag.putDouble("sizeW", size.x());
+                tag.putDouble("sizeH", size.y());
+            }
+            tag.putString("timingFunction", timingFunction.toString());
+            return tag;
+        }
+        
+        public Phase getFlippedVersion() {
+            return new Phase(
+                durationTicks,
+                position,
+                orientation == null ? null : orientation.hamiltonProduct(UnilateralPortalState.flipAxisH),
+                size,
+                timingFunction
+            );
+        }
+        
+        // generated by GitHub Copilot
+        public static class Builder {
+            // duration can be zero
+            private long durationTicks;
+            private Vec3 position;
+            private DQuaternion orientation;
+            private Vec2d size;
+            private TimingFunction timingFunction = TimingFunction.linear;
+            
+            public Builder() {
+            }
+            
+            public Builder durationTicks(long durationTicks) {
+                this.durationTicks = durationTicks;
+                return this;
+            }
+            
+            public Builder position(Vec3 position) {
+                this.position = position;
+                return this;
+            }
+            
+            public Builder orientation(DQuaternion orientation) {
+                this.orientation = orientation;
+                return this;
+            }
+            
+            public Builder size(Vec2d size) {
+                this.size = size;
+                return this;
+            }
+            
+            public Builder timingFunction(TimingFunction timingFunction) {
+                this.timingFunction = timingFunction;
+                return this;
+            }
+            
+            public Phase build() {
+                return new Phase(durationTicks, position, orientation, size, timingFunction);
+            }
+        }
+    }
+    
+    public final List<Phase> phases;
+    public final long startingGameTime;
+    public final int loopCount;
+    
+    private final long ticksPerRound;
+    
+    public NormalAnimation(
+        List<Phase> phases,
+        long startingGameTime,
+        int loopCount
+    ) {
+        this.phases = phases;
+        this.startingGameTime = startingGameTime;
+        this.loopCount = loopCount;
+        
+        long totalTicks = 0;
+        for (Phase phase : phases) {
+            totalTicks += phase.durationTicks;
+        }
+        ticksPerRound = totalTicks;
+    }
+    
+    private static NormalAnimation deserialize(CompoundTag compoundTag) {
+        UnilateralPortalState initialState = UnilateralPortalState.fromTag(compoundTag.getCompound("initialState"));
+        
+        List<Phase> phases = Helper.listTagToList(
+            Helper.getCompoundList(compoundTag, "phases"),
+            Phase::fromTag
+        );
+        
+        long startingGameTime = compoundTag.getLong("startingGameTime");
+        
+        int loopCount = compoundTag.getInt("loopCount");
+        
+        if (phases.isEmpty() || loopCount < 0) {
+            throw new RuntimeException("invalid NormalAnimation");
+        }
+        
+        return new NormalAnimation(
+            phases,
+            startingGameTime,
+            loopCount
+        );
+    }
+    
+    @Override
+    public CompoundTag toTag() {
+        CompoundTag tag = new CompoundTag();
+        
+        tag.putString("type", "imm_ptl:normal");
+        tag.put("phases", Helper.listToListTag(phases, Phase::toTag));
+        tag.putLong("startingGameTime", startingGameTime);
+        tag.putInt("loopCount", loopCount);
+        
+        return tag;
+    }
+    
+    private long getTotalDuration() {
+        if (loopCount > 100000) {
+            return Long.MAX_VALUE;
+        }
+        
+        return ticksPerRound * loopCount;
+    }
+    
+    @Override
+    public boolean update(
+        UnilateralPortalState.Builder stateBuilder,
+        long tickTime,
+        float partialTicks
+    ) {
+        if (ticksPerRound == 0 || phases.isEmpty()) {
+            Helper.err("Invalid NormalAnimation");
+            return true;
+        }
+        
+        double passedTicks = ((double) (tickTime - 1 - startingGameTime)) + partialTicks;
+        long totalDuration = getTotalDuration();
+        
+        boolean ends = false;
+        if (passedTicks >= totalDuration - 1) {
+            passedTicks = totalDuration - 1;
+            ends = true;
+        }
+        
+        if (passedTicks < -1) {
+            Helper.err("NormalAnimation starts in the future");
+            return true;
+        }
+        
+        // modulo works for double!
+        double passedTicksInThisRound = passedTicks % ((double) ticksPerRound);
+        long roundIndex = Math.floorDiv((long) passedTicks, ticksPerRound);
+        
+        long traversedTicks = 0;
+        for (Phase phase : phases) {
+            if (phase.durationTicks != 0 && passedTicksInThisRound < traversedTicks + phase.durationTicks) {
+                double phaseProgress = (1 + passedTicksInThisRound - traversedTicks) / (double) phase.durationTicks;
+                phaseProgress = phase.timingFunction.mapProgress(phaseProgress);
+                
+                phase.writeIntermediaryState(stateBuilder, phaseProgress);
+                break;
+            }
+            else {
+                phase.writeEndingState(stateBuilder);
+                traversedTicks += phase.durationTicks;
+            }
+        }
+        
+        return ends;
+    }
+    
+    @Override
+    public void obtainEndingState(UnilateralPortalState.Builder stateBuilder, long tickTime) {
+        end(stateBuilder);
+    }
+    
+    @Override
+    public PortalAnimationDriver getFlippedVersion() {
+        return new NormalAnimation(
+            phases.stream().map(phase -> phase.getFlippedVersion()).collect(Collectors.toList()),
+            startingGameTime,
+            loopCount
+        );
+    }
+    
+    private void end(UnilateralPortalState.Builder stateBuilder) {
+        for (Phase phase : phases) {
+            phase.writeEndingState(stateBuilder);
+        }
+    }
+    
+    // generated by GitHub Copilot
+    public static class Builder {
+        private List<Phase> phases = new ArrayList<>();
+        private long startingGameTime;
+        private int loopCount;
+        
+        public Builder() {
+        }
+        
+        public Builder phases(List<Phase> phases) {
+            this.phases = phases;
+            return this;
+        }
+        
+        public Builder startingGameTime(long startingGameTime) {
+            this.startingGameTime = startingGameTime;
+            return this;
+        }
+        
+        public Builder loopCount(int loopCount) {
+            this.loopCount = loopCount;
+            return this;
+        }
+        
+        public NormalAnimation build() {
+            return new NormalAnimation(phases, startingGameTime, loopCount);
+        }
+    }
+    
+    public static NormalAnimation createOnePhaseAnimation(
+        UnilateralPortalState fromState, UnilateralPortalState toState,
+        long startingGameTime, long durationTicks,
+        TimingFunction timingFunction
+    ) {
+        Phase phase = new Phase.Builder()
+            .durationTicks(durationTicks)
+            .position(toState.position())
+            .orientation(toState.orientation())
+            .size(new Vec2d(toState.width(), toState.height()))
+            .timingFunction(timingFunction)
+            .build();
+        
+        return new Builder()
+            .phases(List.of(phase))
+            .startingGameTime(startingGameTime)
+            .loopCount(1)
+            .build();
+    }
+    
+    public static NormalAnimation createPositionAnimation(
+        Portal portal, Vec3 fromPos, Vec3 toPos,
+        long startingGameTime, long durationTicks,
+        TimingFunction timingFunction
+    ) {
+        Phase phase = new Phase.Builder()
+            .durationTicks(durationTicks)
+            .position(fromPos)
+            .timingFunction(timingFunction)
+            .build();
+        
+        return new Builder()
+            .phases(List.of(phase))
+            .startingGameTime(startingGameTime)
+            .loopCount(1)
+            .build();
+    }
+    
+    public static NormalAnimation createSizeAnimation(
+        Portal portal, Vec2d fromSize, Vec2d toSize,
+        long startingGameTime, long durationTicks,
+        TimingFunction timingFunction
+    ) {
+        Phase initialPhase = new Phase.Builder()
+            .durationTicks(0)
+            .size(fromSize)
+            .timingFunction(timingFunction)
+            .build();
+        
+        Phase endingPhase = new Phase.Builder()
+            .durationTicks(durationTicks)
+            .size(toSize)
+            .timingFunction(timingFunction)
+            .build();
+        
+        return new Builder()
+            .phases(List.of(initialPhase, endingPhase))
+            .startingGameTime(startingGameTime)
+            .loopCount(1)
+            .build();
+    }
+}

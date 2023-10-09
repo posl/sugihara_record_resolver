@@ -1,0 +1,3 @@
+commit 19693113652274bac0e0d631feb366dcfa51445e (2022/1/6 19:22:04)
+2,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/equalsavoidnull/InputEqualsAvoidNullRecordsAndCompactCtors.java,0,0,1,-5,0,0,0,-4,0
+total,0,0,1,-5,0,0,0,-4,0

@@ -1,0 +1,6 @@
+commit b03cb20cd885ac27c0b0a1164cd77e8ab752d2bc (2022/4/8 11:09:10)
+1: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/snippet/Parser.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+2: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/snippet/Replace.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+3: ../data/repositories/SapMachine/src/jdk.jshell/share/classes/jdk/internal/jshell/tool/ConsoleIOContext.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/SapMachine/src/jdk.jshell/share/classes/jdk/jshell/SourceCodeAnalysis.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 2, 2, 0, 0, 0, 2, 0

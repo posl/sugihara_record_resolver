@@ -1,0 +1,5 @@
+commit 1035ca83d29873d4fe1ba2348c2086e9be092382 (2023/1/10 20:37:21)
+2,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/activity/AlertHaltConfigActivityStateDto.java,1,0,0,0,0,0,0,0,0
+3,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/activity/AlertReceivedActivityStateDto.java,2,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/activity/AlertStatusUpdatedActivityStateDto.java,1,0,0,0,0,0,0,0,0
+total,4,0,0,0,0,0,0,0,0

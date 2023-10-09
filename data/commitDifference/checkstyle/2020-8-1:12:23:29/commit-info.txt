@@ -1,0 +1,3 @@
+commit 40e281a07c5efc88268aaa8eef90154b9272eea0 (2020/8/1 12:23:29)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/outertypenumber/InputOuterTypeNumberRecords.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

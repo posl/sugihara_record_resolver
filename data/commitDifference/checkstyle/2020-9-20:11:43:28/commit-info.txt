@@ -1,0 +1,4 @@
+commit 68d0b86e8d20ed1b053ff1b2d2a6378821cee956 (2020/9/20 11:43:28)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/javadoctype/InputJavadocTypeRecordComponents.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/javadoctype/InputJavadocTypeRecordComponents2.java, 10, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 11, 0, 0, 0, 0, 0, 0, 0, 0

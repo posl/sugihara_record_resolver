@@ -1,0 +1,4 @@
+commit 42db5c468e6dbf22fa213cc59ec37bdd679f9f11 (2022/11/8 10:56:45)
+1: ../data/repositories/crate/server/src/main/java/io/crate/execution/ddl/tables/AddColumnRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/crate/server/src/main/java/io/crate/types/StorageSupport.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 1

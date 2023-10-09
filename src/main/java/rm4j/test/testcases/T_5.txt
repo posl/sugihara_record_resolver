@@ -1,1 +1,0 @@
-A<@B(src = {new ArrayList<>(Arrays.asList(1,3,5)), new ArrayList<>(Arrays.asList(2,4,6))}) C<D, E<F<G, @H(val)I>>, @J K.L<M, O<P>>.Q<R>, S.T>, U<V<W,X<Y>>>, Z> T_5

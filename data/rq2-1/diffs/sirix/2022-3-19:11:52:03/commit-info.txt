@@ -1,0 +1,3 @@
+commit 4ff00ad8c7606abc18f4afb7a7d80f52a290c413 (2022/3/19 11:52:03)
+34,../data_original/repositories/rep1645/copied/sirix/bundles/sirix-xquery/src/main/java/org/sirix/xquery/compiler/translator/SirixTranslator.java,0,0,2,-2,0,0,0,0,0
+total,0,0,2,-2,0,0,0,0,0

@@ -1,0 +1,3 @@
+commit 9d029b4ec2d5fe2310cb5fdc24a6792b385712ca (2021/7/28 02:37:07)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/metrics/javancss/InputJavaNCSSRecordsAndCompactCtors.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 0, 0, 0, 1, 0, 0, 0, 1, 0

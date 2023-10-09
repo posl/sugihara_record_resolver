@@ -1,0 +1,3 @@
+commit b1816012284dc27f7019de28d15e41544008128e (2020/7/27 09:53:47)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/imports/unusedimports/InputUnusedImportsRecordsAndCompactCtors.java,3,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

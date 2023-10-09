@@ -1,0 +1,4 @@
+commit 21a2b7009ec84262af3c9a6403b9e80d017454 (2022/5/20 14:33:31)
+4,../data_original/repositories/rep693/copied/marquez/api/src/main/java/marquez/db/migrations/V44_1__BackfillAirflowParentRuns.java,1,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep693/copied/marquez/api/src/main/java/marquez/db/migrations/V44_2_BackfillJobsWithParents.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

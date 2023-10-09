@@ -1,0 +1,3 @@
+commit a6737a7d2dc70b70cdd1ecd57293e1e1bc589cf6 (2022/12/12 18:22:32)
+1: ../data/repositories/crate/server/src/main/java/io/crate/expression/scalar/ExtractFunctions.java, 0, 0, 2, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 2, 0, 0, 0, 0, 0, 0

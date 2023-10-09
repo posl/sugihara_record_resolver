@@ -1,0 +1,4 @@
+commit 644efb80b5a8730845245d93989d3f59263fd33b (2022/11/16 20:42:04)
+3,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/19-spring-security/src/main/java/com/in28minutes/learnspringsecurity/jwt/JwtAuthenticationResource.java,1,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/19-spring-security/src/main/java/com/in28minutes/learnspringsecurity/resources/TodoResource.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

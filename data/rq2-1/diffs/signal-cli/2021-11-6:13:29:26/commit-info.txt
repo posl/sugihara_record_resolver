@@ -1,0 +1,4 @@
+commit 2ab42ca5471e8fc1e1a31cde954e19564178f114 (2021/11/6 13:29:26)
+7,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java,0,0,0,-34,0,0,0,-34,7
+12,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/SendMessageResult.java,2,0,0,0,0,0,0,0,0
+total,2,0,0,-34,0,0,0,-34,7

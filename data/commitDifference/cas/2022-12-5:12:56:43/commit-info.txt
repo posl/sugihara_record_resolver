@@ -1,0 +1,5 @@
+commit 4b3354960fd6c8a180459cf772b95b94b72a24a7 (2022/12/5 12:56:43)
+1: ../data/repositories/cas/core/cas-server-core-notifications-api/src/main/java/org/apereo/cas/notifications/sms/RestfulSmsSender.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/cas/support/cas-server-support-surrogate-authentication/src/main/java/org/apereo/cas/authentication/SurrogateAuthenticationExpirationPolicyBuilder.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+3: ../data/repositories/cas/support/cas-server-support-surrogate-core/src/main/java/org/apereo/cas/authentication/SurrogateAuthenticationExpirationPolicyBuilder.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 1, 0, 0, 0, 0

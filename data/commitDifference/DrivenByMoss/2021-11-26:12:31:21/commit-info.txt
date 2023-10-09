@@ -1,0 +1,10 @@
+commit 65ae613e2b3f8a6915ca81882b5fa839ee6a992e (2021/11/26 12:31:21)
+1: ../data/repositories/DrivenByMoss/src/main/java/de/mossgrabers/bitwig/framework/daw/DeviceMetadataImpl.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/DrivenByMoss/src/main/java/de/mossgrabers/bitwig/framework/daw/MemoryBlockImpl.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/DrivenByMoss/src/main/java/de/mossgrabers/bitwig/framework/graphics/BitmapImpl.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/DrivenByMoss/src/main/java/de/mossgrabers/bitwig/framework/graphics/ImageImpl.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/DrivenByMoss/src/main/java/de/mossgrabers/framework/daw/data/GridStep.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/DrivenByMoss/src/main/java/de/mossgrabers/framework/graphics/DefaultBounds.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/DrivenByMoss/src/main/java/de/mossgrabers/framework/graphics/canvas/utils/SendData.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/DrivenByMoss/src/main/java/de/mossgrabers/framework/parameterprovider/special/EmptyParameterProvider.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 8, 0, 0, 0, 0, 0, 0, 0

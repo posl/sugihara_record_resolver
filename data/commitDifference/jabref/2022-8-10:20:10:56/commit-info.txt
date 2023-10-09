@@ -1,0 +1,3 @@
+commit dcec4e2418530a2d0dbe57360c7636d8eaad9b0d (2022/8/10 20:10:56)
+1: ../data/repositories/jabref/src/main/java/org/jabref/gui/mergeentries/MergeResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

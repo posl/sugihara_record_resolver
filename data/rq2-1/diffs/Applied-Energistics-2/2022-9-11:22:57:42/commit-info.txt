@@ -1,0 +1,3 @@
+commit f3b6d0c39a5bad6e447e853b169b6f6f8e514cf2 (2022/9/11 22:57:42)
+8,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/integration/modules/jei/widgets/Label.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

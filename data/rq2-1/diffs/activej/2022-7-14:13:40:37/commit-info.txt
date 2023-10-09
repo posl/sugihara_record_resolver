@@ -1,0 +1,7 @@
+commit d95df27cb1cca402409333f0c7845f8b8b3a1621 (2022/7/14 13:40:37)
+3,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/CalciteSqlDataflow.java,0,0,2,-2,0,0,0,0,0
+5,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/DataflowShuttle.java,0,0,1,-1,0,0,0,0,0
+16,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/jdbc/DataflowMeta.java,1,0,0,0,0,0,0,0,0
+23,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/test/java/io/activej/dataflow/stream/AbstractCalciteTest.java,7,0,0,0,0,0,0,0,0
+26,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/test/java/io/activej/dataflow/stream/CalciteTest.java,0,0,0,0,7,0,0,0,0
+total,8,0,3,-3,7,0,0,0,0

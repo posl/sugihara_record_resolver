@@ -1,0 +1,6 @@
+commit 942999b7b4beebf4519eed9b216587519b47e6c6 (2022/3/16 21:04:14)
+1,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java,0,0,0,-35,0,0,0,-35,4
+2,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/SendMessageResult.java,0,0,0,-1,0,0,1,-2,1
+8,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/RecipientAddress.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonSendMessageResult.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-38,0,0,1,-39,7

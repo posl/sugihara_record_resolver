@@ -1,0 +1,8 @@
+commit 1861105658d93b0e5b8d1a5e532dc16023dcd8c4 (2022/11/24 19:35:04)
+34,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/codec/StructuredStreamCodec.java,1,0,0,0,0,0,0,0,0
+47,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/http/LocalTaskData.java,0,1,0,-1,0,0,0,0,0
+48,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/http/ReducedTaskData.java,0,1,0,-1,0,0,0,0,0
+51,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/messaging/DataflowRequest.java,4,0,0,0,0,0,0,0,0
+52,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/messaging/DataflowResponse.java,6,0,0,0,0,0,0,0,0
+53,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/messaging/Version.java,1,0,0,0,0,0,0,0,0
+total,12,2,0,-2,0,0,0,0,0

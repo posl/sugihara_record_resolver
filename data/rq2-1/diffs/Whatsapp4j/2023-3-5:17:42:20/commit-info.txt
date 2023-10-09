@@ -1,0 +1,7 @@
+commit ac85e444a5d906c72fa2e1bd8cf9856f7d8ac5f5 (2023/3/5 17:42:20)
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionCipher.java,0,0,0,-1,0,0,0,-1,1
+27,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/contact/ContactJid.java,0,0,0,-1,0,0,0,-1,1
+31,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/privacy/PrivacySettingEntry.java,1,0,0,0,0,0,0,0,0
+34,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Attributes.java,0,0,0,-1,0,0,0,-1,1
+35,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Node.java,0,0,0,-1,0,0,0,-1,1
+total,1,0,0,-4,0,0,0,-4,4

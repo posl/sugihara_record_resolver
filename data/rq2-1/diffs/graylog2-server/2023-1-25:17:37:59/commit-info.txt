@@ -1,0 +1,7 @@
+commit 47401f160bf016cb4d8b6337db8e98bf298521e9 (2023/1/25 17:37:59)
+5,../data_original/repositories/rep118/copied/graylog2-server/graylog-storage-elasticsearch7/src/main/java/org/graylog/storage/elasticsearch7/views/searchtypes/pivot/PivotBucket.java,0,0,0,-1,0,0,0,-1,1
+27,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/migrations/V20220929145442_MigratePivotLimitsInViews.java,0,0,0,0,2,0,0,0,0
+28,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/migrations/V20220930095323_MigratePivotLimitsInSearches.java,0,0,0,0,2,0,0,0,0
+29,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/migrations/V20230113095300_MigrateGlobalPivotLimitsToGroupingsInViews.java,2,0,0,0,0,0,0,0,0
+30,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/migrations/V20230113095301_MigrateGlobalPivotLimitsToGroupingsInSearches.java,2,0,0,0,0,0,0,0,0
+total,4,0,0,-1,4,0,0,-1,1

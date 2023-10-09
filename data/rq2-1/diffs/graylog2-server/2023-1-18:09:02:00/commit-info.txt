@@ -1,0 +1,11 @@
+commit a3aad3a252ee32840fa705c115359107a7feac94 (2023/1/18 09:02:00)
+9,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/favorites/Favorite.java,1,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/favorites/FavoriteDTO.java,1,0,0,0,0,0,0,0,0
+11,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/favorites/FavoritesForUserDTO.java,1,0,0,0,0,0,0,0,0
+25,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/startpage/lastOpened/LastOpened.java,1,0,0,0,0,0,0,0,0
+26,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/startpage/lastOpened/LastOpenedDTO.java,1,0,0,0,0,0,0,0,0
+27,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/startpage/lastOpened/LastOpenedForUserDTO.java,1,0,0,0,0,0,0,0,0
+30,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/startpage/recentActivities/RecentActivity.java,1,0,0,0,0,0,0,0,0
+32,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/startpage/recentActivities/RecentActivityEvent.java,1,0,0,0,0,0,0,0,0
+41,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/lookup/Catalog.java,1,0,0,0,0,0,0,0,0
+total,9,0,0,0,0,0,0,0,0

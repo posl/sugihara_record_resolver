@@ -1,0 +1,3 @@
+commit b616c86cd543450d7f623445df4194f37cd5e594 (2022/9/25 13:40:45)
+1,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/gui/widgets/AETextField.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

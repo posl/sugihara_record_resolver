@@ -1,0 +1,5 @@
+commit a84a7dbc3d7d7a519e3ef9c080c07d97befd4758 (2022/8/15 10:44:36)
+1: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/AccountIdentifierResponse.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/UsernameRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/UsernameResponse.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

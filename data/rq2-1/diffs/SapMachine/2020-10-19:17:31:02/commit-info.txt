@@ -1,0 +1,4 @@
+commit 48ccda152c83e5421b47cbc8b08ced0dbebcfe6c (2020/10/19 17:31:02)
+149,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/io/Serializable/records/DifferentStreamFieldsTest.java,0,0,0,-24,0,0,1,-25,0
+221,../data_original/repositories/rep1322/copied/SapMachine/test/lib/jdk/test/lib/serial/SerialObjectBuilder.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-24,0,0,1,-25,0

@@ -1,0 +1,3 @@
+commit 62db10428150afdcd2f268e063efdcf95ee57aa5 (2022/10/21 19:11:24)
+2,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/test/java/io/activej/dataflow/stream/AbstractCalciteTest.java,0,0,0,-11,0,0,0,-11,1
+total,0,0,0,-11,0,0,0,-11,1

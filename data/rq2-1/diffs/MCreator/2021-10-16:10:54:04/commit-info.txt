@@ -1,0 +1,3 @@
+commit 3fd4f21b4555e11704b1e57568c8e2b27536f650 (2021/10/16 10:54:04)
+5,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/util/locale/LocaleRegistration.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

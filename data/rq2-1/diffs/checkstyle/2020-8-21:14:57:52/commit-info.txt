@@ -1,0 +1,3 @@
+commit 149f8c64061ebd45b16c0d52db3af13f010390ee (2020/8/21 14:57:52)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/missingjavadoctype/InputMissingJavadocTypeRecords.java,6,0,0,0,0,0,0,0,0
+total,6,0,0,0,0,0,0,0,0

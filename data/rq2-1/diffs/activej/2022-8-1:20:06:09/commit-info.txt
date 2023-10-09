@@ -1,0 +1,3 @@
+commit fb95d50a1c2b93d5f02c6a5189fd007e519937f7 (2022/8/1 20:06:09)
+2,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/RecordProjectionFn.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

@@ -1,0 +1,4 @@
+commit 7c4a26f1a37b9cdcfc3cd66ebd2cc937191074f5 (2021/6/25 10:13:53)
+1: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/LeftCurlyBraceEndLineCheck_java16.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/LeftCurlyBraceStartLineCheck_java16.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

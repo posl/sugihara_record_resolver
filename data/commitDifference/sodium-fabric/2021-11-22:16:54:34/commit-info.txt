@@ -1,0 +1,4 @@
+commit 6db3eb9675c7183478ec07b4356bafad020c2d06 (2021/11/22 16:54:34)
+1: ../data/repositories/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/gl/shader/ShaderBindingPoint.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+2: ../data/repositories/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/render/chunk/shader/ChunkShaderOptions.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 1, 0, 0, 0, 1

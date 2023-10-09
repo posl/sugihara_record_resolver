@@ -1,0 +1,4 @@
+commit 34767f2c57eccd6b63ab0e4266d842d48921f7fc (2023/1/30 17:45:04)
+18,../data_original/repositories/rep1374/copied/activej/extra/cloud-crdt/src/main/java/io/activej/crdt/storage/local/FileSystemCrdtStorage.java,2,0,0,0,0,0,0,0,0
+40,../data_original/repositories/rep1374/copied/activej/launchers/crdt/src/main/java/io/activej/launchers/crdt/CrdtDescriptor.java,0,0,0,-1,0,0,0,-1,1
+total,2,0,0,-1,0,0,0,-1,1

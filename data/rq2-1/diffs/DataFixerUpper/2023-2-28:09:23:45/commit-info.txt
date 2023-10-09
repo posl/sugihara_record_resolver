@@ -1,0 +1,12 @@
+commit d93ea7cefdc7b77ba10e2c671f55486ba94caae (2023/2/28 09:23:45)
+1,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Check.java,0,1,0,-1,0,0,0,0,0
+2,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/CompoundList.java,0,1,0,-1,0,0,0,0,0
+3,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Const.java,0,1,0,-1,0,0,0,0,0
+4,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Hook.java,0,1,0,-1,0,0,0,0,0
+5,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/List.java,0,1,0,-1,0,0,0,0,0
+6,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Named.java,0,1,0,-1,0,0,0,0,0
+7,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Product.java,0,1,0,-1,0,0,0,0,0
+8,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/RecursivePoint.java,0,1,0,-1,0,0,0,0,0
+9,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Sum.java,0,1,0,-1,0,0,0,0,0
+10,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Tag.java,0,1,0,-1,0,0,0,0,0
+total,0,10,0,-10,0,0,0,0,0

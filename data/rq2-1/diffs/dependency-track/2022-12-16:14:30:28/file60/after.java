@@ -1,0 +1,138 @@
+/*
+ * This file is part of Dependency-Track.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ * Copyright (c) Steve Springett. All Rights Reserved.
+ */
+package org.dependencytrack.search;
+
+import alpine.common.logging.Logger;
+import alpine.notification.Notification;
+import alpine.notification.NotificationLevel;
+import alpine.persistence.PaginatedResult;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.Field;
+import org.apache.lucene.index.CorruptIndexException;
+import org.apache.lucene.index.Term;
+import org.dependencytrack.model.Vulnerability;
+import org.dependencytrack.notification.NotificationConstants;
+import org.dependencytrack.notification.NotificationGroup;
+import org.dependencytrack.notification.NotificationScope;
+import org.dependencytrack.persistence.QueryManager;
+
+import java.io.IOException;
+import java.util.List;
+
+/**
+ * Indexer for operating on vulnerabilities.
+ *
+ * @author Steve Springett
+ * @since 3.0.0
+ */
+public final class VulnerabilityIndexer extends IndexManager implements ObjectIndexer<Vulnerability> {
+
+    private static final Logger LOGGER = Logger.getLogger(VulnerabilityIndexer.class);
+    private static final VulnerabilityIndexer INSTANCE = new VulnerabilityIndexer();
+
+    protected static VulnerabilityIndexer getInstance() {
+        return INSTANCE;
+    }
+
+    /**
+     * Private constructor.
+     */
+    private VulnerabilityIndexer() {
+        super(IndexType.VULNERABILITY);
+    }
+
+    @Override
+    public String[] getSearchFields() {
+        return IndexConstants.VULNERABILITY_SEARCH_FIELDS;
+    }
+
+    /**
+     * Adds a Vulnerability object to a Lucene index.
+     *
+     * @param vulnerability A persisted Vulnerability object.
+     */
+    public void add(final Vulnerability vulnerability) {
+        final Document doc = new Document();
+        addField(doc, IndexConstants.VULNERABILITY_UUID, vulnerability.getUuid().toString(), Field.Store.YES, false);
+        addField(doc, IndexConstants.VULNERABILITY_VULNID, vulnerability.getVulnId(), Field.Store.YES, true);
+        addField(doc, IndexConstants.VULNERABILITY_DESCRIPTION, vulnerability.getDescription(), Field.Store.YES, true);
+        addField(doc, IndexConstants.VULNERABILITY_SOURCE, vulnerability.getSource(), Field.Store.YES, false);
+
+        try {
+            getIndexWriter().addDocument(doc);
+        } catch (CorruptIndexException e) {
+            handleCorruptIndexException(e);
+        } catch (IOException e) {
+            LOGGER.error("An error occurred while adding a vulnerability to the index", e);
+            Notification.dispatch(new Notification()
+                    .scope(NotificationScope.SYSTEM)
+                    .group(NotificationGroup.INDEXING_SERVICE)
+                    .title(NotificationConstants.Title.VULNERABILITY_INDEXER)
+                    .content("An error occurred while adding a vulnerability to the index. Check log for details. " + e.getMessage())
+                    .level(NotificationLevel.ERROR)
+            );
+        }
+    }
+
+    /**
+     * Deletes a Vulnerability object from the Lucene index.
+     *
+     * @param vulnerability A persisted Vulnerability object.
+     */
+    public void remove(final Vulnerability vulnerability) {
+        try {
+            getIndexWriter().deleteDocuments(new Term(IndexConstants.VULNERABILITY_UUID, vulnerability.getUuid().toString()));
+        } catch (CorruptIndexException e) {
+            handleCorruptIndexException(e);
+        } catch (IOException e) {
+            LOGGER.error("An error occurred while removing a vulnerability from the index", e);
+            Notification.dispatch(new Notification()
+                    .scope(NotificationScope.SYSTEM)
+                    .group(NotificationGroup.INDEXING_SERVICE)
+                    .title(NotificationConstants.Title.VULNERABILITY_INDEXER)
+                    .content("An error occurred while removing a vulnerability from the index. Check log for details. " + e.getMessage())
+                    .level(NotificationLevel.ERROR)
+            );
+        }
+    }
+
+    /**
+     * Re-indexes all Vulnerability objects.
+     * @since 3.4.0
+     */
+    public void reindex() {
+        LOGGER.info("Starting reindex task. This may take some time.");
+        super.reindex();
+        try (QueryManager qm = new QueryManager()) {
+            final long total = qm.getCount(Vulnerability.class);
+            long count = 0;
+            while (count < total) {
+                final PaginatedResult result = qm.getVulnerabilities();
+                final List<Vulnerability> vulnerabilities = result.getList(Vulnerability.class);
+                for (final Vulnerability vulnerability: vulnerabilities) {
+                    add(vulnerability);
+                }
+                count += result.getObjects().size();
+                qm.advancePagination();
+            }
+            commit();
+        }
+        LOGGER.info("Reindexing complete");
+    }
+}

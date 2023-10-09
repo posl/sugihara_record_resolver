@@ -1,0 +1,5 @@
+commit 37e49f9d19279793f1425b010aa9222d6d05ae0 (2021/4/1 17:29:18)
+14,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappMediaConnection.java,1,0,0,0,0,0,0,0,0
+17,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappMediaUpload.java,1,0,0,0,0,0,0,0,0
+25,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/MediaConnectionResponse.java,1,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

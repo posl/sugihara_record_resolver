@@ -1,0 +1,3 @@
+commit bbe5a2366e02cff6050a39cf149255f6356c45aa (2020/8/5 22:31:08)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/outertypefilename/InputOuterTypeFilenameRecord.java, 0, 0, 1, 0, 0, 0, 1, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 1, 0, 0

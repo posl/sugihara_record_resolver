@@ -1,0 +1,3 @@
+commit 58a0f2e638191107c46b970f06b0d382de8bc44b (2023/1/21 23:22:49)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Attributes.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

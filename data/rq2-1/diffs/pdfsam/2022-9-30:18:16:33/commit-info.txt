@@ -1,0 +1,14 @@
+commit e4b8eb878b82ca5ea4e32173bab3f8b0e77c69a9 (2022/9/30 18:16:33)
+172,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/tool/ClearToolRequest.java,1,0,0,0,0,0,0,0,0
+173,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/ChangedSelectedPdfVersionEvent.java,1,0,0,0,0,0,0,0,0
+175,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/NonExistingOutputDirectoryEvent.java,1,0,0,0,0,0,0,0,0
+176,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetActiveToolRequest.java,1,0,0,0,0,0,0,0,0
+177,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetDestinationRequest.java,1,0,0,0,0,0,0,0,0
+178,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/ShowPdfDescriptorRequest.java,1,0,0,0,0,0,0,0,0
+180,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/dnd/MultipleFilesDroppedEvent.java,1,0,0,0,0,0,0,0,0
+226,../data_original/repositories/rep381/copied/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/notification/AddNotificationRequest.java,1,0,0,0,0,0,0,0,0
+234,../data_original/repositories/rep381/copied/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/selection/SetPageRangesRequest.java,1,0,0,0,0,0,0,0,0
+235,../data_original/repositories/rep381/copied/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/selection/ShowPasswordFieldPopupRequest.java,1,0,0,0,0,0,0,0,0
+254,../data_original/repositories/rep381/copied/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/selection/multiple/move/MoveSelectedEvent.java,1,0,0,0,0,0,0,0,0
+255,../data_original/repositories/rep381/copied/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/selection/multiple/move/MoveType.java,1,0,0,0,0,0,0,0,0
+total,12,0,0,0,0,0,0,0,0

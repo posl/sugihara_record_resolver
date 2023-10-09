@@ -1,0 +1,6 @@
+commit 206564c408de74c5ecb773d45e7cd869aa856f1b (2022/9/20 11:10:12)
+21,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/auth/logout/GithubLogoutSuccessHandler.java,1,0,0,0,0,0,0,0,0
+38,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/AssociatedOwnerDto.java,1,0,0,0,0,0,0,0,0
+39,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/OwnerAssociationRequestDto.java,1,0,0,0,0,0,0,0,0
+40,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/security/UserDto.java,1,0,0,0,0,0,0,0,0
+total,4,0,0,0,0,0,0,0,0

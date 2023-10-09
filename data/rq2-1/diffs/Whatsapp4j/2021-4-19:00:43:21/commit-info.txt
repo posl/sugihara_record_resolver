@@ -1,0 +1,3 @@
+commit a8c67c30ba5b7148abf038f4ccfe0c9869e96fbe (2021/4/19 00:43:21)
+4,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/binary/BinaryEncoder.java,0,1,0,-1,0,0,0,0,0
+total,0,1,0,-1,0,0,0,0,0

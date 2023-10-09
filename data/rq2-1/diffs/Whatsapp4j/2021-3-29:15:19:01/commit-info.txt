@@ -1,0 +1,5 @@
+commit 117eac045ff3261942cd6f1f94f76a583f22e078 (2021/3/29 15:19:01)
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappNode.java,0,0,0,-1,0,0,0,-1,1
+9,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/CommonGroupsResponse.java,0,0,0,-1,0,0,0,-1,1
+10,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/model/JsonResponse.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,0,-3,3

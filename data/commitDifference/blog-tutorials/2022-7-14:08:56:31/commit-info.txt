@@ -1,0 +1,3 @@
+commit 38cf9e2855c3b6b9ced44ca27e44725ba594843b (2022/7/14 08:56:31)
+1: ../data/repositories/blog-tutorials/spring-boot-test-mockmvc-webtestclient-testresttemplate/src/main/java/de/rieckpil/Customer.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,3 @@
+commit 28c17f725567cf1bd447c8d7c48fde415c27ff1 (2020/7/27 09:09:36)
+7,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/java14/InputJava14RecordsTopLevel.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

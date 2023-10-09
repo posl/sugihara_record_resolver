@@ -1,0 +1,5 @@
+commit be6370d536eeaa5592f0bcc58e021bfbf8932686 (2023/2/21 09:01:28)
+2,../data_original/repositories/rep240/copied/crate/server/src/main/java/io/crate/execution/dml/IndexItem.java,1,0,0,0,0,0,0,0,0
+3,../data_original/repositories/rep240/copied/crate/server/src/main/java/io/crate/execution/dml/Indexer.java,7,0,0,0,0,0,0,0,0
+24,../data_original/repositories/rep240/copied/crate/server/src/main/java/io/crate/types/StorageSupport.java,0,0,0,0,0,1,0,-1,0
+total,8,0,0,0,0,1,0,-1,0

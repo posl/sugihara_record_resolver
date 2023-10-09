@@ -1,0 +1,8 @@
+commit b61b56e86364316ce50ebd579c4e7a7e5267e8d3 (2021/12/30 15:19:47)
+1: ../data/repositories/CloudNet-v3/launcher/java17/src/main/java/eu/cloudnetservice/launcher/dependency/Dependency.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/launcher/java17/src/main/java/eu/cloudnetservice/launcher/dependency/Repository.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/CloudNet-v3/launcher/java17/src/main/java/eu/cloudnetservice/launcher/updater/LauncherUpdaterContext.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/CloudNet-v3/node/src/main/java/de/dytanic/cloudnet/module/ModuleEntry.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/CloudNet-v3/node/src/main/java/de/dytanic/cloudnet/module/ModulesHolder.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/CloudNet-v3/node/src/main/java/de/dytanic/cloudnet/module/updater/ModuleUpdaterContext.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 6, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,14 @@
+commit e4b8eb878b82ca5ea4e32173bab3f8b0e77c69a9 (2022/9/30 18:16:33)
+1: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/tool/ClearToolRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/ChangedSelectedPdfVersionEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/NonExistingOutputDirectoryEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetActiveToolRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetDestinationRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/ShowPdfDescriptorRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/dnd/MultipleFilesDroppedEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/notification/AddNotificationRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+9: ../data/repositories/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/selection/SetPageRangesRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+10: ../data/repositories/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/selection/ShowPasswordFieldPopupRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+11: ../data/repositories/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/selection/multiple/move/MoveSelectedEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+12: ../data/repositories/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/selection/multiple/move/MoveType.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 12, 0, 0, 0, 0, 0, 0, 0, 0

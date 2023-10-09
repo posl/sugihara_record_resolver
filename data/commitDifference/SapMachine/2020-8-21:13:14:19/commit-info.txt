@@ -1,0 +1,4 @@
+commit 8063ca951a5a7e242382e8e3d606ac54b3516818 (2020/8/21 13:14:19)
+1: ../data/repositories/SapMachine/test/langtools/tools/javac/records/mandated_members/read_resolve_method/CheckReadResolveMethodTest.java, 0, 0, 0, 0, 5, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/test/langtools/tools/javac/warnings/DefaultCtor/NoWarningRecord.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 5, 0, 0, 0, 0

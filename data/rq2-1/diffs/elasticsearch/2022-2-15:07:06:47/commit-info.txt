@@ -1,0 +1,7 @@
+commit ac3d0beaf00e3b9b6f95fc889b6783e627609705 (2022/2/15 07:06:47)
+5,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/NerProcessor.java,0,2,0,-2,0,0,0,0,0
+6,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/NlpTask.java,0,1,0,-1,0,0,0,0,0
+10,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/ZeroShotClassificationProcessor.java,0,2,0,-2,0,0,0,0,0
+13,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/tokenizers/CharSeqTokenTrieNode.java,0,1,0,-1,0,0,0,0,0
+17,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/tokenizers/TokenizationResult.java,0,0,1,-1,0,0,0,0,0
+total,0,6,1,-7,0,0,0,0,0

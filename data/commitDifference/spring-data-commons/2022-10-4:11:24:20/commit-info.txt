@@ -1,0 +1,4 @@
+commit 6a0a404ef2f84e1be76ba3c2560143ea020d7118 (2022/10/4 11:24:20)
+1: ../data/repositories/spring-data-commons/src/test/java/org/springframework/data/mapping/InstantiationAwarePersistentPropertyAccessorUnitTests.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/spring-data-commons/src/test/java/org/springframework/data/mapping/PreferredConstructorDiscovererUnitTests.java, 0, 0, 3, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 4, 0, 0, 0, 0, 0, 0

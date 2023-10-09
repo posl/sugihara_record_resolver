@@ -1,0 +1,3 @@
+commit 36151813cd4248ed8e1ad1e440c4014614b08e10 (2022/9/15 19:08:48)
+1: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/loot/NeedsPressCondition.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+sum: 0, 0, 0, 0, 1, 0, 0, 0, 0

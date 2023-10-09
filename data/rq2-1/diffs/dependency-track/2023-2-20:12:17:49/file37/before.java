@@ -1,0 +1,181 @@
+/*
+ * This file is part of Dependency-Track.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ * Copyright (c) Steve Springett. All Rights Reserved.
+ */
+package org.dependencytrack.tasks;
+
+import alpine.common.logging.Logger;
+import alpine.event.framework.Event;
+import alpine.event.framework.Subscriber;
+import org.apache.commons.collections4.CollectionUtils;
+import org.dependencytrack.event.InternalAnalysisEvent;
+import org.dependencytrack.event.OssIndexAnalysisEvent;
+import org.dependencytrack.event.PortfolioVulnerabilityAnalysisEvent;
+import org.dependencytrack.event.ProjectMetricsUpdateEvent;
+import org.dependencytrack.event.VulnDbAnalysisEvent;
+import org.dependencytrack.event.VulnerabilityAnalysisEvent;
+import org.dependencytrack.event.SnykAnalysisEvent;
+import org.dependencytrack.model.VulnerabilityAnalysisLevel;
+import org.dependencytrack.model.Component;
+import org.dependencytrack.model.Project;
+import org.dependencytrack.persistence.QueryManager;
+import org.dependencytrack.policy.PolicyEngine;
+import org.dependencytrack.tasks.scanners.CacheableScanTask;
+import org.dependencytrack.tasks.scanners.InternalAnalysisTask;
+import org.dependencytrack.tasks.scanners.OssIndexAnalysisTask;
+import org.dependencytrack.tasks.scanners.ScanTask;
+import org.dependencytrack.tasks.scanners.VulnDbAnalysisTask;
+import org.dependencytrack.tasks.scanners.AnalyzerIdentity;
+import org.dependencytrack.tasks.scanners.SnykAnalysisTask;
+
+import java.time.Duration;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+import java.util.stream.Collectors;
+
+public class VulnerabilityAnalysisTask implements Subscriber {
+
+    private static final Logger LOGGER = Logger.getLogger(VulnerabilityAnalysisTask.class);
+
+    private final List<Component> internalCandidates = new ArrayList<>();
+    private final List<Component> ossIndexCandidates = new ArrayList<>();
+    private final List<Component> vulnDbCandidates = new ArrayList<>();
+    private final List<Component> snykCandidates = new ArrayList<>();
+
+    /**
+     * {@inheritDoc}
+     */
+    public void inform(final Event e) {
+        if (e instanceof VulnerabilityAnalysisEvent) {
+            final VulnerabilityAnalysisEvent event = (VulnerabilityAnalysisEvent) e;
+
+            if (event.getComponents() != null && event.getComponents().size() > 0) {
+                final List<Component> components = new ArrayList<>();
+                try (final QueryManager qm = new QueryManager()) {
+                    for (final Component c : event.getComponents()) {
+                        // Ensures the current component (and related objects such as Project) are attached to the
+                        // current persistence manager. This may cause duplicate projects to be created and other
+                        // unexpected behavior.
+                        components.add(qm.getObjectByUuid(Component.class, c.getUuid()));
+                    }
+                    analyzeComponents(qm, components, e);
+                }
+                performPolicyEvaluation(event.getProject(), components);
+            } else if (event.getProject() != null) {
+                performPolicyEvaluation(event.getProject(), new ArrayList<>());
+            }
+        } else if (e instanceof PortfolioVulnerabilityAnalysisEvent) {
+            final PortfolioVulnerabilityAnalysisEvent event = (PortfolioVulnerabilityAnalysisEvent) e;
+            LOGGER.info("Analyzing portfolio");
+            try (final QueryManager qm = new QueryManager()) {
+                final List<UUID> projectUuids = qm.getAllProjects(true)
+                        .stream()
+                        .map(Project::getUuid)
+                        .collect(Collectors.toList());
+                for (final UUID projectUuid: projectUuids) {
+                    final Project project = qm.getObjectByUuid(Project.class, projectUuid);
+                    if (project == null) continue;
+                    final List<Component> components = qm.getAllComponents(project);
+                    LOGGER.info("Analyzing " + components.size() + " components in project: " + project.getUuid());
+                    analyzeComponents(qm, components, e);
+                    performPolicyEvaluation(project, components);
+                    LOGGER.info("Completed scheduled analysis of " + components.size() + " components in project: " + project.getUuid());
+                }
+            }
+            LOGGER.info("Portfolio analysis complete");
+        }
+    }
+
+    private void analyzeComponents(final QueryManager qm, final List<Component> components, final Event event) {
+        /*
+          When this task is processing events that specify the components to scan,
+          separate them out into 'candidates' so that we can fire off multiple events
+          in hopes of perform parallel analysis using different analyzers.
+        */
+        final InternalAnalysisTask internalAnalysisTask = new InternalAnalysisTask();
+        final OssIndexAnalysisTask ossIndexAnalysisTask = new OssIndexAnalysisTask();
+        final VulnDbAnalysisTask vulnDbAnalysisTask = new VulnDbAnalysisTask();
+        final SnykAnalysisTask snykAnalysisTask = new SnykAnalysisTask();
+        for (final Component component : components) {
+            inspectComponentReadiness(component, internalAnalysisTask, internalCandidates);
+            inspectComponentReadiness(component, ossIndexAnalysisTask, ossIndexCandidates);
+            inspectComponentReadiness(component, vulnDbAnalysisTask, vulnDbCandidates);
+            inspectComponentReadiness(component, snykAnalysisTask, snykCandidates);
+        }
+
+        qm.detach(components);
+
+        // Do not call individual async events when processing a known list of components.
+        // Call each analyzer task sequentially and catch any exceptions as to prevent one analyzer
+        // from interrupting the successful execution of all analyzers.
+        performAnalysis(internalAnalysisTask, new InternalAnalysisEvent(internalCandidates), internalAnalysisTask.getAnalyzerIdentity(), event);
+        performAnalysis(ossIndexAnalysisTask, new OssIndexAnalysisEvent(ossIndexCandidates), ossIndexAnalysisTask.getAnalyzerIdentity(), event);
+        performAnalysis(snykAnalysisTask, new SnykAnalysisEvent(snykCandidates), snykAnalysisTask.getAnalyzerIdentity(), event);
+        performAnalysis(vulnDbAnalysisTask, new VulnDbAnalysisEvent(vulnDbCandidates), vulnDbAnalysisTask.getAnalyzerIdentity(), event);
+    }
+
+    private void performPolicyEvaluation(Project project, List<Component> components) {
+        // Evaluate the components against applicable policies via the PolicyEngine.
+        final PolicyEngine pe = new PolicyEngine();
+        pe.evaluate(components);
+        if (project != null) {
+            Event.dispatch(new ProjectMetricsUpdateEvent(project.getUuid()));
+        }
+    }
+
+    private void inspectComponentReadiness(final Component component, final ScanTask scanTask, final List<Component> candidates) {
+        if (scanTask.isCapable(component)) {
+            if (scanTask.getClass().isAssignableFrom(CacheableScanTask.class)) {
+                final CacheableScanTask cacheableScanTask = (CacheableScanTask)scanTask;
+                if (cacheableScanTask.shouldAnalyze(component.getPurl())) {
+                    candidates.add(component);
+                } else {
+                    cacheableScanTask.applyAnalysisFromCache(component);
+                }
+            } else {
+                candidates.add(component);
+            }
+        }
+    }
+
+    private void performAnalysis(final Subscriber scanTask, final VulnerabilityAnalysisEvent event,
+                                 final AnalyzerIdentity analyzerIdentity, final Event eventType) {
+        Instant start = Instant.now();
+        event.setVulnerabilityAnalysisLevel(VulnerabilityAnalysisLevel.PERIODIC_ANALYSIS);
+        if(eventType instanceof VulnerabilityAnalysisEvent) {
+            event.setVulnerabilityAnalysisLevel(VulnerabilityAnalysisLevel.BOM_UPLOAD_ANALYSIS);
+        }
+        if (CollectionUtils.isNotEmpty(event.getComponents())) {
+            // Clear the transient cache result for each component.
+            // Each analyzer will have its own result. Therefore, we do not want to mix them.
+            event.getComponents().forEach(c -> c.setCacheResult(null));
+            try {
+                scanTask.inform(event);
+            } catch (Exception ex) {
+                LOGGER.error("An unexpected error occurred performing a vulnerability analysis task", ex);
+            }
+            // Clear the transient cache result for each component.
+            // Each analyzer will have its own result. Therefore, we do not want to mix them.
+            event.getComponents().forEach(c -> c.setCacheResult(null));
+            Instant end = Instant.now();
+            Duration timeElapsed = Duration.between(start, end);
+            LOGGER.debug("Time taken by perform analysis task by "+analyzerIdentity.name()+" : "+ timeElapsed.toMillis() +" milliseconds");
+        }
+    }
+}

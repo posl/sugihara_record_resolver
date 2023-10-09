@@ -1,0 +1,4 @@
+commit 81d6d70ebc01fbbf831c61ac9f1f13eab739d927 (2020/6/13 00:17:22)
+1: ../data/repositories/sirix/bundles/sirix-xquery/src/main/java/org/sirix/xquery/compiler/optimizer/walker/json/PathData.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/sirix/bundles/sirix-xquery/src/main/java/org/sirix/xquery/compiler/optimizer/walker/json/PathSegmentData.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

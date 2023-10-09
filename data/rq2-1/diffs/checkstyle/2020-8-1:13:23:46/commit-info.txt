@@ -1,0 +1,3 @@
+commit d4f45d6a36a1bee75366b9ebc606de273f8b2a5b (2020/8/1 13:23:46)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/uncommentedmain/InputUncommentedMainRecords.java,3,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

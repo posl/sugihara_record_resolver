@@ -1,0 +1,3 @@
+commit 259eef3edc96532b2f17b8398241093a54463886 (2023/5/5 20:14:22)
+4,../data_original/repositories/rep1374/copied/activej/cloud-rpc/src/main/java/io/activej/rpc/protocol/RpcMessageSerializer.java,0,0,0,0,1,0,0,0,0
+total,0,0,0,0,1,0,0,0,0

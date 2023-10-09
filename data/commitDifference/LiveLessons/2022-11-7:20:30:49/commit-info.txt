@@ -1,0 +1,3 @@
+commit 84b0ea7e5b8568b73a64172a91f56c357cf71cd6 (2022/11/7 20:30:49)
+1: ../data/repositories/LiveLessons/Java8/ex44/src/main/java/ex44.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

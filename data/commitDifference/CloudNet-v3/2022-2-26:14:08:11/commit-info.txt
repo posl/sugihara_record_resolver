@@ -1,0 +1,3 @@
+commit afd670343d0b2705732bfaa17cd846b381ab7c0 (2022/2/26 14:08:11)
+1: ../data/repositories/CloudNet-v3/modules/dockerized-services/src/main/java/eu/cloudnetservice/modules/docker/config/DockerConfiguration.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

@@ -1,0 +1,3 @@
+commit 3c1d63004040d6245fe7db7352438880cef1d026 (2021/11/2 20:11:42)
+2,../data_original/repositories/rep1899/copied/cloud-native-spring-in-action/Chapter05/05-end/catalog-service-jpa/src/main/java/com/polarbookshop/catalogservice/config/PolarProperties.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

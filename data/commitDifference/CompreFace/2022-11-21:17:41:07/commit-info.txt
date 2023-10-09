@@ -1,0 +1,3 @@
+commit f839e3427404de00aa0b4122c6cc833f501fc3cf (2022/11/21 17:41:07)
+1: ../data/repositories/CompreFace/java/common/src/main/java/com/exadel/frs/commonservice/entity/ModelProjection.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,3 @@
+commit 80befec5893fcd75131b7ef65196bb86c2e836b5 (2022/1/22 16:41:00)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/Device.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

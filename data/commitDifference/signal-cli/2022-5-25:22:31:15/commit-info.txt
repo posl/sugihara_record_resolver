@@ -1,0 +1,5 @@
+commit f701df91f0c76059bd249ad2df0069ec9497061 (2022/5/25 22:31:15)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/Message.java, 0, 0, 1, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/json/JsonDataMessage.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/json/JsonPreview.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 1, 0, 0, 0, 0, 0, 2

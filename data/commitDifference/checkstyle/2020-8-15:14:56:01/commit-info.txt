@@ -1,0 +1,4 @@
+commit 3ee42d3deb541e191cf270aa6027a5cec137649e (2020/8/15 14:56:01)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/modifier/classmemberimpliedmodifier/InputClassMemberImpliedModifierNoViolationRecords.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/modifier/classmemberimpliedmodifier/InputClassMemberImpliedModifierRecords.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 10, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,8 @@
+commit 8530a40ef4f8e6279afd64448991597d48eb46e7 (2021/4/4 20:30:27)
+15,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappNode.java,0,0,0,-1,0,0,0,-1,1
+28,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/DescriptionChangeResponse.java,1,0,0,0,0,0,0,0,0
+29,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/GroupActionResponse.java,1,0,0,0,0,0,0,0,0
+30,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/InitialResponse.java,1,0,0,0,0,0,0,0,0
+31,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/SubjectChangeResponse.java,1,0,0,0,0,0,0,0,0
+32,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/TakeOverResponse.java,1,0,0,0,0,0,0,0,0
+total,5,0,0,-1,0,0,0,-1,1

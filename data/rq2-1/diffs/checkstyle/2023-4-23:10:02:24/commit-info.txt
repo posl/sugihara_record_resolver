@@ -1,0 +1,7 @@
+commit 95a8956c1d9a5933d152b43a38a16fe608a934c8 (2023/4/23 10:02:24)
+11,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/atclauseorder/InputAtclauseOrderLotsOfRecords.java,0,0,0,0,24,0,0,0,0
+12,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/atclauseorder/InputAtclauseOrderLotsOfRecords1.java,4,0,0,0,0,0,0,0,0
+13,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/atclauseorder/InputAtclauseOrderLotsOfRecords2.java,8,0,0,0,0,0,0,0,0
+14,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/atclauseorder/InputAtclauseOrderLotsOfRecords3.java,8,0,0,0,0,0,0,0,0
+15,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/atclauseorder/InputAtclauseOrderLotsOfRecords4.java,4,0,0,0,0,0,0,0,0
+total,24,0,0,0,24,0,0,0,0

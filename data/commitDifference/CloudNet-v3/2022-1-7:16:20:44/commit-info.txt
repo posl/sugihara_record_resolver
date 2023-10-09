@@ -1,0 +1,3 @@
+commit b653cb565ef3a1750e2ed811f77964d926fdbd22 (2022/1/7 16:20:44)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/cloudnet/driver/event/DefaultRegisteredEventListener.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

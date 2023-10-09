@@ -1,0 +1,4 @@
+commit 28db71c986caf2390b51c48a544b6b213f4abcb8 (2022/11/19 14:28:18)
+1: ../data/repositories/sirix/bundles/sirix-core/src/main/java/org/sirix/access/trx/page/NodePageTrx.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/sirix/bundles/sirix-core/src/main/java/org/sirix/cache/IndexLogKey.java, 0, 0, 0, 0, 0, 1, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 1, 0, 0, 0

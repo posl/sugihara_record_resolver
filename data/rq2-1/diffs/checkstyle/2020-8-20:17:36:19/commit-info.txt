@@ -1,0 +1,5 @@
+commit eb8c10115483b6d36bd75c3d24367dc6d44c009a (2020/8/20 17:36:19)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/atclauseorder/InputAtclauseOrderLotsOfRecords.java,24,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/atclauseorder/InputAtclauseOrderRecords.java,2,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/utils/blockcommentposition/InputBlockCommentPositionOnCompactCtor.java,0,0,0,-3,0,0,0,-3,1
+total,26,0,0,-3,0,0,0,-3,1

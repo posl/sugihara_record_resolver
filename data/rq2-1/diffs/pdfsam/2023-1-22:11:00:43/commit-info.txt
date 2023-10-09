@@ -1,0 +1,9 @@
+commit 280474e4adf4be409f38dd4e1510fdd2bfc683fd (2023/1/22 11:00:43)
+7,../data_original/repositories/rep381/copied/pdfsam/pdfsam-gui/src/main/java/org/pdfsam/gui/AppContentController.java,1,0,0,0,0,0,0,0,0
+30,../data_original/repositories/rep381/copied/pdfsam/pdfsam-gui/src/main/java/org/pdfsam/gui/components/content/log/LogMessage.java,1,0,0,0,0,0,0,0,0
+127,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/log/ClearLogRequest.java,1,0,0,0,0,0,0,0,0
+128,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/log/SaveLogRequest.java,1,0,0,0,0,0,0,0,0
+131,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetActiveContentItemRequest.java,1,0,0,0,0,0,0,0,0
+132,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetActiveToolRequest.java,0,0,0,0,1,0,0,0,0
+133,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/ShowErrorMessagesRequest.java,1,0,0,0,0,0,0,0,0
+total,6,0,0,0,1,0,0,0,0

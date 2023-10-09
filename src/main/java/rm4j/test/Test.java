@@ -69,7 +69,39 @@ public class Test{
             }
         });
 
-        test6.run();
+        Timer test7 = new Timer(() -> {
+            try{
+                new DatasetManager().mineClassInfo();
+            }catch(IOException e){
+                e.printStackTrace();
+            }
+        });
+
+        Timer test8 = new Timer(() -> {
+            try{
+                new TypeComparator().getRecordToClassConversion();
+            }catch(IOException e){
+                e.printStackTrace();
+            }
+        });
+
+        Timer test9 = new Timer(() -> {
+            try{
+                new DatasetManager().mineClassesAndExpressions();
+            }catch(IOException e){
+                e.printStackTrace();
+            }
+        });
+
+        Timer test10 = new Timer(() -> {
+            try{
+                new DatasetManager().mineAccessors();
+            }catch(IOException e){
+                e.printStackTrace();
+            }
+        });
+
+        test10.run();
     }
 
     public static File debugFile(){

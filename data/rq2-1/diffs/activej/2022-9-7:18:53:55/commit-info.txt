@@ -1,0 +1,3 @@
+commit 2fcd52ff89a1785b77adb00a44b93effeaefa4b (2022/9/7 18:53:55)
+1,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow-jdbc-driver/src/main/java/io/activej/dataflow/jdbc/driver/DataflowResultSet.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

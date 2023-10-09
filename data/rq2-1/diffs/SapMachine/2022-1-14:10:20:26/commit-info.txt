@@ -1,0 +1,3 @@
+commit 2b921e5a8c9122ab8ee04d44df1085a55924fdc6 (2022/1/14 10:20:26)
+80,../data_original/repositories/rep1322/copied/SapMachine/src/jdk.incubator.foreign/share/classes/jdk/internal/foreign/NativeSymbolImpl.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

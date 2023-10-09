@@ -1,0 +1,3 @@
+commit 17a41f0d7286148623386a1d9b6b7f6ed72ffdaa (2022/11/7 18:09:32)
+19,../data_original/repositories/rep1374/copied/activej/core-datastream/src/test/java/io/activej/datastream/processor/StreamLeftJoinTest.java,3,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

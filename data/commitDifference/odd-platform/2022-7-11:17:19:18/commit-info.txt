@@ -1,0 +1,5 @@
+commit 61b72145249034befb841f93bf3fff5ab494d950 (2022/7/11 17:19:18)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/notification/processor/webhook/SlackWebhookSender.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/notification/wal/DecodedWALMessage.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/notification/wal/PostgresWALMessageDecoder.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 0

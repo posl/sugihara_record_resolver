@@ -1,0 +1,3 @@
+commit bd679bcdbaf5741501b97d3517483ee3b548d8eb (2022/8/17 22:28:45)
+1: ../data/repositories/hazelcast/hazelcast-it/jdk17-tests/src/test/java/com/hazelcast/serialization/compact/record/AllTypesRecord.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

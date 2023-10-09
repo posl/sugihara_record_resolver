@@ -1,0 +1,4 @@
+commit c80ac008c2c3b09a5616d52b4e44c624333a5ea6 (2020/8/7 14:15:33)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/emptylineseparator/InputEmptyLineSeparatorRecordsAndCompactCtors.java,7,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/emptylineseparator/InputEmptyLineSeparatorRecordsAndCompactCtorsNoEmptyLines.java,1,0,0,0,0,0,0,0,0
+total,8,0,0,0,0,0,0,0,0

@@ -1,0 +1,5 @@
+commit edb59f905f56cadea4731c3eb61d4a12cf035737 (2022/11/25 18:05:11)
+333,../data_original/repositories/rep60/copied/cas/core/cas-server-core-logout-api/src/main/java/org/apereo/cas/logout/DefaultLogoutManager.java,0,0,0,-1,0,0,0,-1,1
+454,../data_original/repositories/rep60/copied/cas/core/cas-server-core-tickets-api/src/main/java/org/apereo/cas/ticket/expiration/builder/TicketGrantingTicketExpirationPolicyBuilder.java,0,0,0,-1,0,0,0,-1,1
+517,../data_original/repositories/rep60/copied/cas/core/cas-server-core-util-api/src/main/java/org/apereo/cas/util/spring/DirectObjectProvider.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,0,-3,3

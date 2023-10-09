@@ -1,0 +1,5 @@
+commit 8a8f80a0468b4b648357fbeab658e96630e5ac12 (2022/1/23 15:44:07)
+1: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/api/networking/crafting/CraftingJobStatus.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/client/gui/widgets/InfoBar.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/menu/me/crafting/CraftingStatusMenu.java, 0, 0, 2, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 2, 0, 0, 0, 0, 0, 0

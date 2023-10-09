@@ -1,0 +1,3 @@
+commit 421d594507fedd8e94efe515015ed3d1352f43e1 (2022/8/1 14:45:08)
+1: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/FcmConfiguration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

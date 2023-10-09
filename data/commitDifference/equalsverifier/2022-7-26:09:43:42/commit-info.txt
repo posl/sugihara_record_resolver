@@ -1,0 +1,3 @@
+commit e14efcdc55c03af6601de110fca70e6ad8ef602f (2022/7/26 09:43:42)
+1: ../data/repositories/equalsverifier/equalsverifier-16/src/test/java/nl/jqno/equalsverifier/internal/reflection/RecordObjectAccessorTest.java, 0, 0, 3, 0, 0, 0, 1, 0, 0
+sum: 0, 0, 3, 0, 0, 0, 1, 0, 0

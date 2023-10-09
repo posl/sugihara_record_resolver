@@ -1,0 +1,5 @@
+commit 92e9d2e79ca89f5b096f7169176291a8697ee91b (2022/10/17 23:20:54)
+39,../data_original/repositories/rep60/copied/cas/core/cas-server-core-events-api/src/main/java/org/apereo/cas/support/events/listener/CasAuthenticationAuthenticationEventListener.java,0,0,0,-1,0,0,0,-1,1
+45,../data_original/repositories/rep60/copied/cas/core/cas-server-core-services-authentication/src/main/java/org/apereo/cas/authentication/principal/DefaultServiceMatchingStrategy.java,0,0,0,-1,0,0,0,-1,1
+229,../data_original/repositories/rep60/copied/cas/support/cas-server-support-trusted-mfa-dynamodb/src/main/java/org/apereo/cas/trusted/authentication/storage/DynamoDbMultifactorTrustEngineFacilitator.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,0,-3,3

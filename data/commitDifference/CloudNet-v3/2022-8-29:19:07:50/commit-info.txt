@@ -1,0 +1,6 @@
+commit 10b761287e41f79dfa99ad5e24c214103464821d (2022/8/29 19:07:50)
+1: ../data/repositories/CloudNet-v3/modules/cloudflare/src/main/java/eu/cloudnetservice/modules/cloudflare/cloudflare/DnsRecordDetail.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CloudNet-v3/modules/cloudflare/src/main/java/eu/cloudnetservice/modules/cloudflare/config/CloudflareConfiguration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/CloudNet-v3/modules/cloudflare/src/main/java/eu/cloudnetservice/modules/cloudflare/config/CloudflareConfigurationEntry.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/CloudNet-v3/modules/cloudflare/src/main/java/eu/cloudnetservice/modules/cloudflare/config/CloudflareGroupConfiguration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 1

@@ -1,0 +1,75 @@
+package it.auties.whatsapp;
+
+import it.auties.whatsapp.api.Whatsapp;
+import it.auties.whatsapp.model.contact.ContactJid;
+import it.auties.whatsapp.model.message.model.MessageContainer;
+import it.auties.whatsapp.util.Json;
+
+// Just used for testing locally
+public class WebTest {
+    private static final String messageJson = """
+            {
+               "templateMessage":{
+                  "content":{
+                     "templateId":"826505928205159",
+                     "body":"Hi \\nWelcome to 360dialog. How would you like to proceed?",
+                     "buttons":[
+                        {
+                           "quickReplyButton":{
+                              "text":"Speak with an agent"
+                           }
+                        },
+                        {
+                           "quickReplyButton":{
+                              "text":"Get Pricing"
+                           }
+                        }
+                     ]
+                  },
+                  "fourRowTemplateFormat":{
+                     "content":{
+                        "namespace":"c8ae5f90_307a_ca4c_b8f6_d1e2a2573574|en",
+                        "elementName":"interactive_template_sandbox",
+                        "fallbackLg":"en",
+                        "templateMessage":{
+                           "content":{
+                             \s
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+                """;
+    public static void main(String[] args) {
+        Thread.setDefaultUncaughtExceptionHandler((t, e) -> e.printStackTrace());
+        var whatsapp = Whatsapp.lastConnection()
+                .addLoggedInListener(api -> {
+                   try {
+                       System.out.printf("Connected: %s%n", api.store().privacySettings());
+                       var result = Json.readValue(messageJson, MessageContainer.class);
+                       api.sendMessage(ContactJid.of("393495089819"), result)
+                               .thenRun(() -> System.out.println("Sent2"));
+                       System.out.println("Sent");
+                   }catch (Throwable throwable){
+                       throwable.printStackTrace();
+                   }
+                })
+                .addNewMessageListener(message -> System.out.println(message.toJson()))
+                .addContactsListener((api, contacts) -> System.out.printf("Contacts: %s%n", contacts.size()))
+                .addChatsListener(chats -> System.out.printf("Chats: %s%n", chats.size()))
+                .addNodeReceivedListener(incoming -> System.out.printf("Received node %s%n", incoming))
+                .addNodeSentListener(outgoing -> System.out.printf("Sent node %s%n", outgoing))
+                .addActionListener((action, info) -> System.out.printf("New action: %s, info: %s%n", action, info))
+                .addSettingListener(setting -> System.out.printf("New setting: %s%n", setting))
+                .addContactPresenceListener((chat, contact, status) -> System.out.printf("Status of %s changed in %s to %s%n", contact.name(), chat.name(), status.name()))
+                .addAnyMessageStatusListener((chat, contact, info, status) -> System.out.printf("Message %s in chat %s now has status %s for %s %n", info.id(), info.chatName(), status, contact == null ? null : contact.name()))
+                .addChatMessagesSyncListener((chat, last) -> System.out.printf("%s now has %s messages: %s%n", chat.name(), chat.messages().size(), !last ? "waiting for more" : "done"))
+                .addDisconnectedListener(reason -> System.out.printf("Disconnected: %s%n", reason))
+                .connect()
+                .join();
+        System.out.println("Connected");
+        whatsapp.awaitDisconnection();
+        System.out.println("Disconnected");
+    }
+}

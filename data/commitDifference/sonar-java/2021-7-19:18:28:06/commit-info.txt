@@ -1,0 +1,4 @@
+commit ff019c785555dc07d62e577a0d0c78df05e81685 (2021/7/19 18:28:06)
+1: ../data/repositories/sonar-java/java-frontend/src/test/files/highlighter/Records.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/sonar-java/java-frontend/src/test/files/highlighter/SealedClass.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

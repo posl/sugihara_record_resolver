@@ -1,0 +1,6 @@
+commit f5bed1fdd54c30f4f0e3d92095dc7a66e38a43ba (2023/4/10 09:24:51)
+7,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/java19/InputGenericRecordDeconstructionPattern.java,1,0,0,0,0,0,0,0,0
+11,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/java19/InputJava19RecordDecompositionWithConditionInLoops.java,1,0,0,0,0,0,0,0,0
+12,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/java19/InputRecordPatternsPreview.java,4,0,0,0,0,0,0,0,0
+13,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/java19/InputRecordPatternsPreviewNestedDecomposition.java,5,0,0,0,0,0,0,0,0
+total,11,0,0,0,0,0,0,0,0

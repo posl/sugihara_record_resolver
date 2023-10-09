@@ -1,0 +1,3 @@
+commit d96f83658380cb3da5cdfc5bb5d78406d7a383ab (2021/12/23 22:52:44)
+13,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/parts/PartPlacement.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

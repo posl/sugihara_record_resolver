@@ -1,0 +1,3 @@
+commit 9a2fb4f56f7c31ed924848266bc7bec626208c7 (2021/10/4 10:09:36)
+1: ../data/repositories/cloudsimplus/cloudsim-plus/src/main/java/org/cloudbus/cloudsim/network/topologies/Point2D.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

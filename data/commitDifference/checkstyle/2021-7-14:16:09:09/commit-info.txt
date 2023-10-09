@@ -1,0 +1,3 @@
+commit 463140f61006a777e7e418bd3933f73cae01f1c2 (2021/7/14 16:09:09)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/nolinewrap/InputNoLineWrapRecordsAndCompactCtors.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 0, 0, 0, 1, 0, 0, 0, 1, 0

@@ -1,0 +1,3 @@
+commit 4f3fc34b53cc64873c06f92b2e986a879de38c6a (2021/7/12 10:49:49)
+1: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/unused/UnusedTypeParameterCheck.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

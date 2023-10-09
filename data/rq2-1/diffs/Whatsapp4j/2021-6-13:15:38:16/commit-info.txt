@@ -1,0 +1,4 @@
+commit 7733b93320ec2f90b0494cbb7819ea79041e42b7 (2021/6/13 15:38:16)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/code-tester-bot/src/main/java/org/example/whatsapp/TesterBotListener.java,0,0,0,-1,0,0,0,-1,1
+2,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/commands/src/main/java/org/example/whatsapp/bot/WhatsappBotListener.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

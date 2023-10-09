@@ -1,0 +1,4 @@
+commit a11616e38d4f7dc3f5260efc9baab4cfacff6b23 (2021/1/9 12:42:18)
+4,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/Node.java,0,0,0,0,1,0,0,0,0
+7,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/utils/BytesArray.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,1,0,0,-1,1

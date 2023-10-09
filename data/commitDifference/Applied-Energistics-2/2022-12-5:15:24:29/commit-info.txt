@@ -1,0 +1,5 @@
+commit 7327cad89169689ae1cf9a5602d805f216321faf (2022/12/5 15:24:29)
+1: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/api/implementations/blockentities/PatternContainerGroup.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/client/gui/me/patternaccess/PatternAccessTermScreen.java, 0, 0, 2, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/client/guidebook/render/SimpleRenderContext.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 1, 0, 2, 0, 0, 0, 0, 0, 1

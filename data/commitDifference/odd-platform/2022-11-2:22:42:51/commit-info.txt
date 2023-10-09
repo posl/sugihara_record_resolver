@@ -1,0 +1,9 @@
+commit 740d43a597e45c61be86ba48cbf8114392755b9d (2022/11/2 22:42:51)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/auth/util/SecurityRule.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/AssociatedOwnerDto.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/OwnerDto.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/RoleDto.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/policy/DataEntityPolicyResolverContext.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/policy/TermPolicyResolverContext.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/security/UserDto.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 5, 0, 0, 0, 0, 0, 0, 0, 2

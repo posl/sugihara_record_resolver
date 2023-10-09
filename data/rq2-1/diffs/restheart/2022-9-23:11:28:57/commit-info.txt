@@ -1,0 +1,4 @@
+commit f022e40bb41f0d4720af25b215653e71300c6b0e (2022/9/23 11:28:57)
+12,../data_original/repositories/rep1161/copied/restheart/core/src/main/java/org/restheart/plugins/PluginsFactory.java,0,1,0,-1,0,0,0,0,0
+14,../data_original/repositories/rep1161/copied/restheart/core/src/main/java/org/restheart/plugins/PluginsScanner.java,0,3,0,-3,0,0,0,0,0
+total,0,4,0,-4,0,0,0,0,0

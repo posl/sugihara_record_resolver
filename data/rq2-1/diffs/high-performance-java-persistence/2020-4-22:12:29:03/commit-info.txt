@@ -1,0 +1,4 @@
+commit e1e8973d716755d17cd2ff3bbc864db95036ec6 (2020/4/22 12:29:03)
+1,../data_original/repositories/rep775/copied/high-performance-java-persistence/core/src/test/java/com/vladmihalcea/book/hpjp/hibernate/type/json/MySQLJsonRecordTest.java,1,0,0,0,0,0,0,0,0
+3,../data_original/repositories/rep775/copied/high-performance-java-persistence/core/src/test/java/com/vladmihalcea/book/hpjp/hibernate/type/json/PostgreSQLJsonRecordTest.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

@@ -1,0 +1,5 @@
+commit 98d28f4edcca22c861708a739b5516d47aa228a6 (2021/9/28 21:44:40)
+125,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/core/sync/packets/MEInventoryUpdatePacket.java,0,0,0,-1,0,0,0,-1,1
+132,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/crafting/CraftingPlan.java,1,0,0,0,0,0,0,0,0
+187,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/me/service/CraftingService.java,0,0,1,-1,0,0,0,0,0
+total,1,0,1,-2,0,0,0,-1,1

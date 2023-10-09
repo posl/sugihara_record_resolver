@@ -1,0 +1,3 @@
+commit c11aaa7fcf4d5445ecea81277d4a109a9f9b7040 (2022/4/13 13:33:38)
+1: ../data/repositories/high-performance-java-persistence/core/src/test/java/com/vladmihalcea/book/hpjp/hibernate/query/window/WindowFunctionRunningTotalTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

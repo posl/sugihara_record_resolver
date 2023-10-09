@@ -1,0 +1,4 @@
+commit 2a20e70aabaad0106774157a78eba60428604ac1 (2022/4/9 19:01:37)
+2,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/Group.java,0,0,0,-1,0,0,0,-1,1
+9,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/commands/ListGroupsCommand.java,0,0,0,-2,0,0,0,-2,1
+total,0,0,0,-3,0,0,0,-3,2

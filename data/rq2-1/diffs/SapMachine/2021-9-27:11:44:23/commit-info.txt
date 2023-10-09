@@ -1,0 +1,7 @@
+commit 8be9f4cc69c9fc65210c852dc3f235ef3c94d989 (2021/9/27 11:44:23)
+75,../data_original/repositories/rep1322/copied/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/snippet/Parser.java,2,0,0,0,0,0,0,0,0
+76,../data_original/repositories/rep1322/copied/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/snippet/Replace.java,1,0,0,0,0,0,0,0,0
+77,../data_original/repositories/rep1322/copied/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/snippet/Style.java,3,0,0,0,0,0,0,0,0
+364,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/nio/file/Files/probeContentType/Basic.java,0,0,1,-1,0,0,0,0,0
+388,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/jdk/javadoc/doclet/testSnippetTag/TestSnippetTag.java,9,0,0,0,0,0,0,0,0
+total,15,0,1,-1,0,0,0,0,0

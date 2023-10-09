@@ -1,0 +1,3 @@
+commit a98f6505b75ea2adc691a915f93f2ba4b042f807 (2020/7/9 09:39:32)
+56,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/io/Serializable/records/BasicRecordSer.java,0,0,2,-15,0,0,0,-13,0
+total,0,0,2,-15,0,0,0,-13,0

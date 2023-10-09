@@ -1,0 +1,5 @@
+commit 24065711f6335b616b469cf8539f702211ee4867 (2022/10/28 16:23:22)
+1,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/DownloadUrl.java,0,0,0,-1,0,0,0,-1,1
+2,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/ExecuteCommand.java,0,0,0,-1,0,0,0,-1,1
+4,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-workflow/src/main/java/org/apache/baremaps/workflow/tasks/ImportOpenStreetMap.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,0,-3,3

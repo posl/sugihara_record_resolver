@@ -1,0 +1,4 @@
+commit 51311ea87be9fafd91e36b80335c54dcbfae88e9 (2022/9/20 23:34:25)
+2,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/event/ComponentMetricsUpdateEvent.java,1,0,0,0,0,0,0,0,0
+17,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/tasks/metrics/ComponentMetricsUpdateTask.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

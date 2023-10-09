@@ -1,0 +1,3 @@
+commit f6d7bf114c57dd6599943567239bd6b52affabec (2022/5/9 23:02:49)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/config/OAuthSecurityConfiguration.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

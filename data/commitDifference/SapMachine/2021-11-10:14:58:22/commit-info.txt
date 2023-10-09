@@ -1,0 +1,4 @@
+commit 8d90768b81bef08603174fd5724b21dec3bde25b (2021/11/10 14:58:22)
+1: ../data/repositories/SapMachine/test/hotspot/jtreg/vmTestbase/nsk/jdb/list/list003/list003.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/doclet/testSnippetTag/TestSnippetTag.java, 0, 0, 0, 8, 0, 0, 0, 8, 0
+sum: 1, 0, 0, 8, 0, 0, 0, 8, 0

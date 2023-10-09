@@ -1,0 +1,5 @@
+commit caeb9d134aa654c5278ac6233c597288b6c78ad5 (2022/7/3 13:41:45)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/driver/network/http/annotation/parser/ParameterInvocationHint.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/driver/network/http/content/StaticContentHttpHandler.java, 0, 0, 0, 0, 0, 1, 0, 0, 0
+3: ../data/repositories/CloudNet-v3/node/src/main/java/eu/cloudnetservice/node/http/annotation/SecurityAnnotationExtensions.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 1, 0, 0, 0

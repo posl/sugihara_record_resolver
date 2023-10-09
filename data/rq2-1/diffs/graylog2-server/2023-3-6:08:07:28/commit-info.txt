@@ -1,0 +1,8 @@
+commit 4891a1858268cd5c34429b2cc4661d3d7a5a95f1 (2023/3/6 08:07:28)
+3,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/favorites/Favorite.java,0,0,0,-1,0,0,0,-1,1
+4,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/favorites/FavoritesForUserDTO.java,0,0,0,-1,0,0,0,-1,1
+9,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/startpage/lastOpened/LastOpened.java,0,0,0,-1,0,0,0,-1,1
+10,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/startpage/lastOpened/LastOpenedDTO.java,0,0,0,-1,0,0,0,-1,1
+12,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/startpage/recentActivities/RecentActivity.java,0,0,0,-1,0,0,0,-1,1
+18,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/migrations/V20230220095500_MigrateStartPageObjectReferencesToGRNbyRemoval.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-5,0,0,0,-5,5

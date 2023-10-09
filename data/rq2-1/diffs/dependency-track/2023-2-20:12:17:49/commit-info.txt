@@ -1,0 +1,15 @@
+commit f4d38e41e197b55d231a3641967d0496e267adff (2023/2/20 12:17:49)
+14,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/Author.java,1,0,0,0,0,0,0,0,0
+15,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/Classification.java,1,0,0,0,0,0,0,0,0
+16,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/Cpe.java,1,0,0,0,0,0,0,0,0
+17,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/CvssV2Metric.java,1,0,0,0,0,0,0,0,0
+18,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/CvssV3Metric.java,1,0,0,0,0,0,0,0,0
+19,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/ExternalReference.java,1,0,0,0,0,0,0,0,0
+20,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/ExternalText.java,1,0,0,0,0,0,0,0,0
+21,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/NvdAdditionalInfo.java,1,0,0,0,0,0,0,0,0
+22,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/Product.java,1,0,0,0,0,0,0,0,0
+24,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/Status.java,1,0,0,0,0,0,0,0,0
+25,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/Vendor.java,1,0,0,0,0,0,0,0,0
+26,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/Version.java,1,0,0,0,0,0,0,0,0
+27,../data_original/repositories/rep547/copied/dependency-track/src/main/java/org/dependencytrack/parser/vulndb/model/Vulnerability.java,1,0,0,0,0,0,0,0,0
+total,13,0,0,0,0,0,0,0,0

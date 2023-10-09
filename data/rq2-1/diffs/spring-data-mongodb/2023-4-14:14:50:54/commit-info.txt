@@ -1,0 +1,5 @@
+commit 67bd722cfd73a6cd782a24f2c5c059d818ab49ba (2023/4/14 14:50:54)
+2,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/BulkOperationsSupport.java,1,0,0,0,0,0,0,0,0
+3,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/DefaultBulkOperations.java,0,0,0,-1,0,0,1,-2,1
+4,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/DefaultReactiveBulkOperations.java,0,1,0,-1,0,0,0,0,0
+total,1,1,0,-2,0,0,1,-2,1

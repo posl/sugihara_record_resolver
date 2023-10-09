@@ -1,3 +1,0 @@
-do{
-    curr = curr.next;
-}while(!(curr.e instanceof Token));ST_DW_1

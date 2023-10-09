@@ -1,0 +1,9 @@
+commit 71d17ee938112a2b0ff1fe4020c77a4c58a7ee4c (2022/11/24 16:14:17)
+4,../data_original/repositories/rep1161/copied/restheart/commons/src/main/java/org/restheart/configuration/CoreModule.java,1,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep1161/copied/restheart/commons/src/main/java/org/restheart/configuration/Listener.java,1,0,0,0,0,0,0,0,0
+6,../data_original/repositories/rep1161/copied/restheart/commons/src/main/java/org/restheart/configuration/Logging.java,1,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep1161/copied/restheart/commons/src/main/java/org/restheart/configuration/ProxiedResource.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep1161/copied/restheart/commons/src/main/java/org/restheart/configuration/StaticResource.java,1,0,0,0,0,0,0,0,0
+9,../data_original/repositories/rep1161/copied/restheart/commons/src/main/java/org/restheart/configuration/TLSListener.java,1,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep1161/copied/restheart/commons/src/main/java/org/restheart/configuration/Utils.java,2,0,0,0,0,0,0,0,0
+total,8,0,0,0,0,0,0,0,0

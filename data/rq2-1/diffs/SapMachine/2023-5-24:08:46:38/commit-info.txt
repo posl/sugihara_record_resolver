@@ -1,0 +1,6 @@
+commit 9f541869dd9d05894cdb093d26daab66bcf7bdda (2023/5/24 08:46:38)
+61,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/classfile/impl/ModuleDescImpl.java,0,0,0,0,1,0,0,0,0
+62,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/classfile/impl/PackageDescImpl.java,0,0,0,0,1,0,0,0,0
+123,../data_original/repositories/rep1322/copied/SapMachine/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/Platform.java,0,0,0,-1,0,0,0,-1,1
+223,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/net/httpclient/AbstractNoBody.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-2,2,0,0,-1,1

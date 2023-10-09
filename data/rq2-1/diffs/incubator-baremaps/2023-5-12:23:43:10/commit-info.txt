@@ -1,0 +1,6 @@
+commit 572a1557904d8290e2afa08eff04b5f3208f3990 (2023/5/12 23:43:10)
+3,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/iploc/InetRange.java,1,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/iploc/IpLocObject.java,1,0,0,0,0,0,0,0,0
+23,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/CreateIplocIndex.java,0,0,0,-1,0,0,0,-1,1
+30,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-server/src/main/java/org/apache/baremaps/server/IpLocResources.java,0,0,2,-2,0,0,1,-1,0
+total,2,0,2,-3,0,0,1,-2,1

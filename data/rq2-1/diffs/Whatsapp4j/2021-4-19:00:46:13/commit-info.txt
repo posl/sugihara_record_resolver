@@ -1,0 +1,4 @@
+commit 5fd5724fa92486f6b41ef7fd129db217497c0c21 (2021/4/19 00:46:13)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappCoordinates.java,0,0,0,-1,0,0,0,-1,1
+2,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappMute.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

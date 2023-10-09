@@ -1,0 +1,5 @@
+commit 3851f3f75bda740465f870c6a3b4d0b30989e00c (2021/12/15 09:47:39)
+7,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/deployment/ModelStats.java,0,1,0,-1,0,0,0,0,0
+18,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/pytorch/results/PyTorchResult.java,1,0,0,0,0,0,0,0,0
+19,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/pytorch/results/ThreadSettings.java,1,0,0,0,0,0,0,0,0
+total,2,1,0,-1,0,0,0,0,0

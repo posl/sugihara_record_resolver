@@ -1,0 +1,10 @@
+commit 4113562969249ba040bb8143aaa0cfea77fdfdfb (2023/1/11 17:37:40)
+20,../data_original/repositories/rep1374/copied/activej/cloud-fs/src/main/java/io/activej/fs/cluster/Fs_Cluster.java,1,0,0,0,0,0,0,0,0
+77,../data_original/repositories/rep1374/copied/activej/core-codegen/src/main/java/io/activej/codegen/expression/Expression_Compare.java,1,0,0,0,0,0,0,0,0
+81,../data_original/repositories/rep1374/copied/activej/core-codegen/src/main/java/io/activej/codegen/expression/Expression_Equals.java,1,0,0,0,0,0,0,0,0
+299,../data_original/repositories/rep1374/copied/activej/extra/cloud-crdt/src/main/java/io/activej/crdt/storage/local/CrdtStorage_Fs.java,2,0,0,0,0,0,0,0,0
+363,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/where/WherePredicate_Like.java,1,0,0,0,0,0,0,0,0
+424,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-aggregation/src/main/java/io/activej/aggregation/OTState_Aggregation.java,3,0,0,0,0,0,0,0,0
+441,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-cube/src/main/java/io/activej/cube/http/JsonCodec_AggregationPredicate.java,1,0,0,0,0,0,0,0,0
+508,../data_original/repositories/rep1374/copied/activej/launchers/crdt/src/main/java/io/activej/launchers/crdt/CrdtDescriptor.java,0,0,0,-1,0,0,0,-1,1
+total,10,0,0,-1,0,0,0,-1,1

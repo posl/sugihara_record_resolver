@@ -1,0 +1,3 @@
+commit 28937caa691c440407bf6569d4a099ced2910ca7 (2023/3/24 18:37:51)
+54,../data_original/repositories/rep60/copied/cas/support/cas-server-support-consent-couchdb/src/main/java/org/apereo/cas/consent/CouchDbConsentRepository.java,0,0,0,0,1,0,0,0,0
+total,0,0,0,0,1,0,0,0,0

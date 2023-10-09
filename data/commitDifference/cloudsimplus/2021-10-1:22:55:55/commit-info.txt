@@ -1,0 +1,3 @@
+commit 74f14c308a963b313b951a6f2acf0b2a62f3e313 (2021/10/1 22:55:55)
+1: ../data/repositories/cloudsimplus/cloudsim-plus/src/main/java/org/cloudbus/cloudsim/core/events/PredicateType.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

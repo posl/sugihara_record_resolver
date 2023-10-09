@@ -1,0 +1,8 @@
+commit 9838c915bf8237632cce9d4de25052abf7cfd933 (2020/5/25 11:41:41)
+220,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/io/Serializable/records/ConstructorPermissionTest.java,0,0,0,-3,0,0,0,-3,2
+306,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/LocalRecord.java,1,0,0,0,0,0,0,0,0
+307,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/diags/examples/CanonicalCantHaveStrongerAccessPrivileges.java,1,0,0,0,0,0,0,0,0
+314,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/processing/model/element/TestRecordDesugar.java,0,0,0,-2,0,0,0,-2,2
+317,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/records/RecordMemberTests.java,0,0,0,-12,0,0,1,-13,4
+318,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/records/VarargsRecordsTest.java,0,0,0,-3,0,0,0,-3,3
+total,2,0,0,-20,0,0,1,-21,11

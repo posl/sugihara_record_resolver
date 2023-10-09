@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+import rm4j.compiler.tree.BlockTree;
 import rm4j.compiler.tree.ClassTree;
 import rm4j.compiler.tree.ExpressionNameTree;
 import rm4j.compiler.tree.MemberSelectTree;
@@ -11,6 +12,7 @@ import rm4j.compiler.tree.MethodTree;
 import rm4j.compiler.tree.ReturnTree;
 import rm4j.compiler.tree.StatementTree;
 import rm4j.compiler.tree.ThisTree;
+import rm4j.compiler.tree.Tree;
 import rm4j.compiler.tree.VariableTree;
 import rm4j.compiler.tree.ModifiersTree.ModifierKeyword;
 import rm4j.compiler.tree.Tree.DeclarationType;
@@ -80,8 +82,15 @@ public class PropertyResolver {
     }
 
     public boolean isCanonicalConstructor(MethodTree method, ClassTree c){
-        List<VariableTree> fields = new ArrayList<>(getInstanceFields(c));
         if(isConstructor(method) && method.typeParameters().isEmpty() && method.exceptions().isEmpty()){
+            return isWeaklyCanonicalConstructor(method, c);
+        }
+        return false;
+    }
+
+    public boolean isWeaklyCanonicalConstructor(MethodTree method, ClassTree c){
+        List<VariableTree> fields = new ArrayList<>(getInstanceFields(c));
+        if(isConstructor(method)){
             if(method.parameters() == null || method.parameters().size() != fields.size()){
                 return false;
             }
@@ -147,6 +156,39 @@ public class PropertyResolver {
                 }
             ).toList();
         }
+    }
+    
+    public int getClassData(ClassTree c){
+        int ret = 0;
+        if(getInstanceFields(c).stream().anyMatch(v -> !v.modifiers().getModifiers().contains(ModifierKeyword.FINAL))){
+            ret |= 0b1;
+        }
+        if(c.modifiers().getModifiers().stream().anyMatch(modifier -> 
+            modifier == ModifierKeyword.ABSTRACT
+            || modifier == ModifierKeyword.SEALED
+            || modifier == ModifierKeyword.NON_SEALED)){
+            ret |= 0b10;
+        }
+        if(c.extendsClause() != null){
+            ret |= 0b100;
+        }
+        for(Tree member : c.members()){
+            if(member instanceof BlockTree b && !b.isStatic()){
+                ret |= 0b1000;
+            }
+            if(member instanceof MethodTree method){
+                if(isWeaklyCanonicalConstructor(method, c) && !isCanonicalConstructor(method, c)){
+                    ret |= 0b10000;
+                }
+                if(isEffectivelyGetter(method, c) && !isRecordFormatGetter(method, c)){
+                    ret |= 0b100000;
+                }
+                if(isEffectivelyGetter(method, c)){
+                    ret |= 0b1000000;
+                }
+            }
+        }
+        return ret;
     }
 
 }

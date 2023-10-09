@@ -1,0 +1,4 @@
+commit beb3adcc72cd24b29688a931bf6246ab688249ea (2022/1/3 17:51:04)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java, 0, 0, 0, 0, 0, 0, 0, 0, 3
+2: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/json/JsonSticker.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 4

@@ -1,0 +1,4 @@
+commit c2d38237b5a81a6d08e63a4e23de51047b04880e (2023/4/5 16:29:21)
+1,../data_original/repositories/rep60/copied/cas/core/cas-server-core-authentication/src/main/java/org/apereo/cas/config/CasCoreAuthenticationMonitoringConfiguration.java,0,0,0,-1,0,0,0,-1,1
+7,../data_original/repositories/rep60/copied/cas/support/cas-server-support-saml-idp/src/main/java/org/apereo/cas/config/SamlIdPMonitoringConfiguration.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-1,0,0,0,-1,1

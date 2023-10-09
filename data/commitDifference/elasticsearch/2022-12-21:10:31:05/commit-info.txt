@@ -1,0 +1,4 @@
+commit 1479494dc2571fa83fbef667234a637a991241d4 (2022/12/21 10:31:05)
+1: ../data/repositories/elasticsearch/x-pack/plugin/security/qa/security-trial/src/javaRestTest/java/org/elasticsearch/xpack/security/remoteaccess/RemoteAccessHeadersForCcsRestIT.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/transport/SecurityServerTransportInterceptor.java, 0, 0, 0, 1, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 1, 0, 0, 0, 0, 0

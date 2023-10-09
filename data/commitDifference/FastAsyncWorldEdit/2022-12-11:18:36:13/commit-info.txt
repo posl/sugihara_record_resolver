@@ -1,0 +1,4 @@
+commit f98e526fa0400c2795f30f8d5c90538c13b530b8 (2022/12/11 18:36:13)
+1: ../data/repositories/FastAsyncWorldEdit/worldedit-bukkit/adapters/adapter-1_19_3/src/main/java/com/sk89q/worldedit/bukkit/adapter/impl/fawe/v1_19_R2/PaperweightFaweWorldNativeAccess.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/FastAsyncWorldEdit/worldedit-bukkit/adapters/adapter-1_19_3/src/main/java/com/sk89q/worldedit/bukkit/adapter/impl/fawe/v1_19_R2/PaperweightPlatformAdapter.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

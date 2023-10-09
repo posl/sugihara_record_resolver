@@ -1,0 +1,6 @@
+commit 14ace64dd74645af4633fcc4091adb85005cb84c (2021/5/10 15:01:53)
+139,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/net/httpclient/websocket/WebSocketProxyTest.java,0,0,1,-1,0,0,0,0,0
+140,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/net/httpclient/websocket/WebSocketTest.java,0,0,1,-1,0,0,0,0,0
+144,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/javax/crypto/KeyGenerator/CompareKeys.java,1,0,0,0,0,0,0,0,0
+159,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/jdk/javadoc/doclet/testMemberSummary/pkg3/Members.java,1,0,0,0,0,0,0,0,0
+total,2,0,2,-2,0,0,0,0,0

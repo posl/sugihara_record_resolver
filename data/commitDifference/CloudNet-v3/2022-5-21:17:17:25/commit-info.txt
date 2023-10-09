@@ -1,0 +1,3 @@
+commit 3c15aaf2021bc41148096067187581366d7b6d6f (2022/5/21 17:17:25)
+1: ../data/repositories/CloudNet-v3/modules/bridge/src/main/java/eu/cloudnetservice/modules/bridge/player/NetworkServiceInfo.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

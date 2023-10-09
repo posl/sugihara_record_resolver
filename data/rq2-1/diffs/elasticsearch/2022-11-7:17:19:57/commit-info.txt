@@ -1,0 +1,3 @@
+commit 7d2f51bcb7d3d54b722afa3b66741887bc5ad677 (2022/11/7 17:19:57)
+1,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/action/user/GetUserPrivilegesResponse.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

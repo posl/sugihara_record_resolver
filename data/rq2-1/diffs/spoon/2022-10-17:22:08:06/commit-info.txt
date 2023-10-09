@@ -1,0 +1,3 @@
+commit 3f8c1b4b992f01fabd3decbdc51b454fa04962eb (2022/10/17 22:08:06)
+3,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/WithStaticInitializer.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

@@ -1,1 +1,0 @@
-return 0; ST_RT_3

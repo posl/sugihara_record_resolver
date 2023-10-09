@@ -1,0 +1,8 @@
+commit 9d020f3a1060517fa4a8020c26b6201dc7cf0e65 (2023/3/6 19:43:58)
+8,../data_original/repositories/rep1386/copied/jenetics/jenetics.incubator/src/main/java/io/jenetics/incubator/property/MetaObject.java,1,0,0,0,0,0,0,0,0
+9,../data_original/repositories/rep1386/copied/jenetics/jenetics.incubator/src/main/java/io/jenetics/incubator/property/PathName.java,1,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep1386/copied/jenetics/jenetics.incubator/src/main/java/io/jenetics/incubator/property/PathObject.java,1,0,0,0,0,0,0,0,0
+14,../data_original/repositories/rep1386/copied/jenetics/jenetics.incubator/src/main/java/io/jenetics/incubator/property/PropertyDescription.java,1,0,0,0,0,0,0,0,0
+24,../data_original/repositories/rep1386/copied/jenetics/jenetics.incubator/src/main/java/io/jenetics/incubator/util/TaskCompletion.java,0,1,0,-1,0,0,0,0,0
+26,../data_original/repositories/rep1386/copied/jenetics/jenetics.incubator/src/test/java/io/jenetics/incubator/property/PropertyExtractorTest.java,1,0,0,0,0,0,0,0,0
+total,5,1,0,-1,0,0,0,0,0

@@ -1,0 +1,12 @@
+commit 3ce45c3c3721e9ee202f0404bb968caa412c3eb2 (2022/11/18 14:04:58)
+3,../data_original/repositories/rep118/copied/graylog2-server/full-backend-tests/src/test/java/org/graylog/testing/utils/SharingRequest.java,2,0,0,0,0,0,0,0,0
+6,../data_original/repositories/rep118/copied/graylog2-server/full-backend-tests/src/test/java/org/graylog/testing/utils/UserUtils.java,1,0,0,0,0,0,0,0,0
+17,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/AggregationSpec.java,1,0,0,0,0,0,0,0,0
+18,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/Grouping.java,1,0,0,0,0,0,0,0,0
+19,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/Metric.java,1,0,0,0,0,0,0,0,0
+20,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/SearchRequestSpec.java,1,0,0,0,0,0,0,0,0
+22,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/response/Metadata.java,1,0,0,0,0,0,0,0,0
+23,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/response/ResponseData.java,1,0,0,0,0,0,0,0,0
+24,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/response/ResponseSchemaEntry.java,1,0,0,0,0,0,0,0,0
+25,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/response/TabularResponse.java,1,0,0,0,0,0,0,0,0
+total,11,0,0,0,0,0,0,0,0

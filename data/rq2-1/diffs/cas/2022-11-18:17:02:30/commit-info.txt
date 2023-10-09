@@ -1,0 +1,10 @@
+commit 772852d38d0aca5409e680a8549f6593c9e5ce57 (2022/11/18 17:02:30)
+58,../data_original/repositories/rep60/copied/cas/core/cas-server-core-rest-api/src/main/java/org/apereo/cas/rest/authentication/DefaultRestAuthenticationService.java,0,0,0,0,0,1,0,-1,0
+82,../data_original/repositories/rep60/copied/cas/core/cas-server-core-tickets-api/src/main/java/org/apereo/cas/ticket/registry/DefaultTicketRegistrySupport.java,0,0,0,0,0,1,0,-1,0
+121,../data_original/repositories/rep60/copied/cas/support/cas-server-support-dynamodb-ticket-registry/src/main/java/org/apereo/cas/ticket/registry/DynamoDbTicketRegistryFacilitator.java,0,0,0,0,0,1,0,-1,0
+128,../data_original/repositories/rep60/copied/cas/support/cas-server-support-gauth-core/src/main/java/org/apereo/cas/gauth/credential/GoogleAuthenticatorOneTimeTokenCredentialValidator.java,0,0,0,0,0,1,0,-1,0
+139,../data_original/repositories/rep60/copied/cas/support/cas-server-support-inwebo-mfa/src/main/java/org/apereo/cas/support/inwebo/service/InweboService.java,0,0,0,-1,0,0,0,-1,1
+156,../data_original/repositories/rep60/copied/cas/support/cas-server-support-ldap-core/src/main/java/org/apereo/cas/util/LdapConnectionFactory.java,0,0,0,0,0,1,0,-1,0
+321,../data_original/repositories/rep60/copied/cas/support/cas-server-support-saml-idp-web/src/main/java/org/apereo/cas/support/saml/web/idp/profile/builders/enc/DefaultSamlIdPObjectSigner.java,0,0,0,-1,0,0,0,-1,1
+349,../data_original/repositories/rep60/copied/cas/support/cas-server-support-simple-mfa-core/src/main/java/org/apereo/cas/mfa/simple/web/CasSimpleMultifactorAuthenticationEndpoint.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-2,0,5,0,-7,2

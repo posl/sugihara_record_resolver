@@ -1,0 +1,5 @@
+commit 881c357358afa39623e02af0b3724e5e00bdf2cd (2022/1/9 16:43:37)
+7,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/integration/modules/jei/GenericEntryStackHelper.java,0,0,1,-1,0,0,0,0,0
+8,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/integration/modules/jei/transfer/AbstractTransferHandler.java,0,0,0,0,0,0,1,-1,0
+10,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/integration/modules/jei/transfer/UseCraftingRecipeTransfer.java,0,0,1,-1,0,0,0,0,0
+total,0,0,2,-2,0,0,1,-1,0

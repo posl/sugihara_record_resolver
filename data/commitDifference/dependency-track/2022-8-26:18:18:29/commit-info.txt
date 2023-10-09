@@ -1,0 +1,3 @@
+commit 282787d97813895381cabbb1948f2b8a37967b8a (2022/8/26 18:18:29)
+1: ../data/repositories/dependency-track/src/main/java/org/dependencytrack/event/NewVulnerableDependencyAnalysisEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

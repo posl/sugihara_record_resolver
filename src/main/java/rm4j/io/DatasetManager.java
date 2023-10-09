@@ -3,6 +3,7 @@ package rm4j.io;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -51,9 +52,9 @@ public class DatasetManager implements FileManager{
     public void getMetrics() throws IOException{
         String labels = "repository_name,age,number_of_commits,number_of_authors,number_of_java_files,version";
         ProjectSpec[] specs = Stream.of(repositories).map(ProjectManager::getSpec).toArray(ProjectSpec[]::new);
-        writeCSV(labels, specs, new File("work/dataset_spec/all_repository_metrics.csv"));
-        writeCSV(labels, Stream.of(specs).filter(spec -> spec.metrics().version() != JavaVersion.BEFORE_JAVA16).toList(), new File("work/dataset_spec/Java16_repository_metrics.csv"));
-        writeCSV(labels, Stream.of(specs).filter(spec -> spec.metrics().version() != JavaVersion.HAS_RECORDS).toList(), new File("work/dataset_spec/record_repository_metrics.csv"));
+        writeCSV(labels, specs, new File("out/dataset_spec/all_repository_metrics.csv"));
+        writeCSV(labels, Stream.of(specs).filter(spec -> spec.metrics().version() != JavaVersion.BEFORE_JAVA16).toList(), new File("out/dataset_spec/Java16_repository_metrics.csv"));
+        writeCSV(labels, Stream.of(specs).filter(spec -> spec.metrics().version() != JavaVersion.HAS_RECORDS).toList(), new File("out/dataset_spec/record_repository_metrics.csv"));
     }
 
     public void collectDifferenceInfo() throws IOException{
@@ -64,7 +65,7 @@ public class DatasetManager implements FileManager{
                 data.add(project.collectDifferenceData());
             }
         }
-        recordDataInCSV(labels, data, new File("work/rq2-1/diffs/diff_summerize.csv"));
+        recordDataInCSV(labels, data, new File("out/rq2-1/diffs/diff_summerize.csv"));
     }
 
     public void mineRecordHistory() throws IOException{
@@ -80,7 +81,7 @@ public class DatasetManager implements FileManager{
                 data.add(project.mineRecordHistory());
             }
         }
-        recordDataInCSV(labels, data, new File("work/rq1-1/record_history.csv"));
+        recordDataInCSV(labels, data, new File("out/rq1-1/record_history.csv"));
     }
 
     public void countTypeDeclarations() throws IOException{
@@ -114,9 +115,9 @@ public class DatasetManager implements FileManager{
             }
         }
 
-        writeCSV(labels, data, new File("work/rq1-1/type_declarations_A.csv"));
-        writeCSV(labels, list1, new File("work/rq1-1/type_declarations_B.csv"));
-        writeCSV(labels, list2, new File("work/rq1-1/type_declarations_C.csv"));
+        writeCSV(labels, data, new File("out/rq1-1/type_declarations_A.csv"));
+        writeCSV(labels, list1, new File("out/rq1-1/type_declarations_B.csv"));
+        writeCSV(labels, list2, new File("out/rq1-1/type_declarations_C.csv"));
     }
 
     public void countTypeUsage() throws IOException{
@@ -133,13 +134,42 @@ public class DatasetManager implements FileManager{
         for(int i = 0; i < 5; i++){
             writeCSV("%s, frequency".formatted(labelsList[i]),
                         classData.enumerateRankers().get(i).getRanking(),
-                        new File("work/rq1-2/classes/%s.csv".formatted(labelsList[i])));
+                        new File("out/rq1-2/classes/%s.csv".formatted(labelsList[i])));
         }
         for(int i = 0; i < 5; i++){
             writeCSV("%s, frequency".formatted(labelsList[i]),
                         recordData.enumerateRankers().get(i).getRanking(),
-                        new File("work/rq1-2/records/%s.csv".formatted(labelsList[i])));
+                        new File("out/rq1-2/records/%s.csv".formatted(labelsList[i])));
         }
+    }
+
+    public void mineClassInfo() throws IOException{
+        String labels = "repository_name,all_classes,has_non_final_fields,extends_other_class,has_prohibited_modifiers,has_instrance_initializer,has_inproper_canonical_constructor,has_get_prefixed_getters,has_effective_getters,record_format_classes";
+        List<String> data = new LinkedList<>();
+        for(ProjectManager project : repositories){
+            if(project.isCompatibleWithJava16() && !project.hasRecords()){
+                data.add(project.collectClassData());
+            }
+        }
+        recordDataInCSV(labels, data, new File("out/rq2-2/class_data.csv"));
+    }
+
+    public void mineClassesAndExpressions() throws IOException{
+        String labels = "repository_name,classes,enum,records,interfaces,annotations,all_reference_types,simple_assignment,method_arguments,both_expressions";
+        List<String> data = Arrays.stream(repositories)
+                                .parallel()
+                                .map(ProjectManager::collectClassesAndExpressions)
+                                .toList();
+        recordDataInCSV(labels, data, new File("out/rq1-1/expressions.csv"));
+    }
+
+    public void mineAccessors() throws IOException{
+        String labels = "repository_name,all_effective_getters,get_prefixed_getters,record_format_getters";
+        List<String> data = Arrays.stream(repositories)
+                                .parallel()
+                                .map(ProjectManager::collectAccessorsInfo)
+                                .toList();
+        recordDataInCSV(labels, data, new File("out/rq2-2/accessors.csv"));
     }
 
     public void writeCSV(String labels, CSVTuple[] data, File path) throws IOException{

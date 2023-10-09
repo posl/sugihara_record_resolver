@@ -1,0 +1,3 @@
+commit 16b1cb69ac8996dc56400ac0db178175518a9e66 (2021/4/27 19:35:17)
+15,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/UserStatusResponse.java,0,1,0,-1,0,0,0,0,0
+total,0,1,0,-1,0,0,0,0,0

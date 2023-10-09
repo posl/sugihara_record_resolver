@@ -1,0 +1,4 @@
+commit a17bfcd18aa071ef9ff1798b207f494e90d8aa4a (2021/11/17 10:56:19)
+1: ../data/repositories/crate/server/src/main/java/io/crate/replication/logical/metadata/pgcatalog/PgSubscriptionRelTable.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/crate/server/src/main/java/io/crate/replication/logical/metadata/pgcatalog/PgSubscriptionTable.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

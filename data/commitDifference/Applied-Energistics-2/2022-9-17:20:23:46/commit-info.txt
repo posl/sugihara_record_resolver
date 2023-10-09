@@ -1,0 +1,5 @@
+commit 5aced27cc81893b6058fa5d73e347d330d60f8be (2022/9/17 20:23:46)
+1: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/api/networking/crafting/UnsuitableCpus.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/crafting/execution/CraftingSubmitResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/crafting/execution/CraftingSubmitResultImpl.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 1, 0, 0, 0, 0

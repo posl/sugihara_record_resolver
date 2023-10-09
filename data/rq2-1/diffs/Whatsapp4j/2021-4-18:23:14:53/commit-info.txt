@@ -1,0 +1,6 @@
+commit ca71573a7ef301108ad36446b0244d63ba9f7d73 (2021/4/18 23:14:53)
+8,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/DescriptionChangeResponse.java,0,1,0,-1,0,0,0,0,0
+9,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/GroupActionResponse.java,0,1,0,-1,0,0,0,0,0
+10,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/MediaConnectionResponse.java,0,1,0,-1,0,0,0,0,0
+11,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/SubjectChangeResponse.java,0,1,0,-1,0,0,0,0,0
+total,0,4,0,-4,0,0,0,0,0

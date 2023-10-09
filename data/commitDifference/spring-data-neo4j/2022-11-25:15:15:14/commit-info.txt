@@ -1,0 +1,3 @@
+commit a883bb76b09f29bafc1457bf27a1a2b6b633900e (2022/11/25 15:15:14)
+1: ../data/repositories/spring-data-neo4j/src/test/java/org/springframework/data/neo4j/integration/issues/gh2632/ReactiveConnectionAcquisitionIT.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

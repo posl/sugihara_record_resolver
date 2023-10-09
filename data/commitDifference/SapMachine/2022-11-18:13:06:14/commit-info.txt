@@ -1,0 +1,11 @@
+commit dfa688b81f717c82a90d18d27fd8ce849e9034e4 (2022/11/18 13:06:14)
+1: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/InheritDocTaglet.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/InheritableTaglet.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/ParamTaglet.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/ReturnTaglet.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/SeeTaglet.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/SimpleTaglet.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/SpecTaglet.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/DocFinder.java, 0, 0, 3, 0, 0, 0, 1, 0, 0
+9: ../data/repositories/SapMachine/test/micro/org/openjdk/bench/java/security/Signatures.java, 0, 0, 0, 0, 0, 0, 1, 0, 0
+sum: 0, 0, 10, 0, 0, 0, 2, 0, 0

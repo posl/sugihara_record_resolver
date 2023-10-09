@@ -1,0 +1,32 @@
+commit c12bbd43030116d5fda37f6a8ac3d9e762904e51 (2022/12/11 09:36:19)
+1: ../data/repositories/SapMachine/make/langtools/tools/javacserver/client/ClientConfiguration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/AbstractLinker.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/Binding.java, 0, 9, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/LinkerOptions.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/NativeEntryPoint.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+6: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/UpcallLinker.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+7: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/VMStorage.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/aarch64/CallArranger.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+9: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/x64/sysv/CallArranger.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+10: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/x64/windows/CallArranger.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+11: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/vm/ScopedValueContainer.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+12: ../data/repositories/SapMachine/src/java.base/share/classes/sun/nio/ch/IOUtil.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+13: ../data/repositories/SapMachine/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/TransPatterns.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+14: ../data/repositories/SapMachine/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/JCTree.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+15: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/SpecTaglet.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+16: ../data/repositories/SapMachine/test/jdk/java/foreign/SafeFunctionAccessTest.java, 0, 0, 0, 1, 0, 0, 0, 0, 0
+17: ../data/repositories/SapMachine/test/jdk/java/foreign/TestMismatch.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+18: ../data/repositories/SapMachine/test/jdk/java/foreign/UpcallTestHelper.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+19: ../data/repositories/SapMachine/test/jdk/java/foreign/capturecallstate/TestCaptureCallState.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+20: ../data/repositories/SapMachine/test/jdk/jdk/incubator/concurrent/ScopedValue/ManyBindings.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+21: ../data/repositories/SapMachine/test/langtools/tools/javac/T8297602.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+22: ../data/repositories/SapMachine/test/langtools/tools/javac/diags/examples/PatternTypeCannotInfer.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+23: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/DeconstructionDesugaring.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+24: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Exhaustiveness.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+25: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/GenericRecordDeconstructionPattern.java, 0, 0, 0, 0, 0, 0, 1, 0, 0
+26: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Guards.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+27: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/MatchExceptionTest.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+28: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/NullSwitch.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+29: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Switches.java, 0, 0, 2, 0, 0, 0, 0, 0, 0
+30: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/TypedDeconstructionPatternExc.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 16, 13, 9, 2, 0, 0, 1, 1, 5

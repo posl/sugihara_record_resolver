@@ -1,0 +1,3 @@
+commit f974f0ade65f0b6b5ab7891f0c4537e56e56f221 (2020/7/9 07:47:12)
+1,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/java14/InputJava14SwitchExpression.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

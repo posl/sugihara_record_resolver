@@ -1,0 +1,7 @@
+commit efaf81819b473621ee4829690c13f29d56b35b8 (2022/9/18 23:35:15)
+39,../data_original/repositories/rep60/copied/cas/core/cas-server-core-util-api/src/main/java/org/apereo/cas/util/spring/DirectObjectProvider.java,0,0,0,-1,0,0,0,-1,1
+48,../data_original/repositories/rep60/copied/cas/core/cas-server-core-web-api/src/main/java/org/apereo/cas/web/view/DynamicHtmlView.java,0,0,0,-1,0,0,0,-1,1
+86,../data_original/repositories/rep60/copied/cas/support/cas-server-support-amqp-ticket-registry/src/main/java/org/apereo/cas/ticket/registry/queue/AMQPTicketRegistryQueuePublisher.java,1,0,0,0,0,0,0,0,0
+114,../data_original/repositories/rep60/copied/cas/support/cas-server-support-jms-ticket-registry/src/main/java/org/apereo/cas/ticket/registry/JmsTicketRegistryQueuePublisher.java,0,0,0,0,1,0,0,0,0
+162,../data_original/repositories/rep60/copied/cas/support/cas-server-support-pac4j-core/src/main/java/org/apereo/cas/pac4j/discovery/DefaultDelegatedAuthenticationDynamicDiscoveryProviderLocator.java,0,0,0,0,0,1,0,-1,0
+total,1,0,0,-2,1,1,0,-3,2

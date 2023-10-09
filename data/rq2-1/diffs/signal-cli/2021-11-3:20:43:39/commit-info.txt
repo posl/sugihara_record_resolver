@@ -1,0 +1,25 @@
+commit 9075cc1a309fbc90276d2878d480d1e9e9c81887 (2021/11/3 20:43:39)
+5,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java,34,0,0,0,0,0,0,0,0
+14,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonAttachment.java,0,0,0,-1,0,0,0,-1,1
+15,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonCallMessage.java,0,0,5,-6,0,0,0,-1,1
+16,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonContactAddress.java,0,0,0,-1,0,0,0,-1,1
+17,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonContactAvatar.java,0,0,0,-1,0,0,0,-1,1
+18,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonContactEmail.java,0,0,0,-1,0,0,0,-1,1
+19,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonContactName.java,0,0,0,-1,0,0,0,-1,1
+20,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonContactPhone.java,0,0,0,-1,0,0,0,-1,1
+21,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonDataMessage.java,0,0,0,-1,0,0,0,-1,1
+22,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonGroupInfo.java,0,0,0,-1,0,0,0,-1,1
+23,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonMention.java,0,0,0,-1,0,0,0,-1,1
+24,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonMessageEnvelope.java,0,0,0,-1,0,0,0,-1,1
+25,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonQuote.java,0,0,0,-1,0,0,0,-1,1
+26,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonQuotedAttachment.java,0,0,0,-1,0,0,0,-1,1
+27,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonReaction.java,0,0,0,-1,0,0,0,-1,1
+28,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonReceiptMessage.java,0,0,0,-1,0,0,0,-1,1
+29,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonRemoteDelete.java,0,0,0,-1,0,0,0,-1,1
+30,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonSharedContact.java,0,0,0,-1,0,0,0,-1,1
+31,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonSticker.java,0,0,0,-1,0,0,0,-1,1
+32,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonSyncDataMessage.java,0,0,0,-1,0,0,0,-1,1
+33,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonSyncMessage.java,0,0,0,-1,0,0,0,-1,1
+34,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonSyncReadMessage.java,0,0,0,-1,0,0,0,-1,1
+35,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonTypingMessage.java,0,0,0,-1,0,0,0,-1,1
+total,34,0,5,-27,0,0,0,-22,22

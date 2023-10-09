@@ -1,0 +1,4 @@
+commit 25d79751ac39c99616ff86cbfe6f896ea339f26 (2022/10/3 11:24:47)
+7,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/RelToDatasetConverter.java,2,0,0,0,0,0,0,0,0
+14,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/test/java/io/activej/dataflow/stream/AbstractCalciteTest.java,0,0,0,-11,0,0,0,-11,2
+total,2,0,0,-11,0,0,0,-11,2

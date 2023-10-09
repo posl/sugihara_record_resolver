@@ -1,0 +1,3 @@
+commit dc76070ed4be45e085811fb3d0ac15a806f1156f (2022/3/21 12:03:03)
+1: ../data/repositories/equalsverifier/equalsverifier-16/src/test/java/nl/jqno/equalsverifier/integration/extended_contract/RecordsTest.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

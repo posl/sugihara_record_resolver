@@ -1,0 +1,4 @@
+commit a85bb8f30c90812014e766e7753178152faa9e9d (2021/8/21 19:42:58)
+1: ../data/repositories/LiveLessons/Loom/ex2/src/main/java/utils/GCDResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/LiveLessons/Loom/ex2/src/main/java/utils/PrimeResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

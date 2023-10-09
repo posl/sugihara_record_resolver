@@ -1,0 +1,15 @@
+commit 5f00c0e4e445cef2baf24e713167a2db758b188a (2022/11/14 16:30:34)
+14,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/controller/EventApiController.java,1,0,0,0,0,0,0,0,0
+15,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/controller/parser/ParseResult.java,2,0,0,0,0,0,0,0,0
+17,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/DataEntityMessageContext.java,2,0,0,0,0,0,0,0,0
+18,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageChannelDto.java,1,0,0,0,0,0,0,0,0
+20,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageEventDto.java,1,0,0,0,0,0,0,0,0
+21,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageEventPayload.java,1,0,0,0,0,0,0,0,0
+22,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageEventRequest.java,1,0,0,0,0,0,0,0,0
+25,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageProviderIdentity.java,1,0,0,0,0,0,0,0,0
+27,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageUserDto.java,1,0,0,0,0,0,0,0,0
+51,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/MessageDto.java,1,0,0,0,0,0,0,0,0
+52,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/OwnershipPair.java,1,0,0,0,0,0,0,0,0
+71,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/partition/manager/TablePartition.java,1,0,0,0,0,0,0,0,0
+80,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/service/activity/ActivityTablePartitionManagerImpl.java,0,0,0,0,1,0,0,0,0
+total,14,0,0,0,1,0,0,0,0

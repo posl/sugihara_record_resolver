@@ -1,0 +1,3 @@
+commit 346ec4aab1fafcb3bd43f573497e93073727bae3 (2022/9/30 15:02:14)
+1,../data_original/repositories/rep484/copied/intellij-plugins/flex/src/com/intellij/lang/javascript/generation/ActionScriptGenerateEventHandler.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

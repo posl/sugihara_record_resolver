@@ -1,0 +1,8 @@
+commit 91700ce995ae381dd97b246ea3ff11afb748e421 (2023/5/20 12:47:35)
+2,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/Message.java,0,0,0,-6,0,0,0,-6,2
+3,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java,0,0,0,-40,0,0,1,-41,2
+4,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/TextStyle.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonDataMessage.java,0,0,0,-1,0,0,0,-1,1
+9,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonQuote.java,0,0,0,-1,0,0,0,-1,1
+10,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonTextStyle.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,-48,0,0,1,-49,6

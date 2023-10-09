@@ -1,0 +1,3 @@
+commit c4c5397b44312ff4f962b9d974161b41b0a178bc (2022/7/28 10:03:35)
+1: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/GroupCredentials.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

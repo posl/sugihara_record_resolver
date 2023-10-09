@@ -1,0 +1,5 @@
+commit 7f257a725bf3e4af484fd9e4fef1baef6d8de3c4 (2023/4/24 15:17:58)
+9,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/DownloadUrl.java,0,0,0,-1,0,0,0,-1,1
+10,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ExportVectorTiles.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/UngzipFile.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,0,-3,3

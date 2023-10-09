@@ -1,1 +1,0 @@
-yield.new Initializer(); ST_EX_5

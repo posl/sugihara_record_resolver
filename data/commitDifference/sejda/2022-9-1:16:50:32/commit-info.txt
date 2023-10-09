@@ -1,0 +1,3 @@
+commit c38b245fedf9a67465fc8b2702981579570261f4 (2022/9/1 16:50:32)
+1: ../data/repositories/sejda/sejda-sambox/src/main/java/org/sejda/impl/sambox/component/TableOfContentsCreator.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

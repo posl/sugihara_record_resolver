@@ -1,0 +1,4 @@
+commit eb499833c6b80de25f2822e5eeb57d1db01ff523 (2023/1/25 15:15:46)
+4,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/DirectoryV2ClientConfiguration.java,0,1,0,-1,0,0,0,0,0
+5,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/SecureStorageServiceConfiguration.java,0,1,0,-1,0,0,0,0,0
+total,0,2,0,-2,0,0,0,0,0

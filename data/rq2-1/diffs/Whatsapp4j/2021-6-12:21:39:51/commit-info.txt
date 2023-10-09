@@ -1,0 +1,3 @@
+commit ada23f2a218bc264feada20b909b08d81075cd7d (2021/6/12 21:39:51)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/ban-bot/src/main/java/org/example/whatsapp/BanBotListener.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

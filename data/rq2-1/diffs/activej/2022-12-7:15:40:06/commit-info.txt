@@ -1,0 +1,5 @@
+commit 51f25878b9aef4ab6c56376ffbb10900f04cadfa (2022/12/7 15:40:06)
+6,../data_original/repositories/rep1374/copied/activej/extra/cloud-crdt/src/main/java/io/activej/crdt/messaging/CrdtRequest.java,7,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep1374/copied/activej/extra/cloud-crdt/src/main/java/io/activej/crdt/messaging/CrdtResponse.java,8,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep1374/copied/activej/extra/cloud-crdt/src/main/java/io/activej/crdt/messaging/Version.java,1,0,0,0,0,0,0,0,0
+total,16,0,0,0,0,0,0,0,0

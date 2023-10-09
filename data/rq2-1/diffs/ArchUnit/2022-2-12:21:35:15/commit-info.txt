@@ -1,0 +1,7 @@
+commit c883c67cc5d2d0c85cea894ab0a5688b432ef024 (2022/2/12 21:35:15)
+2,../data_original/repositories/rep346/copied/ArchUnit/archunit/src/jdk16test/java/com/tngtech/archunit/core/importer/ClassFileImporterRecordsTest.java,4,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep346/copied/ArchUnit/archunit/src/jdk16test/java/com/tngtech/archunit/lang/syntax/elements/GivenClassesThatRecordsTest.java,2,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep346/copied/ArchUnit/archunit/src/jdk16test/java/com/tngtech/archunit/lang/syntax/elements/GivenMembersDeclaredInClassesThatRecordsTest.java,2,0,0,0,0,0,0,0,0
+6,../data_original/repositories/rep346/copied/ArchUnit/archunit/src/jdk16test/java/com/tngtech/archunit/lang/syntax/elements/ShouldClassesThatRecordsTest.java,2,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep346/copied/ArchUnit/archunit/src/jdk16test/java/com/tngtech/archunit/lang/syntax/elements/ShouldOnlyByClassesThatRecordsTest.java,4,0,0,0,0,0,0,0,0
+total,14,0,0,0,0,0,0,0,0

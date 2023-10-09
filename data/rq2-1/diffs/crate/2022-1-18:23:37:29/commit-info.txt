@@ -1,0 +1,3 @@
+commit 58c87c828c404be731d04c98cbff69db47bd8dd1 (2022/1/18 23:37:29)
+7,../data_original/repositories/rep240/copied/crate/plugins/cr8-copy-s3/src/main/java/io/crate/copy/s3/common/S3ClientHelper.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

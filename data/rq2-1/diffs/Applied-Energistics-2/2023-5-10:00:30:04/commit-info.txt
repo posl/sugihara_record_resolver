@@ -1,0 +1,4 @@
+commit 93592787f47763dcc7326619a2a555e87009cd9f (2023/5/10 00:30:04)
+7,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/GuidePage.java,0,1,0,-1,0,0,0,0,0
+20,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/style/TextStyle.java,0,0,0,-1,0,0,0,-1,1
+total,0,1,0,-2,0,0,0,-1,1

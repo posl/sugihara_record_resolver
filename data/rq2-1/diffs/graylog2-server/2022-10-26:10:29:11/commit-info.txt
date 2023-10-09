@@ -1,0 +1,5 @@
+commit 97f807d43c54716327b793cde084caff0af9102 (2022/10/26 10:29:11)
+11,../data_original/repositories/rep118/copied/graylog2-server/graylog-storage-elasticsearch7/src/main/java/org/graylog/storage/elasticsearch7/views/searchtypes/pivot/PivotBucket.java,1,0,0,0,0,0,0,0,0
+36,../data_original/repositories/rep118/copied/graylog2-server/graylog-storage-opensearch2/src/main/java/org/graylog/storage/opensearch2/views/searchtypes/pivot/PivotBucket.java,1,0,0,0,0,0,0,0,0
+57,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/searchtypes/pivot/BucketSpecHandler.java,0,0,1,-1,0,0,0,0,0
+total,2,0,1,-1,0,0,0,0,0

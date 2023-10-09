@@ -1,0 +1,3 @@
+commit 6763ab89daebda6faa1a8628bdb192d28752b50f (2021/12/3 00:41:06)
+1: ../data/repositories/sirix/bundles/sirix-xquery/src/main/java/org/sirix/xquery/function/xml/io/Store.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

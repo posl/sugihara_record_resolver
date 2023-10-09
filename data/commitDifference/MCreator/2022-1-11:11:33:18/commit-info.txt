@@ -1,0 +1,5 @@
+commit 186038d4507efd55aab30f29405f7a0309822f13 (2022/1/11 11:33:18)
+1: ../data/repositories/MCreator/src/main/java/net/mcreator/blockly/java/BlocklyVariables.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/MCreator/src/main/java/net/mcreator/generator/blockly/OutputBlockCodeGenerator.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/MCreator/src/main/java/net/mcreator/generator/blockly/ProceduralBlockCodeGenerator.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 3, 0, 0, 0, 0, 0, 0, 0

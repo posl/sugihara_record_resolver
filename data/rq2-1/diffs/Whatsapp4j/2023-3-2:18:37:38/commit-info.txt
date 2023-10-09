@@ -1,0 +1,4 @@
+commit d279697b2e58f1904c1c9add765d5ad8df5c5bf9 (2023/3/2 18:37:38)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/message/model/MessageContainer.java,0,0,0,-1,0,0,0,-1,1
+2,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/sync/ActionValueSync.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

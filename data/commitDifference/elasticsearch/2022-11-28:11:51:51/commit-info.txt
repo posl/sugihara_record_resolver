@@ -1,0 +1,3 @@
+commit 3a223d933a4e86543949fa2f1113f32a57e32784 (2022/11/28 11:51:51)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/action/admin/cluster/node/shutdown/NodesRemovalPrevalidation.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

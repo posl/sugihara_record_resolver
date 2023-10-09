@@ -1,0 +1,3 @@
+commit c67716b4e9241dec93158bbc2aef267998ecbd23 (2020/8/20 20:17:35)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/annotation/annotationlocation/InputAnnotationLocationRecordsAndCompactCtors.java, 10, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 10, 0, 0, 0, 0, 0, 0, 0, 0

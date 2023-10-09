@@ -1,0 +1,6 @@
+commit 9592ac174d7a181ef99d81546a6d792c7ef4c116 (2021/5/9 12:27:52)
+2,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/ban-bot/src/main/java/org/example/whatsapp/BanBotListener.java,1,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/code-tester-bot/src/main/java/org/example/whatsapp/TesterBotListener.java,1,0,0,0,0,0,0,0,0
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/commands/src/main/java/org/example/whatsapp/bot/WhatsappBotListener.java,1,0,0,0,0,0,0,0,0
+14,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/binary/BinaryEncoder.java,0,0,0,-1,0,0,0,-1,1
+total,3,0,0,-1,0,0,0,-1,1

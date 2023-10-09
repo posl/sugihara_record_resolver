@@ -1,0 +1,11 @@
+commit c65b2eae4984949ca4ecc2641cc7f4052149935e (2021/10/18 09:59:06)
+1: ../data/repositories/spoon/src/test/resources/records/CompactConstructor.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/spoon/src/test/resources/records/DeriveAnnotations.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/spoon/src/test/resources/records/EmptyRecord.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/spoon/src/test/resources/records/ExplicitAccessor.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/spoon/src/test/resources/records/MultiParameter.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/spoon/src/test/resources/records/NoClasspathAnnotations.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/spoon/src/test/resources/records/PartiallyAnnotations.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/spoon/src/test/resources/records/RecordWithInterface.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+9: ../data/repositories/spoon/src/test/resources/records/SingleParameter.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 9, 0, 0, 0, 0, 0, 0, 0, 0

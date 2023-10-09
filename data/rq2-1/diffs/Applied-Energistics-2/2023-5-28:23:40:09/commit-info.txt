@@ -1,0 +1,3 @@
+commit 66cd9a2a1acf7c6143faec8f9946df13650d6d0e (2023/5/28 23:40:09)
+4,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/compiler/tags/RecipeCompiler.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

@@ -1,0 +1,5 @@
+commit 968a77aef711788ec9468ce16c1ee9f8b6bbabdd (2022/10/31 17:18:34)
+1: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Table.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Exhaustiveness.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+3: ../data/repositories/SapMachine/test/langtools/tools/javac/processing/model/util/elements/TestRecordPredicates.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 1, 0, 0, 0, 1, 2

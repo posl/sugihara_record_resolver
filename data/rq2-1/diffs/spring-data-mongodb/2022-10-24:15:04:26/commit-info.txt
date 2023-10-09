@@ -1,0 +1,3 @@
+commit fd0a554d5940da011c4ceef16b6293511adcc106 (2022/10/24 15:04:26)
+1,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/ContextProviderFactory.java,0,0,0,-2,0,0,0,-2,1
+total,0,0,0,-2,0,0,0,-2,1

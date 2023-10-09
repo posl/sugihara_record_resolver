@@ -1,0 +1,3 @@
+commit e95661a2f477f97d0d510c73d4f88cbb708bec5f (2021/4/15 16:56:53)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/modifier/modifierorder/InputModifierOrderSealedAndNonSealed.java,3,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

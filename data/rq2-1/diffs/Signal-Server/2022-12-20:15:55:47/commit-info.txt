@@ -1,0 +1,3 @@
+commit a60450d931f42dc0cfc3aade491340397ba2b58a (2022/12/20 15:55:47)
+1,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/UserCapabilities.java,0,1,0,-1,0,0,0,0,0
+total,0,1,0,-1,0,0,0,0,0

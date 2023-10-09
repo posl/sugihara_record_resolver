@@ -1,0 +1,5 @@
+commit 79cc225869b9a97bbb5b3f054970d5a6bb2222ee (2021/11/11 15:49:23)
+1: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/commands/RegisterCommand.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/commands/VerifyCommand.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/jsonrpc/SignalJsonRpcDispatcherHandler.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 3, 0, 0, 0, 0, 0, 0

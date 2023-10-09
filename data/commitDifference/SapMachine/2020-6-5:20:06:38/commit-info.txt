@@ -1,0 +1,3 @@
+commit be9abc53324296459f8f345dfb32df5319e2e860 (2020/6/5 20:06:38)
+1: ../data/repositories/SapMachine/test/jdk/java/io/Serializable/records/UnsharedTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

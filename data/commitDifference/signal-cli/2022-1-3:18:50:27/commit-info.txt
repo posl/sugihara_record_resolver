@@ -1,0 +1,5 @@
+commit 8a5f98dac68e008ee35f8b7f252e1fb17699fcb4 (2022/1/3 18:50:27)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/DeviceLinkInfo.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/StickerPack.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/commands/ListStickerPacksCommand.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 3

@@ -1,0 +1,3 @@
+commit 77ca2c2843dd81ab9ae4912405a83bb3108dda3c (2021/4/15 07:56:16)
+1: ../data/repositories/SapMachine/test/jdk/javax/management/mxbean/RecordsMXBeanTest.java, 13, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 13, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,6 @@
+commit 77ace234ef4da42245f34051ac4f88aa87032160 (2022/2/11 17:23:48)
+1,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/action/profile/Profile.java,0,0,0,-4,0,0,0,-4,2
+4,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/RealmDomain.java,0,0,0,-1,0,0,0,-1,1
+9,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/profile/ProfileDocument.java,0,0,0,-2,0,0,0,-2,2
+10,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/profile/ProfileService.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-8,0,0,0,-8,6

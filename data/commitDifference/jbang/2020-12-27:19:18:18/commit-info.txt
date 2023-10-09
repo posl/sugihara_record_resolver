@@ -1,0 +1,3 @@
+commit f87834fd8d991617437fecfcbb943fb687b25323 (2020/12/27 19:18:18)
+1: ../data/repositories/jbang/examples/records.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+sum: 0, 0, 0, 0, 1, 0, 0, 0, 0

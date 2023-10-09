@@ -1,0 +1,4 @@
+commit fca8195e40fc1cca82c268a9ac9a6628275bf336 (2022/11/22 13:23:51)
+7,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/Grouping.java,0,0,0,-1,0,0,0,-1,1
+8,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/SearchRequestSpec.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

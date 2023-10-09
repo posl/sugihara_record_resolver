@@ -1,0 +1,4 @@
+commit 8dfbcd5c02ca30c8a24f31296b68c312337b407e (2022/8/12 16:17:49)
+1: ../data/repositories/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authz/RoleDescriptorsIntersection.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/rest/action/apikey/RestQueryApiKeyAction.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 1, 0, 0, 0, 0, 0, 0

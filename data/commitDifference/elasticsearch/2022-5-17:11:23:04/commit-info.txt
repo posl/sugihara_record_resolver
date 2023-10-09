@@ -1,0 +1,3 @@
+commit bf4304d18a4d63d91e65339a894dc46ce074e4a1 (2022/5/17 11:23:04)
+1: ../data/repositories/elasticsearch/qa/ccs-rolling-upgrade-remote-cluster/src/javaRestTest/java/org/elasticsearch/upgrades/SearchStatesIT.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

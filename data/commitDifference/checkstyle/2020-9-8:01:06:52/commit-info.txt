@@ -1,0 +1,4 @@
+commit 6d32c7ec120f2ee0602a2be2527f88752a958ae7 (2020/9/8 01:06:52)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/indentation/indentation/InputIndentationRecords.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/indentation/indentation/InputIndentationRecordsAndCompactCtors.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 6, 0, 0, 0, 0, 0, 0, 0, 0

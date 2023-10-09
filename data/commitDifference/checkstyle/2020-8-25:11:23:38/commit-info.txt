@@ -1,0 +1,10 @@
+commit cfb80c20692f3571e3f14d018d2018a1c6fdfbf1 (2020/8/25 11:23:38)
+1: ../data/repositories/checkstyle/src/it/resources-noncompilable/org/checkstyle/suppressionxpathfilter/recordcomponentnumber/SuppressionXpathRecordComponentNumber1.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/it/resources-noncompilable/org/checkstyle/suppressionxpathfilter/recordcomponentnumber/SuppressionXpathRecordComponentNumber2.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumber.java, 21, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberMax1.java, 18, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberMax20.java, 18, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberPrivateModifier.java, 21, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberTopLevel1.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberTopLevel2.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 82, 0, 0, 0, 0, 0, 0, 0, 0

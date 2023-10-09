@@ -1,0 +1,3 @@
+commit dedfe4821471f5e9a2a18bcc0adf1ce802cb9880 (2022/12/1 08:30:04)
+10,../data_original/repositories/rep693/copied/marquez/api/src/main/java/marquez/service/ColumnLineageService.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

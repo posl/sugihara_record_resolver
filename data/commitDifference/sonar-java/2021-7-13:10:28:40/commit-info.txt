@@ -1,0 +1,4 @@
+commit 50298161a691d973c1063709e993deab76b33b97 (2021/7/13 10:28:40)
+1: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/ExpressionComplexityCheck.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/ExpressionComplexityCheckCustom.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 0

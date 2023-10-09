@@ -1,0 +1,4 @@
+commit 5566c158bcd87abc4678559518eb683074a62464 (2021/11/22 21:52:40)
+241,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/net/spi/InetAddressResolverProvider/LookupPolicyMappingTest.java,1,0,0,0,0,0,0,0,0
+290,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/jdk/javadoc/lib/javadoc/tester/JavadocTester.java,0,0,1,-1,0,0,0,0,0
+total,1,0,1,-1,0,0,0,0,0

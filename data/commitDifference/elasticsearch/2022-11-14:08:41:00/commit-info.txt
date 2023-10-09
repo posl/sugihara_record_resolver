@@ -1,0 +1,3 @@
+commit a3639026cc82a57c30d14ac55e6e265549e406f1 (2022/11/14 08:41:00)
+1: ../data/repositories/elasticsearch/x-pack/plugin/eql/qa/ccs-rolling-upgrade/src/test/java/org/elasticsearch/xpack/eql/qa/ccs_rolling_upgrade/EqlCcsRollingUpgradeIT.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

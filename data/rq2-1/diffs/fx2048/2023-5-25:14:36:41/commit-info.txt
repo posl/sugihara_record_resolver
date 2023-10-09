@@ -1,0 +1,3 @@
+commit 5c88ceafbadf290cf226a836f7385a8fe3b4aa86 (2023/5/25 14:36:41)
+8,../data_original/repositories/rep1923/copied/fx2048/src/main/java/io/fxgame/game2048/Location.java,0,1,0,-1,0,0,0,0,0
+total,0,1,0,-1,0,0,0,0,0

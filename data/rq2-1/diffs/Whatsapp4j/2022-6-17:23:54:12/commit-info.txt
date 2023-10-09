@@ -1,0 +1,3 @@
+commit 7bb9ead8372a7e7806f5d07ca074ca1a6ff72b07 (2022/6/17 23:54:12)
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionBuilder.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

@@ -1,0 +1,4 @@
+commit 13620c1330cdcf896e96ef8fdc8a2123e4fce6a (2023/4/8 10:58:09)
+65,../data_original/repositories/rep1629/copied/DrivenByMoss/src/main/java/de/mossgrabers/bitwig/framework/daw/DeviceMetadataImpl.java,0,0,0,-1,0,0,0,-1,1
+1147,../data_original/repositories/rep1629/copied/DrivenByMoss/src/main/java/de/mossgrabers/framework/graphics/canvas/utils/SendData.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

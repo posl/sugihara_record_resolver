@@ -1,0 +1,20 @@
+commit a85ea2708182112f40d3da74698e08517b030954 (2021/10/12 06:50:32)
+147,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/analyze/model/OutputExpressionsEvent.java,0,1,0,-1,0,0,0,0,0
+152,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/analyze/model/TruthTableEvent.java,0,1,0,-1,0,0,0,0,0
+156,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/analyze/model/VariableListEvent.java,0,1,0,-1,0,0,0,0,0
+164,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/circuit/CircuitEvent.java,0,1,0,-1,0,0,0,0,0
+208,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/circuit/appear/CircuitAppearanceEvent.java,0,1,0,-1,0,0,0,0,0
+224,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/comp/ComponentEvent.java,0,1,0,-1,0,0,0,0,0
+228,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/comp/ComponentUserEvent.java,0,1,0,-1,0,0,0,0,0
+233,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/comp/TextFieldEvent.java,0,1,0,-1,0,0,0,0,0
+238,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/data/AttributeEvent.java,0,1,0,-1,0,0,0,0,0
+255,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/file/LibraryEvent.java,0,1,0,-1,0,0,0,0,0
+404,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/gui/generic/AttrTableModelEvent.java,0,1,0,-1,0,0,0,0,0
+493,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/gui/main/Frame.java,0,0,1,-1,0,0,0,0,0
+591,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/prefs/ConvertEvent.java,0,1,0,-1,0,0,0,0,0
+608,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/proj/ProjectEvent.java,0,1,0,-1,0,0,0,0,0
+783,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/std/hdl/VhdlParser.java,0,1,0,-1,0,0,0,0,0
+1021,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/tools/CaretEvent.java,0,1,0,-1,0,0,0,0,0
+1045,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/tools/WireRepairData.java,0,1,0,-1,0,0,0,0,0
+1101,../data_original/repositories/rep268/copied/logisim-evolution/src/main/java/com/cburch/logisim/util/TableConstraints.java,0,1,0,-1,0,0,0,0,0
+total,0,17,1,-18,0,0,0,0,0

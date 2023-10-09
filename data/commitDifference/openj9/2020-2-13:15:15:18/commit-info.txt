@@ -1,0 +1,3 @@
+commit 39368e2421c8d5dd0ce9a873940d897fcaad39d (2020/2/13 15:15:18)
+1: ../data/repositories/openj9/test/functional/Java14andUp/src/org/openj9/test/java/lang/Test_Class.java, 0, 0, 5, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 5, 0, 0, 0, 0, 0, 0

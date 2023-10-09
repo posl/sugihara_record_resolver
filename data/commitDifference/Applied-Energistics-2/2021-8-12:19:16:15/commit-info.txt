@@ -1,0 +1,3 @@
+commit 2e94e13ec022127e53380db946ef4507d0825af7 (2021/8/12 19:16:15)
+1: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/spatial/CachedPlane.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

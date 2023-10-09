@@ -1,0 +1,5 @@
+commit 284dce6a2a9c025d431628d466186cac84ceef77 (2022/9/6 18:17:36)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/metadata/DesiredNode.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/metadata/DesiredNodeWithStatus.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/elasticsearch/x-pack/plugin/autoscaling/src/main/java/org/elasticsearch/xpack/autoscaling/capacity/nodeinfo/AutoscalingNodeInfo.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 3
