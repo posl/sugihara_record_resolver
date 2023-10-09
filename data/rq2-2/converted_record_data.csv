@@ -1,0 +1,9 @@
+all_conversions : 133 
+has_non_final_fields : 33 (24.8%) 
+extends_other_class : 2 (1.5%) 
+has_prohibited_modifiers : 7 (5.3%) 
+has_instrance_initializer : 0 (0.0%) 
+has_inproper_canonical_constructor: 0 (0.0%) 
+has_get_prefixed_getters: 30 (22.6%) 
+has_effective_getters: 94 (70.7%) 
+none_of_the_above: 91 (68.4%) 

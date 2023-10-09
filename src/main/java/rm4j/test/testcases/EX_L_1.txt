@@ -1,1 +1,0 @@
-s -> s.length() == 3 EX_L_1

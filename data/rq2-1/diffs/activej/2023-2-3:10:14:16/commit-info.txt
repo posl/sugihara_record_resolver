@@ -1,0 +1,17 @@
+commit 6b72bcd6e08cbcbb31d15cd4244535f6fe01075 (2023/2/3 10:14:16)
+2,../data_original/repositories/rep1374/copied/activej/boot-jmx/src/main/java/io/activej/jmx/ProtoObjectName.java,0,1,0,-1,0,0,0,0,0
+4,../data_original/repositories/rep1374/copied/activej/boot-triggers/src/main/java/io/activej/trigger/Triggers.java,0,1,0,-2,0,0,0,-1,0
+7,../data_original/repositories/rep1374/copied/activej/core-http/src/main/java/io/activej/http/BasicAuthServlet.java,0,1,0,-1,0,0,0,0,0
+8,../data_original/repositories/rep1374/copied/activej/core-inject/src/test/java/io/activej/inject/TestInjectorInternals.java,0,1,0,-1,0,0,0,0,0
+13,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/graph/Partition.java,0,1,0,-1,0,0,0,0,0
+15,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/node/impl/Reduce.java,0,1,0,-1,0,0,0,0,0
+16,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/test/java/io/activej/dataflow/calcite/AbstractCalciteTest.java,0,1,0,-17,0,0,0,-16,0
+18,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-cube/src/main/java/io/activej/cube/linear/CubeMySqlOTUplink.java,0,1,0,-1,0,0,0,0,0
+23,../data_original/repositories/rep1374/copied/activej/extra/cloud-multilog/src/main/java/io/activej/multilog/PartitionAndFile.java,0,1,0,-1,0,0,0,0,0
+25,../data_original/repositories/rep1374/copied/activej/extra/cloud-ot/src/main/java/io/activej/ot/AsyncOTCommitFactory.java,0,1,0,-1,0,0,0,0,0
+28,../data_original/repositories/rep1374/copied/activej/extra/cloud-ot/src/main/java/io/activej/ot/uplink/AsyncOTUplink.java,0,1,0,-1,0,0,0,0,0
+33,../data_original/repositories/rep1374/copied/activej/launchers/fs/src/main/java/io/activej/launchers/fs/gui/Dir.java,0,1,0,-1,0,0,0,0,0
+34,../data_original/repositories/rep1374/copied/activej/launchers/fs/src/main/java/io/activej/launchers/fs/gui/DirView.java,0,1,0,-1,0,0,0,0,0
+36,../data_original/repositories/rep1374/copied/activej/util-state/src/main/java/io/activej/state/file/FileNamingScheme.java,0,1,0,-1,0,0,0,0,0
+37,../data_original/repositories/rep1374/copied/activej/util-state/src/main/java/io/activej/state/file/FileState.java,0,1,0,-1,0,0,0,0,0
+total,0,15,0,-32,0,0,0,-17,0

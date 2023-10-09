@@ -1,0 +1,4 @@
+commit ebd336f5c74eb7527df6f61dec4bb267431e8d58 (2022/11/15 11:27:00)
+2,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/health/Diagnosis.java,0,0,0,-2,0,0,0,-2,1
+4,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/health/HealthIndicatorResult.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,0,-3,2

@@ -1,0 +1,3 @@
+commit 441406cc780fc5384832b48e382a7c899bac21af (2022/9/27 12:32:40)
+1,../data_original/repositories/rep16/copied/gson/gson/src/test/java/com/google/gson/functional/Java17RecordTest.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

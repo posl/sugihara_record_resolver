@@ -1,0 +1,4 @@
+commit b8aa5adf1b7664d0ab534ff640bd74230151c13b (2022/11/16 13:19:08)
+202,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/net/URL/URLFromURITest.java,1,0,0,0,0,0,0,0,0
+241,../data_original/repositories/rep1322/copied/SapMachine/test/micro/org/openjdk/bench/java/security/Signatures.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

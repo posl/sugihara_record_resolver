@@ -1,0 +1,5 @@
+commit 618bc68c27db8b645e1a2ff68a849c8f57ef7a7a (2023/5/2 00:10:38)
+12,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/chat/ChatMute.java,0,0,0,-1,0,0,0,-1,1
+14,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/chat/GroupParticipant.java,0,0,0,0,0,1,0,-1,0
+26,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/response/ContactStatusResponse.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,1,0,-3,2

@@ -1,0 +1,8 @@
+commit 763805a3ba702fe739a30f6de16ede99013fc42a (2022/12/4 00:38:16)
+3,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/datagen/providers/recipes/ChargerRecipes.java,0,0,0,0,0,0,1,-1,0
+6,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/datagen/providers/recipes/MatterCannonAmmo.java,0,0,0,0,1,0,0,0,0
+8,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/datagen/providers/recipes/TransformRecipes.java,0,0,0,0,0,0,1,-1,0
+11,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/recipes/handlers/ChargerRecipeBuilder.java,1,0,0,0,0,0,0,0,0
+15,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/recipes/mattercannon/MatterCannonAmmo.java,0,0,1,-1,0,0,0,0,0
+17,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/recipes/transform/TransformRecipeBuilder.java,1,0,0,0,0,0,0,0,0
+total,2,0,1,-1,1,0,2,-2,0

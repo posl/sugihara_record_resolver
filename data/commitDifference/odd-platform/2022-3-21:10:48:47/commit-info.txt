@@ -1,0 +1,5 @@
+commit 45e5bfd4e56cfd7ce22afe4df75b79bdd37fe07a (2022/3/21 10:48:47)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/CollectorDto.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/DataSourceDto.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/TokenDto.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 1

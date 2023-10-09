@@ -1,0 +1,3 @@
+commit 998d70300e4dce14fc02621130f954f446b71f71 (2022/2/4 17:47:32)
+1: ../data/repositories/CloudNet-v3/modules/influx/src/main/java/eu/cloudnetservice/modules/influx/InfluxConfiguration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

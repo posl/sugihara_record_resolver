@@ -1,0 +1,3 @@
+commit 62c536c05d60126a2bbe31c2b88a4bc61a123d09 (2022/1/24 11:35:08)
+1: ../data/repositories/CloudNet-v3/modules/npcs/src/main/java/eu/cloudnetservice/modules/npc/configuration/NPCConfigurationEntry.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

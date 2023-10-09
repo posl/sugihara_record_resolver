@@ -1,0 +1,4 @@
+commit cb497406265e2310fef591d6c19d7b05f1a74781 (2022/7/21 20:35:13)
+4,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionBuilder.java,0,0,0,-1,0,0,0,-1,1
+5,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionCipher.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

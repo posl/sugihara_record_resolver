@@ -1,0 +1,5 @@
+commit 9484aaefeb3805854d4a7426c9aa0a32f227334f (2022/6/12 21:29:08)
+2,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/code-tester-bot/src/main/java/org/example/whatsapp/TesterBotListener.java,0,0,0,-1,0,0,0,-1,1
+51,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionCipher.java,0,0,1,-2,0,0,0,-1,1
+107,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/contact/ContactJid.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,1,-4,0,0,0,-3,3

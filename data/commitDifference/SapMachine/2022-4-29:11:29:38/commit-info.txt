@@ -1,0 +1,4 @@
+commit 2940a8e2fd436e3914aa4d94f92b44590ac30e2e (2022/4/29 11:29:38)
+1: ../data/repositories/SapMachine/test/langtools/tools/doclint/MissingRecordParamsTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/test/langtools/tools/doclint/RecordParamsTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

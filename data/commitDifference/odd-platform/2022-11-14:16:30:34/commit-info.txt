@@ -1,0 +1,15 @@
+commit 5f00c0e4e445cef2baf24e713167a2db758b188a (2022/11/14 16:30:34)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/controller/EventApiController.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/controller/parser/ParseResult.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/DataEntityMessageContext.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageChannelDto.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageEventDto.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageEventPayload.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageEventRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageProviderIdentity.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+9: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/datacollaboration/dto/MessageUserDto.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+10: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/MessageDto.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+11: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/OwnershipPair.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+12: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/partition/manager/TablePartition.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+13: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/service/activity/ActivityTablePartitionManagerImpl.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+sum: 14, 0, 0, 0, 1, 0, 0, 0, 0

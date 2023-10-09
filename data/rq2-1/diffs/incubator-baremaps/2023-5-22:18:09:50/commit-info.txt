@@ -1,0 +1,4 @@
+commit da4de51c9917fe04763270f27dc08c8e322d5038 (2023/5/22 18:09:50)
+5,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/vectortile/tilejson/VectorLayer.java,1,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ExportVectorTiles.java,0,0,0,-1,0,0,0,-1,1
+total,1,0,0,-1,0,0,0,-1,1

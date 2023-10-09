@@ -1,0 +1,4 @@
+commit e8a2b8608b115b90190951f03251d07823b6b63f (2022/1/22 12:42:42)
+1: ../data/repositories/sirix/bundles/sirix-xquery/src/main/java/org/sirix/xquery/compiler/optimizer/walker/json/PathData.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/sirix/bundles/sirix-xquery/src/main/java/org/sirix/xquery/compiler/optimizer/walker/json/QueryPathSegment.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 1

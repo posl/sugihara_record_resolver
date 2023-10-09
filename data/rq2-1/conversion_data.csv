@@ -1,0 +1,21 @@
+total class -> record refactorings : 935 
+constructor reduce refactorings : 650 (69.5%) 
+found compact constructors : 42 (4.5%) 
+compact constructor refactorings : 39 (4.2%) 
+effective getter reduction refactorings : 360 (38.5%) 
+conversions that changed properties' name: 328 (35.1%) 
+total number of getters that changed name: 863 
+removal of get-prefix conversions : 257 (27.5%) 
+total number of getters being removed get-prefix: 630 
+
+      properties       | classes | records | delta 
+ ================================================ 
+     constructors      |   818   |   137   |  681  
+     real getters      |   1059   |   58   |  1001  
+ get-prefixed getters  |   724   |   40   |  684  
+ record-format getters |   202   |   2   |  200  
+   equals(Object o)    |   183   |   23   |  160  
+      hashCode()       |   182   |   23   |  159  
+      toString()       |   191   |   80   |  111  
+
+deleted field reference : 181 | deleted class getter reference : 1928 | added record getter reference : 2139 

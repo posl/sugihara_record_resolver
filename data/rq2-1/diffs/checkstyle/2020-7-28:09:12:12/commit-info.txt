@@ -1,0 +1,4 @@
+commit ec517413bf3617be5f4218c417a35f9e09675b44 (2020/7/28 09:12:12)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/magicnumber/InputMagicNumberIgnoreFieldDeclarationRecords.java,2,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/magicnumber/InputMagicNumberRecordsDefault.java,1,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

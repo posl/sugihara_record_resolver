@@ -1,0 +1,3 @@
+commit 73e563abb31d497f96ca9c5798298802a9a318ca (2022/10/23 16:45:42)
+6,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/imm_ptl_core/src/main/java/qouteall/imm_ptl/core/teleportation/TeleportationUtil.java,0,0,2,-4,0,0,0,-2,0
+total,0,0,2,-4,0,0,0,-2,0

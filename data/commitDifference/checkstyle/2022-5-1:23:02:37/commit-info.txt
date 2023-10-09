@@ -1,0 +1,3 @@
+commit 9bdddd4c6e0a530cb8fb71eab5451f9d2d832790 (2022/5/1 23:02:37)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/blocks/rightcurly/InputRightCurlyTestRecordsAndCompactCtors.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

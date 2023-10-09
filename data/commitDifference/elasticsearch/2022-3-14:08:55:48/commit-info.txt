@@ -1,0 +1,5 @@
+commit ca3d7d1c1380565f6425288a59815c9ef3c6e999 (2022/3/14 08:55:48)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/metadata/MetadataIndexStateService.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/metadata/MetadataMappingService.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/service/MasterService.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 3

@@ -1,0 +1,3 @@
+commit ed1b2c3fb612b684a6ee057e43c2a824d10c31d4 (2022/10/11 11:13:42)
+1,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/autoscaling/NodeAvailabilityZoneMapper.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

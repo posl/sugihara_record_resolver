@@ -1,0 +1,3 @@
+commit 43f500fda7ea85a358fcbd1585716f3effcc772d (2020/8/20 11:39:33)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/javadocmethod/InputJavadocMethodRecordsAndCompactCtors.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 0

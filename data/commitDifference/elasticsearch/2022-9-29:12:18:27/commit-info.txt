@@ -1,0 +1,4 @@
+commit 17579ae1af2ede9a99022fd35896d10bee94b16e (2022/9/29 12:18:27)
+1: ../data/repositories/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/deployment/ModelStats.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/pytorch/process/PyTorchResultProcessor.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

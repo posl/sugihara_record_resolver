@@ -1,0 +1,7 @@
+commit 79c79e9061659ec2dbadcebb9f6aed6e571d2525 (2022/12/6 12:39:06)
+171,../data_original/repositories/rep308/copied/CompreFace/java/common/src/main/java/com/exadel/frs/commonservice/projection/EmbeddingProjection.java,1,0,0,0,0,0,0,0,0
+172,../data_original/repositories/rep308/copied/CompreFace/java/common/src/main/java/com/exadel/frs/commonservice/projection/EnhancedEmbeddingProjection.java,1,0,0,0,0,0,0,0,0
+173,../data_original/repositories/rep308/copied/CompreFace/java/common/src/main/java/com/exadel/frs/commonservice/projection/ModelProjection.java,1,0,0,0,0,0,0,0,0
+174,../data_original/repositories/rep308/copied/CompreFace/java/common/src/main/java/com/exadel/frs/commonservice/projection/ModelStatisticProjection.java,1,0,0,0,0,0,0,0,0
+175,../data_original/repositories/rep308/copied/CompreFace/java/common/src/main/java/com/exadel/frs/commonservice/projection/ModelSubjectProjection.java,1,0,0,0,0,0,0,0,0
+total,5,0,0,0,0,0,0,0,0

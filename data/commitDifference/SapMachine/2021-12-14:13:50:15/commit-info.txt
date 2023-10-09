@@ -1,0 +1,9 @@
+commit 81b654acf6ac2fdc8121caa0a21ae467b88cba74 (2021/12/14 13:50:15)
+1: ../data/repositories/SapMachine/src/java.base/share/classes/sun/nio/ch/IOUtil.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/SapMachine/src/jdk.incubator.foreign/share/classes/jdk/internal/foreign/NativeSymbolImpl.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/snippet/Parser.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+4: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/doclet/testSnippetTag/TestSnippetTag.java, 0, 0, 0, 11, 0, 0, 0, 11, 0
+5: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Exhaustiveness.java, 0, 0, 0, 1, 0, 0, 0, 0, 0
+6: ../data/repositories/SapMachine/test/langtools/tools/javac/records/BigRecordsToStringTest.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/SapMachine/test/micro/org/openjdk/bench/java/lang/runtime/ObjectMethods.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 8, 0, 0, 13, 0, 0, 0, 12, 1

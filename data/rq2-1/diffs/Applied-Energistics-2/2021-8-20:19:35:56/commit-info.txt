@@ -1,0 +1,7 @@
+commit 7fa1e1801fbd8b1397cb4f3f3c425b1595f61454 (2021/8/20 19:35:56)
+8,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/api/features/P2PTunnelAttunement.java,0,0,1,-1,0,0,0,0,0
+9,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/api/features/P2PTunnelAttunementInternal.java,0,0,0,-1,0,0,0,-1,1
+201,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/datagen/providers/recipes/MatterCannonAmmo.java,0,0,0,-1,0,0,0,-1,1
+317,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/integration/modules/waila/tile/CableBusDataProvider.java,0,0,0,0,0,1,0,-1,0
+467,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/test/java/net/fabricmc/loader/launch/common/AccessWidenerTransformer.java,1,0,0,0,0,0,0,0,0
+total,1,0,1,-3,0,1,0,-3,2

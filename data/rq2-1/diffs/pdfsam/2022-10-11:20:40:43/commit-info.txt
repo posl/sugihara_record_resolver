@@ -1,0 +1,7 @@
+commit bdd4d9a65e56b7545320cee96f41c04323113897 (2022/10/11 20:40:43)
+58,../data_original/repositories/rep381/copied/pdfsam/pdfsam-gui/src/main/java/org/pdfsam/gui/components/log/LogMessage.java,0,1,0,-1,0,0,0,0,0
+98,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/io/FilesOpenRequest.java,0,0,0,0,1,0,0,0,0
+109,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/StageStatus.java,0,0,0,-1,0,0,0,-1,1
+112,../data_original/repositories/rep381/copied/pdfsam/pdfsam-persistence/src/test/java/org/pdfsam/persistence/DefaultEntityRepositoryTest.java,0,0,0,-1,0,0,0,-1,1
+192,../data_original/repositories/rep381/copied/pdfsam/pdfsam-ui-components/src/main/java/org/pdfsam/ui/components/selection/multiple/move/SingleSelectionAndFocus.java,0,1,0,-1,0,0,0,0,0
+total,0,2,0,-4,1,0,0,-2,2

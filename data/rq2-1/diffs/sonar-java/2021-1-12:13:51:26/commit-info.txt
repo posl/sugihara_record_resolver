@@ -1,0 +1,3 @@
+commit 7132d3d83580a18d37821ce426680689979abe9c (2021/1/12 13:51:26)
+2,../data_original/repositories/rep844/copied/sonar-java/java-checks-test-sources/src/main/files/non-compiling/checks/MissingDeprecatedCheckWithRecords.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

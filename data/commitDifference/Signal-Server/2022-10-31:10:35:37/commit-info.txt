@@ -1,0 +1,3 @@
+commit c10fda836305323e6a362e4d19c465a2a5119644 (2022/10/31 10:35:37)
+1: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/websocket/WebSocketConnection.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

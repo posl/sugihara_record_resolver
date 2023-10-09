@@ -1,0 +1,4 @@
+commit 63417707684ae0d0ba728848a988ed841d72ac16 (2022/10/7 14:26:17)
+1: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/controllers/SubscriptionController.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/subscriptions/ProcessorCustomer.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 1, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,6 @@
+commit cd80dfc858ebaea3b8635b440ef133a353cfa299 (2022/12/2 23:04:31)
+55,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ImportGeoPackage.java,0,0,0,-1,0,0,0,-1,1
+56,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ImportOpenStreetMap.java,0,0,0,-1,0,0,0,-1,1
+57,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ImportShapefile.java,0,0,0,-1,0,0,0,-1,1
+58,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/UpdateOpenStreetMap.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-4,0,0,0,-4,4

@@ -1,0 +1,10 @@
+commit 84a128b143e8bedfda4e5668c5889e80bc03329a (2022/9/25 18:11:39)
+1: ../data/repositories/pdfsam/pdfsam-core/src/main/java/org/pdfsam/core/context/PersistentPropertyChange.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/news/NewsData.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/premium/PremiumTool.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/premium/PremiumToolsResponse.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/StageStatus.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+6: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/workspace/SaveWorkspaceRequest.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/pdfsam/pdfsam-persistence/src/test/java/org/pdfsam/persistence/DefaultEntityRepositoryTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/pdfsam/pdfsam-persistence/src/test/java/org/pdfsam/persistence/PreferencesRepositoryTest.java, 0, 0, 0, 0, 0, 0, 1, 0, 0
+sum: 4, 1, 0, 0, 0, 0, 1, 0, 2

@@ -1,0 +1,5 @@
+commit b17676b7078fc4c09d46833694df998a79b1cb1 (2023/2/12 18:19:11)
+4,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/gl/attribute/GlVertexAttributeFormat.java,0,0,0,-1,0,0,0,-1,1
+30,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/render/chunk/region/RenderRegionManager.java,0,0,0,-1,0,0,0,-1,1
+32,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/render/chunk/shader/ChunkShaderOptions.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,0,-3,3

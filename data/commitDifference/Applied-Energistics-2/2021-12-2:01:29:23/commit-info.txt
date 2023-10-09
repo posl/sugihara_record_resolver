@@ -1,0 +1,9 @@
+commit 44bc92f6a21cb2dcac4a7234cfaca82996432af1 (2021/12/2 01:29:23)
+1: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/api/storage/GenericStack.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/core/sync/packets/MEInventoryUpdatePacket.java, 0, 0, 0, 0, 0, 0, 1, 0, 0
+3: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/crafting/CraftingPlan.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+4: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/me/service/StorageService.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+5: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/menu/me/interaction/EmptyingAction.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/parts/automation/AnnihilationPlanePart.java, 0, 0, 0, 0, 0, 0, 1, 0, 0
+7: ../data/repositories/Applied-Energistics-2/src/main/java/appeng/parts/automation/ItemPickupStrategy.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 2, 0, 3

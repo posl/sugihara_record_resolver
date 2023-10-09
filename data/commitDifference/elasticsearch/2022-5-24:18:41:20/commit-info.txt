@@ -1,0 +1,3 @@
+commit 346abf9816e20057192776092ed6646a3cbb1fbf (2022/5/24 18:41:20)
+1: ../data/repositories/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authz/AuthorizationEngine.java, 0, 0, 1, 0, 0, 1, 0, 0, 1
+sum: 0, 0, 1, 0, 0, 1, 0, 0, 1

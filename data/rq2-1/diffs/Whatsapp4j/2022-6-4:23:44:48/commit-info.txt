@@ -1,0 +1,9 @@
+commit 6d3633aaed23943d551d62cb9d3f18c30bd6f25f (2022/6/4 23:44:48)
+9,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/GroupBuilder.java,0,0,0,-1,0,0,0,-1,1
+10,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionBuilder.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionCipher.java,0,0,0,-1,0,0,0,-1,1
+23,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/signal/keypair/SignalKeyPair.java,0,0,0,-1,0,0,0,-1,1
+24,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/signal/keypair/SignalPreKeyPair.java,0,0,0,-1,0,0,0,-1,1
+31,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/util/Attributes.java,0,0,0,-1,0,0,0,-1,1
+41,../data_original/repositories/rep1854/copied/Whatsapp4j/src/test/java/it/auties/whatsapp/test/BaileysCompatibilityLayer.java,0,0,0,0,21,0,0,0,0
+total,0,0,0,-6,21,0,0,-6,6

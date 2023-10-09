@@ -1,0 +1,3 @@
+commit 73558da17520253543277e1b60ecfa1d5732f4ac (2020/8/20 21:07:56)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/annotation/annotationonsameline/InputAnnotationOnSameLineRecordsAndCompactCtors.java,9,0,0,0,0,0,0,0,0
+total,9,0,0,0,0,0,0,0,0

@@ -1,0 +1,4 @@
+commit ef03868374d7de02867393a5a8f65dd8366286b6 (2022/11/29 11:37:59)
+6,../data_original/repositories/rep844/copied/sonar-java/java-checks-test-sources/src/main/files/non-compiling/symbolicexecution/engine/SwitchWithPatterns.java,0,0,1,-1,0,0,0,0,0
+30,../data_original/repositories/rep844/copied/sonar-java/java-frontend/src/test/files/highlighter/SwitchPatternExpression.java,1,0,0,0,0,0,0,0,0
+total,1,0,1,-1,0,0,0,0,0

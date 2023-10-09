@@ -1,0 +1,5 @@
+commit 3d4234e80ef698cd909e9397356a8d1e5d25f8a2 (2022/5/6 09:54:34)
+1: ../data/repositories/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authz/AuthorizationEngine.java, 0, 0, 2, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/profile/ProfileDocument.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+3: ../data/repositories/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/profile/ProfileService.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 3, 0, 0, 0, 0, 0, 2

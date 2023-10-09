@@ -1,0 +1,5 @@
+commit 8d65110c0bd311d9d2ede7a613acfd13a40f7157 (2023/1/10 12:52:28)
+103,../data_original/repositories/rep1374/copied/activej/core-serializer/src/main/java/io/activej/serializer/stream/StreamCodec.java,1,0,0,0,0,0,0,0,0
+104,../data_original/repositories/rep1374/copied/activej/core-serializer/src/main/java/io/activej/serializer/stream/StreamCodecs.java,1,0,0,0,0,0,0,0,0
+113,../data_original/repositories/rep1374/copied/activej/core-stream-codecs/src/main/java/io/activej/streamcodecs/StructuredStreamCodec.java,0,0,0,0,1,0,0,0,0
+total,2,0,0,0,1,0,0,0,0

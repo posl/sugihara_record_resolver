@@ -1,0 +1,4 @@
+commit 1c33dfe8b29a7eb5cc59f3d989a008aeb421bbb8 (2022/4/10 16:26:50)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/cloudnet/driver/channel/ChannelMessage.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CloudNet-v3/node/src/main/java/eu/cloudnetservice/cloudnet/node/cluster/task/LocalNodeUpdateTask.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

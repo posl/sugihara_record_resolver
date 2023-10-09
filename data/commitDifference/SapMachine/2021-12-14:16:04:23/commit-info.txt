@@ -1,0 +1,9 @@
+commit 3653db301befea4700f422c06d4fd87c0b65440e (2021/12/14 16:04:23)
+1: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/snippet/Parser.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+2: ../data/repositories/SapMachine/test/jdk/java/lang/Object/InvalidFinalizationOption.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/SapMachine/test/jdk/java/net/httpclient/ManyRequests.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/SapMachine/test/jdk/java/net/httpclient/ManyRequestsLegacy.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/doclet/testSnippetTag/TestSnippetMarkup.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/doclet/testSnippetTag/TestSnippetTag.java, 0, 0, 0, 11, 0, 0, 0, 11, 0
+7: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Exhaustiveness.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 1, 2, 1, 13, 0, 0, 0, 13, 0

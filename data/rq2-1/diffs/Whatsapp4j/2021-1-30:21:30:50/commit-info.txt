@@ -1,0 +1,4 @@
+commit 6636c9fcb8bc328ce7f98156936a2fa290131191 (2021/1/30 21:30:50)
+13,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/ResponseNode.java,1,0,0,0,0,0,0,0,0
+16,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/utils/BinaryEncoder.java,0,0,0,0,0,1,0,-1,0
+total,1,0,0,0,0,1,0,-1,0

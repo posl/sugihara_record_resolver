@@ -1,0 +1,5 @@
+commit 79d497ff571b5d18924cf88659757fdfee922031 (2022/1/15 13:16:42)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/cloudnet/driver/network/http/content/FileContentStreamProvider.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CloudNet-v3/launcher/java17/src/main/java/eu/cloudnetservice/launcher/java17/dependency/Repository.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/util/RecordMaker.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 3

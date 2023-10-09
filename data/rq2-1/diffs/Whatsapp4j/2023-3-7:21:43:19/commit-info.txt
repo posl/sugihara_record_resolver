@@ -1,0 +1,6 @@
+commit f0a419f22f4c0ec69fcf74fe2ca6f88de78e291 (2023/3/7 21:43:19)
+4,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/info/MessageIndexInfo.java,0,0,0,-1,0,0,0,-1,1
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Node.java,0,0,0,-1,0,0,0,-1,1
+7,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Request.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/sync/PatchRequest.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-4,0,0,0,-4,4

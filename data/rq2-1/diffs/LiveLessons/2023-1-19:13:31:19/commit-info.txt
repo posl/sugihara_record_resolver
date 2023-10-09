@@ -1,0 +1,3 @@
+commit b43422a024a79ba2ec8e46025e76448a1f0bb37d (2023/1/19 13:31:19)
+30,../data_original/repositories/rep1598/copied/LiveLessons/WebMVC/ex2/src/main/java/berraquotes/common/Quote.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

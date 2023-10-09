@@ -1,0 +1,3 @@
+commit 8695eee8429c1e248087d8a9fb8dd0fef5fd96ed (2021/7/7 14:48:18)
+1: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/RecordInsteadOfClassCheck.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

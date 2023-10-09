@@ -1,0 +1,4 @@
+commit f96810ab53522957c2e9aadeb0fd40a9c6bed5c3 (2022/11/25 07:25:31)
+5,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/Metric.java,0,0,0,0,0,1,0,-1,0
+7,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/PercentileConfiguration.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,1,0,-1,0

@@ -1,0 +1,3 @@
+commit de7883067b9c2dcc06ebe5f4e91377e6521557b5 (2022/12/16 17:33:25)
+1,../data_original/repositories/rep535/copied/jdbi/java17/src/test/java/org/jdbi/v3/java17/TestRecord.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

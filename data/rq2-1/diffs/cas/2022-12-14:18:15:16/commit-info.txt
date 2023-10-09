@@ -1,0 +1,5 @@
+commit a1899ef2244732dfbe6a1cee8e7781fa72bcb27a (2022/12/14 18:15:16)
+23,../data_original/repositories/rep60/copied/cas/core/cas-server-core-notifications-api/src/main/java/org/apereo/cas/notifications/sms/RestfulSmsSender.java,0,0,0,-1,0,0,0,-1,1
+36,../data_original/repositories/rep60/copied/cas/core/cas-server-core-util-api/src/main/java/org/apereo/cas/util/http/SimpleHttpClient.java,0,0,0,-1,0,0,0,-1,1
+148,../data_original/repositories/rep60/copied/cas/support/cas-server-support-sms-smsmode/src/main/java/org/apereo/cas/support/sms/SmsModeSmsSender.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,0,-3,3

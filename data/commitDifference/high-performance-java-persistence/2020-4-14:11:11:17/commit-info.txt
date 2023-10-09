@@ -1,0 +1,4 @@
+commit 1ef6363bfdd43b9e632c3a854a83a7dd30f4a25b (2020/4/14 11:11:17)
+1: ../data/repositories/high-performance-java-persistence/core/src/test/java/com/vladmihalcea/book/hpjp/hibernate/query/dto/projection/record/PostRecordOverrideTest.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/high-performance-java-persistence/core/src/test/java/com/vladmihalcea/book/hpjp/hibernate/query/dto/projection/record/PostRecordTest.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 0

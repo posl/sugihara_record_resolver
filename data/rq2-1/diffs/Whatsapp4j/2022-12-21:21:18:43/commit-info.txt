@@ -1,0 +1,3 @@
+commit a767af7c4660670eaf7ed51653ccf3fb5806fcfe (2022/12/21 21:18:43)
+7,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/contact/ContactJid.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

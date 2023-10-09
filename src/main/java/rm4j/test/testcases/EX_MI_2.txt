@@ -1,1 +1,0 @@
-System.out.println(String.format("id%d: %s", info.id(), info.content())) EX_MI_2

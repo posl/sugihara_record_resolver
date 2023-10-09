@@ -1,0 +1,3 @@
+commit b079723a996e894af614973ae640b5169aec1066 (2022/9/30 15:04:58)
+1,../data_original/repositories/rep484/copied/intellij-plugins/AngularJS/src/org/angularjs/index/AngularJSIndexingHandler.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

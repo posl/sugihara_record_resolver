@@ -1,0 +1,9 @@
+commit 666fe7432f823a48aad67ba27b28a7cff4dbd32 (2023/2/26 21:10:35)
+46,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/chat/ChatMute.java,0,0,0,-1,0,0,0,-1,1
+48,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/chat/GroupParticipant.java,0,0,0,-1,0,0,0,-1,1
+51,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/contact/ContactJid.java,0,0,0,-1,0,0,0,-1,1
+52,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/info/MessageIndexInfo.java,0,0,0,-1,0,0,0,-1,1
+60,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/message/model/MessageContainer.java,0,0,1,-1,0,0,0,0,0
+71,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Request.java,0,0,0,-1,0,0,0,-1,1
+79,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/sync/ActionValueSync.java,0,0,1,-1,0,0,0,0,0
+total,0,0,2,-7,0,0,0,-5,5

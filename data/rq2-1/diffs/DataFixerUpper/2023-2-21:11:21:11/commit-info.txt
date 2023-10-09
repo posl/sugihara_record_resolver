@@ -1,0 +1,4 @@
+commit 256d0abe981a13e2a58e639fabf58f43dda563d3 (2023/2/21 11:21:11)
+1,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/TypedOptic.java,0,1,1,-2,0,0,0,0,0
+3,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/optics/Optic.java,0,0,0,-1,0,0,0,-1,1
+total,0,1,1,-3,0,0,0,-1,1

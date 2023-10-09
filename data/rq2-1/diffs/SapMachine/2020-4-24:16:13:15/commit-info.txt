@@ -1,0 +1,3 @@
+commit 31a6dd58625783e11e18e019875c7e892450754c (2020/4/24 16:13:15)
+1016,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/lang/invoke/defineHiddenClass/src/HiddenRecord.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

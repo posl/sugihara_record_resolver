@@ -1,0 +1,4 @@
+commit 2c159952893123b190f66bd10370a4b12c3471d2 (2022/4/6 22:35:51)
+1,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/SendMessageResult.java,0,0,0,-1,0,0,0,-1,1
+2,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonSendMessageResult.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

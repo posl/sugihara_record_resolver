@@ -1,0 +1,3 @@
+commit e4189711bd522690c288acc08b68e651f306a07c (2021/12/3 10:34:59)
+1: ../data/repositories/sparrow/src/main/java/com/sparrowwallet/sparrow/control/AnimationUtil.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

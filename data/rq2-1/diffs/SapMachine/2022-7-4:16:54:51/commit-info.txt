@@ -1,0 +1,5 @@
+commit 430d3c114aaa36cfcd5ca396deb3b4953183f676 (2022/7/4 16:54:51)
+17,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/java/util/stream/Collectors.java,0,1,0,-1,0,0,0,0,0
+216,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/doclint/RecordCompactConstructorTest.java,1,0,0,0,0,0,0,0,0
+217,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/patterns/ProxyMethodLookup.java,2,0,0,0,0,0,0,0,0
+total,3,1,0,-1,0,0,0,0,0

@@ -1,1 +1,0 @@
-changed |= l.removeIf(e -> e.length() == 0) EX_AS_4

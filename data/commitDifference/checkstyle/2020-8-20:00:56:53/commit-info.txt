@@ -1,0 +1,3 @@
+commit 1618a24f26c2da7ba67778e8a91645752ebe123b (2020/8/20 00:56:53)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/hiddenfield/InputHiddenFieldRecords.java, 3, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

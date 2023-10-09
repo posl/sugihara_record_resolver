@@ -1,0 +1,6 @@
+commit 5e723b82edabb896d8fa2e48ff97ca4413795725 (2022/12/19 15:46:53)
+3,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/business/BusinessCatalogEntry.java,0,0,0,-1,0,0,0,-1,1
+9,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Attributes.java,1,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Node.java,0,0,0,-1,0,0,0,-1,1
+16,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/util/Attributes.java,0,0,0,0,1,0,0,0,0
+total,1,0,0,-2,1,0,0,-2,2

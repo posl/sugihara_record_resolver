@@ -1,0 +1,4 @@
+commit 968a77aef711788ec9468ce16c1ee9f8b6bbabdd (2022/10/31 17:18:34)
+52,../data_original/repositories/rep1322/copied/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Table.java,0,0,0,-1,0,0,0,-1,1
+311,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/processing/model/util/elements/TestRecordPredicates.java,0,0,0,-3,0,0,0,-3,1
+total,0,0,0,-4,0,0,0,-4,2

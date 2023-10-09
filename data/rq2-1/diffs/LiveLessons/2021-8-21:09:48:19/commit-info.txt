@@ -1,0 +1,4 @@
+commit 73d79807f550bfa163bf3ea814a364dc5a3c08a5 (2021/8/21 09:48:19)
+4,../data_original/repositories/rep1598/copied/LiveLessons/Java8/ex35/src/main/java/utils/GCDResult.java,1,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep1598/copied/LiveLessons/Java8/ex35/src/main/java/utils/PrimeResult.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

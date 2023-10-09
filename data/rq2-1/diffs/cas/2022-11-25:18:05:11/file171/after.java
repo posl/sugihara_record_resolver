@@ -1,0 +1,106 @@
+package org.apereo.cas.authentication.credential;
+
+import org.apereo.cas.util.function.FunctionUtils;
+import org.apereo.cas.util.spring.ApplicationContextProvider;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+import lombok.val;
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.binding.message.MessageBuilder;
+import org.springframework.binding.validation.ValidationContext;
+
+import jakarta.validation.constraints.Size;
+
+import java.io.Serial;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/**
+ * Credential for authenticating with a username and password.
+ *
+ * @author Scott Battaglia
+ * @author Marvin S. Addison
+ * @since 3.0.0
+ */
+@ToString(exclude = "password")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
+public class UsernamePasswordCredential extends AbstractCredential {
+    /**
+     * Authentication attribute name for password.
+     **/
+    public static final String AUTHENTICATION_ATTRIBUTE_PASSWORD = "credential";
+
+    @Serial
+    private static final long serialVersionUID = -700605081472810939L;
+
+    private @Size(min = 1, message = "username.required") String username;
+
+    @JsonIgnore
+    private @Size(min = 1, message = "password.required") char[] password;
+
+    private String source;
+
+    private Map<String, Object> customFields = new LinkedHashMap<>();
+
+    public UsernamePasswordCredential(final String username, final String password) {
+        this.username = username;
+        assignPassword(StringUtils.defaultString(password));
+    }
+
+    @Override
+    public String getId() {
+        return this.username;
+    }
+
+    @Override
+    public void validate(final ValidationContext context) {
+        val messages = context.getMessageContext();
+        if (!"submit".equalsIgnoreCase(context.getUserEvent()) || messages.hasErrorMessages()) {
+            return;
+        }
+
+        ApplicationContextProvider.getCasConfigurationProperties().ifPresent(props -> {
+            if (StringUtils.isBlank(source) && props.getAuthn().getPolicy().isSourceSelectionEnabled()) {
+                messages.addMessage(new MessageBuilder()
+                    .error()
+                    .source("source")
+                    .defaultText("Required Source")
+                    .code("source.required")
+                    .build());
+            }
+        });
+        super.validate(context);
+    }
+
+    /**
+     * Convert to string-friendly password.
+     *
+     * @return the string
+     */
+    public String toPassword() {
+        return FunctionUtils.doIfNull(this.password, () -> null, () -> new String(this.password)).get();
+    }
+
+    /**
+     * Sets password and converts it to char array.
+     *
+     * @param password the password
+     */
+    public void assignPassword(final String password) {
+        FunctionUtils.doIfNotNull(password, p -> {
+            this.password = new char[p.length()];
+            System.arraycopy(password.toCharArray(), 0, this.password, 0, password.length());
+        }, p -> this.password = ArrayUtils.EMPTY_CHAR_ARRAY);
+    }
+}

@@ -1,0 +1,7 @@
+commit 32818a8608f5bddc46ad5c7dc442f509c939791c (2021/11/6 21:09:06)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java, 0, 0, 0, 0, 0, 0, 0, 0, 11
+2: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/json/JsonMessageEnvelope.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/json/JsonReceiptMessage.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+4: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/json/JsonSyncDataMessage.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+5: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/json/JsonSyncMessage.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 15

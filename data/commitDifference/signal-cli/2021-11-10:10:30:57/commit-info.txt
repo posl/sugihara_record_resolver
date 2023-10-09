@@ -1,0 +1,3 @@
+commit 81a11dc9776672e3468ee9a8eed556889fb2e070 (2021/11/10 10:30:57)
+1: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/jsonrpc/SignalJsonRpcDispatcherHandler.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

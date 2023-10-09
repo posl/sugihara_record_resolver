@@ -1,0 +1,4 @@
+commit a80e18169a9cc68c59c5d7bc6dcdc7b747dfcf37 (2022/5/14 15:08:19)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java, 0, 0, 0, 0, 0, 0, 0, 0, 3
+2: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/json/JsonSyncDataMessage.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 4

@@ -1,0 +1,5 @@
+commit 1a1ed24e2c00285edd8d8709c9022972483b1228 (2021/8/21 17:26:56)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/methodlength/InputMethodLengthRecordsAndCompactCtors.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumber.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+3: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberPrivateModifier.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 0, 0, 0, 3, 0, 0, 0, 3, 0

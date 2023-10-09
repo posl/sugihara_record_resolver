@@ -1,0 +1,3 @@
+commit fd344fddcd78c5ed94334be534666b3c5b64c3d9 (2022/6/7 10:53:12)
+1: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/formats/html/Table.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

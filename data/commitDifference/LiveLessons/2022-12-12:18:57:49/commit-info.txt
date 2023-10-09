@@ -1,0 +1,3 @@
+commit c2ac8b7ad42474ff7370720199e9dee921c6f1c5 (2022/12/12 18:57:49)
+1: ../data/repositories/LiveLessons/WebMVC/ex1/src/main/java/primechecker/utils/PrimeUtils.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

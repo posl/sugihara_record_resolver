@@ -1,0 +1,17 @@
+commit 82a950abc02d942e134eed30b2fcdc7712f3b3b7 (2021/4/16 15:32:49)
+3,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/binary/BinaryArray.java,0,0,0,-1,0,0,0,-1,1
+5,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/binary/BinaryEncoder.java,0,0,0,-1,0,0,0,-1,1
+35,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappNode.java,0,0,0,-1,0,0,0,-1,1
+36,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappResponse.java,0,0,0,-1,0,0,0,-1,1
+51,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/AckResponse.java,0,0,0,-1,0,0,0,-1,1
+53,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/ChatCmdResponse.java,0,0,0,-1,0,0,0,-1,1
+54,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/ChatPictureResponse.java,0,0,0,-1,0,0,0,-1,1
+57,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/FeaturesInformation.java,0,0,0,-1,0,0,0,-1,1
+59,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/GroupMetadataResponse.java,0,0,0,-1,0,0,0,-1,1
+60,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/GroupModificationResponse.java,0,0,0,-1,0,0,0,-1,1
+62,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/InitialResponse.java,0,0,0,-1,0,0,0,-1,1
+64,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/MessageResponse.java,0,0,0,-1,0,0,0,-1,1
+68,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/PhoneInformation.java,0,0,0,-1,0,0,0,-1,1
+69,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/PresenceResponse.java,0,0,0,-1,0,0,0,-1,1
+71,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/TakeOverResponse.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-15,0,0,0,-15,15

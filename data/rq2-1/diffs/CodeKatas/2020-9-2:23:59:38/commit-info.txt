@@ -1,0 +1,10 @@
+commit f3d04c7656d26149cc55f3ac85b765664b8b60d5 (2020/9/2 23:59:38)
+1,../data_original/repositories/rep1920/copied/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata/Customer.java,0,1,0,-1,0,0,0,0,0
+2,../data_original/repositories/rep1920/copied/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata/Delivery.java,0,1,0,-1,0,0,0,0,0
+3,../data_original/repositories/rep1920/copied/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata/Donut.java,0,1,0,-1,0,0,0,0,0
+5,../data_original/repositories/rep1920/copied/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata/Order.java,0,1,0,-1,0,0,0,0,0
+6,../data_original/repositories/rep1920/copied/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata10/Customer.java,0,0,0,0,1,0,0,0,0
+7,../data_original/repositories/rep1920/copied/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata10/Delivery.java,0,0,0,0,1,0,0,0,0
+8,../data_original/repositories/rep1920/copied/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata10/Donut.java,0,0,0,0,1,0,0,0,0
+11,../data_original/repositories/rep1920/copied/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata10/Order.java,0,0,0,0,1,0,0,0,0
+total,0,4,0,-4,4,0,0,0,0

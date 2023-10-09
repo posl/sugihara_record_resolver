@@ -1,0 +1,3 @@
+commit 38904ed5d094772fc4e8c21ba32e6272708fa54e (2022/3/14 12:43:09)
+1: ../data/repositories/crate/server/src/main/java/io/crate/protocols/postgres/KeyData.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

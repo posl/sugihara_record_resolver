@@ -1,0 +1,14 @@
+commit a09427024dd93ac72a4ae57f9a89a4c7cb38f0d4 (2022/11/13 15:42:27)
+2,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/ban-bot/src/main/java/org/example/whatsapp/BanBotListener.java,0,0,0,0,1,0,0,0,0
+4,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/code-tester-bot/src/main/java/org/example/whatsapp/TesterBotListener.java,0,0,0,0,1,0,0,0,0
+17,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/GroupCipher.java,0,0,0,-1,0,0,0,-1,1
+20,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionBuilder.java,0,0,0,-1,0,0,0,-1,1
+21,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionCipher.java,0,0,0,-1,0,0,0,-1,1
+61,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/action/BusinessCatalogEntry.java,0,0,0,-1,0,0,0,-1,1
+107,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/privacy/GdprAccountReport.java,3,0,0,0,0,0,0,0,0
+111,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Node.java,0,0,0,-1,0,0,0,-1,1
+112,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Reply.java,0,0,0,0,2,0,0,0,0
+113,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/ReplyHandler.java,1,0,0,0,0,0,0,0,0
+114,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Request.java,0,0,0,-1,0,0,0,-1,1
+134,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/util/Attributes.java,0,0,0,-1,0,0,0,-1,1
+total,4,0,0,-7,4,0,0,-7,7

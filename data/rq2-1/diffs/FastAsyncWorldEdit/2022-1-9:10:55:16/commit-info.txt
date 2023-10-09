@@ -1,0 +1,19 @@
+commit 9ba90d8c83f71af01c0a33ac31f027b981aa240c (2022/1/9 10:55:16)
+9,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-bukkit/adapters/adapter-1_17_1/src/main/java/com/sk89q/worldedit/bukkit/adapter/impl/fawe/v1_17_R1_2/regen/PaperweightRegen.java,0,1,0,-1,0,0,0,0,0
+13,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-bukkit/adapters/adapter-1_18/src/main/java/com/sk89q/worldedit/bukkit/adapter/impl/fawe/v1_18_R1/PaperweightPlatformAdapter.java,0,2,0,-2,0,0,0,0,0
+26,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/command/tool/brush/AngleBrush.java,0,1,0,-1,0,0,0,0,0
+27,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/command/tool/brush/BlobBrush.java,0,1,0,-1,0,0,0,0,0
+29,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/command/tool/brush/CircleBrush.java,0,1,0,-1,0,0,0,0,0
+33,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/command/tool/brush/PopulateSchem.java,0,1,0,-1,0,0,0,0,0
+34,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/command/tool/brush/RecurseBrush.java,0,1,0,-1,0,0,0,0,0
+35,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/command/tool/brush/RockBrush.java,0,1,0,-1,0,0,0,0,0
+42,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/command/tool/sweep/Spline.java,0,1,0,-1,0,0,0,0,0
+95,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/function/visitor/DFSVisitor.java,0,1,0,-1,0,0,0,0,0
+96,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/function/visitor/IntersectRegionFunction.java,0,1,0,-1,0,0,0,0,0
+101,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/limit/PropertyRemap.java,0,1,0,-1,0,0,0,0,0
+106,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/math/IntPair.java,0,1,0,-1,0,0,0,0,0
+107,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/math/IntTriple.java,0,1,0,-1,0,0,0,0,0
+111,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/math/random/NoiseRandom.java,0,1,0,-1,0,0,0,0,0
+112,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/math/transform/RoundedTransform.java,0,1,0,-1,0,0,0,0,0
+115,../data_original/repositories/rep1400/copied/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/queue/IChunkExtent.java,0,1,0,-1,0,0,0,0,0
+total,0,18,0,-18,0,0,0,0,0

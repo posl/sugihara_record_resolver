@@ -1,0 +1,6 @@
+commit 15739216a4d863730e1dd6f66f44172e8d38b163 (2023/1/30 17:39:06)
+5,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-aggregation/src/main/java/io/activej/aggregation/AggregationOTState.java,3,0,0,0,0,0,0,0,0
+6,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-aggregation/src/main/java/io/activej/aggregation/AggregationPredicates.java,0,0,0,0,1,0,0,0,0
+20,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-aggregation/src/main/java/io/activej/aggregation/predicate/AggregationPredicates.java,1,0,0,0,0,0,0,0,0
+22,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-aggregation/src/main/java/io/activej/aggregation/predicate/PredicateDefJsonCodec.java,1,0,0,0,0,0,0,0,0
+total,5,0,0,0,1,0,0,0,0

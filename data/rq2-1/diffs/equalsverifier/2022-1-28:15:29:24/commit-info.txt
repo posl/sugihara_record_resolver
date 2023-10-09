@@ -1,0 +1,9 @@
+commit 93df3876f6dbe8c44d15b3af2ac6efa5faf10b9c (2022/1/28 15:29:24)
+5,../data_original/repositories/rep1591/copied/equalsverifier/equalsverifier-16/src/test/java/nl/jqno/equalsverifier/integration/extended_contract/RecordsTest.java,13,0,0,0,0,0,0,0,0
+6,../data_original/repositories/rep1591/copied/equalsverifier/equalsverifier-16/src/test/java/nl/jqno/equalsverifier/internal/reflection/ClassAccessorRecordTest.java,1,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep1591/copied/equalsverifier/equalsverifier-16/src/test/java/nl/jqno/equalsverifier/internal/reflection/RecordInstantiatorTest.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep1591/copied/equalsverifier/equalsverifier-16/src/test/java/nl/jqno/equalsverifier/internal/reflection/RecordObjectAccessorCopyingTest.java,2,0,0,0,0,0,0,0,0
+9,../data_original/repositories/rep1591/copied/equalsverifier/equalsverifier-16/src/test/java/nl/jqno/equalsverifier/internal/reflection/RecordObjectAccessorModificationTest.java,1,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep1591/copied/equalsverifier/equalsverifier-16/src/test/java/nl/jqno/equalsverifier/internal/reflection/RecordObjectAccessorScramblingTest.java,4,0,0,0,0,0,0,0,0
+11,../data_original/repositories/rep1591/copied/equalsverifier/equalsverifier-16/src/test/java/nl/jqno/equalsverifier/internal/reflection/RecordObjectAccessorTest.java,2,0,0,0,0,0,0,0,0
+total,24,0,0,0,0,0,0,0,0

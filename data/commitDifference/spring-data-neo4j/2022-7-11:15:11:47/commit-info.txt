@@ -1,0 +1,4 @@
+commit 60dd429c6c4c7a8031a8aba304847c056fe76933 (2022/7/11 15:11:47)
+1: ../data/repositories/spring-data-neo4j/src/main/java/org/springframework/data/neo4j/core/schema/DefaultElementId.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/spring-data-neo4j/src/test/java/org/springframework/data/neo4j/core/transaction/BookmarkForTesting.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

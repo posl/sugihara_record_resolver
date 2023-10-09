@@ -1,0 +1,4 @@
+commit 2885b07d883dd7e18fe99b50a2db2f2479d12d86 (2021/10/28 13:35:54)
+158,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/diags/examples/IneffectualSerialRecord.java,1,0,0,0,0,0,0,0,0
+171,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/warnings/Serial/RecordSerial.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

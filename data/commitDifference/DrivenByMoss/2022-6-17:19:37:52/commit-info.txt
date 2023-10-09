@@ -1,0 +1,3 @@
+commit 93cefb3a097cd6ad3ca9a86c40e629b281809dbd (2022/6/17 19:37:52)
+1: ../data/repositories/DrivenByMoss/src/main/java/de/mossgrabers/framework/parameterprovider/special/EmptyParameterProvider.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

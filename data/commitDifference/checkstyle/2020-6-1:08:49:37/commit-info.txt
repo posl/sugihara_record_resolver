@@ -1,0 +1,3 @@
+commit 41081a7efbf5318e2e07073d9ce6dbff633eac88 (2020/6/1 08:49:37)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/java14/InputJava14Records.java, 10, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 10, 0, 0, 0, 0, 0, 0, 0, 0

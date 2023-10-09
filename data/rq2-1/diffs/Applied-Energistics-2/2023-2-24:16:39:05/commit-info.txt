@@ -1,0 +1,3 @@
+commit f311c7fb9171cb4b2bef826eebb24eef4ff1d52e (2023/2/24 16:39:05)
+13,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/gui/widgets/InfoBar.java,0,0,0,-2,0,0,0,-2,1
+total,0,0,0,-2,0,0,0,-2,1

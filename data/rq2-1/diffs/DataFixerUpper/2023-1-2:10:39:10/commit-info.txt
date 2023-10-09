@@ -1,0 +1,8 @@
+commit cb939f2ed3f78f00ceee5682e5c203ac7e67f889 (2023/1/2 10:39:10)
+1,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/OpticParts.java,0,1,0,-1,0,0,0,0,0
+2,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/RewriteResult.java,0,1,0,-1,0,0,0,0,0
+3,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/TypeRewriteRule.java,0,2,0,-2,0,0,0,0,0
+4,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/View.java,0,1,0,-1,0,0,0,0,0
+5,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/functions/PointFreeRule.java,0,5,0,-8,0,0,0,-3,0
+6,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/optics/Optic.java,0,1,0,-1,0,0,0,0,0
+total,0,11,0,-14,0,0,0,-3,0

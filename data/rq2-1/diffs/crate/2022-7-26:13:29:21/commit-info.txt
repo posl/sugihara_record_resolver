@@ -1,0 +1,3 @@
+commit fa997316b687127da4dafee5753aa5deb56679ac (2022/7/26 13:29:21)
+20,../data_original/repositories/rep240/copied/crate/server/src/main/java/io/crate/planner/SubqueryPlanner.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

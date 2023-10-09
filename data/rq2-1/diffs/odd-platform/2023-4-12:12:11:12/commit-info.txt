@@ -1,0 +1,4 @@
+commit 9fda9b786742a5816cb3b52737c67edea0b5271a (2023/4/12 12:11:12)
+1,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/DataEntityClassesTotalDelta.java,0,0,0,0,1,0,0,0,0
+2,../data_original/repositories/rep1605/copied/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/DataEntityTotalDelta.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,1,0,0,0,0

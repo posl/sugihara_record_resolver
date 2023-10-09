@@ -1,0 +1,4 @@
+commit 6e8e990f4c07e32876e9883d38d36c5c8fd79b77 (2022/9/21 22:04:58)
+7,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Node.java,0,0,0,-1,0,0,0,-1,1
+8,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/socket/MessageHandler.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-2,0,0,0,-1,1

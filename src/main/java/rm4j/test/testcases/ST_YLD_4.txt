@@ -1,1 +1,0 @@
-yield a; ST_YLD_4

@@ -1,0 +1,4 @@
+commit a90b8685a8684a0fb7bceef002acde9eb8d51e25 (2022/8/10 19:23:33)
+8,../data_original/repositories/rep302/copied/jabref/src/main/java/org/jabref/gui/mergeentries/newmergedialog/ShowDiffConfig.java,1,0,0,0,0,0,0,0,0
+19,../data_original/repositories/rep302/copied/jabref/src/main/java/org/jabref/gui/mergeentries/newmergedialog/diffhighlighter/DiffHighlighter.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

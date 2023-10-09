@@ -1,0 +1,5 @@
+commit 4deb7f2239499dce0a767d5ba2e1b3dd670cc2ba (2023/2/24 14:24:00)
+32,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/gui/widgets/InfoBar.java,0,0,0,-2,0,0,0,-2,2
+41,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/compiler/tags/RecipeCompiler.java,0,0,0,-1,0,0,0,-1,1
+45,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/render/SimpleRenderContext.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-4,0,0,0,-4,4

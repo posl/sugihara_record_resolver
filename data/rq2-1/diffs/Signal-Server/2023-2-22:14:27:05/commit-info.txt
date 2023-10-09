@@ -1,0 +1,11 @@
+commit 35286f838e8eb8a324489e83efa9a1b9bcabb352 (2023/2/22 14:27:05)
+3,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/auth/StoredVerificationCode.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/RegistrationServiceSession.java,1,0,0,0,0,0,0,0,0
+12,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/SubmitVerificationCodeRequest.java,1,0,0,0,0,0,0,0,0
+13,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/UpdateVerificationSessionRequest.java,1,0,0,0,0,0,0,0,0
+14,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/VerificationCodeRequest.java,1,0,0,0,0,0,0,0,0
+15,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/VerificationSessionResponse.java,1,0,0,0,0,0,0,0,0
+18,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/mappers/RegistrationServiceSenderExceptionMapper.java,1,0,0,0,0,0,0,0,0
+22,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/registration/VerificationSession.java,1,0,0,0,0,0,0,0,0
+31,../data_original/repositories/rep85/copied/Signal-Server/service/src/test/java/org/whispersystems/textsecuregcm/storage/SerializedExpireableJsonDynamoStoreTest.java,2,0,0,0,0,0,0,0,0
+total,9,0,0,-1,0,0,0,-1,1

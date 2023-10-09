@@ -1,0 +1,9 @@
+commit 7e541d666ac76a0b2e09feea8b2f67e81e3e5d92 (2022/10/7 18:43:08)
+1: ../data/repositories/pdfsam/pdfsam-gui/src/main/java/org/pdfsam/gui/components/notification/RemoveNotificationRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/ComboItem.java, 0, 0, 0, 0, 0, 1, 0, 0, 0
+3: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/InputPdfArgumentsLoadRequest.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+4: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetActiveDashboardItemRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetActiveToolRequest.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+6: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetTitleRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/dnd/FilesDroppedEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 1, 0, 0, 2

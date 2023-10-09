@@ -1,0 +1,4 @@
+commit bd095d753c236159d790a91ec9c7978e21a49210 (2021/11/25 20:58:56)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/methodname/InputMethodNameRecordInInterfaceBody.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/antlr4/InputAntlr4AstRegressionInterfaceRecordDef.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 8, 0, 0, 0, 0, 0, 0, 0, 0

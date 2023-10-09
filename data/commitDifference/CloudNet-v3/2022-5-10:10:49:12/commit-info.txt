@@ -1,0 +1,5 @@
+commit 47d2982cdf5963fad70a0927e49d3b9680f1545a (2022/5/10 10:49:12)
+1: ../data/repositories/CloudNet-v3/driver/src/test/java/eu/cloudnetservice/driver/network/rpc/handler/DefaultRPCHandlerTest.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CloudNet-v3/launcher/java17/src/main/java/eu/cloudnetservice/launcher/java17/dependency/Dependency.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/CloudNet-v3/modules/npcs/src/main/java/eu/cloudnetservice/modules/npc/configuration/ItemLayout.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 3

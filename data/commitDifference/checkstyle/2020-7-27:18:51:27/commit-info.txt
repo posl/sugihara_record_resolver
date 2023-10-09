@@ -1,0 +1,3 @@
+commit 8e82c6cf0131875fa0a4f3912ad4169aa57ff5e1 (2020/7/27 18:51:27)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/methodparampad/InputMethodParamPadRecords.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 5, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,4 @@
+commit 9d0e544235989c8ea9e2682b003957dc5e170459 (2021/8/4 16:10:55)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/illegalidentifiername/InputIllegalIdentifierName.java, 0, 0, 0, 3, 0, 0, 0, 3, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/illegalidentifiername/InputIllegalIdentifierNameOpenTransitive.java, 0, 0, 0, 3, 0, 0, 0, 3, 0
+sum: 0, 0, 0, 6, 0, 0, 0, 6, 0

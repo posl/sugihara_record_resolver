@@ -1,0 +1,3 @@
+commit 4ba6b19f400b2f310581e25369ba7f784e447a26 (2020/12/18 11:53:22)
+31,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/lang/reflect/records/CheckEqualityIsBasedOnFields.java,9,0,0,0,0,0,0,0,0
+total,9,0,0,0,0,0,0,0,0

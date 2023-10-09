@@ -1,0 +1,3 @@
+commit 1e02353cb64f88c8ce09ecbbe0592c354342558c (2022/10/5 17:59:27)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/health/Diagnosis.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

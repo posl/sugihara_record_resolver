@@ -1,0 +1,11 @@
+commit a4b0c51f318dcc59cbf58ba87abb2d94444919ba (2021/1/28 21:06:15)
+9,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappGroupMetadata.java,0,0,0,-1,0,0,0,-1,1
+10,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappGroupParticipant.java,0,0,0,-1,0,0,0,-1,1
+12,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappMessage.java,0,0,0,0,0,1,0,-1,0
+13,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappNode.java,0,0,0,-1,0,0,0,-1,1
+14,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappPendingMessage.java,0,0,0,-1,0,0,0,-1,1
+17,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappQuotedMessage.java,0,0,0,0,1,0,0,0,0
+18,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappResponseNode.java,0,0,0,-1,0,0,0,-1,1
+20,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/MapResponse.java,0,0,0,-1,0,0,0,-1,1
+24,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/utils/BinaryEncoder.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-7,1,1,0,-8,7

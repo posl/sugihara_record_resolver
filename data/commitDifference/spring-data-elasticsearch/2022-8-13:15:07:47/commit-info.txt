@@ -1,0 +1,11 @@
+commit a4ed7300d1c1ddf9ed9ec4e8b4b9654559b4486f (2022/8/13 15:07:47)
+1: ../data/repositories/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchTemplate.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/AbstractReactiveElasticsearchTemplate.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/ActiveShardCount.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/query/Query.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/query/ScriptData.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/query/SeqNoPrimaryTerm.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/support/ScoreDoc.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/support/Version.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+9: ../data/repositories/spring-data-elasticsearch/src/test/java/org/springframework/data/elasticsearch/core/index/MappingBuilderUnitTests.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 9, 0, 0, 0, 0, 0, 0, 0

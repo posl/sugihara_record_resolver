@@ -1,0 +1,4 @@
+commit 6597848770d0990cee59cedbfdba14e284536a9e (2022/11/21 14:28:08)
+4,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/response/ResponseData.java,0,0,0,0,1,0,0,0,0
+5,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/response/TabularResponse.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,1,0,0,-1,1

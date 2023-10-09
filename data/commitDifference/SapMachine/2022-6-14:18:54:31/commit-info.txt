@@ -1,0 +1,4 @@
+commit d5b0c99ba493bbb66ca97013332afeb9863118ba (2022/6/14 18:54:31)
+1: ../data/repositories/SapMachine/test/jdk/java/lang/Thread/virtual/ThreadAPI.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+2: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/doclet/testDoclintDocletMessages/TestDocLintDocletMessages.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 1, 0, 0, 0, 1, 0

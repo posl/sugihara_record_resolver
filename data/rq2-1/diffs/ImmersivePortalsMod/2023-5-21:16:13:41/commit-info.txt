@@ -1,0 +1,7 @@
+commit cbf401c90724c52ab1a1141138fe59f9901cae76 (2023/5/21 16:13:41)
+5,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/imm_ptl_core/src/main/java/qouteall/imm_ptl/core/portal/animation/UnilateralPortalState.java,0,0,0,-1,0,0,0,-1,1
+6,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/q_misc_util/src/main/java/qouteall/q_misc_util/my_util/Circle.java,0,0,0,-1,0,0,0,-1,1
+9,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/q_misc_util/src/main/java/qouteall/q_misc_util/my_util/Sphere.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/src/main/java/qouteall/imm_ptl/peripheral/wand/ClientPortalWandPortalDrag.java,0,0,1,-1,0,0,0,0,0
+12,../data_original/repositories/rep1941/copied/ImmersivePortalsMod/src/main/java/qouteall/imm_ptl/peripheral/wand/PortalCorner.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,1,-5,0,0,0,-4,4

@@ -1,1 +1,0 @@
-Arrays.asList("a", "b", "c") EX_MI_3

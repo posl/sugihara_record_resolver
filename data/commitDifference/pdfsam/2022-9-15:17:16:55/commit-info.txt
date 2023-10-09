@@ -1,0 +1,23 @@
+commit 26b2385fe5e16daeeb4b1f4038081599e46af2f0 (2022/9/15 17:16:55)
+1: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/io/FilesOpenRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/io/NativeOpenFileRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/io/NativeOpenUrlRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/news/LatestNewsResponse.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/news/NewImportantNewsEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/news/NewsData.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/premium/PremiumModule.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/premium/PremiumModulesResponse.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+9: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/tool/TaskExecutionRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+10: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/tool/ToolDescriptor.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+11: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/tool/ToolIdNamePair.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+12: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/AddPdfVersionConstraintEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+13: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/InputPdfArgumentsLoadRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+14: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/RemovePdfVersionConstraintEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+15: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/SetLatestStageStatusRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+16: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/StageStatus.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+17: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/workspace/LoadWorkspaceRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+18: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/workspace/LoadWorkspaceResponse.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+19: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/workspace/WorkspaceLoadedEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+20: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/update/UpdateAvailableEvent.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+21: ../data/repositories/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/update/UpdateCheckRequest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 21, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,5 @@
+commit d9158b8b0d2a93321596d6c52d2ad1634eba588b (2022/6/25 18:55:24)
+5,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/blockentity/misc/ChargerBlockEntity.java,0,1,0,-1,0,0,0,0,0
+19,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/datagen/providers/recipes/ChargerRecipes.java,1,0,0,0,0,0,0,0,0
+21,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/datagen/providers/recipes/TransformRecipes.java,1,0,0,0,0,0,0,0,0
+total,2,1,0,-1,0,0,0,0,0

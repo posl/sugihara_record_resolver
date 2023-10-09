@@ -1,0 +1,4 @@
+commit ffb95aa9f74d549d72f0841597831dc6733acd57 (2021/8/27 16:05:45)
+1: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/src/jdk.jlink/share/classes/jdk/tools/jlink/internal/Platform.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 2, 0, 0, 0, 0, 0, 0, 0

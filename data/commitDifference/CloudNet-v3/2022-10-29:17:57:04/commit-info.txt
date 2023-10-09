@@ -1,0 +1,3 @@
+commit 37e799024bee39ce34368eb749b3e7661e606af3 (2022/10/29 17:57:04)
+1: ../data/repositories/CloudNet-v3/modules/npcs/src/main/java/eu/cloudnetservice/modules/npc/configuration/InventoryConfiguration.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

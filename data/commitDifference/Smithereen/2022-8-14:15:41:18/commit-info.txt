@@ -1,0 +1,4 @@
+commit 1db74a13a41af3a6d230356ac5b6b30517630c59 (2022/8/14 15:41:18)
+1: ../data/repositories/Smithereen/src/main/java/smithereen/controllers/NewsfeedController.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Smithereen/src/main/java/smithereen/storage/PostStorage.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 1, 0, 0, 1, 0, 0, 0, 1, 0

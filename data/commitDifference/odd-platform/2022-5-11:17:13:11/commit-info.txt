@@ -1,0 +1,8 @@
+commit 836d2377c2e75d1207b6807b85f6a540a9951226 (2022/5/11 17:13:11)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/TagDto.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/TokenDto.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/term/TermOwnershipDto.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/repository/DataEntityRepositoryImpl.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+5: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/repository/util/FTSConfig.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/repository/util/OrderByField.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 1, 0, 0, 0, 0, 0, 0, 2

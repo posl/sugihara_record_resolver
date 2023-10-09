@@ -1,0 +1,5 @@
+commit ad8dfafeeaeb20090775ca535e0c8f8a4a57f913 (2022/8/22 14:16:10)
+1: ../data/repositories/CloudNet-v3/common/src/main/java/eu/cloudnetservice/common/language/I18n.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/emitter/ReportDataWriter.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/CloudNet-v3/modules/syncproxy/src/main/java/eu/cloudnetservice/modules/syncproxy/config/SyncProxyTabList.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 3

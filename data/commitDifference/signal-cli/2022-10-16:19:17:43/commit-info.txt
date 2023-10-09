@@ -1,0 +1,6 @@
+commit b9eee539bdaa6eb27b9acd4e829e1eaeeb6e1c6c (2022/10/16 19:17:43)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/RecipientAddress.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/RecipientStore.java, 0, 0, 0, 0, 0, 0, 1, 0, 0
+3: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/RecipientWithAddress.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/signal-cli/lib/src/test/java/org/asamk/signal/manager/storage/recipients/MergeRecipientHelperTest.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 1, 0, 1

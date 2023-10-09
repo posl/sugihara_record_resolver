@@ -1,0 +1,3 @@
+commit 925152a15b33d19421a2d6d5bb98a2399639cb5a (2021/12/22 19:36:28)
+3,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/crafting/CraftingCalculation.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

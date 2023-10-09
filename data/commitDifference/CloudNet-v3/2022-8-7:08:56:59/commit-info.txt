@@ -1,0 +1,3 @@
+commit 3bb13231f33ab7904710bcb7b3dd9fdab703aec6 (2022/8/7 08:56:59)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/driver/service/ServiceCreateResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

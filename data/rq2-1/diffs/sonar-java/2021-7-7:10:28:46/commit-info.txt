@@ -1,0 +1,4 @@
+commit a2486ea066702e17197b50c595a887aa6c0216b8 (2021/7/7 10:28:46)
+1,../data_original/repositories/rep844/copied/sonar-java/java-checks-test-sources/src/main/files/non-compiling/checks/serialization/SerialVersionUidInRecordCheck.java,4,0,0,0,0,0,0,0,0
+2,../data_original/repositories/rep844/copied/sonar-java/java-checks-test-sources/src/main/java/checks/serialization/SerialVersionUidInRecordCheck.java,14,0,0,0,0,0,0,0,0
+total,18,0,0,0,0,0,0,0,0

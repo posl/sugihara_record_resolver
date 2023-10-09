@@ -1,0 +1,4 @@
+commit eaaef05332e2220b1df25c98c374408e9a6ed95b (2022/11/10 20:44:44)
+5,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/41-full-stack/02-rest-api/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/jwt/JwtTokenRequest.java,1,0,0,0,0,0,0,0,0
+6,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/41-full-stack/02-rest-api/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/jwt/JwtTokenResponse.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

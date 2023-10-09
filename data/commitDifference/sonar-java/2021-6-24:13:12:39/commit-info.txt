@@ -1,0 +1,3 @@
+commit 56853cbf0b2ef8761f107951ab07644745a4161d (2021/6/24 13:12:39)
+1: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/api/undocumentedAPI/UndocumentedAPI_java16.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

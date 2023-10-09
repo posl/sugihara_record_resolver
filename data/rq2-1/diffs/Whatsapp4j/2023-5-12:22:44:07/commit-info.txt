@@ -1,0 +1,6 @@
+commit ad7c7349542881e08ca60fb2dd6d0fd673358526 (2023/5/12 22:44:07)
+28,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/mobile/PhoneNumber.java,0,0,0,-1,0,0,0,-1,1
+32,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/response/AppVersionResponse.java,0,0,0,0,3,0,0,0,0
+34,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/response/WebVersionResponse.java,1,0,0,0,0,0,0,0,0
+38,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/util/MetadataHelper.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,-1,3,0,0,-1,1

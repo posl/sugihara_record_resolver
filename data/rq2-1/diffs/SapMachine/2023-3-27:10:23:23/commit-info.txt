@@ -1,0 +1,6 @@
+commit 20322f05458cfd25a3b86bbe09501a8586d008fc (2023/3/27 10:23:23)
+27,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/Binding.java,0,0,0,-9,0,0,0,-9,9
+32,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/UpcallLinker.java,0,0,0,-2,0,0,0,-2,1
+41,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/riscv64/linux/TypeClass.java,0,0,0,-2,0,0,0,-2,1
+84,../data_original/repositories/rep1322/copied/SapMachine/src/jdk.compiler/share/classes/com/sun/tools/javac/comp/ThisEscapeAnalyzer.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-13,0,0,0,-13,11

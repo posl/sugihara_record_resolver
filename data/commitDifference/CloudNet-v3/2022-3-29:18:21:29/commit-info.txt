@@ -1,0 +1,3 @@
+commit 96065672ee75a66a7a96af4cd14d8132cb9ee3fb (2022/3/29 18:21:29)
+1: ../data/repositories/CloudNet-v3/node/src/main/java/eu/cloudnetservice/cloudnet/node/config/RestConfiguration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

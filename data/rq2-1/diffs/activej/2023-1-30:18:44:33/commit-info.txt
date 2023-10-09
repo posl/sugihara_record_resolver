@@ -1,0 +1,24 @@
+commit 68f98dda67dcc932f9ed06bb765cb9f679ed470 (2023/1/30 18:44:33)
+10,../data_original/repositories/rep1374/copied/activej/boot-jmx/src/main/java/io/activej/jmx/DynamicMBeanFactory.java,0,0,0,-2,0,0,0,-2,2
+17,../data_original/repositories/rep1374/copied/activej/boot-servicegraph/src/main/java/io/activej/service/ServiceGraph.java,0,0,0,-1,0,0,0,-1,1
+20,../data_original/repositories/rep1374/copied/activej/boot-triggers/src/main/java/io/activej/trigger/Triggers.java,0,0,0,-1,0,0,0,-1,1
+21,../data_original/repositories/rep1374/copied/activej/boot-triggers/src/main/java/io/activej/trigger/TriggersModule.java,0,0,0,-2,0,0,0,-2,2
+30,../data_original/repositories/rep1374/copied/activej/cloud-fs/src/main/java/io/activej/fs/cluster/FileSystem_Cluster.java,0,0,0,-1,0,0,0,-1,1
+39,../data_original/repositories/rep1374/copied/activej/cloud-rpc/src/main/java/io/activej/rpc/protocol/RpcMessageSerializer.java,0,0,0,-1,0,0,0,-1,1
+45,../data_original/repositories/rep1374/copied/activej/core-codegen/src/main/java/io/activej/codegen/expression/ExpressionCompareBuilder.java,0,0,0,-1,0,0,0,-1,1
+128,../data_original/repositories/rep1374/copied/activej/core-inject/src/main/java/io/activej/inject/Injector.java,0,0,0,-1,0,0,0,-1,1
+148,../data_original/repositories/rep1374/copied/activej/core-serializer/src/main/java/io/activej/serializer/stream/StreamCodecs.java,0,0,0,-1,0,0,0,-1,1
+156,../data_original/repositories/rep1374/copied/activej/extra/cloud-crdt/src/main/java/io/activej/crdt/storage/local/FileSystemCrdtStorage.java,0,0,0,-2,0,0,0,-2,2
+161,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow-jdbc-driver/src/main/java/io/activej/dataflow/jdbc/driver/DataflowResultSet.java,0,0,0,-1,0,0,0,-1,1
+163,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/RelToDatasetConverter.java,0,0,0,-2,0,0,0,-2,1
+176,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/jdbc/DataflowMeta.java,0,0,0,-2,0,0,0,-2,2
+180,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/where/WherePredicate_Like.java,0,0,0,-1,0,0,0,-1,1
+191,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-aggregation/src/main/java/io/activej/aggregation/AggregationOTState.java,0,0,0,-3,0,0,0,-3,2
+200,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-aggregation/src/main/java/io/activej/aggregation/predicate/AggregationPredicates.java,0,0,0,-1,0,0,0,-1,1
+201,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-aggregation/src/main/java/io/activej/aggregation/predicate/PredicateDefJsonCodec.java,0,0,0,-1,0,0,0,-1,1
+219,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-cube/src/main/java/io/activej/cube/CubeClassLoaderCache.java,0,0,0,-1,0,0,0,-1,1
+223,../data_original/repositories/rep1374/copied/activej/extra/cloud-lsmt-cube/src/main/java/io/activej/cube/service/CubeCleanerController.java,0,0,0,-1,0,0,0,-1,1
+230,../data_original/repositories/rep1374/copied/activej/extra/cloud-ot/src/main/java/io/activej/ot/OTLoadedGraph.java,0,0,0,-1,0,0,0,-1,1
+232,../data_original/repositories/rep1374/copied/activej/extra/cloud-ot/src/main/java/io/activej/ot/system/OTSystemImpl.java,0,0,0,-1,0,0,0,-1,1
+240,../data_original/repositories/rep1374/copied/activej/util-types/src/main/java/io/activej/types/scanner/TypeScannerRegistry.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-29,0,0,0,-29,27

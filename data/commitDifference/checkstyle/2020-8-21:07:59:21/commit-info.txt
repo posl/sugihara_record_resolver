@@ -1,0 +1,3 @@
+commit 85bc5271e2d5f9c9b648e3256fb01a65cfdb0bf9 (2020/8/21 07:59:21)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/illegaltype/InputIllegalTypeRecordsAndCompactCtors.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 0

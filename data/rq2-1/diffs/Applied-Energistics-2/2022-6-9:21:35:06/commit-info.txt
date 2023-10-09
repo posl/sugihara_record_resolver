@@ -1,0 +1,4 @@
+commit b4130e19139c9e84464a99314c0f99d543c0c00e (2022/6/9 21:35:06)
+4,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/integration/modules/jei/transfer/UseCraftingRecipeTransfer.java,0,0,0,0,0,0,1,-1,0
+6,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/menu/me/items/CraftingTermMenu.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,1,-1,0

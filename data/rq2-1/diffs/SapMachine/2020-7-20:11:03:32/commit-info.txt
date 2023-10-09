@@ -1,0 +1,3 @@
+commit f96893b9180773ce766500bbc70b0321da766313 (2020/7/20 11:03:32)
+1776,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/processing/model/element/RecordNotPreservingNestedTypeAnnotationsTest.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

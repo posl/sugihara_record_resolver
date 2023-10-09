@@ -1,0 +1,5 @@
+commit c1c5c3fad175f4ba782fec9f64639d59b92dcaf8 (2022/2/24 10:34:21)
+1,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/action/profile/Profile.java,0,0,0,-4,0,0,0,-4,2
+2,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/action/profile/SearchProfilesResponse.java,0,0,0,-1,0,0,0,-1,1
+5,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/profile/ProfileDocument.java,0,0,0,-2,0,0,0,-2,2
+total,0,0,0,-7,0,0,0,-7,5

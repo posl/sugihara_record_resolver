@@ -1,0 +1,4 @@
+commit c3c961c2644decd256c55e393cc527ed77919c5 (2022/3/22 20:19:52)
+1: ../data/repositories/CloudNet-v3/modules/signs/src/main/java/eu/cloudnetservice/modules/signs/configuration/SignConfigurationEntry.java, 0, 2, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/modules/signs/src/main/java/eu/cloudnetservice/modules/signs/configuration/SignGroupConfiguration.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 3, 0, 0, 0, 0, 0, 0, 0

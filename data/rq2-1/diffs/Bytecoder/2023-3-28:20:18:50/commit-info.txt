@@ -1,0 +1,23 @@
+commit abb06a64ec3d64ea3e49911f7c2b86b930012e64 (2023/3/28 20:18:50)
+52,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/com/sun/crypto/provider/PKCS12PBECipherCore.java,0,0,1,-1,0,0,0,0,0
+272,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/java/lang/reflect/Executable.java,0,0,1,-1,0,0,0,0,0
+279,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/java/lang/reflect/Proxy.java,0,0,1,-1,0,0,0,0,0
+431,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/java/security/SecureClassLoader.java,0,1,0,-1,0,0,0,0,0
+689,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/java/util/stream/Collectors.java,0,1,0,-1,0,0,0,0,0
+854,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/AbstractLinker.java,1,0,0,0,0,0,0,0,0
+856,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/Binding.java,9,0,0,0,0,0,0,0,0
+862,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/DowncallLinker.java,1,0,0,0,0,0,0,0,0
+863,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/LinkerOptions.java,2,0,0,0,0,0,0,0,0
+864,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/NativeEntryPoint.java,1,0,0,0,0,0,0,0,0
+868,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/UpcallLinker.java,2,0,0,0,0,0,0,0,0
+870,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/VMStorage.java,1,0,0,0,0,0,0,0,0
+872,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/aarch64/CallArranger.java,1,0,0,0,0,0,0,0,0
+882,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/x64/sysv/CallArranger.java,1,0,0,0,0,0,0,0,0
+886,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/foreign/abi/x64/windows/CallArranger.java,1,0,0,0,0,0,0,0,0
+958,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/misc/ThreadTracker.java,1,0,0,0,0,0,0,0,0
+968,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/module/ModuleReferenceImpl.java,0,0,1,-1,0,0,0,0,0
+1146,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/reflect/ReflectionFactory.java,0,0,1,-1,0,0,0,0,0
+1171,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/jdk/internal/vm/ScopedValueContainer.java,1,0,0,0,0,0,0,0,0
+1261,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/sun/nio/ch/IOUtil.java,0,0,0,-2,0,0,0,-2,2
+1363,../data_original/repositories/rep1487/copied/Bytecoder/classlib/java.base/src/main/resources/META-INF/modules/java.base/classes/sun/security/pkcs/SignerInfo.java,0,0,1,-1,0,0,0,0,0
+total,22,2,6,-10,0,0,0,-2,2

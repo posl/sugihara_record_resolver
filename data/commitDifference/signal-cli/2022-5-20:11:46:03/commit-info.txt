@@ -1,0 +1,3 @@
+commit 5f941004f5006b286690df2a93bc47ace3b59270 (2022/5/20 11:46:03)
+1: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/commands/ListContactsCommand.java, 0, 0, 1, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 1

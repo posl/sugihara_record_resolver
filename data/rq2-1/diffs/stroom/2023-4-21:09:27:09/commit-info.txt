@@ -1,0 +1,5 @@
+commit f331e1be863a7ace924f6cbeef4685caa197bebd (2023/4/21 09:27:09)
+31,../data_original/repositories/rep1514/copied/stroom/stroom-analytics/stroom-analytics-impl/src/main/java/stroom/analytics/impl/AnalyticRule.java,1,0,0,0,0,0,0,0,0
+35,../data_original/repositories/rep1514/copied/stroom/stroom-analytics/stroom-analytics-impl/src/main/java/stroom/analytics/impl/AnalyticRuleState.java,1,0,0,0,0,0,0,0,0
+46,../data_original/repositories/rep1514/copied/stroom/stroom-analytics/stroom-analytics-impl/src/main/java/stroom/analytics/impl/RecordConsumer.java,2,0,0,0,0,0,0,0,0
+total,4,0,0,0,0,0,0,0,0

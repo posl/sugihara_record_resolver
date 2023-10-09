@@ -1,1 +1,0 @@
-output.accept(String.format("%s : %s", date, log)); ST_EX_2

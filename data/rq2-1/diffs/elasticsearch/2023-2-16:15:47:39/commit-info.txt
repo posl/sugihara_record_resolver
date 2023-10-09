@@ -1,0 +1,3 @@
+commit 21630f3a7244af7349b8665588ddefc1e67c881a (2023/2/16 15:47:39)
+1,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authz/RoleDescriptorsIntersection.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

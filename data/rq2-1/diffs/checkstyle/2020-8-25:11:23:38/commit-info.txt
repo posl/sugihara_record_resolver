@@ -1,0 +1,10 @@
+commit cfb80c20692f3571e3f14d018d2018a1c6fdfbf1 (2020/8/25 11:23:38)
+2,../data_original/repositories/rep88/copied/checkstyle/src/it/resources-noncompilable/org/checkstyle/suppressionxpathfilter/recordcomponentnumber/SuppressionXpathRecordComponentNumber1.java,1,0,0,0,0,0,0,0,0
+3,../data_original/repositories/rep88/copied/checkstyle/src/it/resources-noncompilable/org/checkstyle/suppressionxpathfilter/recordcomponentnumber/SuppressionXpathRecordComponentNumber2.java,1,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumber.java,21,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberMax1.java,18,0,0,0,0,0,0,0,0
+9,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberMax20.java,18,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberPrivateModifier.java,21,0,0,0,0,0,0,0,0
+11,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberTopLevel1.java,1,0,0,0,0,0,0,0,0
+12,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/recordcomponentnumber/InputRecordComponentNumberTopLevel2.java,1,0,0,0,0,0,0,0,0
+total,82,0,0,0,0,0,0,0,0

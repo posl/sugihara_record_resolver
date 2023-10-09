@@ -1,0 +1,12 @@
+commit b86c580683ca74e362b0477b9bdd013ad982bb8a (2022/7/5 13:47:34)
+7,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/service/ConfigInfos.java,0,4,0,-4,0,0,0,0,0
+8,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/service/ConnectorExpandInfo.java,1,0,0,0,0,0,0,0,0
+9,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/service/ConnectorInfo.java,0,1,0,-1,0,0,0,0,0
+10,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/service/ConnectorPlugin.java,0,1,0,-1,0,0,0,0,0
+11,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/service/ConnectorState.java,0,1,0,-1,0,0,0,0,0
+12,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/service/ConnectorStatusInfo.java,0,1,0,-1,0,0,0,0,0
+14,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/service/KafkaConnectInfo.java,0,1,0,-1,0,0,0,0,0
+15,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/service/TaskInfo.java,1,0,0,0,0,0,0,0,0
+16,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/service/TopicsInfo.java,0,1,0,-1,0,0,0,0,0
+17,../data_original/repositories/rep1999/copied/kcctl/src/main/java/org/kcctl/util/Tuple.java,0,1,0,-1,0,0,0,0,0
+total,2,11,0,-11,0,0,0,0,0

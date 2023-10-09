@@ -1,0 +1,5 @@
+commit 64fabdfdd00c99c2ed20f0e7cca89fb147c16fb6 (2023/2/24 20:12:09)
+6,../data_original/repositories/rep1443/copied/sts4/headless-services/spring-boot-language-server/src/main/java/org/springframework/ide/vscode/boot/java/data/providers/QueryMethodSubject.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep1443/copied/sts4/headless-services/spring-boot-language-server/src/main/java/org/springframework/ide/vscode/boot/java/data/providers/prefixsensitive/DataRepositoryMethodNameParseResult.java,1,0,0,0,0,0,0,0,0
+11,../data_original/repositories/rep1443/copied/sts4/headless-services/spring-boot-language-server/src/main/java/org/springframework/ide/vscode/boot/java/data/providers/prefixsensitive/QueryPredicateKeywordInfo.java,1,0,0,0,0,0,0,0,0
+total,3,0,0,0,0,0,0,0,0

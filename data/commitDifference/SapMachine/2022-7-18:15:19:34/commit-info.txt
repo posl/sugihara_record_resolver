@@ -1,0 +1,3 @@
+commit 99a830a205729973e341ca514db5b3039147a96f (2022/7/18 15:19:34)
+1: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Domination.java, 0, 0, 0, 8, 0, 0, 0, 0, 0
+sum: 0, 0, 0, 8, 0, 0, 0, 0, 0

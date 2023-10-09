@@ -1,0 +1,5 @@
+commit e6c386028e362900c66dcb9b8c633512b5a648a9 (2022/9/30 13:22:48)
+1: ../data/repositories/cas/support/cas-server-support-oidc-core-api/src/main/java/org/apereo/cas/oidc/discovery/webfinger/OidcWebFingerDiscoveryService.java, 0, 0, 0, 0, 0, 1, 0, 0, 0
+2: ../data/repositories/cas/support/cas-server-support-saml-idp-core/src/main/java/org/apereo/cas/support/saml/services/idp/metadata/SamlRegisteredServiceServiceProviderMetadataFacade.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/cas/support/cas-server-support-service-registry-stream-kafka/src/main/java/org/apereo/cas/services/RegisteredServiceKafkaDistributedCacheListener.java, 0, 0, 0, 0, 0, 1, 0, 0, 0
+sum: 0, 0, 0, 0, 0, 2, 0, 0, 1

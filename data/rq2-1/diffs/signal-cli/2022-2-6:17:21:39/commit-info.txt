@@ -1,0 +1,4 @@
+commit 5cccf521032954d7ad8e3f70e3cbef2ce1293e85 (2022/2/6 17:21:39)
+5,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/PathConfig.java,0,0,0,-1,0,0,0,-1,1
+34,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/stickerPacks/JsonStickerPack.java,2,0,0,0,0,0,0,0,0
+total,2,0,0,-1,0,0,0,-1,1

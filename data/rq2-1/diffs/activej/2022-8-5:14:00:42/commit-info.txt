@@ -1,0 +1,4 @@
+commit ab825863271702e0e2662186e51dacd22426557d (2022/8/5 14:00:42)
+19,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/main/java/io/activej/dataflow/calcite/utils/RecordSortComparator.java,1,0,0,0,0,0,0,0,0
+36,../data_original/repositories/rep1374/copied/activej/extra/cloud-dataflow/src/test/java/io/activej/dataflow/stream/AbstractCalciteTest.java,0,0,1,-9,0,0,0,-8,0
+total,1,0,1,-9,0,0,0,-8,0

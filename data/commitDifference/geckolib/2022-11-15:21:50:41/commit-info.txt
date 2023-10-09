@@ -1,0 +1,4 @@
+commit 35f3a5a5c151f4cf2a3d701058c0b6b7250d5a54 (2022/11/15 21:50:41)
+1: ../data/repositories/geckolib/Forge/core/src/main/java/software/bernie/geckolib3/core/animation/Animation.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/geckolib/Forge/core/src/main/java/software/bernie/geckolib3/core/animation/RawAnimation.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

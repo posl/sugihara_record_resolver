@@ -1,0 +1,4 @@
+commit 5f88bcebdf6ae349dc5a632540bafd0418b063dc (2022/12/28 16:07:51)
+2,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/generator/GeneratorFile.java,0,0,0,-1,0,0,0,-1,1
+4,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/generator/GeneratorTemplatesList.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-1,0,0,0,-1,1

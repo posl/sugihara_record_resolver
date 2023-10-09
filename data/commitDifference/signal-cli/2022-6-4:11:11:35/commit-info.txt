@@ -1,0 +1,3 @@
+commit cb5e3c6bf748c9d020218033eabdcc3c5680c81a (2022/6/4 11:11:35)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/util/DataURI.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

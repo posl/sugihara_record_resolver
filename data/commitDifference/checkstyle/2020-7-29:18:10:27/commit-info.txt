@@ -1,0 +1,5 @@
+commit d4cb0e0eef52456800dc922a19d354cd3c2b9348 (2020/7/29 18:10:27)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/requirethis/InputRequireThisRecordAsTopLevel.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/requirethis/InputRequireThisRecordDefault.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/requirethis/InputRequireThisRecordsAndCompactCtors.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

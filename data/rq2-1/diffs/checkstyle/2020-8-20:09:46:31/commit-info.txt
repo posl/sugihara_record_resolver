@@ -1,0 +1,4 @@
+commit 8179a34d87881f480b1b26b44bafcbcc6607cec9 (2020/8/20 09:46:31)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/missingjavadocmethod/InputMissingJavadocMethodRecordsAndCtors.java,3,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/missingjavadocmethod/InputMissingJavadocMethodRecordsAndCtorsMinLineCount.java,3,0,0,0,0,0,0,0,0
+total,6,0,0,0,0,0,0,0,0

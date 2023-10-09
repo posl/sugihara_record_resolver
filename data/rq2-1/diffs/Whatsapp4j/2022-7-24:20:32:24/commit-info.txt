@@ -1,0 +1,3 @@
+commit fed2428203ad619f950012a35863cccd37a7eeed (2022/7/24 20:32:24)
+10,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/socket/AppStateHandler.java,0,0,1,-5,0,0,0,-4,0
+total,0,0,1,-5,0,0,0,-4,0

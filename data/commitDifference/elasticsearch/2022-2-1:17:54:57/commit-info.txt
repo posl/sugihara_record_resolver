@@ -1,0 +1,5 @@
+commit 520b8435d0e8c1bb2e874acfa762447c99c60652 (2022/2/1 17:54:57)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/desirednodes/DesiredNodesSettingsValidator.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/metadata/DesiredNode.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/metadata/DesiredNodes.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

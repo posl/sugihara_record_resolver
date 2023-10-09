@@ -1,0 +1,4 @@
+commit 6e5d10997e6598c5744b412bc4f3d23e7ba9e194 (2023/2/2 08:25:48)
+3,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/rest/resources/entities/preferences/model/EntityListPreferences.java,0,0,0,-1,0,0,0,-1,1
+4,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/rest/resources/entities/preferences/model/StoredEntityListPreferences.java,0,0,0,0,0,1,0,-1,0
+total,0,0,0,-1,0,1,0,-2,1

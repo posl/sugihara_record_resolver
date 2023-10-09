@@ -1,0 +1,4 @@
+commit 7ba86b40aa0923f673c73cb96fa0539ea0689879 (2023/5/4 14:33:45)
+3,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/CreateCallLinkCredential.java,1,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/GetCreateCallLinkCredentialsRequest.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

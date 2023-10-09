@@ -1,0 +1,4 @@
+commit 9932f173e2d2a92fc5f4d40c2da4e1aca167184c (2022/3/7 09:45:56)
+1: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/src/jdk.jfr/share/classes/jdk/jfr/internal/consumer/Reference.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 1, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,4 @@
+commit 6bdef5b26cd6fd6d5dd862dea6a6da760b14151 (2023/2/7 18:58:26)
+32,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/render/vertex/serializers/MemoryTransfer.java,0,0,0,0,1,0,0,0,0
+34,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/render/vertex/serializers/generated/VertexSerializerFactory.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,1,0,0,0,0

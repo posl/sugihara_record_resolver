@@ -1,0 +1,3 @@
+commit b264d1382da8e365e0432757667131ec76ca2199 (2020/7/10 15:44:53)
+1: ../data/repositories/bnd/biz.aQute.bndlib/testresources/sealed/Expr.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 0

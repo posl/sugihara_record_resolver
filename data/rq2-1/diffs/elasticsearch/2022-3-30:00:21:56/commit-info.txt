@@ -1,0 +1,6 @@
+commit 898d84998b081d47ec6a9c2305f9bf4486d69be3 (2022/3/30 00:21:56)
+49,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/action/admin/indices/rollover/TransportRolloverAction.java,0,0,0,-2,0,0,0,-2,1
+85,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/cluster/coordination/ClusterFormationFailureHelper.java,0,0,0,-1,0,0,0,-1,1
+293,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/tasks/TaskInfo.java,0,0,0,-1,0,0,0,-1,1
+406,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/profile/ProfileDocument.java,0,0,0,-2,0,0,0,-2,1
+total,0,0,0,-6,0,0,0,-6,4

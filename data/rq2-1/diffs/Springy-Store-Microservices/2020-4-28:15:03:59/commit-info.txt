@@ -1,0 +1,6 @@
+commit 3331bb43fd7c5f985ae77ec7ba94e1ad8d5b91bd (2020/4/28 15:03:59)
+1,../data_original/repositories/rep1583/copied/Springy-Store-Microservices/store-common/store-api/src/main/java/com/siriusxi/ms/store/api/composite/dto/ProductAggregate.java,0,1,0,-1,0,0,0,0,0
+2,../data_original/repositories/rep1583/copied/Springy-Store-Microservices/store-common/store-api/src/main/java/com/siriusxi/ms/store/api/composite/dto/RecommendationSummary.java,0,1,0,-1,0,0,0,0,0
+3,../data_original/repositories/rep1583/copied/Springy-Store-Microservices/store-common/store-api/src/main/java/com/siriusxi/ms/store/api/composite/dto/ReviewSummary.java,0,1,0,-1,0,0,0,0,0
+4,../data_original/repositories/rep1583/copied/Springy-Store-Microservices/store-common/store-api/src/main/java/com/siriusxi/ms/store/api/composite/dto/ServiceAddresses.java,0,1,0,-1,0,0,0,0,0
+total,0,4,0,-4,0,0,0,0,0

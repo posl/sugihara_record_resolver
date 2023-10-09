@@ -1,0 +1,5 @@
+commit 4533bb2a0ab956e0f840c6338ae81729659a64d4 (2022/12/9 16:51:54)
+1: ../data/repositories/SapMachine/test/hotspot/jtreg/compiler/intrinsics/chacha/TestChaCha20.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/test/langtools/tools/javac/attr/AttrRecoveryTest.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+3: ../data/repositories/SapMachine/test/langtools/tools/javac/parser/JavacParserTest.java, 0, 0, 0, 1, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 2, 0, 0, 0, 1, 0

@@ -1,0 +1,5 @@
+commit d19cb163d24fc265b099adb85405fec5438ed775 (2021/12/14 15:34:49)
+1: ../data/repositories/CloudNet-v3/modules/bridge/src/main/java/de/dytanic/cloudnet/ext/bridge/WorldPosition.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/modules/bridge/src/main/java/de/dytanic/cloudnet/ext/bridge/player/NetworkPlayerProxyInfo.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/CloudNet-v3/modules/bridge/src/main/java/de/dytanic/cloudnet/ext/bridge/player/NetworkPlayerServerInfo.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 3, 0, 0, 0, 0, 0, 0, 0

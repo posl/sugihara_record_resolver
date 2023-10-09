@@ -1,1 +1,0 @@
-P.new A<B>().s EX_MS_3

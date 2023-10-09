@@ -1,0 +1,4 @@
+commit d663231a83bf456c41f6a3fdc9a2952ac4a7877e (2022/8/10 11:21:38)
+1: ../data/repositories/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/common/ResultsAndErrors.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/x-pack/plugin/security/src/test/java/org/elasticsearch/xpack/security/profile/ProfileServiceTests.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 1, 0, 0, 0, 0, 0, 0

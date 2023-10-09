@@ -1,0 +1,3 @@
+commit ffaa9d2ed311d74cf14f25fdc0cc75b66991cc3b (2022/1/27 20:03:43)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

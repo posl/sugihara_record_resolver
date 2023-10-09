@@ -1,0 +1,3 @@
+commit cf15173bd9c5f06a1c5afa225002fc4b3a2875b2 (2022/1/27 17:18:13)
+1,../data_original/repositories/rep844/copied/sonar-java/java-checks-test-sources/src/main/java/checks/unused/UnusedLocalVariableCheck.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

@@ -1,0 +1,3 @@
+commit 54020ab521d7d5d1cf84b50fc7069467b80ed6e4 (2020/8/7 19:42:18)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/metrics/booleanexpressioncomplexity/InputBooleanExpressionComplexityRecordsAndCompactCtors.java,5,0,0,0,0,0,0,0,0
+total,5,0,0,0,0,0,0,0,0

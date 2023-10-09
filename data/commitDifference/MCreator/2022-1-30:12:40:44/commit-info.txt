@@ -1,0 +1,12 @@
+commit 448cabc603241b223360e3be85144a3eccdc491d (2022/1/30 12:40:44)
+1: ../data/repositories/MCreator/src/main/java/net/mcreator/blockly/BlocklyCompileNote.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/MCreator/src/main/java/net/mcreator/blockly/data/NamedInput.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/MCreator/src/main/java/net/mcreator/element/types/Recipe.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/MCreator/src/main/java/net/mcreator/minecraft/api/ModAPI.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/MCreator/src/main/java/net/mcreator/minecraft/api/ModAPIImplementation.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/MCreator/src/main/java/net/mcreator/ui/MCreatorDropTarget.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/MCreator/src/main/java/net/mcreator/ui/action/impl/workspace/resources/StructureImportActions.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/MCreator/src/main/java/net/mcreator/ui/vcs/WorkspaceMergeHandles.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+9: ../data/repositories/MCreator/src/main/java/net/mcreator/vcs/SyncTwoRefsWithMerge.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+10: ../data/repositories/MCreator/src/main/java/net/mcreator/vcs/diff/AffectedObjectWithType.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 9, 0, 0, 0, 0, 0, 0, 0

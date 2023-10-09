@@ -1,0 +1,4 @@
+commit bde76b1dd17eccbba6a31214e4bd3b3d9bb73ed (2022/10/1 13:16:30)
+1: ../data/repositories/cas/support/cas-server-support-consent-dynamodb/src/main/java/org/apereo/cas/consent/DynamoDbConsentFacilitator.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/cas/support/cas-server-support-pac4j-core/src/main/java/org/apereo/cas/web/flow/DefaultDelegatedClientAuthenticationWebflowManager.java, 0, 0, 0, 0, 0, 1, 0, 0, 0
+sum: 0, 0, 0, 0, 0, 1, 0, 0, 1

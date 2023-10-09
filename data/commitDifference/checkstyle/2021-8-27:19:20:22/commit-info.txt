@@ -1,0 +1,3 @@
+commit e662bd96c3527104fc57a91a130bf74e031c106c (2021/8/27 19:20:22)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/javadoc/javadocmethod/InputJavadocMethodCompilationUnit.java, 0, 0, 0, 2, 0, 0, 0, 2, 0
+sum: 0, 0, 0, 2, 0, 0, 0, 2, 0

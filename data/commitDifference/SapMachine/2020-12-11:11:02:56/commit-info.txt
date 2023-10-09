@@ -1,0 +1,5 @@
+commit 7e4d81c7b46b3114e7d7debeb9a1814b5ccf093c (2020/12/11 11:02:56)
+1: ../data/repositories/SapMachine/src/jdk.net/share/classes/jdk/net/UnixDomainPrincipal.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/test/jdk/java/lang/reflect/records/IsRecordTest.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/SapMachine/test/langtools/tools/javac/diags/examples/SafeVarargsNotApplicableToRecordAccessors.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 5, 1, 0, 0, 0, 0, 0, 0, 0

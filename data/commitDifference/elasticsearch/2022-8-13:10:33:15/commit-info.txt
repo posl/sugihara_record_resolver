@@ -1,0 +1,6 @@
+commit 4779893b25f87645fe7dcd695d618632977a8229 (2022/8/13 10:33:15)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/action/admin/indices/rollover/TransportRolloverAction.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/ClusterStateTaskExecutor.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/reservedstate/service/ReservedStateErrorTaskExecutor.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+4: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/reservedstate/service/ReservedStateUpdateTaskExecutor.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 3

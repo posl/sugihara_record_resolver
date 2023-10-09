@@ -1,0 +1,5 @@
+commit 38baa363468aad21071e20486dace8438586dc66 (2023/5/11 17:17:04)
+4,../data_original/repositories/rep1/copied/elasticsearch/libs/geo/src/main/java/org/elasticsearch/geometry/simplify/SimplificationErrorCalculator.java,2,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep1/copied/elasticsearch/libs/geo/src/test/java/org/elasticsearch/geometry/simplify/GeometrySimplifierTests.java,1,0,0,0,0,0,0,0,0
+13,../data_original/repositories/rep1/copied/elasticsearch/libs/geo/src/test/java/org/elasticsearch/geometry/simplify/SimplificationErrorCalculatorTests.java,1,0,0,0,0,0,0,0,0
+total,4,0,0,0,0,0,0,0,0

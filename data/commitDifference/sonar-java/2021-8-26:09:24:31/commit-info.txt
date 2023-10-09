@@ -1,0 +1,4 @@
+commit a379b9c6e2ca87733f255922f5b4739dca47a733 (2021/8/26 09:24:31)
+1: ../data/repositories/sonar-java/java-checks-test-sources/src/main/java/checks/EmptyMethodsCheck.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/sonar-java/java-checks/src/test/files/checks/EmptyMethodsCheck.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 1, 0, 0, 0, 0

@@ -1,0 +1,3 @@
+commit 5dc155d7cd09ba05fb0519e160af89f21e68bd6c (2021/7/25 09:16:55)
+2,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/grammar/antlr4/InputAntlr4AstRegressionUncommon.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

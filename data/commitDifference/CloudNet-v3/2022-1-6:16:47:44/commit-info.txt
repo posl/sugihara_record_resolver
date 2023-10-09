@@ -1,0 +1,4 @@
+commit 8bd83fedcf425c4071fd1b3d6c762618d2f8b60d (2022/1/6 16:47:44)
+1: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/util/RecordMaker.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CloudNet-v3/node/src/main/java/eu/cloudnetservice/cloudnet/node/console/animation/setup/answer/QuestionAnswerType.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

@@ -1,0 +1,6 @@
+commit c80ce8fbd69136f23301406f5a4466ab6e864df1 (2023/3/3 00:58:00)
+7,../data_original/repositories/rep1645/copied/sirix/bundles/sirix-core/src/main/java/org/sirix/axis/pathsummary/filter/PathKindFilter.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep1645/copied/sirix/bundles/sirix-core/src/main/java/org/sirix/axis/pathsummary/filter/PathLevelFilter.java,1,0,0,0,0,0,0,0,0
+9,../data_original/repositories/rep1645/copied/sirix/bundles/sirix-core/src/main/java/org/sirix/axis/pathsummary/filter/PathNameFilter.java,1,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep1645/copied/sirix/bundles/sirix-core/src/main/java/org/sirix/cache/PathSummaryData.java,0,0,0,-1,0,0,0,-1,1
+total,3,0,0,-1,0,0,0,-1,1

@@ -1,0 +1,5 @@
+commit b8c086908b8c6b4d57c317ce9ae325b3ab5c0e80 (2022/12/10 17:41:49)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/service/ingestion/alert/AlertAction.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/service/ingestion/alert/AlertBISCandidate.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/service/ingestion/processor/AlertIngestionRequestProcessor.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 1, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,5 @@
+commit b8aa5adf1b7664d0ab534ff640bd74230151c13b (2022/11/16 13:19:08)
+1: ../data/repositories/SapMachine/test/jdk/java/net/URL/URLFromURITest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/test/langtools/tools/javac/records/RecordDeclarationSyntaxTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/SapMachine/test/micro/org/openjdk/bench/java/security/Signatures.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

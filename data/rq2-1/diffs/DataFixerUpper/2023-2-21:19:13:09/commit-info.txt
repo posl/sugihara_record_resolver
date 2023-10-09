@@ -1,0 +1,9 @@
+commit 179995cf3703920b68e39e26d1ae923129da035e (2023/2/21 19:13:09)
+2,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/OpticParts.java,0,0,0,0,1,0,0,0,0
+5,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/CompoundList.java,0,0,0,-1,0,0,0,-1,1
+6,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Const.java,0,0,0,-1,0,0,0,-1,1
+7,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/List.java,0,0,0,-1,0,0,0,-1,1
+8,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Product.java,0,0,0,-1,0,0,0,-1,1
+9,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/RecursivePoint.java,0,0,0,-1,0,0,0,-1,1
+10,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/types/templates/Sum.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-6,1,0,0,-6,6

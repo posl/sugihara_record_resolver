@@ -1,0 +1,6 @@
+commit 8abb0ed86feb1abf0863c631f7162b0e50c6055a (2022/6/10 00:47:04)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/examples/ban-bot/src/main/java/org/example/whatsapp/BanBotListener.java,0,0,0,-1,0,0,0,-1,1
+22,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionBuilder.java,0,0,0,-1,0,0,0,-1,1
+35,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/contact/ContactJid.java,0,0,0,-1,0,0,0,-1,1
+60,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/response/AppVersionResponse.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-3,0,0,0,-3,3

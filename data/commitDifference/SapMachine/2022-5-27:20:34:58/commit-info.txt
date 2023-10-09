@@ -1,0 +1,16 @@
+commit 1bfd42c3dc4ebcaff326ab222586284192d6d095 (2022/5/27 20:34:58)
+1: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/DowncallLinker.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/UpcallLinker.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/SapMachine/test/langtools/tools/javac/annotations/typeAnnotations/classfile/Patterns.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/SapMachine/test/langtools/tools/javac/diags/examples/IncorrectNumberOfNestedPatterns.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/SapMachine/test/langtools/tools/javac/diags/examples/RawDeconstructionPattern.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/SapMachine/test/langtools/tools/javac/lambda/deduplication/Deduplication.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/EmptyRecordClass.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Exhaustiveness.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+9: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/GenericRecordDeconstructionPattern.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+10: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/NestedDeconstructionPattern.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+11: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/NestedPrimitiveDeconstructionPattern.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+12: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/NullsInDeconstructionPatterns.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+13: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/SimpleDeconstructionPattern.java, 10, 0, 0, 0, 0, 0, 0, 0, 0
+14: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/TypedDeconstructionPatternExc.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 24, 0, 2, 1, 0, 0, 0, 1, 0

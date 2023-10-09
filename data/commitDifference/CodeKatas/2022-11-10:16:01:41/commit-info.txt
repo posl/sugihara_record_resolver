@@ -1,0 +1,4 @@
+commit 9ca788bf3ca642e80c0c4ee2ecb3d27a854aec4 (2022/11/10 16:01:41)
+1: ../data/repositories/CodeKatas/deck-of-cards-kata-solutions/src/main/java/bnymellon/codekatas/deckofcards/Card.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CodeKatas/deck-of-cards-kata/src/main/java/bnymellon/codekatas/deckofcards/Card.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

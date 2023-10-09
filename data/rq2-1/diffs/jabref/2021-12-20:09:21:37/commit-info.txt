@@ -1,0 +1,3 @@
+commit f4cbd3b636bf7099996c22b37c08532c67cc3050 (2021/12/20 09:21:37)
+3,../data_original/repositories/rep302/copied/jabref/src/main/java/org/jabref/gui/exporter/ExportToClipboardAction.java,0,1,0,-1,0,0,0,0,0
+total,0,1,0,-1,0,0,0,0,0

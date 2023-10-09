@@ -1,0 +1,3 @@
+commit 6acb30a4ba99335cb81942b38e267a85f8df83eb (2022/2/20 16:13:03)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/modifier/redundantmodifier/InputRedundantModifierRecords.java,11,0,0,0,0,0,0,0,0
+total,11,0,0,0,0,0,0,0,0

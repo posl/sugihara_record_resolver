@@ -1,0 +1,3 @@
+commit 2e9e151cb206fcdddef0b2c0152ed814028e765b (2022/8/8 11:15:56)
+1: ../data/repositories/crate/server/src/main/java/io/crate/execution/engine/collect/stats/JobsLogs.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

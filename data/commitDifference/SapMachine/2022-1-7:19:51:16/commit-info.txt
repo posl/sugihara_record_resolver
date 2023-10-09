@@ -1,0 +1,3 @@
+commit 15e8d7ba663b7406b49321c6d45000cc3eeff2f6 (2022/1/7 19:51:16)
+1: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/lib/javadoc/tester/TestJavaFileManagerBuilder.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

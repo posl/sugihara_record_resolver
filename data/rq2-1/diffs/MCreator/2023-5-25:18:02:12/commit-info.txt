@@ -1,0 +1,5 @@
+commit 392cb14fff9f0f1588b03b1c7675998d604b611c (2023/5/25 18:02:12)
+25,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/ui/vcs/WorkspaceMergeHandles.java,0,0,0,0,1,0,0,0,0
+32,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/vcs/SyncTwoRefsWithMerge.java,0,0,0,0,1,0,0,0,0
+37,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/vcs/diff/AffectedObjectWithType.java,0,0,0,0,1,0,0,0,0
+total,0,0,0,0,3,0,0,0,0

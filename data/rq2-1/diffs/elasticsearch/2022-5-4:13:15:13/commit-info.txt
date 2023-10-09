@@ -1,0 +1,6 @@
+commit b7f24bdc4bc8a4427d71325ddbb33ca327d182a7 (2022/5/4 13:15:13)
+2,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/inference/results/QuestionAnsweringInferenceResults.java,1,0,0,0,0,0,0,0,0
+19,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/NerProcessor.java,0,0,0,-2,0,0,0,-2,1
+20,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/QuestionAnsweringProcessor.java,3,0,0,0,0,0,0,0,0
+26,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/inference/nlp/tokenizers/TokenizationResult.java,0,0,0,-1,0,0,0,-1,1
+total,4,0,0,-3,0,0,0,-3,2

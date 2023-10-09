@@ -1,0 +1,4 @@
+commit 9875c0a3c347b358d579fa1ff4d01d34e9edc7ea (2022/3/23 22:22:29)
+1: ../data/repositories/sirix/bundles/sirix-xquery/src/main/java/org/sirix/xquery/compiler/translator/DerefExpr.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/sirix/bundles/sirix-xquery/src/main/java/org/sirix/xquery/compiler/translator/SirixTranslator.java, 0, 0, 0, 0, 0, 0, 2, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 2, 0, 0

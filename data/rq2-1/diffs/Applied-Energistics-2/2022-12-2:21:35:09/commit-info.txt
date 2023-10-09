@@ -1,0 +1,24 @@
+commit 9439c2baa8142d4e53c570e283033c7ed88735e6 (2022/12/2 21:35:09)
+4,../data_original/repositories/rep749/copied/Applied-Energistics-2/libs/markdown/src/main/java/appeng/libs/mdast/MdastContext.java,1,0,0,0,0,0,0,0,0
+77,../data_original/repositories/rep749/copied/Applied-Energistics-2/libs/markdown/src/main/java/appeng/libs/micromark/InitializeDocument.java,1,0,0,0,0,0,0,0,0
+88,../data_original/repositories/rep749/copied/Applied-Energistics-2/libs/markdown/src/main/java/appeng/libs/micromark/Point.java,1,0,0,0,0,0,0,0,0
+95,../data_original/repositories/rep749/copied/Applied-Energistics-2/libs/markdown/src/main/java/appeng/libs/micromark/Tokenizer.java,2,0,0,0,0,0,0,0,0
+118,../data_original/repositories/rep749/copied/Applied-Energistics-2/libs/markdown/src/main/java/appeng/libs/micromark/commonmark/Subtokenize.java,1,0,0,0,0,0,0,0,0
+192,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/gui/DashPattern.java,1,0,0,0,0,0,0,0,0
+196,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/GuidePageChange.java,1,0,0,0,0,0,0,0,0
+198,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/PageAnchor.java,1,0,0,0,0,0,0,0,0
+199,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/compiler/Frontmatter.java,1,0,0,0,0,0,0,0,0
+200,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/compiler/FrontmatterNavigation.java,1,0,0,0,0,0,0,0,0
+216,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/compiler/tags/RecipeForCompiler.java,1,0,0,0,0,0,0,0,0
+219,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/document/LytRect.java,1,0,0,0,0,0,0,0,0
+220,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/document/LytSize.java,1,0,0,0,0,0,0,0,0
+224,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/document/block/LytDocument.java,2,0,0,0,0,0,0,0,0
+258,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/indices/MultiValuedIndex.java,1,0,0,0,0,0,0,0,0
+260,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/indices/UniqueIndex.java,1,0,0,0,0,0,0,0,0
+266,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/layout/flow/Line.java,1,0,0,0,0,0,0,0,0
+271,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/navigation/NavigationNode.java,1,0,0,0,0,0,0,0,0
+278,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/render/SimpleRenderContext.java,1,0,0,0,0,0,0,0,0
+284,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/style/ResolvedTextStyle.java,1,0,0,0,0,0,0,0,0
+287,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/guidebook/style/TextStyle.java,1,0,0,0,0,0,0,0,0
+298,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/test/java/appeng/client/guidebook/layout/flow/LineBuilderTest.java,1,0,0,0,0,0,0,0,0
+total,24,0,0,0,0,0,0,0,0

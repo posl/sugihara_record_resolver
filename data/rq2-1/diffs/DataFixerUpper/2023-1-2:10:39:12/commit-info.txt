@@ -1,0 +1,4 @@
+commit 3994c05369506ae84164beda44090df68ced9b4e (2023/1/2 10:39:12)
+1,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/TypeRewriteRule.java,0,0,0,-2,0,0,0,-2,1
+2,../data_original/repositories/rep800/copied/DataFixerUpper/src/main/java/com/mojang/datafixers/View.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-3,0,0,0,-3,2

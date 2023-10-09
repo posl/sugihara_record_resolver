@@ -1,0 +1,5 @@
+commit c0587289af31553af81e1dcfba2e7f959a27817e (2023/2/23 13:01:03)
+11,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/cluster/ClusterStateTaskExecutor.java,0,0,0,-1,0,0,0,-1,1
+28,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/cluster/service/MasterService.java,0,0,1,-3,0,0,0,-2,0
+49,../data_original/repositories/rep1/copied/elasticsearch/server/src/test/java/org/elasticsearch/cluster/service/MasterServiceTests.java,0,0,2,-2,0,0,0,0,0
+total,0,0,3,-6,0,0,0,-3,1

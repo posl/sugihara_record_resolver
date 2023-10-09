@@ -1,0 +1,5 @@
+commit 547c8327b22b395293d02354e6c85d1f46995374 (2022/11/10 08:40:22)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/search/fetch/StoredFieldsSpec.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/search/fetch/subphase/StoredFieldsPhase.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/search/fetch/subphase/highlight/HighlightPhase.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 1, 0, 0, 0, 0, 0, 0

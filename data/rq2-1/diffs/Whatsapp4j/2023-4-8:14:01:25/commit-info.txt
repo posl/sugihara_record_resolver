@@ -1,0 +1,8 @@
+commit f54d582a37656c3e5f9fb8a983672899a82ab8ba (2023/4/8 14:01:25)
+7,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionBuilder.java,0,0,0,-1,0,0,0,-1,1
+17,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/chat/GroupParticipant.java,0,0,0,-1,0,0,0,-1,1
+19,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/contact/ContactJid.java,0,0,0,-1,0,0,0,-1,1
+35,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/mobile/PhoneNumber.java,0,0,0,-1,0,0,0,-1,1
+36,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/MessageSendRequest.java,0,0,0,-1,0,0,0,-1,1
+40,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/signal/session/SessionPreKey.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-6,0,0,0,-6,6

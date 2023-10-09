@@ -1,0 +1,4 @@
+commit 65ad3fe6236ab7f8afa04a85e2ae20d21a67525a (2022/12/6 13:14:14)
+1: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/captcha/AssessmentResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/configuration/HCaptchaConfiguration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

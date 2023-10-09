@@ -1,0 +1,4 @@
+commit 6ef2f6c30f9c3ea874579dd8a47b9b4ff6b4713e (2020/8/20 17:35:54)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/utils/blockcommentposition/InputBlockCommentPositionOnCompactCtor.java, 3, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/utils/blockcommentposition/InputBlockCommentPositionOnRecord.java, 3, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 6, 0, 0, 0, 0, 0, 0, 0, 0

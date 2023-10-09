@@ -1,0 +1,3 @@
+commit c572efc3cdd455b1940204d0ec021538ec6e7dfa (2021/4/1 17:29:10)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/binary/BinaryArray.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

@@ -1,0 +1,3 @@
+commit b169c3f72a8a87df0ece0c17ab67e74d3296b4b3 (2022/2/12 17:32:29)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/cloudnet/driver/network/rpc/defaults/rpc/RPCResultMapper.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

@@ -1,0 +1,3 @@
+commit aaa6412469c0af93a226ba805e6dbe74b4ea9773 (2022/6/11 22:45:51)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/accounts/AccountsStorage.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

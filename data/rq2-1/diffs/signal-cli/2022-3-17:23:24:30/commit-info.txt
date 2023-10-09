@@ -1,0 +1,4 @@
+commit 9eb97746c123575593d8cb3709a3413c0b22482d (2022/3/17 23:24:30)
+5,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java,0,0,0,-35,0,0,0,-35,14
+22,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/RecipientAddress.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-36,0,0,0,-36,15

@@ -1,0 +1,4 @@
+commit 10339279c0e4f965beda0722777f65249076ec95 (2022/2/21 08:22:46)
+1: ../data/repositories/SapMachine/src/jdk.jfr/share/classes/jdk/jfr/snippet-files/Snippets.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Exhaustiveness.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 0, 0, 1, 1, 0, 0, 0, 1, 0

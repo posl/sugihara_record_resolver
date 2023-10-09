@@ -1,0 +1,4 @@
+commit 3808cd8a746bea2b186bca86101fc475261e9a83 (2023/1/25 14:38:22)
+64,../data_original/repositories/rep1374/copied/activej/extra/cloud-ot/src/main/java/io/activej/ot/system/OTSystem.java,0,0,0,0,0,0,1,-1,0
+65,../data_original/repositories/rep1374/copied/activej/extra/cloud-ot/src/main/java/io/activej/ot/system/OTSystemImpl.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,1,-1,0

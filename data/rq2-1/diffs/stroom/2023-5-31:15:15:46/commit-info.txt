@@ -1,0 +1,3 @@
+commit b26c3eaae886fc70a6bf80389b0662f5255633c (2023/5/31 15:15:46)
+3,../data_original/repositories/rep1514/copied/stroom/stroom-dropwizard-common/src/main/java/stroom/dropwizard/common/AbstractJerseyClientFactory.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

@@ -1,0 +1,4 @@
+commit 603dbfa1f40c849024687e7ad534769460a90ccb (2023/1/23 17:46:44)
+1,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java,0,0,0,-2,0,0,0,-2,1
+9,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/cache/common/CacheKey.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-2,0,0,0,-2,1

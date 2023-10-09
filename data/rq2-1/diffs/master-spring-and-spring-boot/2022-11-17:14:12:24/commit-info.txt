@@ -1,0 +1,4 @@
+commit f6c7755120524fdb107d71cbdda83d51278a1a18 (2022/11/17 14:12:24)
+31,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/91-aws/03-rest-api-full-stack-h2/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/jwt/JwtTokenRequest.java,1,0,0,0,0,0,0,0,0
+32,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/91-aws/03-rest-api-full-stack-h2/src/main/java/com/in28minutes/rest/webservices/restfulwebservices/jwt/JwtTokenResponse.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

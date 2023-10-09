@@ -1,0 +1,4 @@
+commit 31d703f24c266583529e4bdaef777e6096fff766 (2022/2/22 21:36:19)
+4,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/action/search/FetchLookupFieldsPhase.java,1,0,0,0,0,0,0,0,0
+13,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/search/fetch/subphase/LookupField.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

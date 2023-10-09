@@ -1,0 +1,4 @@
+commit 3991961de359d50dac725ee4f5bfcde2f68c7847 (2022/2/10 12:40:41)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/ClusterStateTaskExecutor.java, 0, 0, 1, 0, 0, 0, 0, 0, 2
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/cluster/service/MasterService.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 2, 0, 0, 0, 0, 0, 2

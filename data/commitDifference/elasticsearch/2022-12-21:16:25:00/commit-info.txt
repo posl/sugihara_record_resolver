@@ -1,0 +1,3 @@
+commit f7e0d477f65440a00f8fc7b4edd5349db6cca2f5 (2022/12/21 16:25:00)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/search/aggregations/bucket/composite/GlobalOrdinalValuesSource.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

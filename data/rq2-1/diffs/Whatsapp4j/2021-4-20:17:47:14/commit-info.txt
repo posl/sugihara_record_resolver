@@ -1,0 +1,4 @@
+commit a2e1a6a65e8a40f767860b4275ea729f2b312b61 (2021/4/20 17:47:14)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/model/WhatsappResponse.java,0,0,0,-1,0,0,0,-1,1
+3,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/model/JsonListResponse.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

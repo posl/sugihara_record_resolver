@@ -1,0 +1,3 @@
+commit ad054e93d08903b39028a2c109bfc0266b4f60c5 (2022/8/31 17:07:05)
+1: ../data/repositories/JetBrainsRuntime/src/java.desktop/share/classes/sun/java2d/loops/RenderCache.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

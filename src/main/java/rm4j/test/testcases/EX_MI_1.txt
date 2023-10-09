@@ -1,1 +1,0 @@
-new ArrayList<>(set).get(0) EX_MI_1

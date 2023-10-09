@@ -1,0 +1,18 @@
+commit 85fd84668e03585826a5ac728654dd66fc56726f (2023/5/10 20:07:14)
+9,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/java/lang/constant/ModuleDescImpl.java,1,0,0,0,0,0,0,0,0
+11,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/java/lang/constant/PackageDescImpl.java,1,0,0,0,0,0,0,0,0
+49,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/Binding.java,0,0,0,-9,0,0,0,-9,9
+55,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/LinkerOptions.java,0,0,2,-3,0,0,1,-2,0
+56,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/NativeEntryPoint.java,0,0,0,-1,0,0,0,-1,1
+61,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/aarch64/CallArranger.java,0,0,0,0,0,0,2,-2,0
+71,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/fallback/FallbackLinker.java,2,0,0,0,0,0,0,0,0
+97,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/jdk/internal/util/Version.java,1,0,0,0,0,0,0,0,0
+212,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/foreign/SafeFunctionAccessTest.java,0,0,0,-1,0,0,0,-1,1
+231,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/foreign/TestLinker.java,0,0,1,-1,0,0,0,0,0
+262,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/foreign/UpcallTestHelper.java,0,0,0,-1,0,0,0,-1,1
+308,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/lang/reflect/AccessFlag/RequiredMethodParameterFlagTest.java,1,0,0,0,0,0,0,0,0
+310,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/net/httpclient/EncodedCharsInURI.java,0,0,1,-1,0,0,0,0,0
+311,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/net/httpclient/EscapedOctetsInURI.java,0,0,1,-1,0,0,0,0,0
+312,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/net/httpclient/NonAsciiCharsInURI.java,0,0,1,-1,0,0,0,0,0
+395,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/processing/model/util/elements/MethodParameters/ImplicitParametersProcessor.java,1,0,0,0,0,0,0,0,0
+total,7,0,6,-19,0,0,3,-16,12

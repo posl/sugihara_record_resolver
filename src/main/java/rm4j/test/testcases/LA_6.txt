@@ -1,1 +1,0 @@
-Type1<@Anno2 ? extends Type2<Type3>>.@Anno4(id2)Type4<Type5>@Anno5[][]@Anno6[] LA_6

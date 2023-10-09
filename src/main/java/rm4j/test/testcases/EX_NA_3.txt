@@ -1,1 +1,0 @@
-new boolean[4]{filter.test(l), l.size() == 0, l.contains(null), l instanceof ArrayList} EX_NA_3

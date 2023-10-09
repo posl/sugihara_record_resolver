@@ -1,0 +1,5 @@
+commit 862de7072470b18d34d0f57347944ab29cb641a (2022/2/21 17:29:59)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/MetadataBinding.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/metadata/MetadataKey.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/service/metadata/MetadataIngestionServiceImpl.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 1, 0, 0, 0, 0, 0, 0, 0

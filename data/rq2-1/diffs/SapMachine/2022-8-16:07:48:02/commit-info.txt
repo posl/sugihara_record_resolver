@@ -1,0 +1,4 @@
+commit 6432d3f91476b37dec9683d509c7fe788b962d93 (2022/8/16 07:48:02)
+12,../data_original/repositories/rep1322/copied/SapMachine/src/java.base/share/classes/java/lang/reflect/Executable.java,0,0,1,-1,0,0,0,0,0
+121,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/processing/model/util/elements/TestRecordPredicates.java,3,0,0,0,0,0,0,0,0
+total,3,0,1,-1,0,0,0,0,0

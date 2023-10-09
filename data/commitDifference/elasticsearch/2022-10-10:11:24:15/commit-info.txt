@@ -1,0 +1,4 @@
+commit 4c8847bdd4c31aa2ddb04b0d5eb7c2968696a316 (2022/10/10 11:24:15)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/indices/store/TransportNodesListShardStoreMetadata.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authz/RoleDescriptorsIntersection.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

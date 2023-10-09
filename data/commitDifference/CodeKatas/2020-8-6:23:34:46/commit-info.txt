@@ -1,0 +1,4 @@
+commit d7224fc75b908262a503dbbd8d28edec51940561 (2020/8/6 23:34:46)
+1: ../data/repositories/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata10/Delivery.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CodeKatas/donut-kata/src/main/java/bnymellon/codekatas/donutkata10/Order.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

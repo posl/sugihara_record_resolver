@@ -1,0 +1,3 @@
+commit 761b6490802bace6b3f580eef0e67f9c0a47cdb5 (2023/4/5 15:58:09)
+3,../data_original/repositories/rep60/copied/cas/core/cas-server-core-authentication/src/main/java/org/apereo/cas/config/CasCoreAuthenticationMonitoringConfiguration.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

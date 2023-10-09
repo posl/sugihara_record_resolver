@@ -1,0 +1,5 @@
+commit 40f72c205798ed52f77121055b75140054b2bd48 (2022/4/11 10:05:20)
+1: ../data/repositories/CloudNet-v3/modules/dockerized-services/src/main/java/eu/cloudnetservice/modules/docker/DockerCommand.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/modules/dockerized-services/src/main/java/eu/cloudnetservice/modules/docker/config/DockerConfiguration.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+3: ../data/repositories/CloudNet-v3/modules/dockerized-services/src/main/java/eu/cloudnetservice/modules/docker/config/TaskDockerConfig.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 2

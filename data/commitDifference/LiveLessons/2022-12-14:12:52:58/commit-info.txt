@@ -1,0 +1,6 @@
+commit 2e2b3b0c3e48d28cd93a246cb5583d82c6362f95 (2022/12/14 12:52:58)
+1: ../data/repositories/LiveLessons/Loom/ex2/src/main/java/common/GCDResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/LiveLessons/Loom/ex2/src/main/java/common/PrimeResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/LiveLessons/WebMVC/ex3/src/main/java/mathservices/common/GCDResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/LiveLessons/WebMVC/ex3/src/main/java/mathservices/common/PrimeResult.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 4, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,7 @@
+commit 2112acef70889220dfe1d6e2e2498dd5b6d03d48 (2023/1/27 13:58:49)
+11,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/rest/bulk/AuditParams.java,1,0,0,0,0,0,0,0,0
+15,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/rest/bulk/model/BulkOperationFailure.java,1,0,0,0,0,0,0,0,0
+16,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/rest/bulk/model/BulkOperationRequest.java,1,0,0,0,0,0,0,0,0
+17,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/rest/bulk/model/BulkOperationResponse.java,1,0,0,0,0,0,0,0,0
+22,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/test/java/org/graylog2/audit/jersey/DefaultSuccessContextCreatorTest.java,1,0,0,0,0,0,0,0,0
+total,5,0,0,0,0,0,0,0,0

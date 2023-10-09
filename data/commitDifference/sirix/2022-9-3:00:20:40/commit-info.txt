@@ -1,0 +1,4 @@
+commit 23c22d8667d00edd095a2926edd21e1815984e6d (2022/9/3 00:20:40)
+1: ../data/repositories/sirix/bundles/sirix-core/src/main/java/org/sirix/node/HashEntryNode.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/sirix/bundles/sirix-core/src/main/java/org/sirix/node/NodeKind.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 1

@@ -1,0 +1,4 @@
+commit 2a5103507ed586f49e50ca9c75d46250fa95723b (2023/2/11 19:40:56)
+5,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/mobile/VerificationCodeResponse.java,0,0,0,-1,0,0,0,-1,1
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Request.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

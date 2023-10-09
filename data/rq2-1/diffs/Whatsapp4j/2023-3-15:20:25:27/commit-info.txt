@@ -1,0 +1,3 @@
+commit d54e8ca45eb33cf861c9fa28d5367a201a6818ba (2023/3/15 20:25:27)
+1,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/signal/session/Session.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

@@ -1,0 +1,17 @@
+commit be249d9a757c315486d167c0cb5a6bb5831e9c9e (2023/2/19 16:43:20)
+97,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/mvt/expression/Expressions.java,22,0,0,0,0,0,0,0,0
+136,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/CreateEntityCollection.java,1,0,0,0,0,0,0,0,0
+137,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/CreateGeonamesIndex.java,0,0,0,-1,0,0,0,-1,1
+138,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/CreateIplocIndex.java,0,0,0,-1,0,0,0,-1,1
+139,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/DownloadUrl.java,0,0,0,-1,0,0,0,-1,1
+143,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ExecuteSql.java,0,0,0,-1,0,0,0,-1,1
+144,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ExportVectorTiles.java,0,0,0,-1,0,0,0,-1,1
+145,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ImportGeoPackage.java,0,0,0,-1,0,0,0,-1,1
+146,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ImportOpenStreetMap.java,0,0,0,-1,0,0,0,-1,1
+147,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ImportShapefile.java,0,0,0,-1,0,0,0,-1,1
+148,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/TransformEntityCollection.java,2,0,0,0,0,0,0,0,0
+149,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/UngzipFile.java,0,0,0,-1,0,0,0,-1,1
+150,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/UnzipFile.java,0,0,0,-1,0,0,0,-1,1
+151,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/UpdateOpenStreetMap.java,0,0,0,-1,0,0,0,-1,1
+169,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/test/java/org/apache/baremaps/mvt/ExpressionsTest.java,1,0,0,0,0,0,0,0,0
+total,26,0,0,-11,0,0,0,-11,11

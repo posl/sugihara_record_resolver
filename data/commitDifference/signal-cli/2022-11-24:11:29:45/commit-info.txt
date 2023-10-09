@@ -1,0 +1,3 @@
+commit 35def4445d13011f4feb9f6422546b88ce32bda0 (2022/11/24 11:29:45)
+1: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/json/JsonAttachmentData.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

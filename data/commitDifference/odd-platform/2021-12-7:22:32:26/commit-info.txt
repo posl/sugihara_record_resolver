@@ -1,0 +1,3 @@
+commit 4daeaaffd0587479304b6adac0009d07ac1fc410 (2021/12/7 22:32:26)
+1: ../data/repositories/odd-platform/odd-platform-api/src/main/java/org/opendatadiscovery/oddplatform/dto/DataSourceDto.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

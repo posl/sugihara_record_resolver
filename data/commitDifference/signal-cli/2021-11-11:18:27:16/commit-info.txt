@@ -1,0 +1,4 @@
+commit b7005884fdcfa8d95f54e557ddbf2fe4201962f8 (2021/11/11 18:27:16)
+1: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/commands/FinishLinkCommand.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/commands/StartLinkCommand.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 0, 0, 0, 0, 0

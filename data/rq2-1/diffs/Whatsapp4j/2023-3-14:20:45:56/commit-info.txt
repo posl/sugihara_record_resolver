@@ -1,0 +1,6 @@
+commit ebcae8ebbd5d0ea0477a000b93cd4f3648d5548e (2023/3/14 20:45:56)
+3,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/GroupCipher.java,0,0,0,-1,0,0,0,-1,1
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionBuilder.java,0,0,0,-1,0,0,0,-1,1
+15,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/signal/sender/SenderMessageKey.java,0,0,0,-1,0,0,0,-1,1
+17,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/sync/PatchRequest.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-4,0,0,0,-4,4

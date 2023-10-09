@@ -1,0 +1,3 @@
+commit bb9d44811c511c7acef24e0e9047bdafef9b8f39 (2022/5/17 20:39:06)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/UserStatus.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

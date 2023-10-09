@@ -1,0 +1,4 @@
+commit 46cd4cd59eb5f8a35222fd8a63e0d46ded56b4c9 (2022/8/17 13:11:11)
+17,../data_original/repositories/rep333/copied/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/query/Query.java,0,0,1,-2,0,0,0,-1,0
+21,../data_original/repositories/rep333/copied/spring-data-elasticsearch/src/test/java/org/springframework/data/elasticsearch/core/PointInTimeIntegrationTests.java,1,0,0,0,0,0,0,0,0
+total,1,0,1,-2,0,0,0,-1,0

@@ -1,0 +1,3 @@
+commit 244174c9326f9021b57b59030b15e5de2e8cfb8e (2021/3/27 23:01:53)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/sizes/executablestatementcount/InputExecutableStatementCountRecords.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 0, 0, 0, 1, 0, 0, 0, 1, 0

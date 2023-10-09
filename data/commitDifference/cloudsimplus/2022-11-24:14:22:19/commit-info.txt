@@ -1,0 +1,3 @@
+commit 9232e8e29d0613f8bababdc908947a12f3a71344 (2022/11/24 14:22:19)
+1: ../data/repositories/cloudsimplus/src/main/java/org/cloudsimplus/builders/tables/ColumnMapping.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

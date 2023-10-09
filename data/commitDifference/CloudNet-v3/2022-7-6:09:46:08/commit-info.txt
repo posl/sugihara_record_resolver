@@ -1,0 +1,10 @@
+commit 7089ee1d1c049a3ac6db434fb2661b3b1eb31b9e (2022/7/6 09:46:08)
+1: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/config/PasteServer.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/config/PasteService.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+3: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/config/RecordConfiguration.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+4: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/config/ReportConfiguration.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+5: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/emitter/ReportDataWriter.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/emitter/defaults/HeapDumpDataEmitter.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+7: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/paste/PasteCreator.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+8: ../data/repositories/CloudNet-v3/modules/report/src/main/java/eu/cloudnetservice/modules/report/util/RecordMaker.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+sum: 3, 0, 0, 0, 4, 0, 0, 0, 1

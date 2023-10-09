@@ -1,0 +1,7 @@
+commit 48b1ce7a85a1701c37433a3bbac5044244261788 (2023/1/6 15:33:48)
+12,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/geocoder/response/Data.java,0,0,0,0,1,0,0,0,0
+13,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/geocoder/response/Result.java,0,0,0,0,1,0,0,0,0
+18,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/CreateGeonamesIndex.java,0,0,0,-1,0,0,0,-1,1
+19,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/CreateIplocIndex.java,0,0,0,-1,0,0,0,-1,1
+24,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-server/src/main/java/org/apache/baremaps/server/GeocoderResources.java,0,0,2,-2,0,0,0,0,0
+total,0,0,2,-4,2,0,0,-2,2

@@ -1,0 +1,4 @@
+commit d2868b00bf490f1a8159d989ab108d9e873f8592 (2022/8/1 12:53:03)
+1: ../data/repositories/elasticsearch/x-pack/plugin/security/qa/security-trial/src/javaRestTest/java/org/elasticsearch/xpack/security/apikey/ApiKeyRestIT.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/authc/ApiKeyService.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 1

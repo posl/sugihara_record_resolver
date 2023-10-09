@@ -1,0 +1,3 @@
+commit 100687916a10bd0c309fdb158600cdc6316d020d (2022/12/21 10:59:48)
+193,../data_original/repositories/rep1514/copied/stroom/stroom-proxy/stroom-proxy-app/src/test/java/stroom/proxy/app/AbstractEndToEndTest.java,0,0,3,-3,0,0,0,0,0
+total,0,0,3,-3,0,0,0,0,0

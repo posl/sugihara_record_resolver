@@ -1,0 +1,8 @@
+commit 200b355e7dec94977587487b1d442341f4e260e9 (2022/6/29 21:14:25)
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionBuilder.java,0,0,0,-1,0,0,0,-1,1
+7,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/crypto/SessionCipher.java,0,0,0,-2,0,0,0,-2,1
+64,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Request.java,0,0,0,-1,0,0,0,-1,1
+66,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/sync/SnapshotContainer.java,1,0,0,0,0,0,0,0,0
+67,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/sync/SnapshotSyncRecord.java,0,0,0,-1,0,0,0,-1,1
+68,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/sync/SnapshotsRecord.java,0,0,0,0,1,0,0,0,0
+total,1,0,0,-5,1,0,0,-5,4

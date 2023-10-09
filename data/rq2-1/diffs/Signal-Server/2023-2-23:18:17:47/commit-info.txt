@@ -1,0 +1,4 @@
+commit 47f4a1c007dd222c2ad2b34bac90f2db61f1613 (2023/2/23 18:17:47)
+28,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/AuthCheckRequest.java,0,0,0,-1,0,0,0,-1,1
+29,../data_original/repositories/rep85/copied/Signal-Server/service/src/main/java/org/whispersystems/textsecuregcm/entities/AuthCheckResponse.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-2,0,0,0,-2,2

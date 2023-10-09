@@ -1,0 +1,5 @@
+commit 9a698929f47d47d5cb63ad74ec4c1196f0cd91df (2022/6/7 15:09:10)
+5,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/stickers/LegacyStickerStore.java,2,0,0,0,0,0,0,0,0
+7,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/stickers/StickerPack.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/stickers/StickerStore.java,0,0,0,0,0,0,2,-2,0
+total,3,0,0,0,0,0,2,-2,0

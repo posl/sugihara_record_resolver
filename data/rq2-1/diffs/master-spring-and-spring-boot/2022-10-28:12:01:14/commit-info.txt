@@ -1,0 +1,3 @@
+commit 70ac688b61b94cef861627e69af5da05f43dac90 (2022/10/28 12:01:14)
+3,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/01-spring/learn-spring-framework/src/main/java/com/in28minutes/learnspringframework/HelloWorldConfiguration.java,2,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

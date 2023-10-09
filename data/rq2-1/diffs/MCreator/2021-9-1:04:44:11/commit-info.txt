@@ -1,0 +1,9 @@
+commit 225634e60ca7e9bdf49e7ee7c30dbd32fc7f0ac2 (2021/9/1 04:44:11)
+2,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/gradle/GradleTaskResult.java,0,1,0,-1,0,0,0,0,0
+3,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/plugin/PluginUpdateInfo.java,0,1,0,-1,0,0,0,0,0
+6,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/ui/help/HelpContextWithEntry.java,0,1,0,-1,0,0,0,0,0
+10,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/util/Tuple.java,0,1,0,-1,0,0,0,0,0
+11,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/util/image/EmptyIcon.java,0,1,0,-1,0,0,0,0,0
+12,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/util/locale/LocaleRegistration.java,0,1,0,-1,0,0,0,0,0
+13,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/vcs/diff/DiffResult.java,0,1,0,-1,0,0,0,0,0
+total,0,7,0,-7,0,0,0,0,0

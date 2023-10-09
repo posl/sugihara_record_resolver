@@ -1,0 +1,5 @@
+commit 2eebdf36d6d6a3ace861d7d500cdacb9fffabdae (2022/10/17 14:03:31)
+1: ../data/repositories/SapMachine/src/jdk.jfr/share/classes/jdk/jfr/internal/EventInstrumentation.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+2: ../data/repositories/SapMachine/test/jdk/java/lang/Thread/virtual/ThreadAPI.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+3: ../data/repositories/SapMachine/test/langtools/tools/javac/lambda/methodReference/IntersectionParameterTypeTest.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 1, 0, 0, 0, 1, 2

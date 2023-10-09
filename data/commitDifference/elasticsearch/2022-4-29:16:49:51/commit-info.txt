@@ -1,0 +1,5 @@
+commit 1cdb03ddb1c97b4869de33515305b7daee6cebb7 (2022/4/29 16:49:51)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/health/HealthIndicatorResult.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/health/UserAction.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/elasticsearch/server/src/test/java/org/elasticsearch/cluster/routing/allocation/ShardsAvailabilityHealthIndicatorServiceTests.java, 0, 0, 1, 0, 0, 0, 0, 0, 1
+sum: 2, 0, 1, 0, 0, 0, 0, 0, 2

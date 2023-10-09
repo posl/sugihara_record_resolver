@@ -1,0 +1,5 @@
+commit 4221443617178621a83ac36f921d7ff6bbf60ecf (2020/7/28 11:13:47)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/whitespacearound/InputWhitespaceAroundAllowEmptyCompactCtors.java,9,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/whitespacearound/InputWhitespaceAroundRecords.java,11,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/whitespacearound/InputWhitespaceAroundRecordsAllowEmptyTypes.java,4,0,0,0,0,0,0,0,0
+total,24,0,0,0,0,0,0,0,0

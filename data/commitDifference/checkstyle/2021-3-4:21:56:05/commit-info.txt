@@ -1,0 +1,3 @@
+commit ff424ff8e19c976cf3deed74fe20cb8dc56a894b (2021/3/4 21:56:05)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/whitespace/whitespacearound/InputWhitespaceAroundAllowEmptyCompactCtors.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

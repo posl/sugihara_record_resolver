@@ -1,0 +1,4 @@
+commit ed77a48edc6702ca8137d6b75a3e2c13b6e27540 (2023/5/12 21:17:39)
+11,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/mobile/PhoneNumber.java,0,0,0,-1,0,0,0,-1,1
+12,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/response/AppVersionResponse.java,0,0,2,-3,0,0,0,-1,1
+total,0,0,2,-4,0,0,0,-2,2

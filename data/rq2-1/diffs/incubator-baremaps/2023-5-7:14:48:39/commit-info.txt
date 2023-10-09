@@ -1,0 +1,3 @@
+commit 533480f89ce03fd77e36c3b2c6be5682b535d28b (2023/5/7 14:48:39)
+11,../data_original/repositories/rep1900/copied/incubator-baremaps/baremaps-core/src/main/java/org/apache/baremaps/workflow/tasks/ExportVectorTiles.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

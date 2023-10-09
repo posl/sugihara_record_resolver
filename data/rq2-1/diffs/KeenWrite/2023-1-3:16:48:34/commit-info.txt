@@ -1,0 +1,3 @@
+commit fd5d7030d37502bbc35d5303df1a10f9b610e288 (2023/1/3 16:48:34)
+49,../data_original/repositories/rep1553/copied/KeenWrite/src/main/java/com/keenwrite/typesetting/installer/panes/UnixManagerInstallPane.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

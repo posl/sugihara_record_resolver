@@ -1,0 +1,3 @@
+commit 586787dd58013b7d9d5d63fbd77de08128f98ecb (2021/1/13 11:48:03)
+1: ../data/repositories/sonar-java/java-frontend/src/test/files/metrics/Methods.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 1, 0, 0, 0, 0, 0, 0

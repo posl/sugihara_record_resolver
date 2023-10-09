@@ -1,0 +1,7 @@
+commit 7190c47ca5515ad8cb827bc4065ae7664d2766c1 (2020/11/2 11:53:39)
+1: ../data/repositories/checkstyle/src/it/resources-noncompilable/com/google/checkstyle/test/chapter5naming/rule526parameternames/InputRecordComponentName.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/checkstyle/src/it/resources-noncompilable/org/checkstyle/suppressionxpathfilter/recordcomponentname/SuppressionXpathRecordComponentName1.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/checkstyle/src/it/resources-noncompilable/org/checkstyle/suppressionxpathfilter/recordcomponentname/SuppressionXpathRecordComponentName2.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/recordcomponentname/InputRecordComponentNameDefault.java, 3, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/naming/recordcomponentname/InputRecordComponentNameLowercase.java, 3, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 10, 0, 0, 0, 0, 0, 0, 0, 0

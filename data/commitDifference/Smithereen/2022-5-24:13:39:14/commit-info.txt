@@ -1,0 +1,7 @@
+commit d90542c92d138fc4412c4068fdad3a255c5012c2 (2022/5/24 13:39:14)
+1: ../data/repositories/Smithereen/src/main/java/smithereen/controllers/ObjectLinkResolver.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Smithereen/src/main/java/smithereen/data/ActorWithDescription.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/Smithereen/src/main/java/smithereen/routes/ActivityPubRoutes.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/Smithereen/src/main/java/smithereen/storage/IdPair.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/Smithereen/src/main/java/smithereen/storage/PostStorage.java, 0, 2, 0, 1, 0, 0, 0, 0, 0
+sum: 3, 3, 0, 1, 0, 0, 0, 0, 0

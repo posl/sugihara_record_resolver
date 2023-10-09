@@ -1,0 +1,7 @@
+commit df4e4bd7e5a1df6767be8cb342d52c68f96cf75c (2021/3/9 22:12:43)
+1: ../data/repositories/ArchUnit/archunit/src/jdk15test/java/com/tngtech/archunit/core/importer/ClassFileImporterRecordsTest.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/ArchUnit/archunit/src/jdk15test/java/com/tngtech/archunit/lang/syntax/elements/GivenClassesThatRecordsTest.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/ArchUnit/archunit/src/jdk15test/java/com/tngtech/archunit/lang/syntax/elements/GivenMembersDeclaredInClassesThatRecordsTest.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/ArchUnit/archunit/src/jdk15test/java/com/tngtech/archunit/lang/syntax/elements/ShouldClassesThatRecordsTest.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/ArchUnit/archunit/src/jdk15test/java/com/tngtech/archunit/lang/syntax/elements/ShouldOnlyByClassesThatRecordsTest.java, 4, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 14, 0, 0, 0, 0, 0, 0, 0, 0

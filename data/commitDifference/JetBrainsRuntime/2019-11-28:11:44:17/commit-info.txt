@@ -1,0 +1,3 @@
+commit 1671575fa37a798d1012f25e79703e989b3ac0f (2019/11/28 11:44:17)
+1: ../data/repositories/JetBrainsRuntime/src/java.desktop/share/classes/sun/font/GlyphRenderData.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 2, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,4 @@
+commit 93b73080e6fde324b02fb6f44a3d4e8fb4f3c4f8 (2023/1/30 14:50:21)
+1,../data_original/repositories/rep1374/copied/activej/core-codegen/src/main/java/io/activej/codegen/expression/ExpressionCompareBuilder.java,1,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep1374/copied/activej/core-codegen/src/main/java/io/activej/codegen/expression/Expression_Equals.java,0,0,0,0,1,0,0,0,0
+total,1,0,0,0,1,0,0,0,0

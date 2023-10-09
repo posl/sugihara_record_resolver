@@ -1,0 +1,4 @@
+commit 86f6600ab6ff7d726af899f3be7669db61e778b1 (2022/1/7 12:14:22)
+1: ../data/repositories/CodeKatas/deck-of-cards-kata-solutions/src/main/java/bnymellon/codekatas/deckofcards/list/immutable/EclipseCollectionsDeckOfCardsAsList.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/CodeKatas/deck-of-cards-kata-solutions/src/main/java/bnymellon/codekatas/deckofcards/sortedset/immutable/EclipseCollectionsDeckOfCardsAsSortedSet.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 2

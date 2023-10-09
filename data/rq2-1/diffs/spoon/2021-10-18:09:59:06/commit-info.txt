@@ -1,0 +1,11 @@
+commit c65b2eae4984949ca4ecc2641cc7f4052149935e (2021/10/18 09:59:06)
+45,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/CompactConstructor.java,1,0,0,0,0,0,0,0,0
+46,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/DeriveAnnotations.java,1,0,0,0,0,0,0,0,0
+47,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/EmptyRecord.java,1,0,0,0,0,0,0,0,0
+48,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/ExplicitAccessor.java,1,0,0,0,0,0,0,0,0
+49,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/MultiParameter.java,1,0,0,0,0,0,0,0,0
+50,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/NoClasspathAnnotations.java,1,0,0,0,0,0,0,0,0
+51,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/PartiallyAnnotations.java,1,0,0,0,0,0,0,0,0
+52,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/RecordWithInterface.java,1,0,0,0,0,0,0,0,0
+53,../data_original/repositories/rep625/copied/spoon/src/test/resources/records/SingleParameter.java,1,0,0,0,0,0,0,0,0
+total,9,0,0,0,0,0,0,0,0

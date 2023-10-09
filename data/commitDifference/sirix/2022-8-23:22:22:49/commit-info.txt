@@ -1,0 +1,3 @@
+commit 56337274bf19aedb4ce67a21eef00c164ad2c887 (2022/8/23 22:22:49)
+1: ../data/repositories/sirix/bundles/sirix-core/src/main/java/org/sirix/node/NodeKind.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,3 @@
+commit 999c2e3bb972850bbc87b084cd5f2f3a3764485e (2023/5/19 18:42:43)
+1,../data_original/repositories/rep775/copied/high-performance-java-persistence/jooq/jooq-pgsql/src/test/java/com/vladmihalcea/book/hpjp/jooq/pgsql/crud/QuestionAndAnswerTest.java,0,0,1,-3,0,0,0,-2,0
+total,0,0,1,-3,0,0,0,-2,0

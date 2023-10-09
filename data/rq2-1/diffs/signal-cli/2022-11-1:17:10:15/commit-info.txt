@@ -1,0 +1,4 @@
+commit ae678871ec976f2bcf1cee969e555ca00239f7d8 (2022/11/1 17:10:15)
+1,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/jsonrpc/SignalJsonRpcCommandHandler.java,3,0,0,0,0,0,0,0,0
+2,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/jsonrpc/SignalJsonRpcDispatcherHandler.java,0,0,0,0,0,0,3,-3,0
+total,3,0,0,0,0,0,3,-3,0

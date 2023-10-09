@@ -1,0 +1,10 @@
+commit a593051512b716ed3cc42a1a7b69d49a459352ed (2022/8/8 18:12:30)
+1,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/Color.java,1,0,0,0,0,0,0,0,0
+2,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/MessageEnvelope.java,0,0,4,-39,0,0,0,-35,4
+6,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonDataMessage.java,0,0,0,-1,0,0,0,-1,1
+7,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonMessageEnvelope.java,0,0,0,-1,0,0,0,-1,1
+8,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonStoryContext.java,1,0,0,0,0,0,0,0,0
+9,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonStoryMessage.java,3,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonSyncMessage.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep363/copied/signal-cli/src/main/java/org/asamk/signal/json/JsonSyncStoryMessage.java,1,0,0,0,0,0,0,0,0
+total,6,0,4,-42,0,0,0,-38,7

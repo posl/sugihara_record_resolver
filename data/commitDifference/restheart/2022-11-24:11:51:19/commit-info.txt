@@ -1,0 +1,3 @@
+commit 695f39014fc5920e165c3b845fa5e69e93f2a897 (2022/11/24 11:51:19)
+1: ../data/repositories/restheart/commons/src/main/java/org/restheart/Configuration.java, 0, 0, 2, 0, 0, 0, 0, 0, 2
+sum: 0, 0, 2, 0, 0, 0, 0, 0, 2

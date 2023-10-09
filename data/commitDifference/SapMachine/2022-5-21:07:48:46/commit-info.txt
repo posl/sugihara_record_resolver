@@ -1,0 +1,14 @@
+commit c051ee04bced0c5d100fbfc9a6f11dfbd395c054 (2022/5/21 07:48:46)
+1: ../data/repositories/SapMachine/src/java.base/share/classes/com/sun/crypto/provider/PKCS12PBECipherCore.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/NativeEntryPoint.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/ProgrammableInvoker.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+4: ../data/repositories/SapMachine/src/java.base/share/classes/jdk/internal/foreign/abi/ProgrammableUpcallHandler.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/SapMachine/src/jdk.compiler/share/classes/com/sun/tools/javac/tree/TreeInfo.java, 0, 0, 0, 0, 0, 0, 1, 0, 0
+6: ../data/repositories/SapMachine/src/jdk.incubator.foreign/share/classes/jdk/internal/foreign/abi/ProgrammableUpcallHandler.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+7: ../data/repositories/SapMachine/src/jdk.jfr/share/classes/jdk/jfr/internal/EventControl.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+8: ../data/repositories/SapMachine/src/jdk.jfr/share/classes/jdk/jfr/internal/MetadataDescriptor.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+9: ../data/repositories/SapMachine/src/jdk.jfr/share/classes/jdk/jfr/internal/consumer/ChunkParser.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+10: ../data/repositories/SapMachine/test/hotspot/jtreg/compiler/lib/ir_framework/driver/irmatching/parser/Block.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+11: ../data/repositories/SapMachine/test/jdk/java/lang/Thread/virtual/ThreadAPI.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+12: ../data/repositories/SapMachine/test/langtools/tools/javac/patterns/Exhaustiveness.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 5, 3, 1, 2, 1, 0, 1, 2, 0

@@ -1,0 +1,4 @@
+commit 3434a510916d4e1809ec9dab8866c661a8e45de (2022/10/2 18:21:37)
+12,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/ComboItem.java,1,0,0,0,0,0,0,0,0
+13,../data_original/repositories/rep381/copied/pdfsam/pdfsam-model/src/main/java/org/pdfsam/model/ui/dnd/SingleFileDroppedEvent.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

@@ -1,0 +1,7 @@
+commit 5049fe0f184ef2d1620458adc5cb553b0d952a7c (2022/12/5 21:40:55)
+1: ../data/repositories/geckolib/Fabric/src/main/java/software/bernie/geckolib/cache/object/GeoQuad.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+2: ../data/repositories/geckolib/Fabric/src/main/java/software/bernie/geckolib/loading/object/BakedModelFactory.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+3: ../data/repositories/geckolib/Forge/src/main/java/software/bernie/geckolib/cache/object/GeoQuad.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+4: ../data/repositories/geckolib/Forge/src/main/java/software/bernie/geckolib/loading/object/BakedModelFactory.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/geckolib/Quilt/src/main/java/software/bernie/geckolib/cache/object/GeoQuad.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 2, 0, 0, 0, 0, 0, 3

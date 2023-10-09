@@ -1,0 +1,437 @@
+/*
+ * Copyright (C) 2020 ActiveJ LLC.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package io.activej.dns;
+
+import io.activej.common.StringFormatUtils;
+import io.activej.common.builder.AbstractBuilder;
+import io.activej.common.time.CurrentTimeProvider;
+import io.activej.dns.protocol.DnsProtocol.ResponseErrorCode;
+import io.activej.dns.protocol.DnsQuery;
+import io.activej.dns.protocol.DnsQueryException;
+import io.activej.dns.protocol.DnsResponse;
+import io.activej.jmx.api.attribute.JmxAttribute;
+import io.activej.jmx.api.attribute.JmxOperation;
+import io.activej.jmx.api.attribute.JmxReducers.JmxReducerSum;
+import io.activej.promise.Promise;
+import io.activej.reactor.AbstractReactive;
+import io.activej.reactor.Reactor;
+import org.jetbrains.annotations.Nullable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.net.InetAddress;
+import java.time.Duration;
+import java.util.*;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+import static io.activej.reactor.Reactive.checkInReactorThread;
+
+/**
+ * Represents a cache for storing resolved domains during it's time to live.
+ */
+public final class DnsCache extends AbstractReactive {
+	private static final Logger logger = LoggerFactory.getLogger(DnsCache.class);
+
+	public static final Duration DEFAULT_ERROR_CACHE_EXPIRATION = Duration.ofMinutes(1);
+	public static final Duration DEFAULT_TIMED_OUT_EXPIRATION = Duration.ofSeconds(1);
+	public static final Duration DEFAULT_HARD_EXPIRATION_DELTA = Duration.ofMinutes(1);
+	public static final Duration DEFAULT_MAX_TTL = null;
+
+	private final Map<DnsQuery, CachedDnsQueryResult> cache = new ConcurrentHashMap<>();
+
+	private long errorCacheExpiration = DEFAULT_ERROR_CACHE_EXPIRATION.toMillis();
+	private long timedOutExpiration = DEFAULT_TIMED_OUT_EXPIRATION.toMillis();
+	private long hardExpirationDelta = DEFAULT_HARD_EXPIRATION_DELTA.toMillis();
+	private long maxTtl = Long.MAX_VALUE;
+
+	private final AtomicBoolean cleaningUpNow = new AtomicBoolean(false);
+	private final PriorityQueue<CachedDnsQueryResult> expirations = new PriorityQueue<>();
+
+	final CurrentTimeProvider now;
+
+	/**
+	 * Creates a new DNS cache.
+	 *
+	 * @param reactor reactor
+	 */
+	private DnsCache(Reactor reactor) {
+		super(reactor);
+		this.now = reactor;
+	}
+
+	public static DnsCache create(Reactor reactor) {
+		return builder(reactor).build();
+	}
+
+	public static Builder builder(Reactor reactor) {
+		return new DnsCache(reactor).new Builder();
+	}
+
+	public final class Builder extends AbstractBuilder<Builder, DnsCache> {
+		private Builder() {}
+
+		/**
+		 * @param errorCacheExpiration expiration time for errors without time to live
+		 */
+		public Builder withErrorCacheExpiration(Duration errorCacheExpiration) {
+			checkNotBuilt(this);
+			DnsCache.this.errorCacheExpiration = errorCacheExpiration.toMillis();
+			return this;
+		}
+
+		/**
+		 * @param timedOutExpiration expiration time for timed out exception
+		 */
+		public Builder withTimedOutExpiration(Duration timedOutExpiration) {
+			checkNotBuilt(this);
+			DnsCache.this.timedOutExpiration = timedOutExpiration.toMillis();
+			return this;
+		}
+
+		/**
+		 * @param hardExpirationDelta delta between time at which entry is considered resolved, but needs
+		 */
+		public Builder withHardExpirationDelta(Duration hardExpirationDelta) {
+			checkNotBuilt(this);
+			DnsCache.this.hardExpirationDelta = hardExpirationDelta.toMillis();
+			return this;
+		}
+
+		public Builder withMaxTtl(@Nullable Duration maxTtl) {
+			checkNotBuilt(this);
+			DnsCache.this.maxTtl = maxTtl == null ? Long.MAX_VALUE : maxTtl.toMillis();
+			return this;
+		}
+
+		@Override
+		protected DnsCache doBuild() {
+			return DnsCache.this;
+		}
+	}
+
+	/**
+	 * Tries to get status of the entry for some query from the cache.
+	 *
+	 * @param query DNS query
+	 * @return DnsQueryCacheResult for this query
+	 */
+	public @Nullable DnsCache.DnsQueryCacheResult tryToResolve(DnsQuery query) {
+		checkInReactorThread(this);
+		CachedDnsQueryResult cachedResult = cache.get(query);
+
+		if (cachedResult == null) {
+			logger.trace("{} cache miss", query);
+			return null;
+		}
+
+		DnsResponse result = cachedResult.response;
+		assert result != null; // results with null responses should never be in cache map
+		if (result.isSuccessful()) {
+			logger.trace("{} cache hit", query);
+		} else {
+			logger.trace("{} error cache hit", query);
+		}
+
+		if (isExpired(cachedResult)) {
+			logger.trace("{} hard TTL expired", query);
+			return null;
+		} else if (isSoftExpired(cachedResult)) {
+			logger.trace("{} soft TTL expired", query);
+			return new DnsQueryCacheResult(result, true);
+		}
+		return new DnsQueryCacheResult(result, false);
+	}
+
+	private boolean isExpired(CachedDnsQueryResult cachedResult) {
+		return now.currentTimeMillis() >= cachedResult.expirationTime + hardExpirationDelta;
+	}
+
+	private boolean isSoftExpired(CachedDnsQueryResult cachedResult) {
+		return now.currentTimeMillis() >= cachedResult.expirationTime;
+	}
+
+	/**
+	 * Adds DnsResponse to this cache
+	 *
+	 * @param response response to add
+	 */
+	public void add(DnsQuery query, DnsResponse response) {
+		checkInReactorThread(this);
+		long expirationTime = now.currentTimeMillis();
+		if (response.isSuccessful()) {
+			assert response.getRecord() != null; // where are my advanced contracts so that the IDE would know it's true here without an assertion?
+			long minTtl = response.getRecord().getMinTtl() * 1000L;
+			if (minTtl == 0) {
+				return;
+			}
+			expirationTime += Math.min(minTtl, maxTtl);
+		} else {
+			expirationTime += response.getErrorCode() == ResponseErrorCode.TIMED_OUT ?
+					timedOutExpiration :
+					errorCacheExpiration;
+		}
+		CachedDnsQueryResult cachedResult = new CachedDnsQueryResult(response, expirationTime);
+		CachedDnsQueryResult old = cache.put(query, cachedResult);
+		expirations.add(cachedResult);
+
+		if (old != null) {
+			old.response = null; // mark old cache response as refreshed (see performCleanup)
+			logger.trace("Refreshed cache entry for {}", query);
+		} else {
+			logger.trace("Added cache entry for {}", query);
+		}
+	}
+
+	public void performCleanup() {
+		checkInReactorThread(this);
+		if (!cleaningUpNow.compareAndSet(false, true)) {
+			return;
+		}
+		long currentTime = now.currentTimeMillis();
+
+		CachedDnsQueryResult peeked;
+		while ((peeked = expirations.peek()) != null && peeked.expirationTime <= currentTime) {
+			DnsResponse response = peeked.response;
+			if (response != null) { // if it was not refreshed(so there is a newer response in the queue)
+				DnsQuery query = response.getTransaction().getQuery();
+				cache.remove(query); // we drop it from cache
+				logger.trace("Cache entry expired for {}", query);
+			}
+			expirations.poll();
+		}
+		cleaningUpNow.set(false);
+	}
+
+	@JmxAttribute
+	public Duration getErrorCacheExpiration() {
+		return Duration.ofMillis(errorCacheExpiration);
+	}
+
+	@JmxAttribute
+	public void setErrorCacheExpiration(Duration errorCacheExpiration) {
+		this.errorCacheExpiration = errorCacheExpiration.toMillis();
+	}
+
+	@JmxAttribute
+	public Duration getTimedOutExpiration() {
+		return Duration.ofMillis(timedOutExpiration);
+	}
+
+	@JmxAttribute
+	public void setTimedOutExpiration(Duration timedOutExpiration) {
+		this.timedOutExpiration = timedOutExpiration.toMillis();
+	}
+
+	@JmxAttribute
+	public Duration getHardExpirationDelta() {
+		return Duration.ofMillis(hardExpirationDelta);
+	}
+
+	@JmxAttribute
+	public void setHardExpirationDelta(Duration hardExpirationDelta) {
+		this.hardExpirationDelta = hardExpirationDelta.toMillis();
+	}
+
+	@JmxAttribute
+	public String getMaxTtl() {
+		return maxTtl == Long.MAX_VALUE ? "" : StringFormatUtils.formatDuration(Duration.ofMillis(maxTtl));
+	}
+
+	@JmxAttribute
+	public void setMaxTtl(String s) {
+		if (s == null || s.isEmpty()) {
+			maxTtl = Long.MAX_VALUE;
+		} else {
+			maxTtl = StringFormatUtils.parseDuration(s).toMillis();
+		}
+	}
+
+	@JmxAttribute(reducer = JmxReducerSum.class)
+	public int getDomainsCount() {
+		return cache.size();
+	}
+
+	@JmxAttribute(reducer = JmxReducerSum.class)
+	public int getFailedDomainsCount() {
+		return (int) cache.values().stream()
+				.filter(cachedResult -> {
+					assert cachedResult.response != null;
+					return !cachedResult.response.isSuccessful();
+				})
+				.count();
+	}
+
+	@JmxOperation
+	public List<String> getResolvedDomains() {
+		return getDomainNames(DnsResponse::isSuccessful);
+	}
+
+	@JmxOperation
+	public List<String> getFailedDomains() {
+		return getDomainNames(response -> !response.isSuccessful());
+	}
+
+	private List<String> getDomainNames(Predicate<DnsResponse> predicate) {
+		return cache.entrySet()
+				.stream()
+				.filter(entry -> predicate.test(entry.getValue().response))
+				.map(Entry::getKey)
+				.map(DnsQuery::getDomainName)
+				.collect(Collectors.toList());
+	}
+
+	private class RecordFormatter {
+		final String domain;
+		final CachedDnsQueryResult result;
+
+		RecordFormatter(String domain, CachedDnsQueryResult result) {
+			this.domain = domain;
+			this.result = result;
+		}
+
+		ResponseErrorCode getStatus() {
+			if (result.response == null)
+				return ResponseErrorCode.UNKNOWN;
+			return result.response.getErrorCode();
+		}
+
+		Collection<InetAddress> getIps() {
+			if (result.response == null || result.response.getRecord() == null)
+				return List.of();
+			return List.of(result.response.getRecord().getIps());
+		}
+
+		int getMinTtlSeconds() {
+			if (result.response == null || result.response.getRecord() == null)
+				return 0;
+			return result.response.getRecord().getMinTtl();
+		}
+
+		String getSecondsToSoftExpiration() {
+			long secs = (result.expirationTime - now.currentTimeMillis()) / 1000;
+			return formatExpired(secs);
+		}
+
+		String getSecondsToHardExpiration() {
+			long secs = (result.expirationTime + hardExpirationDelta - now.currentTimeMillis()) / 1000;
+			return formatExpired(secs);
+		}
+
+		private String formatExpired(long secs) {
+			return secs < 0 ? "expired" : Long.toString(secs);
+		}
+
+		public List<String> formatMultiline() {
+			List<String> lines = new ArrayList<>();
+			lines.add("DomainName:\t" + domain);
+			lines.add("Status:\t" + getStatus());
+			lines.add("IP:\t" + getIps());
+			lines.add("MinTtlSeconds:\t" + getMinTtlSeconds());
+			lines.add("SecondsToSoftExpiration:\t" + getSecondsToSoftExpiration());
+			lines.add("SecondsToHardExpiration:\t" + getSecondsToHardExpiration());
+			return lines;
+		}
+	}
+
+	@JmxOperation
+	public List<String> getDomainRecord(String domain) {
+		return cache.entrySet().stream()
+				.filter(e -> e.getKey().getDomainName().equalsIgnoreCase(domain))
+				.findFirst()
+				.map(e -> new RecordFormatter(e.getKey().getDomainName(), e.getValue()).formatMultiline())
+				.orElse(List.of());
+	}
+
+	@JmxOperation
+	public List<String> getDomainRecords() {
+		if (cache.isEmpty())
+			return List.of();
+
+		List<String> lines = new ArrayList<>(cache.size());
+		lines.add("DomainName;Status;IP;MinTtlSeconds;SecondsToSoftExpiration;SecondsToHardExpiration");
+		StringBuilder sb = new StringBuilder();
+		cache.forEach((domainName, cachedResult) -> {
+			RecordFormatter formatter = new RecordFormatter(domainName.getDomainName(), cachedResult);
+			lines.add(sb
+					.append(formatter.domain)
+					.append(";")
+					.append(formatter.getStatus())
+					.append(";")
+					.append(formatter.getIps())
+					.append(";")
+					.append(formatter.getMinTtlSeconds())
+					.append(";")
+					.append(formatter.getSecondsToSoftExpiration())
+					.append(";")
+					.append(formatter.getSecondsToHardExpiration())
+					.toString());
+			sb.setLength(0);
+		});
+		return lines;
+	}
+
+	@JmxOperation
+	public void clear() {
+		cache.clear();
+		reactor.submit(expirations::clear);
+	}
+
+	public static final class DnsQueryCacheResult {
+		private final DnsResponse response;
+		private final boolean needsRefreshing;
+
+		private @Nullable DnsQueryException exception;
+
+		public DnsQueryCacheResult(DnsResponse response, boolean needsRefreshing) {
+			this.response = response;
+			this.needsRefreshing = needsRefreshing;
+		}
+
+		public Promise<DnsResponse> getResponseAsPromise() {
+			if (response.getErrorCode() == ResponseErrorCode.NO_ERROR) {
+				return Promise.of(response);
+			}
+			if (exception == null) {
+				exception = new DnsQueryException(response);
+			}
+			return Promise.ofException(exception);
+		}
+
+		public boolean doesNeedRefreshing() {
+			return needsRefreshing;
+		}
+	}
+
+	static final class CachedDnsQueryResult implements Comparable<CachedDnsQueryResult> {
+		@Nullable DnsResponse response;
+		final long expirationTime;
+
+		CachedDnsQueryResult(@Nullable DnsResponse response, long expirationTime) {
+			this.response = response;
+			this.expirationTime = expirationTime;
+		}
+
+		@Override
+		public int compareTo(CachedDnsQueryResult o) {
+			return Long.compare(expirationTime, o.expirationTime);
+		}
+	}
+}

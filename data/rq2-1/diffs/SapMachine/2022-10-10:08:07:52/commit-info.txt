@@ -1,0 +1,4 @@
+commit 39aac390badcd96780ecad69ec2ce574d23eeeb5 (2022/10/10 08:07:52)
+70,../data_original/repositories/rep1322/copied/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/util/PreviewAPIListBuilder.java,0,0,1,-1,0,0,0,0,0
+219,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/Paths/Util.java,1,0,0,0,0,0,0,0,0
+total,1,0,1,-1,0,0,0,0,0

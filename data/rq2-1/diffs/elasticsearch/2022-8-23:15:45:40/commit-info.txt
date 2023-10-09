@@ -1,0 +1,3 @@
+commit fb4addab65c5badc1623cc04e8895d0fb00d807b (2022/8/23 15:45:40)
+3,../data_original/repositories/rep1/copied/elasticsearch/x-pack/plugin/ml/src/main/java/org/elasticsearch/xpack/ml/autoscaling/MlMemoryAutoscalingCapacity.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,0,0,0,0,0,0

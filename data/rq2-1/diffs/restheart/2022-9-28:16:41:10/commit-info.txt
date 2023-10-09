@@ -1,0 +1,3 @@
+commit be65b874e1a9d098b0ab1cee72cc53d41adf1053 (2022/9/28 16:41:10)
+2,../data_original/repositories/rep1161/copied/restheart/core/src/main/java/org/restheart/plugins/PluginsScanner.java,0,0,0,-3,0,0,0,-3,1
+total,0,0,0,-3,0,0,0,-3,1

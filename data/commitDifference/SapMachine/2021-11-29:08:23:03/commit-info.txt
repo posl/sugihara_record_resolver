@@ -1,0 +1,8 @@
+commit df0ed1afd70440cc3239822fb06a10c1bce66c86 (2021/11/29 08:23:03)
+1: ../data/repositories/SapMachine/src/java.base/share/classes/sun/security/pkcs/SignerInfo.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/snippet/Parser.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+3: ../data/repositories/SapMachine/src/jdk.javadoc/share/classes/jdk/javadoc/internal/doclets/toolkit/taglets/snippet/Replace.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+4: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/doclet/testSnippetTag/TestSnippetMarkup.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/SapMachine/test/langtools/jdk/javadoc/doclet/testSnippetTag/TestSnippetTag.java, 0, 0, 0, 11, 0, 0, 0, 9, 0
+6: ../data/repositories/SapMachine/test/langtools/tools/javac/attr/AttrRecoveryTest.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 3, 0, 1, 13, 0, 0, 0, 11, 0

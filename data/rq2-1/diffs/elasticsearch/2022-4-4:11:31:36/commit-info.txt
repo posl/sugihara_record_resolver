@@ -1,0 +1,4 @@
+commit e8646c69daab0a37e7771eb99089a8665685c70 (2022/4/4 11:31:36)
+1,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/cluster/coordination/ClusterFormationFailureHelper.java,0,0,0,-1,0,0,0,-1,1
+4,../data_original/repositories/rep1/copied/elasticsearch/server/src/main/java/org/elasticsearch/cluster/coordination/JoinStatus.java,1,0,0,0,0,0,0,0,0
+total,1,0,0,-1,0,0,0,-1,1

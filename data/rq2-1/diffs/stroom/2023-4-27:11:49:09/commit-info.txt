@@ -1,0 +1,5 @@
+commit ed27133b92ca2ee0e723dfacd7501aa3f9b4edfe (2023/4/27 11:49:09)
+21,../data_original/repositories/rep1514/copied/stroom/stroom-proxy/stroom-proxy-repo/src/main/java/stroom/proxy/repo/RepoSourceItems.java,0,0,0,0,0,0,1,-1,0
+29,../data_original/repositories/rep1514/copied/stroom/stroom-proxy/stroom-proxy-repo/src/main/java/stroom/proxy/repo/queue/QueueMonitors.java,1,0,0,0,0,0,0,0,0
+30,../data_original/repositories/rep1514/copied/stroom/stroom-proxy/stroom-proxy-repo/src/main/java/stroom/proxy/repo/store/FileStores.java,1,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,1,-1,0

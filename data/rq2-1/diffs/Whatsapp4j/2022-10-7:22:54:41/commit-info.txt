@@ -1,0 +1,3 @@
+commit b75c3afa862b02f278151a9e08970f987710de12 (2022/10/7 22:54:41)
+14,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/request/Reply.java,2,0,0,0,0,0,0,0,0
+total,2,0,0,0,0,0,0,0,0

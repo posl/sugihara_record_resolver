@@ -1,0 +1,4 @@
+commit 4b060a60462cf1af1cfd7a86b43b3edb868a3c94 (2022/7/25 12:29:06)
+1: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/health/HealthComponentResult.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/server/src/main/java/org/elasticsearch/health/HealthIndicatorResult.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 1, 0, 0, 0, 1

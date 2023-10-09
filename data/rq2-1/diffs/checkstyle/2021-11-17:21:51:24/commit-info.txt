@@ -1,0 +1,6 @@
+commit e4297c298f4fd7c8cac43009f17127763aa375c8 (2021/11/17 21:51:24)
+3,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/illegaltype/InputIllegalTypeRecordsWithMemberModifiersDefault.java,2,0,0,0,0,0,0,0,0
+4,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/illegaltype/InputIllegalTypeRecordsWithMemberModifiersFinal.java,2,0,0,0,0,0,0,0,0
+5,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/illegaltype/InputIllegalTypeRecordsWithMemberModifiersPrivateFinal.java,2,0,0,0,0,0,0,0,0
+6,../data_original/repositories/rep88/copied/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/illegaltype/InputIllegalTypeRecordsWithMemberModifiersPublicProtectedStatic.java,2,0,0,0,0,0,0,0,0
+total,8,0,0,0,0,0,0,0,0

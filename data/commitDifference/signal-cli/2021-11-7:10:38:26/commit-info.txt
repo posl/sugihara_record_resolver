@@ -1,0 +1,3 @@
+commit e22cc457ae91e22deb54373078bef7e8cd22edcb (2021/11/7 10:38:26)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/api/Configuration.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,4 @@
+commit 1ffba6e858b75a18c9f4fe0796e99415446b683d (2022/10/27 04:57:43)
+1: ../data/repositories/Smithereen/src/main/java/smithereen/controllers/ObjectLinkResolver.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/Smithereen/src/main/java/smithereen/storage/PostStorage.java, 0, 0, 0, 1, 0, 0, 0, 1, 0
+sum: 0, 0, 1, 1, 0, 0, 0, 1, 0

@@ -1,0 +1,4 @@
+commit b36ab4f97f58597c29ead3c8f08ca242d1e26056 (2022/2/9 12:17:01)
+1: ../data/repositories/JustEnoughItems/src/main/java/mezz/jei/transfer/BasicRecipeTransferHandler.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/JustEnoughItems/src/main/java/mezz/jei/transfer/TransferOperation.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 1, 0, 0, 0, 0, 0, 0

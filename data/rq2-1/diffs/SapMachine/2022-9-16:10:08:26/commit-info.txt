@@ -1,0 +1,6 @@
+commit fc8b4428454e968f5d86124dd7772811a5cd102c (2022/9/16 10:08:26)
+131,../data_original/repositories/rep1322/copied/SapMachine/test/jdk/java/lang/invoke/defineHiddenClass/src/HiddenInterface.java,0,0,1,-1,0,0,0,0,0
+156,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/diags/examples/PreviewPlural/PreviewPlural.java,0,0,1,-1,0,0,0,0,0
+157,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/diags/examples/PreviewPlural/PreviewPluralBar.java,0,0,1,-1,0,0,0,0,0
+159,../data_original/repositories/rep1322/copied/SapMachine/test/langtools/tools/javac/preview/classReaderTest/Bar.java,0,0,1,-1,0,0,0,0,0
+total,0,0,4,-4,0,0,0,0,0

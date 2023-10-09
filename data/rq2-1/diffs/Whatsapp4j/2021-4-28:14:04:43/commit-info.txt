@@ -1,0 +1,5 @@
+commit d86b7a2b24430f0dc9ce9ff1355b6f612062a24c (2021/4/28 14:04:43)
+11,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/GroupModificationResponse.java,0,0,0,-1,0,0,0,-1,1
+12,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/ModificationForParticipant.java,1,0,0,0,0,0,0,0,0
+13,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp4j/response/impl/ModificationForParticipantStatus.java,0,0,0,-1,0,0,0,-1,1
+total,1,0,0,-2,0,0,0,-2,2

@@ -1,0 +1,3 @@
+commit a5dae40d12bb8364110155d4e88899c1a616754e (2023/1/11 20:34:54)
+2,../data_original/repositories/rep1586/copied/MCreator/src/main/java/net/mcreator/generator/GeneratorTemplatesList.java,0,0,0,-1,0,0,0,-1,1
+total,0,0,0,-1,0,0,0,-1,1

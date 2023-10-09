@@ -1,0 +1,3 @@
+commit 8d8e4377ea28d639818f07bf9ad780ec93daeb99 (2022/10/5 00:06:15)
+1,../data_original/repositories/rep1/copied/elasticsearch/build-tools-internal/src/main/java/org/elasticsearch/gradle/internal/docker/DockerSupportService.java,0,0,0,-2,0,0,0,-2,1
+total,0,0,0,-2,0,0,0,-2,1

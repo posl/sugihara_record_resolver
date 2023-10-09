@@ -1,0 +1,7 @@
+commit b94d18ebbb67a5d1c62165475454a1d06f20c660 (2023/5/9 21:27:53)
+6,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/chat/ChatMute.java,0,0,0,-1,0,0,0,-1,1
+11,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/contact/ContactJid.java,0,0,0,-1,0,0,0,-1,1
+49,../data_original/repositories/rep1854/copied/Whatsapp4j/src/main/java/it/auties/whatsapp/model/signal/sender/SenderMessageKey.java,0,0,0,-1,0,0,0,-1,1
+66,../data_original/repositories/rep1854/copied/Whatsapp4j/src/test/java/it/auties/whatsapp/github/GithubKey.java,0,0,0,0,1,0,0,0,0
+68,../data_original/repositories/rep1854/copied/Whatsapp4j/src/test/java/it/auties/whatsapp/github/GithubUpload.java,0,0,0,0,1,0,0,0,0
+total,0,0,0,-3,2,0,0,-3,3

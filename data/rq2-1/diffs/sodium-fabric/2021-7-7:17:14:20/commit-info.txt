@@ -1,0 +1,8 @@
+commit aaa5a9ced13e09f75a323bca9e5c75ac9886cdd6 (2021/7/7 17:14:20)
+7,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/gl/attribute/GlVertexAttributeFormat.java,0,1,0,-1,0,0,0,0,0
+12,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/gl/buffer/IndexedVertexData.java,0,1,0,-1,0,0,0,0,0
+18,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/gl/shader/ShaderBindingPoint.java,0,1,0,-1,0,0,0,0,0
+22,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/gl/tessellation/TessellationBinding.java,0,1,0,-1,0,0,0,0,0
+51,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/render/chunk/shader/ChunkShaderOptions.java,0,1,0,-1,0,0,0,0,0
+56,../data_original/repositories/rep223/copied/sodium-fabric/src/main/java/me/jellysquid/mods/sodium/client/util/Dim2i.java,0,1,0,-1,0,0,0,0,0
+total,0,6,0,-6,0,0,0,0,0

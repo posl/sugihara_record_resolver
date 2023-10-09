@@ -1,8 +1,0 @@
-if(src.match(JavaTS.LEFT_CURLY_BRACKET))
-    body = BlockTree.parse(src);
-else if(src.match(JavaTS.THROW))
-    body = ThrowTree.parse(src);
-else{
-    body = ExpressionTree.parse(src);
-    src.skip(JavaTS.SEMICOLON);
-}ST_IF_4

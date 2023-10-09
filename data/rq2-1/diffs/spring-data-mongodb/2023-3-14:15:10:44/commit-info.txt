@@ -1,0 +1,6 @@
+commit 67215f1209df3f40beb03fed20f66c46497c7067 (2023/3/14 15:10:44)
+8,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/encryption/EncryptionKey.java,0,0,0,0,0,0,2,-2,0
+11,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/encryption/KeyAltName.java,1,0,0,0,0,0,0,0,0
+12,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/encryption/KeyId.java,1,0,0,0,0,0,0,0,0
+20,../data_original/repositories/rep624/copied/spring-data-mongodb/spring-data-mongodb/src/test/java/org/springframework/data/mongodb/core/encryption/MongoEncryptionConverterUnitTests.java,0,0,0,-1,0,0,0,-1,1
+total,2,0,0,-1,0,0,2,-3,1

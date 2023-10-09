@@ -1,0 +1,6 @@
+commit 3fecda9df90050d61848bf7f34b0fbfb3cc1322e (2022/11/29 16:12:11)
+9,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/AggregationRequestSpec.java,1,0,0,0,0,0,0,0,0
+10,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/MessagesRequestSpec.java,1,0,0,0,0,0,0,0,0
+11,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/request/SearchRequestSpec.java,0,0,0,0,0,1,0,-1,0
+14,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/rest/scriptingapi/response/ResponseSchemaEntry.java,0,0,0,-1,0,0,0,-1,1
+total,2,0,0,-1,0,1,0,-2,1

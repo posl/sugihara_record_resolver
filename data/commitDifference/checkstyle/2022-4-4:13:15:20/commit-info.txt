@@ -1,0 +1,3 @@
+commit cd28d8c7ebbe51464d96c05db33e7a1f1b3ad86a (2022/4/4 13:15:20)
+1: ../data/repositories/checkstyle/src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/design/finalclass/InputFinalClassNestedInRecord.java, 5, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 5, 0, 0, 0, 0, 0, 0, 0, 0

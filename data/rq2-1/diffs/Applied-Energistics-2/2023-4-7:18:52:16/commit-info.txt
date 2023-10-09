@@ -1,0 +1,4 @@
+commit ccf0a8dc73a4e2e81b004a80579e214a52e4c42b (2023/4/7 18:52:16)
+2,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/client/gui/StackWithBounds.java,1,0,0,0,0,0,0,0,0
+8,../data_original/repositories/rep749/copied/Applied-Energistics-2/src/main/java/appeng/integration/modules/jei/JEIPlugin.java,0,0,1,-1,0,0,0,0,0
+total,1,0,1,-1,0,0,0,0,0

@@ -1,0 +1,3 @@
+commit 1706d64ddf943aa827332aa0b02337cb9fe5888b (2022/9/15 21:19:31)
+1: ../data/repositories/FastAsyncWorldEdit/worldedit-core/src/main/java/com/fastasyncworldedit/core/util/TextureUtil.java, 0, 0, 2, 0, 0, 0, 0, 0, 0
+sum: 0, 0, 2, 0, 0, 0, 0, 0, 0

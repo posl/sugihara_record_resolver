@@ -1,0 +1,3 @@
+commit 5da8c2fffa8f56693376b143b2f01ba8400c544b (2022/11/16 17:21:50)
+2,../data_original/repositories/rep1704/copied/master-spring-and-spring-boot/20-spring-security/src/main/java/com/in28minutes/learnspringsecurity/jwt/JwtResource.java,0,0,0,0,2,0,0,0,0
+total,0,0,0,0,2,0,0,0,0

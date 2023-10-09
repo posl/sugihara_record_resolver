@@ -1,0 +1,3 @@
+commit 5df0e65b788b563f6c100694fca5e71f844fae77 (2021/12/15 09:04:08)
+1,../data_original/repositories/rep1322/copied/SapMachine/make/langtools/src/classes/build/tools/symbolgenerator/CreateSymbols.java,0,0,1,-1,0,0,0,0,0
+total,0,0,1,-1,0,0,0,0,0

@@ -1,0 +1,5 @@
+commit 184c2425b2dd41d11b8ec5f292c1a06c36996c6 (2022/11/1 16:03:34)
+17,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog/plugins/views/search/searchtypes/pivot/BucketSpecHandler.java,0,0,0,-1,0,0,0,-1,1
+26,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/migrations/V20220929145442_MigratePivotLimitsInViews.java,2,0,0,0,0,0,0,0,0
+27,../data_original/repositories/rep118/copied/graylog2-server/graylog2-server/src/main/java/org/graylog2/migrations/V20220930095323_MigratePivotLimitsInSearches.java,2,0,0,0,0,0,0,0,0
+total,4,0,0,-1,0,0,0,-1,1

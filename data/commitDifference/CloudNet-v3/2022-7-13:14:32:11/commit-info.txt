@@ -1,0 +1,8 @@
+commit 62a88499d1df8d5d1904f0d1faa3789c5beb115b (2022/7/13 14:32:11)
+1: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/driver/network/http/content/ClassLoaderContentStreamProvider.java, 0, 0, 0, 0, 2, 0, 0, 0, 0
+2: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/driver/network/http/content/FileContentStreamProvider.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+3: ../data/repositories/CloudNet-v3/driver/src/main/java/eu/cloudnetservice/driver/network/http/content/MultipleContentStreamProvider.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+4: ../data/repositories/CloudNet-v3/modules/rest/src/main/java/eu/cloudnetservice/modules/rest/v2/V2HttpHandlerService.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+5: ../data/repositories/CloudNet-v3/node/src/main/java/eu/cloudnetservice/node/http/annotation/SecurityAnnotationExtension.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+6: ../data/repositories/CloudNet-v3/node/src/main/java/eu/cloudnetservice/node/http/ticket/WebSocketTicket.java, 0, 0, 0, 0, 1, 0, 0, 0, 0
+sum: 2, 1, 0, 0, 5, 0, 0, 0, 0

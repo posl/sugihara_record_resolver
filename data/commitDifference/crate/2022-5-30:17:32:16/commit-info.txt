@@ -1,0 +1,3 @@
+commit dd88a9c8d00e4cf4b25311bcaf1d248722fa5a2c (2022/5/30 17:32:16)
+1: ../data/repositories/crate/server/src/main/java/io/crate/expression/reference/information/ColumnContext.java, 0, 1, 0, 0, 0, 0, 0, 0, 0
+sum: 0, 1, 0, 0, 0, 0, 0, 0, 0

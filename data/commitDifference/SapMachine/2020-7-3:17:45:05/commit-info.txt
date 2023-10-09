@@ -1,0 +1,4 @@
+commit 8fc7f7f8b11fcb7f05c688d2c454593e2660b30a (2020/7/3 17:45:05)
+1: ../data/repositories/SapMachine/test/jdk/java/io/Serializable/records/DifferentStreamFieldsTest.java, 25, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/SapMachine/test/micro/org/openjdk/bench/java/io/RecordDeserialization.java, 2, 0, 0, 0, 0, 0, 0, 0, 0
+sum: 27, 0, 0, 0, 0, 0, 0, 0, 0

@@ -1,0 +1,4 @@
+commit bd679bcdbaf5741501b97d3517483ee3b548d8eb (2022/8/17 22:28:45)
+1,../data_original/repositories/rep150/copied/hazelcast/hazelcast-it/jdk17-tests/src/test/java/com/hazelcast/serialization/compact/record/AllTypesRecord.java,0,0,0,-2,0,0,0,-2,1
+2,../data_original/repositories/rep150/copied/hazelcast/hazelcast-it/jdk17-tests/src/test/java/com/hazelcast/serialization/compact/record/RecordSerializationTest.java,0,0,0,-2,0,0,0,-2,2
+total,0,0,0,-4,0,0,0,-4,3

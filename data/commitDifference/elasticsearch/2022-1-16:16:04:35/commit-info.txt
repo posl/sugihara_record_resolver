@@ -1,0 +1,4 @@
+commit 93777b4e996c981b7b3987cae4ad3a9248c2abfe (2022/1/16 16:04:35)
+1: ../data/repositories/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/datafeed/SearchInterval.java, 1, 0, 0, 0, 0, 0, 0, 0, 0
+2: ../data/repositories/elasticsearch/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/datafeed/extractor/DataExtractor.java, 0, 0, 1, 0, 0, 0, 0, 0, 0
+sum: 1, 0, 1, 0, 0, 0, 0, 0, 0

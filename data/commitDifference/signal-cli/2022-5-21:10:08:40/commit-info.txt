@@ -1,0 +1,4 @@
+commit bf75d9b4e0385d8b6b86faef8860caa06368c447 (2022/5/21 10:08:40)
+1: ../data/repositories/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/recipients/RecipientStore.java, 0, 0, 0, 0, 0, 0, 0, 0, 3
+2: ../data/repositories/signal-cli/src/main/java/org/asamk/signal/commands/ListContactsCommand.java, 0, 0, 0, 0, 0, 0, 0, 0, 2
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 5

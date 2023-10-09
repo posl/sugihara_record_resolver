@@ -1,0 +1,3 @@
+commit 3169e4ac6eddccc48d7ed1a6b197fa0e1ac2152d (2021/10/18 16:53:23)
+1: ../data/repositories/crate/server/src/main/java/io/crate/types/StorageSupport.java, 0, 0, 0, 0, 0, 0, 0, 0, 1
+sum: 0, 0, 0, 0, 0, 0, 0, 0, 1

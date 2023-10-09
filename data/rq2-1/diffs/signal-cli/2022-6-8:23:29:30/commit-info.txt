@@ -1,0 +1,4 @@
+commit 65c9a2e18572dbe6d8eab0c8f49fee223722c578 (2022/6/8 23:29:30)
+7,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/groups/GroupStore.java,0,0,0,0,0,0,5,-5,0
+8,../data_original/repositories/rep363/copied/signal-cli/lib/src/main/java/org/asamk/signal/manager/storage/groups/LegacyGroupStore.java,5,0,0,0,0,0,0,0,0
+total,5,0,0,0,0,0,5,-5,0
