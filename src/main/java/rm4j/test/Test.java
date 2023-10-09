@@ -2,13 +2,13 @@ package rm4j.test;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 
 import rm4j.io.DatasetManager;
 import rm4j.io.TypeComparator;
 import rm4j.io.Metrics.JavaVersion;
 
 public class Test{
-
 
     public static File debug = new File("./");
 
@@ -100,12 +100,24 @@ public class Test{
                 e.printStackTrace();
             }
         });
+        //test10.run();
 
-        test10.run();
+        sweep(new File("./"));
     }
 
     public static File debugFile(){
         return new File("./org/posl/test/TestSource.java");
+    }
+
+    public static boolean sweep(File file){
+        if(file.isDirectory()){
+            return Arrays.stream(file.listFiles()).allMatch(Test::sweep);
+        }else{
+            if(file.getName().equals(".DS_Store")){
+                return file.delete();
+            }
+            return true;
+        }
     }
 
     @FunctionalInterface
