@@ -65,7 +65,7 @@ public class TreeDriver{
             for(Test[] set : TEST_SET){
                 driveSet(set, output);
             }
-            File dir = new File("../../lib/JavaAPI17/java.base/java/util/");
+            File dir = new File("../../dataset/jdk17modules/java.base/java/util/");
             for(File f : dir.listFiles()){
                 output.accept(Test.instantRun(f)+"\n");
             }

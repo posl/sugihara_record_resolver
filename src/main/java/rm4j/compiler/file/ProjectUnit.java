@@ -24,7 +24,7 @@ public final class ProjectUnit{
 
     public static volatile int numOfFailedFiles = 0;
     public static volatile int numOfFiles = 0;
-    private static final File API = new File("../../lib/JavaAPI17");
+    private static final File API = new File("../../dataset/jdk17modules");
 
     private final JavaModule unnamedModule = new JavaModule(CompilationUnitTree.UNNAMED_MODULE);
     private final JavaPackage unnamedPackage = new JavaPackage(ExpressionNameTree.EMPTY, new ConcurrentHashMap<>());
