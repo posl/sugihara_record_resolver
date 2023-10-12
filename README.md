@@ -71,7 +71,7 @@ Run 'step1.sh' in the 'shell' directory to add 'dataset' and its subdirectories.
 │   ├── ......
 │   └── shell
 │       ├── ......
-│       └── step1.sh 
+│       └── step1.sh <- HERE
 └── dataset
     ├── repositories
     │   ├── rep1
@@ -85,3 +85,39 @@ Run 'step1.sh' in the 'shell' directory to add 'dataset' and its subdirectories.
     └── jdk17modules
 ```
 
+### Cloning Repositories
+Describe a list of GitHub repository URLs in 'repository_urls.txt' (up to 2,000) in the 'shell' directory.
+The original list is also available in the 'list' directory.
+
+(repository_urls.txt) Like this, each URL must be separated by a new line:
+```
+https://github.com/elastic/elasticsearch
+https://github.com/ReactiveX/RxJava
+https://github.com/square/retrofit
+......
+```
+
+Run 'step2.sh' in the 'shell' directory to add a clone in each 'original' directory and its copy in each 'copied' directory.
+
+```
+.
+├── (clone of this repository)
+│   ├── ......
+│   └── shell
+│       ├── ......
+│       ├── repository_urls.txt <- add this
+│       └── step2.sh <- HERE
+└── dataset (will be added later)
+    ├── repositories
+    │   ├── rep1
+    │   ├── rep2
+    │   ├── ......
+    │   ├── (repX)
+    │   │   ├── original
+    │   │   │   └── (a clone of a dataset repository)
+    │   │   └── copied
+    │   │       └── (a copy of the clone above)
+    │   ├── ......
+    │   └── rep2000
+    └── jdk17modules
+```
