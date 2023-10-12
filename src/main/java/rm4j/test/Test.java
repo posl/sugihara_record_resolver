@@ -100,9 +100,21 @@ public class Test{
                 e.printStackTrace();
             }
         });
-        //test10.run();
 
-        sweep(new File("./"));
+        if(args.length > 0){
+            switch(args[0]){
+                case "step1" -> test1.run();
+                case "step2" -> test2.run();
+                case "step3" -> test3.run();
+                case "step4" -> test4.run();
+                case "step5" -> test5.run();
+                case "step6" -> test6.run();
+                case "step7" -> test7.run();
+                case "step8" -> test8.run();
+                case "step9" -> test9.run();
+                case "step10" -> test10.run();
+            }
+        }
     }
 
     public static File debugFile(){

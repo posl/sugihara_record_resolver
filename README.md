@@ -1,6 +1,6 @@
 # sugihara_record_resolver
 
-## Required Directory Structure
+## Directory Structure
 WARNING! This project requires another directory where this repository should be cloned into.
 
 ```
@@ -45,11 +45,6 @@ WARNING! This project requires another directory where this repository should be
 
 ```
 
-## How to Prepare Dataset
-### Before Running Our Scripts
-Make sure your Java Development Kit (JDK) version is 17 or higher. 
-No other special tools are required.
-
 ### Dataset OSS URLs
 We provide dataset OSS urls in 'list' directory.
 Note that some of them may not be available now because we collected these URLs by scraping on June 1, 2023.
@@ -61,6 +56,28 @@ Note that some of them may not be available now because we collected these URLs 
 └── list
     └── repository_urls.txt
 ```
+
+### Result Data
+The result files are in 'data' directory.
+
+```
+.
+├── README.md
+├── ......
+└── data
+    ├── commitDifference (<- commits which are relevant to records)
+    ├── dataset_spec <- Dataset metrics
+    ├── project_specs (<- .ser files which save commit traces of dataset)
+    ├── rq1-1 <- RQ1-1
+    ├── rq1-2 <- RQ1-2
+    ├── rq2-1 <- RQ2-1
+    └── rq2-2 <- RQ2-2
+```
+
+## How to Prepare Dataset
+### Before Running Our Scripts
+Make sure your Java Development Kit (JDK) version is 17 or higher. 
+No other special tools are required.
 
 ### Directory Structures
 Run 'step1.sh' in the 'shell' directory to add 'dataset' and its subdirectories.
@@ -105,7 +122,7 @@ Run 'step2.sh' in the 'shell' directory to add a clone in each 'original' direct
 │   ├── ......
 │   └── shell
 │       ├── ......
-│       ├── repository_urls.txt <- add this
+│       ├── repository_urls.txt <- ADD THIS
 │       └── step2.sh <- HERE
 └── dataset (will be added later)
     ├── repositories
@@ -121,3 +138,7 @@ Run 'step2.sh' in the 'shell' directory to add a clone in each 'original' direct
     │   └── rep2000
     └── jdk17modules
 ```
+
+## Running Scripts
+
+### Set Up
