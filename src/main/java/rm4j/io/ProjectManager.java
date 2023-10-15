@@ -42,9 +42,15 @@ public class ProjectManager implements FileManager{
 
     private static final Date HEAD_COMMIT_STAMP = new Date(2023, 6, 1);
     private static final File INSTANCES_PARENT = new File("out/project_specs");
-    private static final File PROJECTS_PARENT = new File("../data_original/repositories");
+    private static final File PROJECTS_PARENT = new File("../dataset/repositories");
 
     private final ProjectSpec spec;
+
+    static{
+        if(!INSTANCES_PARENT.exists()){
+            INSTANCES_PARENT.mkdir();
+        }
+    }
 
     public ProjectManager(int number) throws IOException{
         spec = deserializeSpec(number);
@@ -68,7 +74,8 @@ public class ProjectManager implements FileManager{
                 File original = dir.listFiles(f -> f.isDirectory())[0];
                 File copied = new File(project, "original/" + original.getName());
                 ProjectSpec spec = new ProjectSpec(project, original, copied, new CommitTrace(cmd -> getStreamReader(cmd, original)), measureMetrics(project, original));
-                try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(new File(INSTANCES_PARENT, project.getName()+".ser")))){
+                instancePath.createNewFile();
+                try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(instancePath))){
                     out.writeObject(spec);
                 }
                 return spec;
@@ -88,7 +95,7 @@ public class ProjectManager implements FileManager{
         Date headStamp = CommitTrace.getCommitInfo(getStreamReader("git log", repository)).date();
         age = 12 * (headStamp.year() - date.year() - 1)
                 + (headStamp.month() + 11 - date.month())
-                + (headStamp.date() + 30 - date.date())/30.0;
+                + (headStamp.date() + 30 - date.date())/30.0;   
         try(BufferedReader reader = new BufferedReader(new FileReader(new File(project, "commits.txt")))){
             String buf;
             while((buf = reader.readLine()) != null){

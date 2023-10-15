@@ -1,3 +1,5 @@
 target/*
+out/*
+!out/.gitkeep
 *.class
 .DS_Store

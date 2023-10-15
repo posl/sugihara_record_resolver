@@ -1,11 +1,16 @@
 # sugihara_record_resolver
 
-## Directory Structure
-WARNING! This project requires another directory where this repository should be cloned into.
+## Recommended System Requirements
+Mac OS X
+Java SE 17 (or higher)
+Git environment
 
+## Directory Structure
+This project requires another directory where this repository should be cloned into.
+However, the commands must be run in the top directory of this clone.
 ```
 .
-├── (clone of this repository)
+├── (clone of this repository) <- Please set this directory as your workspace.
 │   ├── data
 │   │   ├── commitDifference
 │   │   ├── dataset_spec
@@ -14,6 +19,7 @@ WARNING! This project requires another directory where this repository should be
 │   │   ├── rq1-2
 │   │   ├── rq2-1
 │   │   └── rq2-2
+│   ├── jdk
 │   ├── list
 │   ├── out
 │   ├── shell
@@ -47,7 +53,7 @@ WARNING! This project requires another directory where this repository should be
 
 ### Dataset OSS URLs
 We provide dataset OSS urls in 'list' directory.
-Note that some of them may not be available now because we collected these URLs by scraping on June 1, 2023.
+(Note that some of the links may no longer be valid.)
 
 ```
 .
@@ -75,9 +81,6 @@ The result files are in 'data' directory.
 ```
 
 ## How to Prepare Dataset
-### Before Running Our Scripts
-Make sure your Java Development Kit (JDK) version is 17 or higher. 
-No other special tools are required.
 
 ### Directory Structures
 Run 'step1.sh' in the 'shell' directory to add 'dataset' and its subdirectories.
@@ -112,9 +115,12 @@ https://github.com/elastic/elasticsearch
 https://github.com/ReactiveX/RxJava
 https://github.com/square/retrofit
 ......
-```
+https://github.com/godstale/retrowatch
 
-Run 'step2.sh' in the 'shell' directory to add a clone in each 'original' directory and its copy in each 'copied' directory.
+```
+NOTE: Without a new line after final url, the last repository will not be cloned.
+
+Run 'step2.sh' in the 'shell' directory to add jdk17 modules in 'jdk17modules' directory and a clone in each 'original' directory and its copy in each 'copied' directory.
 
 ```
 .
@@ -123,8 +129,8 @@ Run 'step2.sh' in the 'shell' directory to add a clone in each 'original' direct
 │   └── shell
 │       ├── ......
 │       ├── repository_urls.txt <- ADD THIS
-│       └── step2.sh <- HERE
-└── dataset (will be added later)
+│       └── step2.sh
+└── dataset
     ├── repositories
     │   ├── rep1
     │   ├── rep2
@@ -137,8 +143,63 @@ Run 'step2.sh' in the 'shell' directory to add a clone in each 'original' direct
     │   ├── ......
     │   └── rep2000
     └── jdk17modules
+        ├── java.base
+        ├── java.compiler
+        ├── ......
+        └── (jdk17 modules)
 ```
 
 ## Running Scripts
+First, please build this project. The `main` method is in `Test.java` file, which is shown below.
 
-### Set Up
+```
+.
+├── (clone of this repository)
+│   ├── data
+│   ├── jdk
+│   ├── list
+│   ├── out <- All output goes here.
+│   ├── shell
+│   └── src/main/java/rm4j
+│       ├── compiler
+│       ├── io
+│       ├── test
+│       │   └── Test.java (main)
+│       ├── texts
+│       └── util
+└── dataset
+```
+
+Our scripts take several arguments.
+In the first argument, please specify the step you want to run e.g. `step1`, `step7`.
+In the second argument, please specify the size of the dataset (the number of cloned repositories) e.g. `100`. If you do not specify anything, the default is `2000`.
+
+### Step 1
+dataset spec
+
+### Step 2
+rq1-1
+
+### Step 3
+rq1-2
+
+### Step 4
+rq2-1
+
+### Step 5
+rq1-1 record_history.csv
+
+### Step 6
+rq2-1 constructor_override_cases
+
+### Step 7
+rq2-2 class_data.csv
+
+### Step8
+rq2-2 to_class_conversions, converted_record_data
+
+### Step9
+rq1-1 expressions.csv
+
+### Step10
+rq2-2 accessors.csv

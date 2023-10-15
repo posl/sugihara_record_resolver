@@ -11,10 +11,11 @@ import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 import rm4j.io.Metrics.JavaVersion;
+import rm4j.test.Test;
 
 public class DatasetManager implements FileManager{
 
-    private static final int DATASET_SIZE = 2000;
+    private static final int DATASET_SIZE;
     private static final int NUM_OF_TIMESTAMPS = 38;
 
     public static final File DATASET_DIRECTORY = new File("../data_original/repositories");
@@ -33,6 +34,10 @@ public class DatasetManager implements FileManager{
         return timestamps;
     }).get();
 
+    static{
+        DATASET_SIZE = Test.DATASET_SIZE;
+    }
+
     private final ProjectManager[] repositories = new ProjectManager[DATASET_SIZE];
 
     public DatasetManager() throws IOException{
@@ -42,11 +47,17 @@ public class DatasetManager implements FileManager{
     }
 
     public void refreshCopies(Predicate<? super ProjectManager> filter) throws IOException{
-        for(var project : repositories){
-            if(filter.test(project)){
-                project.refreshCopies();
-            }
+        Process p = Runtime.getRuntime().exec("bash shell/refresh.sh");
+        try{
+            p.waitFor();
+        }catch(InterruptedException e){
+            throw new IOException(e);
         }
+        // for(var project : repositories){
+        //     if(filter.test(project)){
+        //         project.refreshCopies();
+        //     }
+        // }
     }
 
     public void getMetrics() throws IOException{
@@ -173,6 +184,9 @@ public class DatasetManager implements FileManager{
     }
 
     public void writeCSV(String labels, CSVTuple[] data, File path) throws IOException{
+        if(!path.getParentFile().exists()){
+            path.getParentFile().mkdirs();
+        }
         path.delete();
         path.createNewFile();
         try(FileWriter writer = new FileWriter(path)){

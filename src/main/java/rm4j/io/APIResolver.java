@@ -28,7 +28,7 @@ public class APIResolver implements Serializable{
 
     private static final long serialVersionUID = 0xC436E989F898BEEAL;
 
-    private static final File API_PATH = new File("../data_original/JavaAPI17");
+    private static final File API_PATH = new File("../dataset/jdk17modules");
     public static final File OBJECT_PATH = new File("out/api17info.ser");
 
     public final Map<String, APINameUnit> packages = new HashMap<>();

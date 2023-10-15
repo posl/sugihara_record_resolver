@@ -10,6 +10,8 @@ import rm4j.io.Metrics.JavaVersion;
 
 public class Test{
 
+    public static int DATASET_SIZE = 2000;
+
     public static File debug = new File("./");
 
     public static void main(String[] args){
@@ -54,7 +56,7 @@ public class Test{
         Timer test5 = new Timer(() -> {
             try{
                 DatasetManager manager = new DatasetManager();
-                //manager.refreshCopies(pm -> pm.getSpec().metrics().version() != JavaVersion.BEFORE_JAVA16);
+                manager.refreshCopies(pm -> pm.getSpec().metrics().version() != JavaVersion.BEFORE_JAVA16);
                 manager.mineRecordHistory();
             }catch(IOException e){
                 e.printStackTrace();
@@ -102,6 +104,13 @@ public class Test{
         });
 
         if(args.length > 0){
+            try{
+                if(args.length > 1){
+                    DATASET_SIZE = Integer.parseInt(args[1]);
+                }
+            }catch(NumberFormatException e){
+                System.out.println("The second argument must be a number.");
+            }
             switch(args[0]){
                 case "step1" -> test1.run();
                 case "step2" -> test2.run();

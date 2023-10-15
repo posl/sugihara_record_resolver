@@ -63,6 +63,9 @@ public interface FileManager {
     }
 
     default public void recordDataInCSV(String label, Collection<String> data, File csv) throws IOException{
+        if(!csv.getParentFile().exists()){
+            csv.getParentFile().mkdirs();
+        }
         if(!csv.exists()){
             csv.createNewFile();
         }

@@ -2,10 +2,11 @@
 
 cd `dirname $0`
 
+unzip -d ../../dataset/jdk17modules ../jdk/src.zip
 cd ../../dataset/repositories
 
 i=0
-cat ../../`dirname $0`/repository_urls.txt | while read line
+cat ../../sugihara_record_resolver/shell/repository_urls.txt | while read line
 do
 ((i++))
 cd rep${i}/original

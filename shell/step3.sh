@@ -4,9 +4,11 @@ cd `dirname $0`
 
 cd ../../dataset/repositories
 
-for i in `seq 2000`
+for i in `seq 10`
 do
 cd rep${i}/original
-cp -rf ./ ../copied
+REP=`ls`
+(cd ${REP} && git shortlog -ns --until="2023-06-01" > ../../commits.txt)
 cd ../../
+
 done

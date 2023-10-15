@@ -1,0 +1,10 @@
+https://github.com/googlemaps/android-maps-utils
+https://github.com/kestra-io/kestra
+https://github.com/nextcloud/android
+https://github.com/yigit/android-priority-jobqueue
+https://github.com/sherxon/AlgoDS
+https://github.com/alamkanak/Android-Week-View
+https://github.com/yanzhenjie/AndServer
+https://github.com/hmkcode/Android
+https://github.com/spockframework/spock
+https://github.com/logisim-evolution/logisim-evolution
