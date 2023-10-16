@@ -1,5 +1,6 @@
 target/*
 out/*
 !out/.gitkeep
+shell/repository_urls.txt
 *.class
 .DS_Store

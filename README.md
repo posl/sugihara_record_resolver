@@ -52,7 +52,7 @@ However, the commands must be run in the top directory of this clone.
 ```
 
 ### Dataset OSS URLs
-We provide dataset OSS urls in 'list' directory.
+We provide dataset OSS urls in `list` directory.
 (Note that some of the links may no longer be valid.)
 
 ```
@@ -64,7 +64,7 @@ We provide dataset OSS urls in 'list' directory.
 ```
 
 ### Result Data
-The result files are in 'data' directory.
+The result files are in `data` directory.
 
 ```
 .
@@ -74,16 +74,16 @@ The result files are in 'data' directory.
     ├── commitDifference (<- commits which are relevant to records)
     ├── dataset_spec <- Dataset metrics
     ├── project_specs (<- .ser files which save commit traces of dataset)
-    ├── rq1-1 <- RQ1-1
-    ├── rq1-2 <- RQ1-2
-    ├── rq2-1 <- RQ2-1
-    └── rq2-2 <- RQ2-2
+    ├── rq1-1 <- RQ1-1 results
+    ├── rq1-2 <- RQ1-2 results
+    ├── rq2-1 <- RQ2-1 results
+    └── rq2-2 <- RQ2-2 results
 ```
 
 ## How to Prepare Dataset
 
 ### Directory Structures
-Run 'step1.sh' in the 'shell' directory to add 'dataset' and its subdirectories.
+Run `step1.sh` in the `shell` directory to add `dataset` and its subdirectories.
 
 ```
 .
@@ -91,23 +91,23 @@ Run 'step1.sh' in the 'shell' directory to add 'dataset' and its subdirectories.
 │   ├── ......
 │   └── shell
 │       ├── ......
-│       └── step1.sh <- HERE
-└── dataset
-    ├── repositories
-    │   ├── rep1
-    │   ├── rep2
+│       └── step1.sh
+└── dataset <-
+    ├── repositories <-
+    │   ├── rep1 <-
+    │   ├── rep2 <-
     │   ├── ......
-    │   ├── (repX)
-    │   │   ├── original
-    │   │   └── copied
+    │   ├── (repX) <-
+    │   │   ├── original <-
+    │   │   └── copied <-
     │   ├── ......
-    │   └── rep2000
-    └── jdk17modules
+    │   └── rep2000 <-
+    └── jdk17modules <-
 ```
 
 ### Cloning Repositories
-Describe a list of GitHub repository URLs in 'repository_urls.txt' (up to 2,000) in the 'shell' directory.
-The original list is also available in the 'list' directory.
+Describe a list of GitHub repository URLs in `repository_urls.txt` (up to 2000) in the `shell` directory.
+The original list is also available in the `list` directory.
 
 (repository_urls.txt) Like this, each URL must be separated by a new line:
 ```
@@ -120,7 +120,7 @@ https://github.com/godstale/retrowatch
 ```
 NOTE: Without a new line after final url, the last repository will not be cloned.
 
-Run 'step2.sh' in the 'shell' directory to add jdk17 modules in 'jdk17modules' directory and a clone in each 'original' directory and its copy in each 'copied' directory.
+Run `step2.sh` in the `shell` directory to add jdk17 modules in `jdk17modules` directory and a clone in each `original` directory and its copy in each `copied` directory.
 
 ```
 .
@@ -128,7 +128,7 @@ Run 'step2.sh' in the 'shell' directory to add jdk17 modules in 'jdk17modules' d
 │   ├── ......
 │   └── shell
 │       ├── ......
-│       ├── repository_urls.txt <- ADD THIS
+│       ├── repository_urls.txt <- ADD THIS BY YOURSELF
 │       └── step2.sh
 └── dataset
     ├── repositories
@@ -137,9 +137,45 @@ Run 'step2.sh' in the 'shell' directory to add jdk17 modules in 'jdk17modules' d
     │   ├── ......
     │   ├── (repX)
     │   │   ├── original
-    │   │   │   └── (a clone of a dataset repository)
+    │   │   │   └── (a clone of a dataset repository) <-
     │   │   └── copied
-    │   │       └── (a copy of the clone above)
+    │   │       └── (a copy of the clone above) <-
+    │   ├── ......
+    │   └── rep2000
+    └── jdk17modules
+        ├── java.base <-
+        ├── java.compiler <-
+        ├── ......
+        └── (jdk17 modules) <-
+```
+
+### Extracting the Number of Commits Grouped by Authors
+Run `step3.sh` to add a `commits.txt` file for each repository.
+This file contains a list of developers and the number of commits each developer has made.
+
+```
+524 Harry Potter
+308 Ronald Weasley
+186 Hermione Granger
+......
+```
+
+```
+.
+├── (clone of this repository)
+│   ├── ......
+│   └── shell
+│       ├── ......
+│       └── step3.sh
+└── dataset
+    ├── repositories
+    │   ├── rep1
+    │   ├── rep2
+    │   ├── ......
+    │   ├── (repX)
+    │   │   ├── original
+    │   │   ├── copied
+    │   │   └── commits.txt <-
     │   ├── ......
     │   └── rep2000
     └── jdk17modules
@@ -170,36 +206,75 @@ First, please build this project. The `main` method is in `Test.java` file, whic
 └── dataset
 ```
 
-Our scripts take several arguments.
+Our script take several arguments. (Without arguments, our script does nothing.)
 In the first argument, please specify the step you want to run e.g. `step1`, `step7`.
 In the second argument, please specify the size of the dataset (the number of cloned repositories) e.g. `100`. If you do not specify anything, the default is `2000`.
 
-### Step 1
-dataset spec
+### Correspondence Between Execution Steps and Files
 
-### Step 2
-rq1-1
-
-### Step 3
-rq1-2
-
-### Step 4
-rq2-1
-
-### Step 5
-rq1-1 record_history.csv
-
-### Step 6
-rq2-1 constructor_override_cases
-
-### Step 7
-rq2-2 class_data.csv
-
-### Step8
-rq2-2 to_class_conversions, converted_record_data
-
-### Step9
-rq1-1 expressions.csv
-
-### Step10
-rq2-2 accessors.csv
+```
+.
+├── (clone of this repository)
+│   ├── ......
+│   └── out
+│       ├── dataset_spec
+│       │   ├── all_repository_metrics.csv <- step1
+│       │   ├── Java16_repository_metrics.csv <- step1
+│       │   └── record_reposioty_metrics.csv <- step1
+│       ├── project_specs (for script performance only)
+│       │   ├── rep1.ser
+│       │   ├── rep2.ser
+│       │   ├── ......
+│       │   └── (repX.ser)
+│       ├── rq1-1
+│       │   ├── expressions.csv <- step9
+│       │   ├── record_histroy.csv <- step5
+│       │   ├── type_declarations_A <- step2
+│       │   ├── type_declarations_B <- step2
+│       │   └── type_declarations_C <- step2
+│       ├── rq1-2 
+│       │   ├── classes
+│       │   │   ├── field_type.csv <- step3
+│       │   │   ├── interface_type.csv <- step3
+│       │   │   ├── num_of_fields <- step3
+│       │   │   ├── num_of_interfaces.csv <- step3
+│       │   │   └── num_of_methods.csv <- step3
+│       │   └── records
+│       │       ├── field_type.csv <- step3
+│       │       ├── interface_type.csv <- step3
+│       │       ├── num_of_fields.csv <- step3
+│       │       ├── num_of_interfaces.csv <- step3
+│       │       └── num_of_methods.csv <- step3
+│       ├── rq2-1
+│       │   ├── constructor_override_cases <- step6
+│       │   │   ├── case0.java
+│       │   │   ├── case1.java
+│       │   │   ├── ......
+│       │   │   └── (caseX.java)
+│       │   ├── diffs <- step4
+│       │   │   ├── ......
+│       │   │   └── (dataset_repository_name)
+│       │   │       ├── ......
+│       │   │       ├── (yyyy-mm-dd:hh:mm:ss) (commit timestamp)
+│       │   │       │   ├── file1
+│       │   │       │   ├── file2
+│       │   │       │   ├── ......
+│       │   │       │   ├── (fileX)
+│       │   │       │   │   ├── after.java (optional)
+│       │   │       │   │   └── before.java (optional)
+│       │   │       │   └── commit-info.txt
+│       │   │       └── repository-info.csv
+│       │   └── conversion_data.csv <- step4
+│       ├── rq2-2
+│       │   ├── to_class_conversions <- step8
+│       │   │   ├── ......
+│       │   │   └── (commit id:fileX)
+│       │   │       ├── after.java
+│       │   │       ├── before.java
+│       │   │       └── converted_records.txt
+│       │   ├── accessors.csv <- step10
+│       │   ├── class_data.csv <- step7
+│       │   └── converted_record_data.csv <- step8
+│       └── api17info.ser (for script performance only)
+└── dataset
+```
