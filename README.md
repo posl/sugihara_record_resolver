@@ -1,9 +1,9 @@
 # sugihara_record_resolver
 
 ## Recommended System Requirements
-Mac OS X
-Java SE 17 (or higher)
-Git environment
+- Mac OS X
+- Java SE 17 (or higher)
+- Git environment
 
 ## Directory Structure
 This project requires another directory where this repository should be cloned into.
