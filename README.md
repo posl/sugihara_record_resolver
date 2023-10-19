@@ -1,4 +1,4 @@
-# sugihara_record_resolver
+# Replication_Package_Sugihara
 
 ## Recommended System Requirements
 - Mac OS X
