@@ -107,6 +107,7 @@ Run `step1.sh` in the `shell` directory to add `dataset` and its subdirectories.
 
 ### Cloning Repositories
 Describe a list of GitHub repository URLs in `repository_urls.txt` (up to 2000) in the `shell` directory.
+The program `url_collector.ipynb`, which is used to collect the url, is provided in the directory `list`.
 The original list is also available in the `list` directory.
 
 (repository_urls.txt) Like this, each URL must be separated by a new line:
