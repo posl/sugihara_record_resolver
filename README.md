@@ -1,5 +1,5 @@
 # Replication_Package_Sugihara
-
+This is a replication package for our paper: "An Empirical Study on the Usage of Java Record Classes in GitHub OSS Projects".
 ## Recommended System Requirements
 - Mac OS X
 - Java SE 17 (or higher)
